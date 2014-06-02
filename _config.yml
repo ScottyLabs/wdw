@@ -1,0 +1,10 @@
+# Site settings
+title: Web Dev Weeks
+email: info@scottylabs.org
+description: ""
+baseurl: "/web_dev_weeks"
+url: ""
+
+# Build settings
+markdown: kramdown
+permalink: pretty
