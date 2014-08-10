@@ -1,0 +1,159 @@
+/* Base */
+/* ----------------------------------------------------------*/
+
+$text: #1a1a1a;
+$sub-text: #555;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+strong {
+  font-weight: 700;
+  color: $text;
+}
+
+html, body, .page-content .pure-g, .page-content .pure-u {
+  font-family: "source sans pro", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: $text;
+}
+
+
+.menu-strip {
+  background: #8cc63f; /* Old browsers */
+  background: -moz-linear-gradient(45deg,  #8cc63f 0%, #39b54a 100%); /* FF3.6+ */
+  background: -webkit-linear-gradient(15deg,  #8cc63f 0%,#39b54a 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(45deg,  #8cc63f 0%,#39b54a 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(45deg,  #8cc63f 0%,#39b54a 100%); /* IE10+ */
+  background: linear-gradient(45deg,  #8cc63f 0%,#39b54a 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8cc63f', endColorstr='#39b54a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0;
+  width: 16%;
+
+  padding: 27px;
+
+  box-shadow: 0 0 0 rgba(0,0,0,0.0) inset;
+
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  transition: width .3s ease-in-out;
+
+}
+.menu-strip {
+
+  a {
+    color: white;
+    opacity: 0.3;
+    text-decoration: none;
+    font-family: "source sans pro";
+  }
+  a:hover {
+    color: white;
+    opacity: 0.8;
+    text-shadow: 0px 1px 0px rgba(0,0,0,0.5);
+  }
+  ul {
+    letter-spacing: 0px;
+    width: 200%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+  }
+}
+
+.pure-u {
+  padding: 27px;
+}
+
+a {
+  color: #3CD4FA;
+}
+
+a:hover {
+  color: lighten(#3CD4FA, 15%);
+}
+
+a:active {
+  color: darken(#3CD4FA, 5%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
+}
+
+h1 {
+  font-family: "crete round";
+  font-size:  54px;
+}
+
+h2 {
+  font-family: "crete round";
+  font-size: 36px;
+}
+
+h3 {
+
+  font-family: "crete round";
+  font-size: 18px;
+  font-style: italic;
+}
+
+section {
+  margin: 27px 0px;
+  padding: 27px 0px;
+}
+
+.intro {
+  font-size: 36px;
+  font-weight: 300;
+}
+
+.intro, p {
+  color: $sub-text;
+}
+
+
+.site-header {
+  display: none;
+}
+
+
+.home h1 {
+  margin-top: 50%;
+}
+
+.aside {
+  color: #999;
+  position: absolute;
+  left: 75%;
+  display: block;
+  width: 20%;
+  line-height: 18px;
+  font-size: 14px;
+  font-style: italic;
+  border-left: 3px solid #bcbcbc;
+  padding: 0px 9px;
+
+}
+
+/* When an aside is a div we need to subtract the newline between it and its parent paragraph. */
+.aside ul {
+  padding: 9px 0px 0px 18px;
+  margin: 0px;
+}
