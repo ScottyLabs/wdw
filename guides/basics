@@ -1,10 +1,10 @@
 ---
 layout: guide
 title: "The Basics"
-permalink: /the_basics/
+permalink: /basics/
 ---
 
-<div class="home pure-g">
+<div class="basics pure-g">
 <div class="menu-strip">
 </div>
 
@@ -67,12 +67,7 @@ permalink: /the_basics/
       <p>Web Dev Weeks goes into detail in all five areas we’ve discussed above through a series of five workshops. We’ve specifically designed the workshops so that they can be taken in any order, although we recommend taking the deployment workshop after you’ve completed at least one technical workshop (so you have something to deploy).
       <p>If you have any comments or questions about this guide, please write to webdevweeks@scottylabs.org.
     </section>
-  <footer>
-    <p>Hosted by <a href="//scottylabs.org">ScottyLabs</a>
-    <p><a href="web_development_basics">Basics</a>  &middot; <a href="html_and_css">HTML/CSS </a>  &middot; <a href="frontend_web_development">Frontend</a> &middot; <a href="backend_web_development">Backend</a> &middot; <a href="design_thinking">Design</a> &middot; <a href="deployment">Deployment</a>
-  </footer>
-</div>
-  <div id="annotations" class="pure-u pure-u-1-3">
-  </div>
 
+    {% include footer.html %}
+  </div>
 </div>
