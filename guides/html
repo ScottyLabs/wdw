@@ -4,9 +4,8 @@ title: "HTML and CSS"
 permalink: /html/
 ---
 <div class="html pure-g">
-<div class="menu-strip">
-</div>
-
+  <div class="menu-strip">
+  </div>
   <div class="pure-u pure-u-1-4 menu-strip-spacer"></div>
   <div class="pure-u pure-u-1-2">
     <h1>html & css</h1>

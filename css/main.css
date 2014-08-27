@@ -41,8 +41,7 @@ html, body, .page-content .pure-g, .page-content .pure-u {
   padding: 27px;
   box-shadow: 0 0 0 transparent inset;
   overflow-x: hidden;
-  overflow-y: scroll;
-  transition: width .3s ease-in-out; }
+  overflow-y: scroll; }
 
 .backend .menu-strip {
   background: #61ebe5;
@@ -201,3 +200,28 @@ h1 {
 .aside ul {
   padding: 9px 0px 0px 18px;
   margin: 0px; }
+
+@media (max-width: 870px) {
+  .menu-strip {
+    width: 27px;
+    padding: 0px; }
+
+  .menu-strip-spacer {
+    width: 27px;
+    padding: 0px; }
+
+  .menu-strip-spacer + div {
+    width: -webkit-calc(100% - 27px - 27px); }
+
+  .aside {
+    position: static;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    border: none; }
+
+  .aside:before {
+    content: " [ "; }
+
+  .aside:after {
+    content: " ] "; } }
