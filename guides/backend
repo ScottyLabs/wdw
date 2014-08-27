@@ -2,22 +2,12 @@
 layout: guide
 title: "Backend Web Development"
 permalink: /backend/
+coloring: "backend"
 ---
-<div class="backend pure-g">
-<div class="menu-strip">
-</div>
-
-  <div class="pure-u pure-u-1-4 menu-strip-spacer"></div>
-  <div class="pure-u pure-u-1-2">
-    <h1>backend development</h1>
-    <div class="intro">Learn how to save information, serve up different pages, and make a blog.</div>
+<h1>backend development</h1>
+<div class="intro">Learn how to save information, serve up different pages, and make a blog.</div>
 
 
-    <h3>Backend Web Development</h3>
-    <p>This course
-    <p>Participants in this workshop will complete exercizes related to JavaScript, for example _____________
-
-
-    {% include footer.html %}
-  </div>
-</div>
+<h3>Backend Web Development</h3>
+<p>This course
+<p>Participants in this workshop will complete exercizes related to JavaScript, for example _____________

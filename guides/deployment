@@ -2,22 +2,14 @@
 layout: guide
 title: "HTML and CSS"
 permalink: /deployment/
+coloring: "deployment"
 ---
-<div class="deployment pure-g">
-<div class="menu-strip">
-</div>
 
-  <div class="pure-u pure-u-1-4 menu-strip-spacer"></div>
-  <div class="pure-u pure-u-1-2">
-    <h1>deployment</h1>
-    <div class="intro">Show off what you've made.</div>
+<h1>deployment</h1>
+<div class="intro">Show off what you've made.</div>
 
-    <section>
-      <h3>HTML & CSS</h3>
-      <p>This course will teach you everything you need to know to make an informative, unchanging website. Learn how to write HTML, and style it with CSS.
-      <p>Participants in this workshop will make a fully functional portfolio, like <a href="#">this</a>
-    </section>
-
-    {% include footer.html %}
-  </div>
-</div>
+<section>
+  <h3>HTML & CSS</h3>
+  <p>This course will teach you everything you need to know to make an informative, unchanging website. Learn how to write HTML, and style it with CSS.
+  <p>Participants in this workshop will make a fully functional portfolio, like <a href="#">this</a>
+</section>
