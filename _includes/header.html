@@ -1,17 +1,15 @@
-<header class="site-header">
+<header>
 
-  <div class="wrap">
-
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-
-    <nav class="site-nav">
-      <div class="trigger">
-        {% for page in site.pages %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-        {% endfor %}
-      </div>
-    </nav>
-
+  <div class="pure-menu pure-menu-open pure-menu-horizontal">
+    <a href="{{ site.baseurl }}/" class="pure-menu-heading wdw-logo">wdw</a>
+    <ul>
+        <li {% if page.subject == "basics" %}class="pure-menu-selected"{% endif %}><a href="{{ "/basics" | prepend: site.baseurl }}">basics</a></li>
+        <li><a href="{{ "/html" | prepend: site.baseurl }}">html/css</a></li>
+        <li><a href="{{ "/frontend" | prepend: site.baseurl }}">frontend</a></li>
+        <li><a href="{{ "/backend" | prepend: site.baseurl }}">backend</a></li>
+        <li><a href="{{ "/design" | prepend: site.baseurl }}">design</a></li>
+        <li><a href="{{ "/deployment" | prepend: site.baseurl }}">deployment</a></li>
+    </ul>
   </div>
 
 </header>

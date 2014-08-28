@@ -2,7 +2,7 @@
 layout: guide
 title: "Frontend Web Development"
 permalink: /frontend/
-coloring: "frontend"
+subject: "frontend"
 ---
 
 <h1>frontend engineering</h1>

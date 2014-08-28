@@ -26,18 +26,7 @@ html, body, .page-content .pure-g, .page-content .pure-u {
   color: $text;
 }
 
-
 .menu-strip {
-  $color-a: #22E3EB;
-  $color-b: #F18E40;
-  background: $color-a; /* Old browsers */
-  background: -moz-linear-gradient(45deg,  $color-a 0%, $color-b 100%); /* FF3.6+ */
-  background: -webkit-linear-gradient(15deg,  $color-a 0%,$color-b 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(45deg,  $color-a 0%,$color-b 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(45deg,  $color-a 0%,$color-b 100%); /* IE10+ */
-  background: linear-gradient(45deg,  $color-a 0%,$color-b 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-a', endColorstr='$color-b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
   position: fixed;
   top: 0px;
   bottom: 0px;
@@ -52,66 +41,70 @@ html, body, .page-content .pure-g, .page-content .pure-u {
   overflow-y: scroll;
 }
 
-.backend .menu-strip {
-  $color-a: #61EBE5;
-  $color-b: #B5C0EB;
-  background: $color-a; /* Old browsers */
-  background: -moz-linear-gradient(45deg,  $color-a 0%, $color-b 100%); /* FF3.6+ */
-  background: -webkit-linear-gradient(15deg,  $color-a 0%,$color-b 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(45deg,  $color-a 0%,$color-b 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(45deg,  $color-a 0%,$color-b 100%); /* IE10+ */
-  background: linear-gradient(45deg,  $color-a 0%,$color-b 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-a', endColorstr='$color-b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+@mixin color-mixin($color-a, $color-b) {
+  .menu-strip {
+    background: $color-a; /* Old browsers */
+    background: -moz-linear-gradient(45deg,  $color-a 0%, $color-b 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(15deg,  $color-a 0%,$color-b 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(45deg,  $color-a 0%,$color-b 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(45deg,  $color-a 0%,$color-b 100%); /* IE10+ */
+    background: linear-gradient(45deg,  $color-a 0%,$color-b 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-a', endColorstr='$color-b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  }
+
+  a {
+    color: $color-b;
+  }
+  a:hover {
+    color: $color-a;
+  }
+  a:active {
+    color: darken($color-a, 10%);
+  }
 }
 
-.design .menu-strip {
-  $color-a: #E7B255;
-  $color-b: #D63998 ;
-  background: $color-a; /* Old browsers */
-  background: -moz-linear-gradient(45deg,  $color-a 0%, $color-b 100%); /* FF3.6+ */
-  background: -webkit-linear-gradient(15deg,  $color-a 0%,$color-b 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(45deg,  $color-a 0%,$color-b 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(45deg,  $color-a 0%,$color-b 100%); /* IE10+ */
-  background: linear-gradient(45deg,  $color-a 0%,$color-b 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-a', endColorstr='$color-b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+@include color-mixin(#22E3EB, #F18E40);
+
+.backend {
+  @include color-mixin(#61EBE5, #B5C0EB)
 }
 
-.frontend .menu-strip {
-  $color-a: #45BBD1;
-  $color-b: #E76CC5;
-  background: $color-a; /* Old browsers */
-  background: -moz-linear-gradient(45deg,  $color-a 0%, $color-b 100%); /* FF3.6+ */
-  background: -webkit-linear-gradient(15deg,  $color-a 0%,$color-b 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(45deg,  $color-a 0%,$color-b 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(45deg,  $color-a 0%,$color-b 100%); /* IE10+ */
-  background: linear-gradient(45deg,  $color-a 0%,$color-b 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-a', endColorstr='$color-b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+.design {
+  @include color-mixin(#E7B255, #D63998)
 }
 
-.html .menu-strip {
-  $color-a: #97A2F6;
-  $color-b: #95E974 ;
-  background: $color-a; /* Old browsers */
-  background: -moz-linear-gradient(45deg,  $color-a 0%, $color-b 100%); /* FF3.6+ */
-  background: -webkit-linear-gradient(15deg,  $color-a 0%,$color-b 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(45deg,  $color-a 0%,$color-b 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(45deg,  $color-a 0%,$color-b 100%); /* IE10+ */
-  background: linear-gradient(45deg,  $color-a 0%,$color-b 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-a', endColorstr='$color-b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+.frontend {
+  @include color-mixin(#45BBD1, #E76CC5)
+
+}
+.html {
+  @include color-mixin(#97A2F6, #95E974)
+
+}
+.deployment {
+  @include color-mixin(#E77272, #EE9045)
 }
 
-.deployment .menu-strip {
-  $color-a: #E77272;
-  $color-b: #EE9045    ;
-  background: $color-a; /* Old browsers */
-  background: -moz-linear-gradient(45deg,  $color-a 0%, $color-b 100%); /* FF3.6+ */
-  background: -webkit-linear-gradient(15deg,  $color-a 0%,$color-b 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(45deg,  $color-a 0%,$color-b 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(45deg,  $color-a 0%,$color-b 100%); /* IE10+ */
-  background: linear-gradient(45deg,  $color-a 0%,$color-b 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-a', endColorstr='$color-b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-}
+header {
+  margin-left: 25%;
 
+  .pure-menu-heading.wdw-logo {
+    font-family: "crete round";
+    text-transform: lowercase;
+    font-size: 27px;
+    color: $text;
+    font-weight: 700;
+  }
+
+  li a {
+    color: $sub-text;
+  }
+
+  li a:hover {
+    color: $text;
+  }
+}
 
 .menu-strip {
 
@@ -140,18 +133,6 @@ html, body, .page-content .pure-g, .page-content .pure-u {
 
 .pure-u {
   padding: 27px;
-}
-
-a {
-  color: #3CD4FA;
-}
-
-a:hover {
-  color: lighten(#3CD4FA, 15%);
-}
-
-a:active {
-  color: darken(#3CD4FA, 5%);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -249,6 +230,10 @@ h1 {
 
   .aside:after {
     content: " ] ";
+  }
+
+  header {
+    margin-left: 27px;
   }
 
 }
