@@ -10,5 +10,16 @@ subject: "deployment"
 
 <section>
   <p>In this session, you'll learn how to put whatever you've made in Web Dev Weeks on the web. We'll teach you how to host your project for free, and how to actually deploy them to the services.
-  
+</section>
+<section>
+  <h3>What to bring</h3>
+  <p>Bring a computer with a web browser and text editor installed. We recommend <a href="chrome.com">Chrome</a> and <a href="sublimetext.com">Sublime Text 2</a>
+  <p>You will also need to bring what you made in one of the technical Web Dev Weeks sessions.
+</section>
+<section>
+  <h3>Dates</h3>
+  <ul>
+    <li>September 13th</li>
+    <li>September 15th</li>
+  </ul>
 </section>

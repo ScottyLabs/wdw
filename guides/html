@@ -13,3 +13,14 @@ subject: "html"
   <p>This course will teach you everything you need to know to make an informative, unchanging website. Learn how to write HTML, and style it with CSS.
   <p>Participants in this workshop will make a fully functional portfolio, like <a href="#">this</a>
 </section>
+<section>
+  <h3>What to bring</h3>
+  <p>Bring a computer with a web browser and text editor installed. We recommend <a href="chrome.com">Chrome</a> and <a href="sublimetext.com">Sublime Text 2</a>
+</section>
+<section>
+  <h3>Dates</h3>
+  <ul>
+    <li>September 5th</li>
+    <li>September 11th</li>
+  </ul>
+</section>
