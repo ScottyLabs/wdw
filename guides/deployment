@@ -9,7 +9,6 @@ subject: "deployment"
 <div class="intro">Show off what you've made.</div>
 
 <section>
-  <h3>HTML & CSS</h3>
-  <p>This course will teach you everything you need to know to make an informative, unchanging website. Learn how to write HTML, and style it with CSS.
-  <p>Participants in this workshop will make a fully functional portfolio, like <a href="#">this</a>
+  <p>In this session, you'll learn how to put whatever you've made in Web Dev Weeks on the web. We'll teach you how to host your project for free, and how to actually deploy them to the services.
+  
 </section>

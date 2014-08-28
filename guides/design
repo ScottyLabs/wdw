@@ -9,7 +9,6 @@ subject: "design"
 <div class="intro">Learn to build things that don't suck.</div>
 
 <section>
-  <h3>HTML & CSS</h3>
-  <p>This course will teach you everything you need to know to make an informative, unchanging website. Learn how to write HTML, and style it with CSS.
-  <p>Participants in this workshop will make a fully functional portfolio, like <a href="#">this</a>
+  <p>This course will teach you a set of guidelines for making your applications and websites work well. We'll cover the skills you need to judge a design, and give you some simple rules to follow when evaluating a design.
+  <p>In the session, you'll make a spaceship interface under a variety of constraints.
 </section>
