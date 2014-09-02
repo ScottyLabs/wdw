@@ -9,9 +9,9 @@ subject: "backend"
 
 
 <section>
-<p>The backend is all about storing and persisting information. If you want to save a user's preferences, do complicated calculations, or store a lot of information, you're going to need a backend.
-<p>Participants in this workshop will learn how to make a simple blog in Flask, a popular Python framework.
-<p>Although it can be taken on its own, we recommend taking <a href="{{ "/html" | prepend: site.baseurl }}">HTML & CSS</a> as well, so that you get a better idea of what's happening on the client side.
+  <p>The backend is all about storing and persisting information. If you want to save a user's preferences, do complicated calculations, or store a lot of information, you're going to need a backend.
+  <p>Participants in this workshop will learn how to make a simple blog in Flask, a popular Python framework.
+  <p>Although it can be taken on its own, we recommend taking <a href="{{ "/html" | prepend: site.baseurl }}">HTML & CSS</a> as well, so that you get a better idea of what's happening on the client side.
 </section>
 <section>
   <h3>What to bring</h3>
@@ -26,6 +26,6 @@ subject: "backend"
   <h3>Dates</h3>
   <ul>
     <li>7:30pm, September 4th</li>
-    <li>7:30pmm, September 9th</li>
+    <li>7:30pm, September 9th</li>
   </ul>
 </section>
