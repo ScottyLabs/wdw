@@ -20,7 +20,7 @@ subject: "frontend"
 <section>
   <h3>Dates</h3>
   <ul>
-    <li>September 4th</li>
-    <li>September 12th</li>
+    <li>5:30pm, September 4th</li>
+    <li>5:30pm, September 12th</li>
   </ul>
 </section>
