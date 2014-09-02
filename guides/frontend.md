@@ -24,4 +24,5 @@ subject: "frontend"
     <li>September 4th</li>
     <li>September 12th</li>
   </ul>
+  <p><a href="https://docs.google.com/forms/d/1uuDuLjw7tiJVhwGSLuCla-rRwrCyIZorBuQsjKvvZXQ/viewform">Register here</a>
 </section>
