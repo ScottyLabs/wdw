@@ -8,10 +8,11 @@ subject: "backend"
 <div class="intro">Learn how to save information, serve up different pages, and make a blog.</div>
 
 
-<h3>Backend Web Development</h3>
+<section>
 <p>The backend is all about storing and persisting information. If you want to save a user's preferences, do complicated calculations, or store a lot of information, you're going to need a backend.
 <p>Participants in this workshop will learn how to make a simple blog in Flask, a popular Python framework.
 <p>Although it can be taken on its own, we recommend taking <a href="{{ "/html" | prepend: site.baseurl }}">HTML & CSS</a> as well, so that you get a better idea of what's happening on the client side.
+</section>
 <section>
   <h3>What to bring</h3>
   <p>Bring a computer with a web browser and text editor installed. We recommend <a href="chrome.com">Chrome</a> and <a href="sublimetext.com">Sublime Text 2</a>
