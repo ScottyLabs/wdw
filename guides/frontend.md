@@ -19,8 +19,9 @@ subject: "frontend"
 </section>
 <section>
   <h3>Dates</h3>
+  <p>Rooms and times will be announced soon.</p>
   <ul>
-    <li>5:30pm, September 4th</li>
-    <li>5:30pm, September 12th</li>
+    <li>September 4th</li>
+    <li>September 12th</li>
   </ul>
 </section>
