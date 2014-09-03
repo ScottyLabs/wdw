@@ -390,3 +390,9 @@ h1 {
 footer {
   margin-top: 80px;
 }
+
+/* line 246, ../sass/main.scss */
+td, th {
+  border: 1px solid black;
+  padding: 10px;
+}

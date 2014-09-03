@@ -6,5 +6,10 @@ baseurl: "/webdevweeks"
 url: ""
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
+highlight: pygments
+
+redcarpet:
+  extensions: [smart, tables]
+
 permalink: pretty
