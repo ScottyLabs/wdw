@@ -9,6 +9,9 @@ subject: frontend
 
 ###### Make your pages interactive.
 
+<!--
+## [start the lab]({{ site.baseurl }}/frontend/js-intro/)
+-->
 This course will teach you how to make an interactive website. Learn how to write JavaScript, the programming language of the web. You can use JavaScript to make web pages the user can interact with in creative ways.
 
 Participants in this workshop will complete exercises related to common JavaScript tasks.

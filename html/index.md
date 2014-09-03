@@ -16,7 +16,7 @@ Participants in this workshop will make a fully functional portfolio. <!-- TODO:
 ### What to bring
 Bring a computer with a web browser and text editor installed. We recommend [Chrome](https://www.google.com/chrome/browser/) and [Sublime Text](http://www.sublimetext.com/).
 
-Dates
+### Dates
 - September 5th from 5:30 to 7:30pm in Wean 5201 (the Mac computer cluster)
 - September 11th from 5:30 to 7:30 in CFA 317
 
