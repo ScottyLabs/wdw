@@ -50,7 +50,7 @@ We'll teach you enough to get started on your first web development project. Thi
 
 Exactly what you learn will depend on what workshops you go to, and you can learn what each workshop is about by reviewing [basics][basics].
 
-It's not possible to teach you everything you need to know in two hours. Many things that we consider "essential" (like mobile web developement) have been left out because of time. However, we aim to teach you foundational skills that you can build on over the rest of the semester.
+It's not possible to teach you everything you need to know in two hours. Many things that we consider "essential" (like mobile web development) have been left out because of time. However, we aim to teach you foundational skills that you can build on over the rest of the semester.
 
 ## Who's running Web Dev Weeks?
 Web Dev Weeks is run by [ScottyLabs](http://scottylabs.org). We also run [TartanHacks](http://tartanhacks.com/) (CMU's largest software hackathon) and other educational events like [CrashCourse](http://scottylabs.org/crashcourse-website/).
