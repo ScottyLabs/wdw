@@ -19,10 +19,9 @@ Although this workshop can be taken on its own, we recommend pairing it with [HT
 Bring a computer with a web browser and text editor installed. We recommend [Chrome](https://www.google.com/chrome/browser/) and [Sublime Text](http://www.sublimetext.com/).
 
 ### Dates
-Rooms and times will be announced soon.
 
-- September 4th
-- September 12th
+- September 4th from 8:00pm to 10pm in Wean 5202 (the windows cluster)
+- September 12th, TBA
 
 ### Registration
 [Register here](https://docs.google.com/forms/d/1uuDuLjw7tiJVhwGSLuCla-rRwrCyIZorBuQsjKvvZXQ/viewform)
