@@ -26,7 +26,7 @@ You will also need to install python and setup Flask. Follow the instructions fo
 
 ### Dates
 - September 4th from 7:30 to 9:30 in Porter 125B
-- September 9th from 7:30 to 9:30 in Wean 5210 (the mac cluster)
+- September 9th from 7:30 to 9:30 in Wean 5201 (the mac cluster)
 
 ### Registration
 [Register here](https://docs.google.com/forms/d/1uuDuLjw7tiJVhwGSLuCla-rRwrCyIZorBuQsjKvvZXQ/viewform)
