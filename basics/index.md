@@ -48,7 +48,7 @@ The backend is all of the code that runs on the web server.
 
 A backend is necessary if you want to store information long term, sign people in, or perform complex computations.
 
-Most backends have a set of HTML, CSS, and JavaScript that is sent to the client on request, so that the client can interact with the backend. Different parts of the frontend are called using different routes or URLs, for example the route of this page is "/the_basics" whereas the route of the homepage is just "/". Finally, there is generally a database, which is where lots of information can be stored long term and accessed quickly.
+Most backends have a set of HTML, CSS, and JavaScript that is sent to the client on request, so that the client can interact with the backend. Different parts of the frontend are called using different routes or URLs, for example the route of this page is "/basics/" whereas the route of the homepage is just "/". Finally, there is generally a database, which is where lots of information can be stored long term and accessed quickly.
 
 <div class="aside">In the workshop, we'll teach you Flask, a popular Python framework. Other common backend languages (and the sites that use them):
     <ul>

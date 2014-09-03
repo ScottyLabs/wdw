@@ -23,7 +23,7 @@ Finally, check out [deployment]({{ site.baseurl }}/deployment/) at the very end.
 ## What will I learn?
 We'll teach you enough to get started on your first web development project. This could be something that you work on outside of class, at a hackathon, or for a club.
 
-Exactly what you learn will depend on what workshops you go to, and you can learn what each workshop is about by reviewing <a href="{{ "/basics" | prepend: site.baseurl }}">the basics</a>.
+Exactly what you learn will depend on what workshops you go to, and you can learn what each workshop is about by reviewing [basics]({{ site.baseurl }}/basics/).
 
 It's not possible to teach you everything you need to know in two hours. Many things that we consider "essential" (like mobile web developement) have been left out because of time. However, we aim to teach you foundational skills that you can build on over the rest of the semester.
 
