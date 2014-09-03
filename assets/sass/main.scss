@@ -150,7 +150,7 @@ h2 {
 }
 
 h3 {
-
+  margin-top: 36px;
   font-family: "crete round";
   font-size: 18px;
   font-style: italic;
@@ -161,12 +161,13 @@ section {
   padding: 18px 0px;
 }
 
-.intro {
+h6 {
   font-size: 36px;
   font-weight: 300;
+  margin-bottom: 45px;
 }
 
-.intro, p {
+h6, p {
   color: $sub-text;
 }
 
@@ -236,4 +237,8 @@ h1 {
     margin-left: 27px;
   }
 
+}
+
+footer {
+  margin-top: 80px;
 }
