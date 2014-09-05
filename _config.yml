@@ -10,6 +10,6 @@ markdown: redcarpet
 highlight: pygments
 
 redcarpet:
-  extensions: [smart, tables]
+  extensions: [smart, tables, with_toc_data]
 
 permalink: pretty

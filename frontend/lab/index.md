@@ -40,15 +40,11 @@ stated), the only struggle should be figuring out the JavaScript required to
 implement it.
 
 ## Diving in
-The code and tutorial for this lab will be hosted on GitHub. Each step is a
+The code and tutorial for this lab will be [hosted on GitHub](source-final). Each step is a
 commit, allowing you to see what changed between steps. Links will be provided
 to the code of the step in question. Most of the explanations will not make
 sense if you do not also take a look at the corresponding code, so be sure to
 do that.
-
-To browse the final source code, use [this link][source-final].
-
-To download the final source code, use [this link][source-final-zip].
 
 ## Step 1: Initial HTML and CSS
 __[download starter code][starter-code]__, __[diff for this step][diff-1]__, __[code at this step][step-1]__
@@ -238,7 +234,26 @@ $ python -m SimpleHTTPServer
 ```
 then open [http://localhost:8000](http://localhost:8000/) in your browser. If
 you need help with this, flag down a mentor! Otherwise, just open the
-index.html file in your browser.
+index.html file in your browser. __Note__: if you don't use the Python command
+to preview your site, you will have to slightly change two lines. First, change
+line 9 of index.html to 
+
+```html
+<link rel="stylesheet"
+href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css"
+type="text/css">
+```
+
+(add `http:` after `href="`), and change the line that loads jQuery within
+index.html (the line you copied and pasted from Google Hosted Libraries) to 
+
+```html
+<script src="http://<the link that you copied>"></script>
+```
+
+(add `http:` after `src="`). Note that `<the link you copied>` is whatever link
+you copied from Google Hosted Libraries.
+
 
 What you'll probably notice is that the form didn't disappear, and it
 looked like the website reloaded the page. If you look carefully, you'll
@@ -569,6 +584,11 @@ Thanks!
 
 - - -
 
+I take great pride in writing good code, documentation, and tutorials. If you
+spot something that's not quite right or you spot something confusing, let me
+know! Write an email to webdevweeks@scottylabs.org and include the url of this
+page in your email.
+
 Written by Jake Zimmerman, July 2014
 
 [galumphing]: http://scottylabs.org/webdevweeks/frontend/demo/
@@ -578,48 +598,48 @@ Written by Jake Zimmerman, July 2014
 
 [starter-code]: https://github.com/Z1MM32M4N/jquery-lab/archive/7a570d3b69f20f89ee14f53c1f67f0e277b02dcb.zip
 
-[diff-1]: https://github.com/Z1MM32M4N/jquery-lab/commit/7a570d3b69f20f89ee14f53c1f67f0e277b02dcb
+[diff-1]: https://github.com/Z1MM32M4N/jquery-lab/commit/7a570d3b69f20f89ee14f53c1f67f0e277b02dcb#diff-0
 [step-1]: https://github.com/Z1MM32M4N/jquery-lab/blob/7a570d3b69f20f89ee14f53c1f67f0e277b02dcb/index.html
 
-[diff-2]: https://github.com/Z1MM32M4N/jquery-lab/commit/1758ef9a9680baab2fadbeb18804b4fdac5e1e76
+[diff-2]: https://github.com/Z1MM32M4N/jquery-lab/commit/1758ef9a9680baab2fadbeb18804b4fdac5e1e76#diff-0
 [step-2]: https://github.com/Z1MM32M4N/jquery-lab/blob/1758ef9a9680baab2fadbeb18804b4fdac5e1e76/index.html
 
-[diff-3]: https://github.com/Z1MM32M4N/jquery-lab/commit/57850d9aeffe58f11f3eda00b5c5efc56cf335b3
+[diff-3]: https://github.com/Z1MM32M4N/jquery-lab/commit/57850d9aeffe58f11f3eda00b5c5efc56cf335b3#diff-0
 [step-3]: https://github.com/Z1MM32M4N/jquery-lab/blob/57850d9aeffe58f11f3eda00b5c5efc56cf335b3/main.js
 
-[diff-4]: https://github.com/Z1MM32M4N/jquery-lab/commit/0c558e73168bbac72ad48a448d72a1c9996f87fc
+[diff-4]: https://github.com/Z1MM32M4N/jquery-lab/commit/0c558e73168bbac72ad48a448d72a1c9996f87fc#diff-0
 [step-4]: https://github.com/Z1MM32M4N/jquery-lab/blob/0c558e73168bbac72ad48a448d72a1c9996f87fc/main.js
 
-[diff-5]: https://github.com/Z1MM32M4N/jquery-lab/commit/3ac0b325290e000c62db61ec46180d80a861cd6e
+[diff-5]: https://github.com/Z1MM32M4N/jquery-lab/commit/3ac0b325290e000c62db61ec46180d80a861cd6e#diff-0
 [step-5]: https://github.com/Z1MM32M4N/jquery-lab/blob/3ac0b325290e000c62db61ec46180d80a861cd6e/main.js
 
-[diff-6]: https://github.com/Z1MM32M4N/jquery-lab/commit/4096958f937c051910e7f02343107842a0af3056
+[diff-6]: https://github.com/Z1MM32M4N/jquery-lab/commit/4096958f937c051910e7f02343107842a0af3056#diff-0
 [step-6]: https://github.com/Z1MM32M4N/jquery-lab/blob/4096958f937c051910e7f02343107842a0af3056/main.js
 
-[diff-7]: https://github.com/Z1MM32M4N/jquery-lab/commit/7539b3c3bef06d8017875029ae6170205e24b6ed
+[diff-7]: https://github.com/Z1MM32M4N/jquery-lab/commit/7539b3c3bef06d8017875029ae6170205e24b6ed#diff-0
 [step-7]: https://github.com/Z1MM32M4N/jquery-lab/blob/7539b3c3bef06d8017875029ae6170205e24b6ed/main.js
 
-[diff-8]: https://github.com/Z1MM32M4N/jquery-lab/commit/6f03b66c13a7854af0c966bc54538e3d394f6b0c
+[diff-8]: https://github.com/Z1MM32M4N/jquery-lab/commit/6f03b66c13a7854af0c966bc54538e3d394f6b0c#diff-0
 [step-8]: https://github.com/Z1MM32M4N/jquery-lab/blob/6f03b66c13a7854af0c966bc54538e3d394f6b0c/main.js
 
-[diff-9]: https://github.com/Z1MM32M4N/jquery-lab/commit/d2cb6d0a00b2ace36b604a82c5ca0271b6a6c0ad
+[diff-9]: https://github.com/Z1MM32M4N/jquery-lab/commit/d2cb6d0a00b2ace36b604a82c5ca0271b6a6c0ad#diff-0
 [step-9]: https://github.com/Z1MM32M4N/jquery-lab/blob/d2cb6d0a00b2ace36b604a82c5ca0271b6a6c0ad/main.js
 
-[diff-10]: https://github.com/Z1MM32M4N/jquery-lab/commit/e8a0125f92dc232d645cd6137c53c8e0264148ec
+[diff-10]: https://github.com/Z1MM32M4N/jquery-lab/commit/e8a0125f92dc232d645cd6137c53c8e0264148ec#diff-0
 [step-10]: https://github.com/Z1MM32M4N/jquery-lab/blob/e8a0125f92dc232d645cd6137c53c8e0264148ec/main.js
 
-[diff-11]: https://github.com/Z1MM32M4N/jquery-lab/commit/d3964bd408295cb7e4cae2a15f341baa8b348f05
+[diff-11]: https://github.com/Z1MM32M4N/jquery-lab/commit/d3964bd408295cb7e4cae2a15f341baa8b348f05#diff-0
 [step-11]: https://github.com/Z1MM32M4N/jquery-lab/blob/d3964bd408295cb7e4cae2a15f341baa8b348f05/main.js
 
-[diff-12]: https://github.com/Z1MM32M4N/jquery-lab/commit/7eb4aeecd41aebe184d67eaf73bf84e9c4081cb5
+[diff-12]: https://github.com/Z1MM32M4N/jquery-lab/commit/7eb4aeecd41aebe184d67eaf73bf84e9c4081cb5#diff-0
 [step-12]: https://github.com/Z1MM32M4N/jquery-lab/blob/7eb4aeecd41aebe184d67eaf73bf84e9c4081cb5/main.js
 
-[diff-13]: https://github.com/Z1MM32M4N/jquery-lab/commit/c9a180d97cabc20bd89be2d019338786997d86c4
+[diff-13]: https://github.com/Z1MM32M4N/jquery-lab/commit/c9a180d97cabc20bd89be2d019338786997d86c4#diff-0
 [step-13]: https://github.com/Z1MM32M4N/jquery-lab/blob/c9a180d97cabc20bd89be2d019338786997d86c4/main.js
 
-[diff-14]: https://github.com/Z1MM32M4N/jquery-lab/commit/638042297ef875ff438730b79d97c48150275759
+[diff-14]: https://github.com/Z1MM32M4N/jquery-lab/commit/638042297ef875ff438730b79d97c48150275759#diff-0
 [step-14]: https://github.com/Z1MM32M4N/jquery-lab/blob/638042297ef875ff438730b79d97c48150275759/main.js
 
-[diff-15]: https://github.com/Z1MM32M4N/jquery-lab/commit/220c4416ce04f4a0caae1c527d7bf7b75df32ef4
+[diff-15]: https://github.com/Z1MM32M4N/jquery-lab/commit/220c4416ce04f4a0caae1c527d7bf7b75df32ef4#diff-0
 [step-15]: https://github.com/Z1MM32M4N/jquery-lab/blob/220c4416ce04f4a0caae1c527d7bf7b75df32ef4/main.js
 
