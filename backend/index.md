@@ -24,6 +24,9 @@ You will also need to install python and setup Flask. Follow the instructions fo
 - [Mac OS X](https://docs.google.com/document/d/1bqxENcqgL8s_LIpW_cYOjGtoPIVzX5ElBRNJBNqqwdw)
 - [Linux](https://docs.google.com/document/d/17e6CQyKWHGENzokiDQRE-oA7nsjCe84pP8dQB_Nht8s)
 
+### Handouts from the Session
+If you missed the session, you can find the lab handout [here](https://docs.google.com/document/d/1dUa36KFGPPwruOIOxDfKkVyqf5ZboZ0AiHdyNYniFWA/edit?pli=1).
+
 ### Dates
 - September 4th from 7:30 to 9:30 in Porter 125B
 - September 9th from 7:30 to 9:30 in Wean 5201 (the mac cluster)
