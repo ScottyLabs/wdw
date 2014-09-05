@@ -10,7 +10,7 @@ subject: html
 
 This course will teach you everything you need to know to make an informative, unchanging website. Learn how to write HTML, and style it with CSS.
 
-Participants in this workshop will make a fully functional portfolio. <!-- TODO: add link to working demo. -->
+Participants in this workshop will make a fully functional portfolio.
 
 
 ### What to bring
