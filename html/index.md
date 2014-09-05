@@ -24,7 +24,7 @@ Bring a computer with a web browser and text editor installed. We recommend [Chr
 
 - [Lab Instructions](https://docs.google.com/file/d/0B9HqC5cnPeRVbng4RnRodDFFZVk/edit)
 - [Sample Website](http://naher94.github.io/Basic-Sample-Site/portfolio.html)
-- [Workshop Slides](https://docs.google.com/file/d/0B9HqC5cnPeRVODB6MURCTUxvSVk/edi)
+- [Workshop Slides](https://docs.google.com/file/d/0B9HqC5cnPeRVODB6MURCTUxvSVk/edit)
 
 ### Registration
 [Register here](https://docs.google.com/forms/d/1uuDuLjw7tiJVhwGSLuCla-rRwrCyIZorBuQsjKvvZXQ/viewform)
