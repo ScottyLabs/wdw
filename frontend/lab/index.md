@@ -89,7 +89,7 @@ someone else: this means we need to go grap an external link to it. To
 find it, search the Web for "Google jQuery CDN". (A CDN, or content
 delivery network, is basically a super-fast network designed for hosting
 commonly-requested files.) On the first result page, you should see a
-large list of Google hosted libraries. Find the one titled JavaScript,
+large list of Google hosted libraries. Find the one titled jQuery,
 copy the `<script>` tag under it, and paste it into the file `index.html`.
 
 Now that we've loaded our helper JavaScript library, we need to load the
