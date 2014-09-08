@@ -42,7 +42,7 @@ Finally, check out [deployment][deployment] at the very end. In this session, we
   - [Frontend][frontend], TBA
 - Saturday, September 13
   - [Deployment][deployment], TBA
-- Monday, September 15
+- Sunday, September 14
   - [Deployment][deployment], TBA
 
 ## What will I learn?
