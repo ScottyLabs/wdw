@@ -41,9 +41,9 @@ Finally, check out [deployment][deployment] at the very end. In this session, we
 - September 12
   - [Frontend][frontend], 4:00 - 6:00pm, Wean 5202 (Windows Cluster)
 - September 13
-  - [Deployment][deployment], TBA
+  - [Deployment][deployment],  2:00 to 4:00 pm in Wean 5202 (Windows Cluster)
 - Sunday, September 14
-  - [Deployment][deployment], TBA
+  - [Deployment][deployment], 6:00 to 8:00 pm in Wean 5202 (Windows Cluster)
 
 ## What will I learn?
 We'll teach you enough to get started on your first web development project. This could be something that you work on outside of class, at a hackathon, or for a club.

@@ -16,8 +16,8 @@ Bring a computer with a web browser and text editor installed. We recommend [Chr
 ### Dates
 Rooms and times will be announced soon.
 
-- September 13th
-- September 14th
+- September 13th from 2:00 to 4:00 pm in Wean 5202 (the windows cluster)
+- September 14th from 6:00 to 8:00 pm in Wean 5202 (the windows cluster)
 
 ### Registration
 [Register here](https://docs.google.com/forms/d/1uuDuLjw7tiJVhwGSLuCla-rRwrCyIZorBuQsjKvvZXQ/viewform)
