@@ -39,7 +39,7 @@ Finally, check out [deployment][deployment] at the very end. In this session, we
 - September 11
   - [HTML/CSS][html], 5:30pm - 7:30pm, CFA 317
 - September 12
-  - [Frontend][frontend], TBA
+  - [Frontend][frontend], 4:00 - 6:00pm, Wean 5202 (Windows Cluster)
 - September 13
   - [Deployment][deployment], TBA
 - September 15
