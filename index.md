@@ -41,7 +41,7 @@ Finally, check out [deployment][deployment] at the very end. In this session, we
 - September 12
   - [Frontend][frontend], 4:00 - 6:00pm, Wean 5202 (Windows Cluster)
 - September 13
-  - [Deployment][deployment],  2:00 to 4:00 pm in Wean 5202 (Windows Cluster)
+  - [Deployment][deployment],  4:00 to 6:00 pm in Wean 5202 (Windows Cluster)
 - Sunday, September 14
   - [Deployment][deployment], 6:00 to 8:00 pm in Wean 5202 (Windows Cluster)
 
