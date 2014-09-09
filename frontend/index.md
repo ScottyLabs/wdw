@@ -25,7 +25,7 @@ Bring a computer with a web browser and text editor installed. We recommend [Chr
 ### Dates
 
 - September 4th from 8:00pm to 10pm in Wean 5202 (the windows cluster)
-- September 12th, TBA
+- September 12th, from 4 to 6pm in Wean 5202 (the windows cluster)
 
 ### Registration
 [Register here](https://docs.google.com/forms/d/1uuDuLjw7tiJVhwGSLuCla-rRwrCyIZorBuQsjKvvZXQ/viewform)
