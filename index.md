@@ -21,28 +21,28 @@ After that, fell free to go to any of the workshops, in any order. We've broken 
 Finally, check out [deployment][deployment] at the very end. In this session, we'll teach you how to put what you've made on the open web for free, so that anyone can see it.
 
 ## Schedule
-- September 4
+- Thursday, September 4
   - [Frontend][frontend], 8:00pm - 10:00pm, WEH 5202 (Windows Cluster)
   - [Backend][backend], 7:30pm - 9:30pm, PH 125B
-- September 5
+- Friday, September 5
   - [HTML/CSS][html], 5:30pm - 7:30pm, WEH 5201 (Mac Cluster)
-- September 6
+- Saturday, September 6
   - No sessions
-- September 7
+- Sunday, September 7
   - [Design][design], 2:30pm - 4:30pm, WEH 5421
-- September 8
+- Monday, September 8
   - No sessions
-- September 9
+- Tuesday, September 9
   - [Backend][backend], 7:30pm - 9:30pm, WEH 5201 (Mac Cluster)
-- September 10
+- Wednesday, September 10
   - [Design][design], 8:30pm 10:30pm, PH 126A
-- September 11
+- Thursday, September 11
   - [HTML/CSS][html], 5:30pm - 7:30pm, CFA 317
 - September 12
   - [Frontend][frontend], 4:00 - 6:00pm, Wean 5202 (Windows Cluster)
 - September 13
   - [Deployment][deployment], TBA
-- September 15
+- Sunday, September 14
   - [Deployment][deployment], TBA
 
 ## What will I learn?

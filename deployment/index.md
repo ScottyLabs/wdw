@@ -17,7 +17,7 @@ Bring a computer with a web browser and text editor installed. We recommend [Chr
 Rooms and times will be announced soon.
 
 - September 13th
-- September 15th
+- September 14th
 
 ### Registration
 [Register here](https://docs.google.com/forms/d/1uuDuLjw7tiJVhwGSLuCla-rRwrCyIZorBuQsjKvvZXQ/viewform)

@@ -26,6 +26,8 @@ You will also need to install python and setup Flask. Follow the instructions fo
 
 ### Handouts from the Session
 If you missed the session, you can find the lab handout [here](https://docs.google.com/document/d/1dUa36KFGPPwruOIOxDfKkVyqf5ZboZ0AiHdyNYniFWA/edit?pli=1).
+You can also review the slides from the session
+[here](https://github.com/anbenson/webdevblog-resources/raw/master/WebDevWeeks-Backend.pdf).
 
 ### Dates
 - September 4th from 7:30 to 9:30 in Porter 125B
