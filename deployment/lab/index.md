@@ -25,8 +25,8 @@ Git is a program that runs inside a terminal. This means that you'll have to run
 #### Creating a Git repository
 Enter
 
-```javascript
-> git init
+```python
+$ git init
 ```
 
 in your folder to _intialize_ your Git repository. This will make a folder called `.git` in your directory that will contain the history of your directory. Any code that you add or delete will be backed up in that folder.
@@ -36,16 +36,16 @@ Copy the files you want to deploy into this directory. This should be the files 
 
 Now, enter
 
-```javascript
-> git add .
+```python
+$ git add -A
 ```
 
 to add all the files in this directory to the repository. This means that Git will now _track_ any changes to these files.
 
 After adding all these files, you'll want to enter
 
-```javascript
-> git commit -m "Initial commit"
+```python
+$ git commit -m "Initial commit"
 ```
 
 to _commit_ your files. This will store the current state of all these files to the repository (the `.git` folder). If you change the files in the future, Git will take note of that and keep the old versions of your files around.
@@ -54,8 +54,8 @@ The text in quotes after `-m` is the commit message. This lets anyone who is vie
 
 If you now enter
 
-```javascript
-> git log
+```python
+$ git log
 ```
 
 you can see a log of all the changes that have been made to this repository. You should see one commit with the message "Initial commit."
@@ -63,14 +63,14 @@ you can see a log of all the changes that have been made to this repository. You
 #### Updating files in a Git repository
 Whenever you change a file, you can run
 
-```javascript
-> git add $FILENAME
+```python
+$ git add <filename>
 ```
 
-where `$FILENAME` is the name of the file you changed. This will add the changes to the next commit you make. This way, the next time you run
+where `<filename>` is the name of the file you changed. This will add the changes to the next commit you make. This way, the next time you run
 
-```javascript
-> git commit -m "Some commit message"
+```python
+$ git commit -m "Some commit message"
 ```
 
 this change will be saved as part of that commit in the repository.
@@ -79,22 +79,22 @@ this change will be saved as part of that commit in the repository.
 #### Pushing and pulling code from remote servers
 Git is pretty useful if you just use it locally to keep track of changes, but its real power is when you use it to download and upload (pull and push) code from servers. To configure your repository to work with a remote server, enter
 
-```javascript
-> git remote add origin $REMOTE_URL
+```python
+$ git remote add origin <remote_url>
 ```
 
-where `$REMOTE_URL` is the URL of the server. We'll talk about which URLs to actually use later in the lab.
+where `<remote_url>` is the URL of the server. We'll talk about which URLs to actually use later in the lab.
 
 Then, to push (upload) code to the server, enter
 
-```javascript
-> git push
+```python
+$ git push
 ```
 
 To pull (download) code from the server, enter
 
-```javascript
-> git pull
+```python
+$ git pull
 ```
 
 At this point, the lab branches off. If you're deploying a static site (from the Frontend or HTML & CSS workshops), go [here](#github-pages-deployment). If you're deploying a dynamic site (from the Backend workshop), go [here](#heroku-deployment).
@@ -108,23 +108,23 @@ You want to start off by creating a Git repository on GitHub's servers. Go to [h
 ### Linking your GitHub and local repositories
 Run the following commands in your terminal:
 
-```javascript
-> git remote add origin https://github.com/$USERNAME/$REPONAME.git
-> git checkout -b gh-pages
-> git push -u origin gh-pages
+```python
+$ git remote add origin https://github.com/<username>/<reponame>.git
+$ git checkout -b gh-pages
+$ git push -u origin gh-pages
 ```
 
-where `$USERNAME` is your GitHub username, and `$REPONAME` is the name of your GitHub repo. The first command links the remote repository with your local one. The second command creates a _branch_ of your code, which just tells GitHub that that's the code you want to deploy. Finally, the last command pushes the code up to the server.
+where `<username>` is your GitHub username, and `<reponame>` is the name of your GitHub repo. Make sure that the first command is __all one line__. On some screens, it wraps around, but it should all be one command. The first command links the remote repository with your local one. The second command creates a _branch_ of your code, which just tells GitHub that that's the code you want to deploy. Finally, the last command pushes the code up to the server.
 
-If you wait a minute or so, your site should be up at `http://$USERNAME.github.io/$REPONAME/`.
+If you wait a minute or so, your site should be up at `http://<username>.github.io/<reponame>/`.
 
 Congratulations! You've just deployed a website.
 
 ## Heroku deployment
 To deploy your dynamic site, we're going to be using a webapp hosting service called [Heroku](https://www.heroku.com/). To begin, you're going to want to [make a Heroku account](https://www.heroku.com/). Then, you'll want to download the [Heroku toolbelt](https://toolbelt.heroku.com/), which includes a set of tools for developing and deploying webapps. Finally, in the Terminal, run
 
-```javascript
-> heroku login
+```python
+$ heroku login
 ```
 
 to authenticate your local toolbelt with Heroku.
@@ -132,29 +132,29 @@ to authenticate your local toolbelt with Heroku.
 ### Creating a Heroku app
 While in the directory that contains your git repo, run
 
-```javascript
-> heroku create $APPNAME
+```python
+$ heroku create <appname>
 ```
 
-where $APPNAME is the optional name you want to give your webapp. If you don't specify an app name, then Heroku will generate one for you.
+where <appname> is the optional name you want to give your webapp. If you don't specify an app name, then Heroku will generate one for you.
 
 ### Deploying a Heroku app
 Now, deploy your code with
 
-```javascript
-> git push heroku master
+```python
+$ git push heroku master
 ```
 
 Then, to assign a server node to run your code, run
 
-```javascript
-> heroku ps:scale web=1
+```python
+$ heroku ps:scale web=1
 ```
 
 Finally, you can open your app in the browser by running
 
-```javascript
-> heroku open
+```python
+$ heroku open
 ```
 
 Congratulations! You've just deployed a webapp.
@@ -166,20 +166,20 @@ For your database to perist, that is, for your data to stick around for as long 
 
 You can tell Heroku to set up a database for you by running
 
-```javascript
-> heroku addons:add heroku-postgresql:dev
+```python
+$ heroku addons:add heroku-postgresql:dev
 ```
 
 Next, you need to install a Python module for connecting to this database by running
 
-```javascript
-> pip install psycopg2
+```python
+$ pip install psycopg2
 ```
 
 while inside the `virtualenv`. You'll also need to include that in the list of requirements:
 
-```javascript
-> pip freeze > requirements.txt
+```python
+$ pip freeze > requirements.txt
 ```
 
 Finally, you'll want to change the line in your `main.py` that says
@@ -198,10 +198,10 @@ in order to use Heroku's database. Note that `DATABASE_URL` is an environmental 
 
 Finally, you'll want to run
 
-```javascript
-> git add .
-> git commit -m "Set up Postgres"
-> git push heroku master
+```python
+$ git add .
+$ git commit -m "Set up Postgres"
+$ git push heroku master
 ```
 
 to deploy your changes and switch your app over the using Heroku's PostgreSQL database.
