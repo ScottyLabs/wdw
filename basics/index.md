@@ -55,7 +55,7 @@ Most backends have a set of HTML, CSS, and JavaScript that is sent to the client
     <li>PHP (Facebook, Wordpress)</li>
     <li>Java (Twitter)</li>
     <li>C#/.NET(Microsoft, Stack Overflow)</li>
-    <li>Ruby (Airbnb, Github)</li>
+    <li>Ruby (Airbnb, GitHub)</li>
     <li>Python (Pinterest,  Instagram, Reddit)</li>
     </ul>
 </div>

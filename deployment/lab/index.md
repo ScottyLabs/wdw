@@ -10,7 +10,7 @@ In this session, you'll learn how to put whatever you've made in Web Dev Weeks o
 ## Overview
 _Deployment_ is the process of making your app or site accessible to other people. With webapps/websites, we want a URL that we can point people to.
 
-_Static_ websites/webapps are those that don't have a backend. They can be written entirely in HTML, CSS, and JavaScript, and don't have any code running on a server. We'll show you how to deploy these with a free service called Github Pages.
+_Static_ websites/webapps are those that don't have a backend. They can be written entirely in HTML, CSS, and JavaScript, and don't have any code running on a server. We'll show you how to deploy these with a free service called GitHub Pages.
 
 _Dynamic_ websites/webapps are those that have a backend. These often have a database, and will have a component written in Python, Java, Ruby, etc. that runs on a server. We'll show you how to deploy these using the free tier of a service called Heroku.
 
@@ -32,7 +32,7 @@ Enter
 in your folder to _intialize_ your Git repository. This will make a folder called `.git` in your directory that will contain the history of your directory. Any code that you add or delete will be backed up in that folder.
 
 #### Adding files to a Git repository
-Copy the files you want to deploy into this directory. This should be the files you worked on either in the Frontend, Backend, or HTML & CSS. If you don't have anything from those sessions, or anything else you want to deploy, download [this code](https://github.com/Z1MM32M4N/jquery-lab/archive/gh-pages.zip) if you want to learn to deploy a static site on Github Pages, or [this code](https://github.com/anbenson/webdevblog-example/archive/master.zip) if you want to learn to deploy a dynamic site on Heroku.
+Copy the files you want to deploy into this directory. This should be the files you worked on either in the Frontend, Backend, or HTML & CSS. If you don't have anything from those sessions, or anything else you want to deploy, download [this code](https://github.com/Z1MM32M4N/jquery-lab/archive/gh-pages.zip) if you want to learn to deploy a static site on GitHub Pages, or [this code](https://github.com/anbenson/webdevblog-example/archive/master.zip) if you want to learn to deploy a dynamic site on Heroku.
 
 Now, enter
 
@@ -99,13 +99,13 @@ To pull (download) code from the server, enter
 
 At this point, the lab branches off. If you're deploying a static site (from the Frontend or HTML & CSS workshops), go [here](#github-pages-deployment). If you're deploying a dynamic site (from the Backend workshop), go [here](#heroku-deployment).
 
-## Github Pages deployment
-To deploy your static site, we're going to be using a site hosting service called [Github Pages](https://pages.github.com/). To begin, you're going to want to [make a Github account](https://pages.github.com/), if you don't already have one.
+## GitHub Pages deployment
+To deploy your static site, we're going to be using a site hosting service called [GitHub Pages](https://pages.github.com/). To begin, you're going to want to [make a GitHub account](https://pages.github.com/), if you don't already have one.
 
-### Creating a Github repository
-You want to start off by creating a Git repository on Github's servers. Go to [https://github.com/new](https://github.com/new), fill in a name and description, and click "Create repository."
+### Creating a GitHub repository
+You want to start off by creating a Git repository on GitHub's servers. Go to [https://github.com/new](https://github.com/new), fill in a name and description, and click "Create repository."
 
-### Linking your Github and local repositories
+### Linking your GitHub and local repositories
 Run the following commands in your terminal:
 
 ```javascript
@@ -114,7 +114,7 @@ Run the following commands in your terminal:
 > git push -u origin gh-pages
 ```
 
-where `$USERNAME` is your Github username, and `$REPONAME` is the name of your Github repo. The first command links the remote repository with your local one. The second command creates a _branch_ of your code, which just tells Github that that's the code you want to deploy. Finally, the last command pushes the code up to the server.
+where `$USERNAME` is your GitHub username, and `$REPONAME` is the name of your GitHub repo. The first command links the remote repository with your local one. The second command creates a _branch_ of your code, which just tells GitHub that that's the code you want to deploy. Finally, the last command pushes the code up to the server.
 
 If you wait a minute or so, your site should be up at `http://$USERNAME.github.io/$REPONAME/`.
 

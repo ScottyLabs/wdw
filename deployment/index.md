@@ -8,6 +8,8 @@ subject: deployment
 
 ###### Show off what you've made.
 
+## [start the lab]({{ site.baseurl }}/deployment/lab/)
+
 In this session, you'll learn how to put whatever you've made in Web Dev Weeks on the web. We'll teach you how to host your project for free, and how to actually deploy them to the services.
 
 ### What to bring
