@@ -12,38 +12,7 @@ Web Dev Weeks is a series of lectures, workshops, and exercises that will introd
 If you want to make websites outside of the classroom, get a head start on later electives, or attend hackathons, Web Dev Weeks will give you the foundational knowledge you need to get started.
 
 ## How do I attend?
-First, __[register here](https://docs.google.com/forms/d/1uuDuLjw7tiJVhwGSLuCla-rRwrCyIZorBuQsjKvvZXQ/viewform)__.
-
-Next, read [the basics][basics]. This will introduce you to some common concepts and explain what the workshops are about.
-
-After that, fell free to go to any of the workshops, in any order. We've broken them up so that you can go to any one and learn something (although attending them all will give you the most complete set of skills).
-
-Finally, check out [deployment][deployment] at the very end. In this session, we'll teach you how to put what you've made on the open web for free, so that anyone can see it.
-
-## Schedule
-- Thursday, September 4
-  - [Frontend][frontend], 8:00pm - 10:00pm, WEH 5202 (Windows Cluster)
-  - [Backend][backend], 7:30pm - 9:30pm, PH 125B
-- Friday, September 5
-  - [HTML/CSS][html], 5:30pm - 7:30pm, WEH 5201 (Mac Cluster)
-- Saturday, September 6
-  - No sessions
-- Sunday, September 7
-  - [Design][design], 2:30pm - 4:30pm, WEH 5421
-- Monday, September 8
-  - No sessions
-- Tuesday, September 9
-  - [Backend][backend], 7:30pm - 9:30pm, WEH 5201 (Mac Cluster)
-- Wednesday, September 10
-  - [Design][design], 8:30pm 10:30pm, PH 126A
-- Thursday, September 11
-  - [HTML/CSS][html], 5:30pm - 7:30pm, CFA 317
-- September 12
-  - [Frontend][frontend], 4:00 - 6:00pm, Wean 5202 (Windows Cluster)
-- September 13
-  - [Deployment][deployment],  4:00 to 6:00 pm in Wean 5202 (Windows Cluster)
-- Sunday, September 14
-  - [Deployment][deployment], 6:00 to 8:00 pm in Wean 5202 (Windows Cluster)
+Web Dev Weeks is over for this year. However, you can still see the workshop resources, and we'll likely run the workshops in the future. Like us on [facebook](https://www.facebook.com/ScottyLabs) to learn about new ScottyLabs events.
 
 ## What will I learn?
 We'll teach you enough to get started on your first web development project. This could be something that you work on outside of class, at a hackathon, or for a club.
