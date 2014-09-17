@@ -16,6 +16,7 @@ In the session, you'll make a spaceship interface under a variety of constraints
 The workshop is over, but you can still [review the presentation.](https://drive.google.com/file/d/0B0-bUe9GLbYQNXJ5ZVpoYjhMWlE/edit?usp=sharing)
 
 Further Reading
+
 - [Hack Design](https://hackdesign.org/)
 - [The Vignelli Cannon](http://www.vignelli.com/canon.pdf)
 - [The Visual Display of Quantitative Information](http://www.amazon.com/The-Visual-Display-Quantitative-Information/dp/0961392142)
