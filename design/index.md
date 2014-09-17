@@ -12,12 +12,10 @@ This course will teach you a set of guidelines for making your applications and 
 
 In the session, you'll make a spaceship interface under a variety of constraints.
 
-### What to bring
-Bring a pencil and paper.
+### Resources
+The workshop is over, but you can still [review the presentation.](https://drive.google.com/file/d/0B0-bUe9GLbYQNXJ5ZVpoYjhMWlE/edit?usp=sharing)
 
-### Dates
-- September 7th from 2:30 to 4:30 in Wean 5421
-- September 10th from 8:30 to 10:30 in Porter 126A
-
-### Registration
-[Register here](https://docs.google.com/forms/d/1uuDuLjw7tiJVhwGSLuCla-rRwrCyIZorBuQsjKvvZXQ/viewform)
+Further Reading
+- [Hack Design](https://hackdesign.org/)
+- [The Vignelli Cannon](http://www.vignelli.com/canon.pdf)
+- [The Visual Display of Quantitative Information](http://www.amazon.com/The-Visual-Display-Quantitative-Information/dp/0961392142)
