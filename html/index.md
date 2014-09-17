@@ -16,9 +16,6 @@ Participants in this workshop will make a fully functional portfolio.
 ### What to bring
 Bring a computer with a web browser and text editor installed. We recommend [Chrome](https://www.google.com/chrome/browser/) and [Sublime Text](http://www.sublimetext.com/).
 
-### Materials
-
-
 ### Resources
 
 The event is over, but you can still learn HTML and CSS. Here are some resources to get you started:
