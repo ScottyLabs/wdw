@@ -642,4 +642,3 @@ Written by Jake Zimmerman, July 2014
 
 [diff-15]: https://github.com/Z1MM32M4N/jquery-lab/commit/220c4416ce04f4a0caae1c527d7bf7b75df32ef4#diff-0
 [step-15]: https://github.com/Z1MM32M4N/jquery-lab/blob/220c4416ce04f4a0caae1c527d7bf7b75df32ef4/main.js
-
