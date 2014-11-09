@@ -13,9 +13,9 @@ The goal of this lab is to create a web app that will let us play the game
 "Galumphing Banderwoozles." I didn't come up with the name: the Spring 2014
 15-251 TA's did.
 
-Nontheless, the rules of the game are as follows: 
+Nontheless, the rules of the game are as follows:
 
-- You are given a board composed of 15251 by 15251 tiles. 
+- You are given a board composed of 15251 by 15251 tiles.
 - Any tile can be one of three colors: __red, green, or blue__.
 - Initially, all tiles are blue, except for the tile in the top left corner,
   which is green.
@@ -40,14 +40,15 @@ stated), the only struggle should be figuring out the JavaScript required to
 implement it.
 
 ## Diving in
-The code and tutorial for this lab will be [hosted on GitHub](source-final). Each step is a
-commit, allowing you to see what changed between steps. Links will be provided
-to the code of the step in question. Most of the explanations will not make
-sense if you do not also take a look at the corresponding code, so be sure to
-do that.
+The code and tutorial for this lab will be [hosted on GitHub](source-final).
+Each step is a commit, allowing you to see what changed between steps. Links
+will be provided to the code of the step in question. Most of the explanations
+will not make sense if you do not also take a look at the corresponding code,
+so be sure to do that.
 
 ## Step 1: Initial HTML and CSS
-__[download starter code][starter-code]__, __[diff for this step][diff-1]__, __[code at this step][step-1]__
+__[download starter code][starter-code]__, __[diff for this step][diff-1]__,
+__[code at this step][step-1]__
 
 The first step takes care of getting the starter code. You can download it
 [using this link][starter-code]. The starter code should contain two files when
@@ -236,7 +237,7 @@ then open [http://localhost:8000](http://localhost:8000/) in your browser. If
 you need help with this, flag down a mentor! Otherwise, just open the
 index.html file in your browser. __Note__: if you don't use the Python command
 to preview your site, you will have to slightly change two lines. First, change
-line 9 of index.html to 
+line 9 of index.html to
 
 ```html
 <link rel="stylesheet"
@@ -245,7 +246,7 @@ type="text/css">
 ```
 
 (add `http:` after `href="`), and change the line that loads jQuery within
-index.html (the line you copied and pasted from Google Hosted Libraries) to 
+index.html (the line you copied and pasted from Google Hosted Libraries) to
 
 ```html
 <script src="http://<the link that you copied>"></script>
@@ -312,7 +313,7 @@ To create a new DOM element (basically, an element in the page), we use
 the jQuery function (`$`) with a string argument representing the HTML
 that we should use to construct that object. We just need to create a
 `<div>` with a class of `tile-row`, so the string we want is `'<div
-class="tile"></div>'`. We can then store this in a variable named
+class="tile-row"></div>'`. We can then store this in a variable named
 `$curTileRow` (note that `$` is a perfectly valid character to use in a
 JavaScript variable name). Finally, we use the jQuery append method to
 append this tile row to the tile wrapper.
