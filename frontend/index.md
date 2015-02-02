@@ -39,7 +39,7 @@ Use these links to move to various parts of the lab, such as the notes from intr
 
 The lab links to the following external resources if you're interested:
 
-1. [Humours video about JavaScript's shortcomings](https://www.destroyallsoftware.com/talks/wat)
+1. [Humorous video about JavaScript's shortcomings](https://www.destroyallsoftware.com/talks/wat)
 1. [Airbnb Style Guide](https://github.com/airbnb/javascript)
 1. [Mozilla operators documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators)
 1. [Hoisting Example](http://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html)
