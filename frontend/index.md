@@ -35,7 +35,7 @@ Use these links to move to various parts of the lab, such as the notes from intr
 1. [JavaScript Lab]({{ site.baseurl }}/frontend/lab/)
 1. [HTML & CSS Recap]({{ site.baseurl }}/frontend/html-css/)
 1. [Demo of Final Project]({{ site.baseurl }}/frontend/demo/)
-1. [Source code of Final Project](https://github.com/Z1MM32M4N/jquery-lab/)
+1. [Source code of Final Project](https://github.com/jez/jquery-lab/)
 
 The lab links to the following external resources if you're interested:
 

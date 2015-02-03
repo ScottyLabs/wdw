@@ -32,7 +32,7 @@ $ git init
 in your folder to _intialize_ your Git repository. This will make a folder called `.git` in your directory that will contain the history of your directory. Any code that you add or delete will be backed up in that folder.
 
 #### Adding files to a Git repository
-Copy the files you want to deploy into this directory. This should be the files you worked on either in the Frontend, Backend, or HTML & CSS. If you don't have anything from those sessions, or anything else you want to deploy, download [this code](https://github.com/Z1MM32M4N/jquery-lab/archive/gh-pages.zip) if you want to learn to deploy a static site on GitHub Pages, or [this code](https://github.com/anbenson/webdevblog-example/archive/master.zip) if you want to learn to deploy a dynamic site on Heroku.
+Copy the files you want to deploy into this directory. This should be the files you worked on either in the Frontend, Backend, or HTML & CSS. If you don't have anything from those sessions, or anything else you want to deploy, download [this code](https://github.com/jez/jquery-lab/archive/gh-pages.zip) if you want to learn to deploy a static site on GitHub Pages, or [this code](https://github.com/anbenson/webdevblog-example/archive/master.zip) if you want to learn to deploy a dynamic site on Heroku.
 
 Now, enter
 

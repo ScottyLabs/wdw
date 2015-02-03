@@ -427,16 +427,16 @@ Tools][chrome-dev] work particularly well.
 
 [tree-adt]: http://en.wikipedia.org/wiki/Tree_%28data_structure%29
 [dom]: http://en.wikipedia.org/wiki/Document_Object_Model
-[gb-head]: https://github.com/Z1MM32M4N/jquery-lab/blob/gh-pages/index.html#L3-L13
-[gb-form]: https://github.com/Z1MM32M4N/jquery-lab/blob/gh-pages/index.html#L15-L20
+[gb-head]: https://github.com/jez/jquery-lab/blob/gh-pages/index.html#L3-L13
+[gb-form]: https://github.com/jez/jquery-lab/blob/gh-pages/index.html#L15-L20
 [gb-form-img]: ../../assets/img/frontend-lab-form.png
-[gb-scoreboard]: https://github.com/Z1MM32M4N/jquery-lab/blob/gh-pages/index.html#L21-L26
+[gb-scoreboard]: https://github.com/jez/jquery-lab/blob/gh-pages/index.html#L21-L26
 [gb-scoreboard-img]: ../../assets/img/frontend-lab-scoreboard.png
-[gb-board]: https://github.com/Z1MM32M4N/jquery-lab/blob/gh-pages/index.html#L27-L30
+[gb-board]: https://github.com/jez/jquery-lab/blob/gh-pages/index.html#L27-L30
 [gb-board-img]: ../../assets/img/frontend-lab-board.png
-[gb-javascript]: https://github.com/Z1MM32M4N/jquery-lab/blob/gh-pages/index.html#L31-L36
-[gb-body]: https://github.com/Z1MM32M4N/jquery-lab/blob/gh-pages/style.css#L1-L4
-[gb-center]: https://github.com/Z1MM32M4N/jquery-lab/blob/gh-pages/style.css#L6-L8
-[gb-input]: https://github.com/Z1MM32M4N/jquery-lab/blob/gh-pages/style.css#L10-L19
-[gb-tile-green-hover]: https://github.com/Z1MM32M4N/jquery-lab/blob/gh-pages/style.css#L78-L80
+[gb-javascript]: https://github.com/jez/jquery-lab/blob/gh-pages/index.html#L31-L36
+[gb-body]: https://github.com/jez/jquery-lab/blob/gh-pages/style.css#L1-L4
+[gb-center]: https://github.com/jez/jquery-lab/blob/gh-pages/style.css#L6-L8
+[gb-input]: https://github.com/jez/jquery-lab/blob/gh-pages/style.css#L10-L19
+[gb-tile-green-hover]: https://github.com/jez/jquery-lab/blob/gh-pages/style.css#L78-L80
 [chrome-dev]: https://www.youtube.com/watch?v=Z3HGJsNLQ1E
