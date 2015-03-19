@@ -1,7 +1,7 @@
 # Site settings
 title: Web Dev Weeks
 email: info@scottylabs.org
-description: "An talk series comprised of interactive workshops that teach the fundamentals of web development."
+description: "A talk series comprised of interactive workshops that teach the fundamentals of web development."
 baseurl: "/wdw"
 url: "http://scottylabs.org"
 
