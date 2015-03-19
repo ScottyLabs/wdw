@@ -3,7 +3,11 @@ layout: guide
 title: Home
 ---
 
-# web dev weeks
+<br>
+
+<img class="hero-logo" src="/wdw/assets/img/logo.svg">
+
+# Web Dev Weeks
 
 ###### Two weeks of workshops to jumpstart your fall semester.
 

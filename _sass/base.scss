@@ -17,7 +17,7 @@ strong {
 }
 
 html, body, .page-content .pure-g, .page-content .pure-u {
-  font-family: "source sans pro", Helvetica, Arial, sans-serif;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
   font-size: 18px;
   line-height: 1.5;
   color: $text;
@@ -38,117 +38,103 @@ html, body, .page-content .pure-g, .page-content .pure-u {
   overflow-y: scroll;
 }
 
-@mixin color-mixin($color-a, $color-b) {
-  .menu-strip {
-    background: $color-a; /* Old browsers */
-    background: -moz-linear-gradient(45deg,  $color-a 0%, $color-b 100%); /* FF3.6+ */
-    background: -webkit-linear-gradient(15deg,  $color-a 0%,$color-b 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(45deg,  $color-a 0%,$color-b 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(45deg,  $color-a 0%,$color-b 100%); /* IE10+ */
-    background: linear-gradient(45deg,  $color-a 0%,$color-b 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-a', endColorstr='$color-b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-  }
-
+@mixin color-mixin($color-base, $color-accent) {
   a {
-    color: $color-b;
+    color: $color-accent;
+    text-decoration: none;
   }
   a:hover {
-    color: $color-a;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 2px 4px;
+    margin: -2px -4px;
+    border-radius: 3px;
   }
   a:active {
-    color: darken($color-a, 10%);
+    color: darken($color-accent, 10%);
+  }
+
+  & {
+    border-bottom: 15px solid $color-base;
   }
 }
 
+.page-content {
+  $pages: basics, html, design, frontend, backend, deployment;
 
-@include color-mixin(#22E3EB, #F18E40);
+  $base-colors: $wdw-pink, $wdw-blue, $wdw-orange,
+                $wdw-purple, $wdw-green, $wdw-pink;
+  $accent-colors: $wdw-orange, $wdw-green, $wdw-pink,
+                  $wdw-blue, $wdw-purple, $wdw-blue;
 
-.backend {
-  @include color-mixin(#61EBE5, #B5C0EB)
-}
+  .home {
+    @include color-mixin(white, $wdw-pink);
+  }
 
-.design {
-  @include color-mixin(#E7B255, #D63998)
-}
-
-.frontend {
-  @include color-mixin(#45BBD1, #E76CC5)
-
-}
-.html {
-  @include color-mixin(#97A2F6, #95E974)
-
-}
-.deployment {
-  @include color-mixin(#E77272, #EE9045)
+  @for $i from 1 through length($pages) {
+    .#{nth($pages, $i)} {
+      @include color-mixin(nth($base-colors, $i), nth($accent-colors, $i))
+    }
+  }
 }
 
 header {
   margin-left: 25%;
 
-  .pure-menu-heading.wdw-logo {
-    font-family: "crete round";
-    text-transform: lowercase;
-    font-size: 27px;
-    color: $text;
-    font-weight: 700;
-  }
+  @for $i from 1 through length($wdw-colors) {
+    // overrides pure-menu-selected
+    li:nth-child(#{length($wdw-colors)}n+#{$i}),
+    li.pure-menu-selected:nth-child(#{length($wdw-colors)}n+#{$i}) {
+      a {
+        color: nth($wdw-colors, $i);
 
-  li a {
-    color: $sub-text;
-  }
+        &:hover {
+          color: darken(nth($wdw-colors, $i), 10%);
+        }
+      }
 
-  li a:hover {
-    color: $text;
+      border-top: 3px solid nth($wdw-colors, $i);
+    }
   }
 }
 
-.menu-strip {
-
-  a {
-    color: white;
-    opacity: 0.3;
-    text-decoration: none;
-    font-family: "source sans pro";
-  }
-  a:hover {
-    color: white;
-    opacity: 0.8;
-    text-shadow: 0px 1px 0px rgba(0,0,0,0.5);
-  }
-  ul {
-    letter-spacing: 0px;
-    width: 200%;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  li {
-  }
+.wdw-logo {
+  margin-top: 3px;
+  height: 20px;
+  vertical-align: middle;
+}
+.hero-logo {
+  width: 70%;
+  display: block;
+  margin: 0 auto;
 }
 
 .pure-u {
   padding: 27px;
 }
 
+
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0px;
 }
 
+h1, h2, h6 {
+  text-align: center;
+}
+
 h1 {
-  font-family: "crete round";
+  font-family: "Lato";
   font-size:  54px;
 }
 
 h2 {
-  font-family: "crete round";
+  font-family: "Lato";
   font-size: 36px;
 }
 
 h3 {
   margin-top: 36px;
-  font-family: "crete round";
+  font-family: "Lato";
   font-size: 18px;
   font-style: italic;
 }

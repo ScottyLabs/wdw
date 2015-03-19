@@ -4,12 +4,18 @@
 @charset "utf-8";
 
 
-$text: #1a1a1a;
-$sub-text: #555;
+$text: #313131;
+$sub-text: #313131;
+
+$wdw-pink: #DB255E;
+$wdw-orange: #F49032;
+$wdw-green: #A9CE45;
+$wdw-purple: #382A57;
+$wdw-blue: #26AAB7;
+$wdw-colors: $wdw-pink, $wdw-blue, $wdw-orange, $wdw-purple, $wdw-green;
 
 @import
   "base",
   "pygments-monokai"
 ;
-
 
