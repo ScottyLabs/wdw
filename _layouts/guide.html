@@ -4,9 +4,7 @@ layout: default
 <div class="guide">
 
 
-  <div class="{{ page.subject }} pure-g">
-    <div class="menu-strip">
-    </div>
+  <div class="{% if page.subject %}{{ page.subject }}{% else %}home{% endif %} pure-g">
     <div class="pure-u pure-u-1-4 menu-strip-spacer"></div>
     <div class="pure-u pure-u-1-2">
       {{ content }}

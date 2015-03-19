@@ -1,15 +1,31 @@
 # Site settings
 title: Web Dev Weeks
 email: info@scottylabs.org
-description: ""
-baseurl: "/webdevweeks"
-url: ""
+description: "An talk series comprised of interactive workshops that teach the fundamentals of web development."
+baseurl: "/wdw"
+url: "http://scottylabs.org"
+
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile.lock
+  - Gemfile
 
 # Build settings
 markdown: redcarpet
 highlight: pygments
 
+sass:
+  sass_dir: _sass
+  style: compressed
+
 redcarpet:
-  extensions: [smart, tables, with_toc_data]
+  extensions:
+    - smart
+    - tables
+    - with_toc_data
 
 permalink: pretty
+
+# custom configuration
+registration_link: https://docs.google.com/forms/d/183QRBEaVsBLfLu_oc_q6Y78C0c_zmkn2uly5eRKhHm8/viewform?usp=send_form

@@ -25,7 +25,7 @@ Git is a program that runs inside a terminal. This means that you'll have to run
 #### Creating a Git repository
 Enter
 
-```python
+```console
 $ git init
 ```
 
@@ -36,7 +36,7 @@ Copy the files you want to deploy into this directory. This should be the files 
 
 Now, enter
 
-```python
+```console
 $ git add -A
 ```
 
@@ -44,7 +44,7 @@ to add all the files in this directory to the repository. This means that Git wi
 
 After adding all these files, you'll want to enter
 
-```python
+```console
 $ git commit -m "Initial commit"
 ```
 
@@ -54,7 +54,7 @@ The text in quotes after `-m` is the commit message. This lets anyone who is vie
 
 If you now enter
 
-```python
+```console
 $ git log
 ```
 
@@ -63,13 +63,13 @@ you can see a log of all the changes that have been made to this repository. You
 #### Updating files in a Git repository
 Whenever you change a file, you can run
 
-```python
+```console
 $ git add <filename>
 ```
 
 where `<filename>` is the name of the file you changed. This will add the changes to the next commit you make. This way, the next time you run
 
-```python
+```console
 $ git commit -m "Some commit message"
 ```
 
@@ -79,7 +79,7 @@ this change will be saved as part of that commit in the repository.
 #### Pushing and pulling code from remote servers
 Git is pretty useful if you just use it locally to keep track of changes, but its real power is when you use it to download and upload (pull and push) code from servers. To configure your repository to work with a remote server, enter
 
-```python
+```console
 $ git remote add origin <remote_url>
 ```
 
@@ -87,13 +87,13 @@ where `<remote_url>` is the URL of the server. We'll talk about which URLs to ac
 
 Then, to push (upload) code to the server, enter
 
-```python
+```console
 $ git push
 ```
 
 To pull (download) code from the server, enter
 
-```python
+```console
 $ git pull
 ```
 
@@ -108,7 +108,7 @@ You want to start off by creating a Git repository on GitHub's servers. Go to [h
 ### Linking your GitHub and local repositories
 Run the following commands in your terminal:
 
-```python
+```console
 $ git remote add origin https://github.com/<username>/<reponame>.git
 $ git checkout -b gh-pages
 $ git push -u origin gh-pages
@@ -123,7 +123,7 @@ Congratulations! You've just deployed a website.
 ## Heroku deployment
 To deploy your dynamic site, we're going to be using a webapp hosting service called [Heroku](https://www.heroku.com/). To begin, you're going to want to [make a Heroku account](https://www.heroku.com/). Then, you'll want to download the [Heroku toolbelt](https://toolbelt.heroku.com/), which includes a set of tools for developing and deploying webapps. Finally, in the Terminal, run
 
-```python
+```console
 $ heroku login
 ```
 
@@ -132,7 +132,7 @@ to authenticate your local toolbelt with Heroku.
 ### Creating a Heroku app
 While in the directory that contains your git repo, run
 
-```python
+```console
 $ heroku create <appname>
 ```
 
@@ -141,19 +141,19 @@ where <appname> is the optional name you want to give your webapp. If you don't 
 ### Deploying a Heroku app
 Now, deploy your code with
 
-```python
+```console
 $ git push heroku master
 ```
 
 Then, to assign a server node to run your code, run
 
-```python
+```console
 $ heroku ps:scale web=1
 ```
 
 Finally, you can open your app in the browser by running
 
-```python
+```console
 $ heroku open
 ```
 
@@ -166,19 +166,19 @@ For your database to perist, that is, for your data to stick around for as long 
 
 You can tell Heroku to set up a database for you by running
 
-```python
+```console
 $ heroku addons:add heroku-postgresql:dev
 ```
 
 Next, you need to install a Python module for connecting to this database by running
 
-```python
+```console
 $ pip install psycopg2
 ```
 
 while inside the `virtualenv`. You'll also need to include that in the list of requirements:
 
-```python
+```console
 $ pip freeze > requirements.txt
 ```
 
@@ -198,7 +198,7 @@ in order to use Heroku's database. Note that `DATABASE_URL` is an environmental 
 
 Finally, you'll want to run
 
-```python
+```console
 $ git add .
 $ git commit -m "Set up Postgres"
 $ git push heroku master

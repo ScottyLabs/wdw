@@ -1,0 +1,227 @@
+/* Base */
+/* ----------------------------------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+strong {
+  font-weight: 700;
+  color: $text;
+}
+
+html, body, .page-content .pure-g, .page-content .pure-u {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: $text;
+}
+
+.menu-strip {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0;
+  width: 16%;
+
+  padding: 27px;
+
+  box-shadow: 0 0 0 rgba(0,0,0,0.0) inset;
+
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+@mixin color-mixin($color-base, $color-accent) {
+  a {
+    color: $color-accent;
+    text-decoration: none;
+  }
+  a:hover {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 2px 4px;
+    margin: -2px -4px;
+    border-radius: 3px;
+  }
+  a:active {
+    color: darken($color-accent, 10%);
+  }
+
+  border-bottom: 15px solid $color-base;
+}
+
+.page-content {
+  $pages: basics, html, css, design, frontend, backend, deployment;
+
+  $base-colors: $wdw-pink, $wdw-blue, $wdw-orange,
+                $wdw-purple, $wdw-green, $wdw-pink, $wdw-blue;
+  $accent-colors: $wdw-orange, $wdw-green, $wdw-pink,
+                  $wdw-blue, $wdw-blue, $wdw-blue, $wdw-pink;
+
+  .home {
+    @include color-mixin(white, $wdw-pink);
+  }
+
+  @for $i from 1 through length($pages) {
+    .#{nth($pages, $i)} {
+      @include color-mixin(nth($base-colors, $i), nth($accent-colors, $i))
+    }
+  }
+}
+
+header {
+  text-align: center;
+
+  $wdw-colors: $wdw-pink, $wdw-blue, $wdw-orange, $wdw-purple, $wdw-green;
+
+  @for $i from 1 through length($wdw-colors) {
+    // overrides pure-menu-selected
+    li:nth-child(#{length($wdw-colors)}n+#{$i}),
+    li.pure-menu-selected:nth-child(#{length($wdw-colors)}n+#{$i}) {
+      a {
+        color: nth($wdw-colors, $i);
+
+        &:hover {
+          color: darken(nth($wdw-colors, $i), 10%);
+        }
+      }
+
+      border-top: 3px solid nth($wdw-colors, $i);
+    }
+  }
+}
+
+.wdw-logo {
+  margin-top: 3px;
+  height: 20px;
+  vertical-align: middle;
+}
+.hero-logo {
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+}
+
+.pure-u {
+  padding: 27px;
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
+}
+
+h1, h2, h6 {
+  text-align: center;
+}
+
+h1 {
+  font-family: "Lato";
+  font-size:  54px;
+}
+
+h2 {
+  font-family: "Lato";
+  font-size: 36px;
+}
+
+h3 {
+  margin-top: 36px;
+  font-family: "Lato";
+  font-size: 18px;
+  font-style: italic;
+}
+
+section {
+  margin: 9px 0px;
+  padding: 18px 0px;
+}
+
+h6 {
+  font-size: 36px;
+  font-weight: 300;
+  margin-bottom: 45px;
+}
+
+h6, p {
+  color: $sub-text;
+}
+
+
+.site-header {
+  display: none;
+}
+
+
+h1 {
+  margin-top: 4 * 27px;
+}
+
+.aside {
+  color: #999;
+  position: absolute;
+  left: 75%;
+  display: block;
+  width: 20%;
+  line-height: 18px;
+  font-size: 14px;
+  font-style: italic;
+  border-left: 3px solid #bcbcbc;
+  padding: 0px 9px;
+
+}
+
+/* When an aside is a div we need to subtract the newline between it and its parent paragraph. */
+.aside ul {
+  padding: 9px 0px 0px 18px;
+  margin: 0px;
+}
+
+@media (max-width: 870px) {
+  .menu-strip {
+    width: 27px;
+    padding: 0px;
+  }
+
+  .menu-strip-spacer {
+    width: 27px;
+    padding: 0px;
+  }
+
+  .menu-strip-spacer + div {
+    width: -webkit-calc(100% - 27px - 27px)
+  }
+
+  .aside {
+    position: static;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    border: none;
+
+  }
+
+  .aside:before {
+    content: " [ ";
+  }
+
+  .aside:after {
+    content: " ] ";
+  }
+}
+
+footer {
+  margin-top: 80px;
+}
+
+td, th {
+  border: 1px solid black;
+  padding: 10px;
+}

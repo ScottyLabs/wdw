@@ -3,30 +3,82 @@ layout: guide
 title: Home
 ---
 
-# web dev weeks
+<br>
 
-###### Two weeks of workshops to jumpstart your fall semester.
+<img class="hero-logo" src="/wdw/assets/img/logo.svg">
 
-Web Dev Weeks is a series of lectures, workshops, and exercises that will introduce you to the fundamentals of web development.
+# Web Dev Weekend
 
-If you want to make websites outside of the classroom, get a head start on later electives, or attend hackathons, Web Dev Weeks will give you the foundational knowledge you need to get started.
+###### a weekend packed with web development workshops
+
+Last fall, we ran an event called Web Dev Weeks: a series of lectures,
+workshops, and exercises to introduce you to the fundamentals of web
+development.
+
+This semester, we're holding a slightly smaller event: Web Dev Weekend, which
+aims to get you up and running with web development even more quickly than
+before.
+
+If you want to make websites outside of the classroom, get a head start on later
+electives, or attend hackathons, Web Dev Weeks will give you the foundational
+knowledge you need to get started.
+
 
 ## How do I attend?
-Web Dev Weeks is over for this year. However, you can still see the workshop resources, and we'll likely run the workshops in the future. Like us on [facebook](https://www.facebook.com/ScottyLabs) to learn about new ScottyLabs events.
+
+1. __[Register here]({{ site.registration_link }})__
+2. Read [The Basics][basics]
+   - This quick read will introduce you to some common concepts and explain what
+     the workshops are about.
+3. Attend workshops!
+  - Workshops are largely independent of each other; you can pick any workshop
+  regardless of what workshops you've already attended.
+
+Make sure to check out the [deployment][deployment] workshop on the last day. In
+this session, we'll teach you how to put what you've made on the open web __for
+free__, so that anyone can see it.
+
+
+## Schedule
+
+All workshops will be held in the WEH 5201 Mac Cluster.
+
+| Day      | Date | Time                  | Session                                           |
+| ---      | ---- | ----                  | -------                                           |
+| Thursday | 4/2  | 7:00 p.m. - 9:00 p.m. | [Crafting Well-Designed Sites][design]            |
+| Friday   | 4/3  | 7:00 p.m. - 9:00 p.m. | [Frontend Engineering with JavaScript][frontend]  |
+| Saturday | 4/4  | 2:00 p.m. - 4:00 p.m. | [Using a CSS Framework][css]                      |
+| Sunday   | 4/5  | 2:00 p.m. - 4:00 p.m. | [Making Your Site Public: Deployment][deployment] |
+
+<br>
+
 
 ## What will I learn?
-We'll teach you enough to get started on your first web development project. This could be something that you work on outside of class, at a hackathon, or for a club.
 
-Exactly what you learn will depend on what workshops you go to, and you can learn what each workshop is about by reviewing [basics][basics].
+We'll teach you enough to get started on your first web development project.
+This could be something that you work on outside of class, at a hackathon, or
+for a club.
 
-It's not possible to teach you everything you need to know in two hours. Many things that we consider "essential" (like mobile web development) have been left out because of time. However, we aim to teach you foundational skills that you can build on over the rest of the semester.
+Exactly what you learn will depend on what workshops you go to, and you can
+learn what each workshop is about by reviewing [basics][basics].
+
+It's not possible to teach you everything you need to know in two hours. Many
+things that we consider "essential" (like mobile web development) have been left
+out because of time. However, we aim to teach you foundational skills that you
+can build on in the future.
+
 
 ## Who's running Web Dev Weeks?
-Web Dev Weeks is run by [ScottyLabs](http://scottylabs.org). We also run [TartanHacks](http://tartanhacks.com/) (CMU's largest software hackathon) and other educational events like [CrashCourse](http://scottylabs.org/crashcourse-website/).
 
-[basics]: /webdevweeks/basics/
-[html]: /webdevweeks/html/
-[design]: /webdevweeks/design/
-[frontend]: /webdevweeks/frontend/
-[backend]: /webdevweeks/backend/
-[deployment]: /webdevweeks/deployment/
+Web Dev Weeks is run by [ScottyLabs](http://scottylabs.org). We also run
+[TartanHacks](http://tartanhacks.com/) (CMU's largest software hackathon) and
+other educational events like
+[CrashCourse](http://scottylabs.org/crashcourse/).
+
+[basics]: basics/
+[html]: html/
+[css]: css/
+[design]: design/
+[frontend]: frontend/
+[backend]: backend/
+[deployment]: deployment/
