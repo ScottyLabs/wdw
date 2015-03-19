@@ -43,12 +43,12 @@ free__, so that anyone can see it.
 
 All workshops will be held in the WEH 5201 Mac Cluster.
 
-| Day      | Date | Time                  | Session                                           |
-| ---      | ---- | ----                  | -------                                           |
-| Thursday | 4/2  | 7:00 p.m. - 9:00 p.m. | [Crafting Well-Designed Sites][design]            |
-| Friday   | 4/3  | 7:00 p.m. - 9:00 p.m. | [Frontend Engineering with JavaScript][frontend]  |
-| Saturday | 4/4  | 2:00 p.m. - 4:00 p.m. | [Using a CSS Framework][css]                      |
-| Sunday   | 4/5  | 2:00 p.m. - 4:00 p.m. | [Making Your Site Public: Deployment][deployment] |
+| Session                                           | Day      | Date | Time                  |
+| -------                                           | ---      | ---- | ----                  |
+| [Crafting Well-Designed Sites][design]            | Thursday | 4/2  | 7:00 p.m. - 9:00 p.m. |
+| [Frontend Engineering with JavaScript][frontend]  | Friday   | 4/3  | 7:00 p.m. - 9:00 p.m. |
+| [Using a CSS Framework][css]                      | Saturday | 4/4  | 2:00 p.m. - 4:00 p.m. |
+| [Making Your Site Public: Deployment][deployment] | Sunday   | 4/5  | 2:00 p.m. - 4:00 p.m. |
 
 <br>
 
