@@ -31,11 +31,10 @@ You will also need to install python and setup Flask. Follow the instructions fo
 
 Here are some resources from the past iteration of Web Dev Weeks:
 
-- [Slides](https://github.com/anbenson/webdevblog-resources/raw/master/WebDevWeeks-Backend.pdf)
+- [Slides](https://github.com/anbenson/webdevblog/raw/master/resources/WebDevWeeks-Backend.pdf)
 - [Tutorial](https://docs.google.com/document/d/1dUa36KFGPPwruOIOxDfKkVyqf5ZboZ0AiHdyNYniFWA/edit?pli=1)
 - [Example website](http://webdevblog.herokuapp.com/)
-- [Repository for webdevblog resources](https://github.com/anbenson/webdevblog-resources)
-- [Repository for example website](https://github.com/anbenson/webdevblog-example)
+- [Repository for webdevblog example and resources](https://github.com/anbenson/webdevblog)
 
 Some helpful links to learn more about backend programming:
 
