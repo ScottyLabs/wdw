@@ -53,18 +53,16 @@ html, body, .page-content .pure-g, .page-content .pure-u {
     color: darken($color-accent, 10%);
   }
 
-  & {
-    border-bottom: 15px solid $color-base;
-  }
+  border-bottom: 15px solid $color-base;
 }
 
 .page-content {
-  $pages: basics, html, design, frontend, backend, deployment;
+  $pages: basics, html, css, design, frontend, backend, deployment;
 
   $base-colors: $wdw-pink, $wdw-blue, $wdw-orange,
-                $wdw-purple, $wdw-green, $wdw-pink;
+                $wdw-purple, $wdw-green, $wdw-pink, $wdw-blue;
   $accent-colors: $wdw-orange, $wdw-green, $wdw-pink,
-                  $wdw-blue, $wdw-purple, $wdw-blue;
+                  $wdw-blue, $wdw-blue, $wdw-blue, $wdw-pink;
 
   .home {
     @include color-mixin(white, $wdw-pink);
@@ -78,7 +76,9 @@ html, body, .page-content .pure-g, .page-content .pure-u {
 }
 
 header {
-  margin-left: 25%;
+  text-align: center;
+
+  $wdw-colors: $wdw-pink, $wdw-blue, $wdw-orange, $wdw-purple, $wdw-green;
 
   @for $i from 1 through length($wdw-colors) {
     // overrides pure-menu-selected
@@ -215,11 +215,6 @@ h1 {
   .aside:after {
     content: " ] ";
   }
-
-  header {
-    margin-left: 27px;
-  }
-
 }
 
 footer {

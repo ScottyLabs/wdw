@@ -26,3 +26,6 @@ redcarpet:
     - with_toc_data
 
 permalink: pretty
+
+# custom configuration
+registration_link: https://docs.google.com/forms/d/183QRBEaVsBLfLu_oc_q6Y78C0c_zmkn2uly5eRKhHm8/viewform?usp=send_form
