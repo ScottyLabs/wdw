@@ -6,9 +6,12 @@ subject: basics
 
 # the basics
 
-###### Read on as we demystify web development and prepare you for your first workshop.
+###### read on as we demystify web development and prepare you for your first workshop
 
 ## What is the Web?
+
+###### but actually, tho
+
 There are many technologies that form the experience we call the Internet. The following is an overview of the most common ones.
 
 __Web browser__ is the most apt term to describe what you first click on to get started online. A web browser is a program—such as Google Chrome, Mozilla Firefox, Apple Safari, or Internet Explorer—that retrieves the source code of a website and displays it in an interactive form.
@@ -25,7 +28,7 @@ Most web development is split up into frontend and backend development, so let�
 
 ## The Frontend
 
-###### Everything you can touch
+###### everything you can touch
 
 The frontend of a web application is everything that ends up running in the browser. It is written in three main languages, __HTML__, __CSS__, and __Javascript__.
 
@@ -41,7 +44,8 @@ When run in a web browser, JavaScript can alter HTML and CSS on the fly, communi
 
 ## The Backend
 
-###### Everything behind the curtain
+###### everything behind the curtain
+
 The backend is all of the code that runs on the web server.
 
 <span class="aside">To learn more and make a simple blog attend <a href="{{ site.baseurl }}/backend/">Introduction to Backend Web Development</a>.</span>
@@ -64,7 +68,7 @@ Backends can be written in any programming language, but some languages are easi
 
 ## Design
 
-###### Optimizing the user's experience
+###### optimizing the user's experience
 <span class="aside">To learn more about design, attend <a href="{{ site.baseurl }}/design/">Introduction to Design Thinking</a></span>
 
 When creating a web application, it’s important to remember that in a good design can make or break your site’s success. Design is best described as all of the choices that go into making a website. Design is more than the way a website looks; a good design considers every aspect of a user’s experience. This includes how a user signs up, how information is laid out, and overall every action the user has to take inside your app. The goal of any good design is to be unobtrusive, intuitive, and pleasant.
@@ -79,19 +83,22 @@ Prototypes are like rough drafts. With prototypes, users can actually interact w
 
 ## Deployment
 
-###### The final flourish
+###### the final flourish
+
 <span class="aside">To learn how to deploy whatever you've created during web dev weeks, attend <a href="{{ site.baseurl }}/deployment/">Deployment</a></span>
 
 After a website has been designed, and the frontend and backend implemented, it’s time for it to be __deployed__. Deployment is the process of taking the code a developer has written, and setting it up to run on a server where the whole world can interact with it. It is a very important step, but it can be complicated because software is often not developed in the same environment it is deployed in. Deploying and running a webapp is generally called __operations__, and it’s an important step in the life cycle of creating a web application.
 
 ## Attending More Workshops
 
-###### Where to go from here
-Thank you for reading this guide, and we hope that you will join us for Web Dev Weeks, being held at Carnegie Mellon from September 4th to 15th!
+###### where to go from here
 
-Web Dev Weeks goes into detail in all five areas we’ve discussed above through a series of five workshops. We’ve specifically designed the workshops so that they can be taken in any order, although we recommend taking the deployment workshop after you’ve completed at least one technical workshop (so you have something to deploy).
+Thank you for reading this guide, and we hope that you will join us for Web Dev Weekend, being held from April 2nd to 4th!
 
-If you have any comments or questions about this guide, please write to webdevweeks@scottylabs.org.
+Web Dev Weeks goes into detail in all five areas we’ve discussed above through a series of workshops. We’ve specifically designed the workshops so that they can be taken in any order, although we recommend taking the deployment workshop after you’ve completed at least one technical workshop (so you have something to deploy).
+
+If you have any comments or questions about this guide, please write to info at scottylabs dot org.
 
 ## Registration
-[Register here](https://docs.google.com/forms/d/1uuDuLjw7tiJVhwGSLuCla-rRwrCyIZorBuQsjKvvZXQ/viewform)
+
+[Register here]({{ site.registration_link }})

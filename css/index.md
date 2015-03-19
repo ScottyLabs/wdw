@@ -19,3 +19,7 @@ Bring a computer with a web browser and text editor installed. We recommend [Chr
 ### Resources
 
 - No resources yet!
+
+### Registration
+
+[Register here]({{ site.registration_link }})
