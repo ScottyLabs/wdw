@@ -408,7 +408,6 @@ __For the lab portion of this session, visit [this page][lab]__.
 
 Written by Jake Zimmerman, July 2014
 
-[webdevweeks]: http://scottylabs.org
 [scottylabs]: http://scottylabs.org
 [nodejs]: http://nodejs.org
 [meteor]: http://www.meteor.com
@@ -416,4 +415,4 @@ Written by Jake Zimmerman, July 2014
 [airbnb]: https://github.com/airbnb/javascript
 [operators]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators
 [hoisting]: http://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html
-[lab]: //scottylabs.org/webdevweeks/frontend/lab/
+[lab]: {{ site.baseurl }}/frontend/lab/

@@ -587,12 +587,12 @@ Thanks!
 
 I take great pride in writing good code, documentation, and tutorials. If you
 spot something that's not quite right or you spot something confusing, let me
-know! Write an email to webdevweeks@scottylabs.org and include the url of this
-page in your email.
+know! Write an email to info@scottylabs.org and include the url of this page in
+your email.
 
 Written by Jake Zimmerman, July 2014
 
-[galumphing]: http://scottylabs.org/webdevweeks/frontend/demo/
+[galumphing]: {{ site.baseurl }}/frontend/demo/
 
 [source-final]: https://github.com/jez/jquery-lab/
 [source-final-zip]: https://github.com/jez/jquery-lab/archive/gh-pages.zip
