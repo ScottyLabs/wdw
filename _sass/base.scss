@@ -83,7 +83,7 @@ header {
   @for $i from 1 through length($wdw-colors) {
     // overrides pure-menu-selected
     li:nth-child(#{length($wdw-colors)}n+#{$i}),
-    li.pure-menu-selected:nth-child(#{length($wdw-colors)}n+#{$i}) {
+    li:nth-child(#{length($wdw-colors)}n+#{$i}) {
       a {
         color: nth($wdw-colors, $i);
 
@@ -108,10 +108,14 @@ header {
   margin: 0 auto;
 }
 
+// -- Pure overrides --
 .pure-u {
   padding: 27px;
 }
 
+.pure-menu-horizontal {
+  white-space: normal;
+}
 
 
 h1, h2, h3, h4, h5, h6 {
