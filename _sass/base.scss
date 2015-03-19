@@ -61,16 +61,16 @@ html, body, .page-content .pure-g, .page-content .pure-u {
 
   $base-colors: $wdw-pink, $wdw-blue, $wdw-orange,
                 $wdw-purple, $wdw-green, $wdw-pink, $wdw-blue;
-  $accent-colors: $wdw-orange, $wdw-green, $wdw-pink,
-                  $wdw-blue, $wdw-blue, $wdw-blue, $wdw-pink;
 
   .home {
+    // white + pink on home page
     @include color-mixin(white, $wdw-pink);
   }
 
   @for $i from 1 through length($pages) {
     .#{nth($pages, $i)} {
-      @include color-mixin(nth($base-colors, $i), nth($accent-colors, $i))
+      // base-colors[i] + base-colors[i] on other pages
+      @include color-mixin(nth($base-colors, $i), nth($base-colors, $i))
     }
   }
 }
