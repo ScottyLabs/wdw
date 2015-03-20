@@ -1,5 +1,11 @@
 # Web Dev Weeks
 
+<br>
+
+![WDW logo](assets/img/logo.svg)
+
+<br>
+
 This is the site source for the Web Dev Weeks and Web Dev Weekend events. We're
 using Jekyll 2.5.3 on GitHub Pages.
 
