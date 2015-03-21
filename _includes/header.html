@@ -7,13 +7,9 @@
       </a>
     </span>
     <ul class="pure-menu-list">
-        <li class="pure-menu-item"><a class="pure-menu-link" href="{{ "/basics/" | prepend: site.baseurl }}">basics</a></li>
-        <li class="pure-menu-item"><a class="pure-menu-link" href="{{ "/html/" | prepend: site.baseurl }}">html</a></li>
-        <li class="pure-menu-item"><a class="pure-menu-link" href="{{ "/css/" | prepend: site.baseurl }}">css</a></li>
-        <li class="pure-menu-item"><a class="pure-menu-link" href="{{ "/design/" | prepend: site.baseurl }}">design</a></li>
-        <li class="pure-menu-item"><a class="pure-menu-link" href="{{ "/frontend/" | prepend: site.baseurl }}">frontend</a></li>
-        <li class="pure-menu-item"><a class="pure-menu-link" href="{{ "/backend/" | prepend: site.baseurl }}">backend</a></li>
-        <li class="pure-menu-item"><a class="pure-menu-link" href="{{ "/deployment/" | prepend: site.baseurl }}">deployment</a></li>
+      {% for p in site.wdw_pages %}
+        <li class="pure-menu-item"><a class="pure-menu-link" href="{{ site.baseurl }}/{{ p }}/">{{ p }}</a></li>
+      {% endfor %}
     </ul>
   </div>
 

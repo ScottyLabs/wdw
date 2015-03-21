@@ -13,6 +13,13 @@ $wdw-green: #A9CE45;
 $wdw-purple: #382A57;
 $wdw-blue: #26AAB7;
 
+// Convert Liquid list to Sass list
+$wdw-pages: {% for p in site.wdw_pages %}{{ p }},{% endfor %};
+
+$wdw-colors: $wdw-blue, $wdw-orange, $wdw-pink,
+              $wdw-blue, $wdw-green, $wdw-purple, $wdw-green;
+
+
 @import
   "base",
   "pygments-monokai"
