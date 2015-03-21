@@ -2,8 +2,6 @@
 /* ----------------------------------------------------------*/
 
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -17,32 +15,17 @@ strong {
 }
 
 html, body, .page-content .pure-g, .page-content .pure-u {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", "Calibri", Arial, sans-serif;
   font-size: 18px;
   line-height: 1.5;
   color: $text;
-}
-
-.menu-strip {
-  position: fixed;
-  top: 0px;
-  bottom: 0px;
-  left: 0;
-  width: 16%;
-
-  padding: 27px;
-
-  box-shadow: 0 0 0 rgba(0,0,0,0.0) inset;
-
-  overflow-x: hidden;
-  overflow-y: scroll;
 }
 
 @mixin color-mixin($color-base, $color-accent) {
   a {
     color: $color-accent;
     text-decoration: none;
-  }
+    }
   a:hover {
     background: rgba(0, 0, 0, 0.1);
     padding: 2px 4px;
@@ -57,28 +40,21 @@ html, body, .page-content .pure-g, .page-content .pure-u {
 }
 
 .page-content {
-  $pages: basics, html, css, design, frontend, backend, deployment;
-
-  $base-colors: $wdw-pink, $wdw-blue, $wdw-orange,
-                $wdw-purple, $wdw-green, $wdw-pink, $wdw-blue;
-
   .home {
     // white + pink on home page
     @include color-mixin(white, $wdw-pink);
   }
 
-  @for $i from 1 through length($pages) {
-    .#{nth($pages, $i)} {
-      // base-colors[i] + base-colors[i] on other pages
-      @include color-mixin(nth($base-colors, $i), nth($base-colors, $i))
+  @for $i from 1 through length($wdw-pages) {
+    .#{nth($wdw-pages, $i)} {
+      // wdw-colors[i] + wdw-colors[i] on other pages
+      @include color-mixin(nth($wdw-colors, $i), nth($wdw-colors, $i))
     }
   }
 }
 
 header {
   text-align: center;
-
-  $wdw-colors: $wdw-pink, $wdw-blue, $wdw-orange, $wdw-purple, $wdw-green;
 
   @for $i from 1 through length($wdw-colors) {
     // overrides pure-menu-selected
@@ -118,34 +94,31 @@ header {
 }
 
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 0px;
-}
-
 h1, h2, h6 {
   text-align: center;
 }
 
 h1 {
-  font-family: "Lato";
   font-size:  54px;
 }
 
 h2 {
-  font-family: "Lato";
+  margin-top: 1.5em;
   font-size: 36px;
 }
 
 h3 {
-  margin-top: 36px;
-  font-family: "Lato";
-  font-size: 18px;
-  font-style: italic;
+  font-size: 26px;
+  margin-top: 1em;
 }
 
-section {
-  margin: 9px 0px;
-  padding: 18px 0px;
+h4 {
+  font-size: 20px;
+  margin: 1em auto;
+
+  &::before {
+    content: "> ";
+  }
 }
 
 h6 {
@@ -154,8 +127,14 @@ h6 {
   margin-bottom: 45px;
 }
 
-h6, p {
-  color: $sub-text;
+h1 + h6,
+h2 + h6 {
+  margin-top: -1em;
+}
+
+section {
+  margin: 9px 0px;
+  padding: 18px 0px;
 }
 
 p {
@@ -170,6 +149,45 @@ p {
 h1 {
   margin-top: 4 * 27px;
 }
+
+.page-content {
+  li {
+    padding: initial;
+  }
+
+  ul {
+    margin: 1em auto;
+  }
+
+  li {
+    margin-bottom: 0.5em;
+  }
+}
+
+code {
+  font-family: "Menlo", Monaco, "Courier New", monospace;
+  font-size: 16px;
+
+  padding: 4px 6px;
+  background: rgba(0,0,0,.1);
+  border-radius: 3px;
+}
+
+pre {
+  padding: 15px;
+
+  & code {
+    padding: 0;
+    background: transparent;
+    border-radius: 0;
+  }
+}
+
+
+.highlight {
+  border-radius: 4px;
+}
+
 
 .aside {
   color: #999;
