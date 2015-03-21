@@ -27,12 +27,14 @@ knowledge you need to get started.
 ## How do I attend?
 
 1. __[Register here]({{ site.registration_link }})__
-2. Read [The Basics][basics]
-   - This quick read will introduce you to some common concepts and explain what
-     the workshops are about.
-3. Attend workshops!
+  - You certainly don't have to register to attend, but we like knowing how many
+    people to expect and what people will be interested in learning.
+1. __[Read "The Basics"][basics]__
+  - This quick read will introduce you to some common concepts and explain what
+    the workshops are about.
+1. __[Pick some workshops!](#schedule)__
   - Workshops are largely independent of each other; you can pick any workshop
-  regardless of what workshops you've already attended.
+    regardless of what workshops you've already attended.
 
 Make sure to check out the [deployment][deployment] workshop on the last day. In
 this session, we'll teach you how to put what you've made on the open web __for
@@ -50,7 +52,7 @@ All workshops will be held in the WEH 5201 Mac Cluster.
 | [Using a CSS Framework][css]                      | Saturday | 4/4  | 2:00 p.m. - 4:00 p.m. |
 | [Making Your Site Public: Deployment][deployment] | Sunday   | 4/5  | 2:00 p.m. - 4:00 p.m. |
 
-<br>
+Click on any of the links to read more about what each section will cover!
 
 
 ## What will I learn?
@@ -68,9 +70,9 @@ out because of time. However, we aim to teach you foundational skills that you
 can build on in the future.
 
 
-## Who's running Web Dev Weeks?
+## Who's running Web Dev Weekend?
 
-Web Dev Weeks is run by [ScottyLabs](http://scottylabs.org). We also run
+Web Dev Weekend is run by [ScottyLabs](http://scottylabs.org). We also run
 [TartanHacks](http://tartanhacks.com/) (CMU's largest software hackathon) and
 other educational events like
 [CrashCourse](http://scottylabs.org/crashcourse/).

@@ -4,13 +4,30 @@ title: Deployment
 subject: deployment
 ---
 
-# deployment
+# Deployment: Making Your Site Public
 
 ###### show off what you've made
 
-## [> start the lab]({{ site.baseurl }}/deployment/lab/)
+## [> start the lab <]({{ site.baseurl }}/deployment/lab/)
 
-In this session, you'll learn how to put whatever you've made in Web Dev Weeks on the web. We'll teach you how to host your project for free, and how to actually deploy them to the services.
+In this session, you'll learn how to put whatever you've made at Web Dev Weekend
+live on the web. Didn't manage to make it to any of the other sessions, but
+you're still interested in learning how to make a site public? Don't worry:
+we'll give you something to deploy.
+
+
+### How to Attend
+
+If you haven't already, __[be sure to register]({{ site.registration_link }})__! You certainly don't have to register to attend, but we like knowing how many people to expect and what people will be interested in learning. We can't wait, and we hope to see you there!
+
+Be sure to bring a laptop. You'll want to make sure that either [GitHub for
+Mac][gh-mac], [GitHub for Windows][gh-win], or [Git][git] & a terminal are
+installed on your system.
+
+[gh-mac]: https://mac.github.com/
+[gh-win]: https://windows.github.com/
+[git]: http://git-scm.com/downloads
+
 
 ### Resources
 
@@ -27,6 +44,3 @@ In this session, you'll learn how to put whatever you've made in Web Dev Weeks o
 * [Amazon AWS](http://aws.amazon.com/free/) - offers a variety of deployment resources (compute, data storage, etc.) with a free tier
 * [Namecheap](https://www.namecheap.com/) - domains with fair prices
 
-### Registration
-
-[Register here]({{ site.registration_link }})

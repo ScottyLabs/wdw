@@ -5,30 +5,49 @@ subject: frontend
 ---
 
 
-# frontend engineering
+# Frontend Engineering
 
 ###### make your pages interactive with JavaScript
 
-This course will teach you how to make an interactive website. Learn how to write JavaScript, the programming language of the web. You can use JavaScript to make web pages the user can interact with in creative ways.
+JavaScript is everywhere on the Web. With only a few lines of code, we can make
+immersive web applications, entertaining games, and interactive sites. Learning
+JavaScript is somewhat treacherous if you're just starting out, so we'll make
+sure to introduce you to JavaScript in a way that will enable you to continue
+learning more.
 
-Participants in this workshop will complete exercises related to common JavaScript tasks.
+Participants in this workshop will complete exercises related to common
+JavaScript tasks.
 
-Although this workshop can be taken on its own, we recommend pairing it with [HTML & CSS]({{ site.baseurl }}/html/) as well as [CSS Frameworks]({{ site.baseurl }}/css/).
-
-### What to bring
-
-Bring a computer with a web browser and text editor installed. We recommend [Chrome](https://www.google.com/chrome/browser/) and [Sublime Text](http://www.sublimetext.com/).
+Although this workshop can be taken on its own, we recommend pairing it
+[Synergize your CSS: Using a Framework]({{ site.baseurl }}/css/).
 
 
-### Resources
+### How to Attend
 
-Use these links to move to various parts of the lab, such as the notes from introduction to JavaScript talk or the actual lab handout:
+If you haven't already, __[be sure to register]({{ site.registration_link }})__!
+You certainly don't have to register to attend, but we like knowing how many
+people to expect and what people will be interested in learning. We can't wait,
+and we hope to see you there!
+
+Bring a computer with a web browser and text editor installed. We recommend
+[Chrome](https://www.google.com/chrome/browser/) and [Sublime
+Text](http://www.sublimetext.com/).
+
+
+## Resources
+
+This workshop has been run before. Here are all the resources that were used
+throughout the workshop. If you attend this workshop, we'll work through all
+of these resources to help you complete a fun JavaScript project!
 
 1. [Introduction to JavaScript]({{ site.baseurl }}/frontend/js-intro/)
 1. [JavaScript Lab]({{ site.baseurl }}/frontend/lab/)
 1. [HTML & CSS Recap]({{ site.baseurl }}/frontend/html-css/)
 1. [Demo of Final Project]({{ site.baseurl }}/frontend/demo/)
 1. [Source code of Final Project](https://github.com/jez/jquery-lab/)
+
+
+## Even More Resources
 
 The lab links to the following external resources if you're interested:
 
@@ -38,16 +57,15 @@ The lab links to the following external resources if you're interested:
 1. [Hoisting Example](http://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html)
 1. [Anonymous Functions Example](http://markdalgleish.com/2011/03/self-executing-anonymous-functions/)
 
-__The following resources are an excellent way to augment your working knowledge of JavaScript, and they're highly recommended__:
+__The following resources are an excellent way to augment your working knowledge
+of JavaScript, and they're highly recommended__:
 
 1. [Dash](https://dash.generalassemb.ly/)
     - Easy and short introduction to HTML, CSS, and JavaScript
 1. [Codecademy](http://www.codecademy.com/)
-    - Learn JavaScript as a language, learn how to use various JavaScript libraries, and work through some real-world projects.
+    - Learn JavaScript as a language, learn how to use various JavaScript
+      libraries, and work through some real-world projects.
 1. [Bento](https://www.bento.io/)
     - Huge list of programming tutorials across tons of subjects
     - Get suggestions for what to learn after completing each tutorial
 
-### Registration
-
-[Register here]({{ site.registration_link }})

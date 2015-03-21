@@ -4,7 +4,7 @@ title: The Basics
 subject: basics
 ---
 
-# the basics
+# The Basics
 
 ###### read on as we demystify web development and prepare you for your first workshop
 
@@ -12,7 +12,7 @@ subject: basics
 
 ###### but actually, tho
 
-There are many technologies that form the experience we call the Internet. The following is an overview of the most common ones.
+Many technologies make up the experience we call "the Internet." The following is an overview of the most common ones.
 
 __Web browser__ is the most apt term to describe what you first click on to get started online. A web browser is a program—such as Google Chrome, Mozilla Firefox, Apple Safari, or Internet Explorer—that retrieves the source code of a website and displays it in an interactive form.
 
@@ -32,13 +32,15 @@ Most web development is split up into frontend and backend development, so let�
 
 The frontend of a web application is everything that ends up running in the browser. It is written in three main languages, __HTML__, __CSS__, and __Javascript__.
 
-<span class="aside">To learn how to write HTML and CSS by creating a simple portfolio website, attend <a href="{{ site.baseurl }}/html/">Introduction to HTML & CSS</a></span>
+<span class="aside">To learn how to write HTML and CSS by creating a simple portfolio website, check out <a href="{{ site.baseurl }}/html/">Introduction to HTML & CSS</a>.</span>
 
 HTML and CSS store information about a page. HTML contains the __content__, which could include text, images, videos, and any number of other things. Complementary to this, CSS stores information about how to __display__ the content stored by the HTML. This includes layout, color, fonts, and other information about how our site looks. With just HTML and CSS we can create beautiful, informational web pages that display the same information for everyone who loads them.
 
+<span class="aside">To learn how to create well-designed sites with minimal effort, attend <a href="{{ site.baseurl }}//">Synergize your CSS: Using a Framework</a>.</span>
+
 On the other hand, JavaScript is a fully featured programming language.
 
-<span class="aside">To learn about JavaScript and its many quirks, attend <a href="{{ site.baseurl }}/frontend/">Introduction to Frontend Engineering</a></span>
+<span class="aside">To learn about JavaScript, its many quirks, and it's infinite possibilities, attend <a href="{{ site.baseurl }}/frontend/">Frontend Engineering with JavaScript</a>.</span>
 
 When run in a web browser, JavaScript can alter HTML and CSS on the fly, communicate with a web server, or perform computation all by itself. This opens the door to modern, interactive, experiences.
 
@@ -48,7 +50,7 @@ When run in a web browser, JavaScript can alter HTML and CSS on the fly, communi
 
 The backend is all of the code that runs on the web server.
 
-<span class="aside">To learn more and make a simple blog attend <a href="{{ site.baseurl }}/backend/">Introduction to Backend Web Development</a>.</span>
+<span class="aside">To learn more and make a simple blog, check out <a href="{{ site.baseurl }}/backend/">Introduction to Backend Web Development</a>.</span>
 
 A backend is necessary if you want to store information long term, sign people in, or perform complex computations.
 
@@ -69,7 +71,7 @@ Backends can be written in any programming language, but some languages are easi
 ## Design
 
 ###### optimizing the user's experience
-<span class="aside">To learn more about design, attend <a href="{{ site.baseurl }}/design/">Introduction to Design Thinking</a></span>
+<span class="aside">To learn more about design, attend <a href="{{ site.baseurl }}/design/">Crafting Well-Designed Sites</a></span>
 
 When creating a web application, it’s important to remember that in a good design can make or break your site’s success. Design is best described as all of the choices that go into making a website. Design is more than the way a website looks; a good design considers every aspect of a user’s experience. This includes how a user signs up, how information is laid out, and overall every action the user has to take inside your app. The goal of any good design is to be unobtrusive, intuitive, and pleasant.
 
@@ -85,7 +87,7 @@ Prototypes are like rough drafts. With prototypes, users can actually interact w
 
 ###### the final flourish
 
-<span class="aside">To learn how to deploy whatever you've created during web dev weeks, attend <a href="{{ site.baseurl }}/deployment/">Deployment</a></span>
+<span class="aside">To learn how to deploy whatever you created during Web Dev Weekend, attend <a href="{{ site.baseurl }}/deployment/">Deployment: Making Your Site Public</a></span>
 
 After a website has been designed, and the frontend and backend implemented, it’s time for it to be __deployed__. Deployment is the process of taking the code a developer has written, and setting it up to run on a server where the whole world can interact with it. It is a very important step, but it can be complicated because software is often not developed in the same environment it is deployed in. Deploying and running a webapp is generally called __operations__, and it’s an important step in the life cycle of creating a web application.
 
@@ -95,10 +97,9 @@ After a website has been designed, and the frontend and backend implemented, it�
 
 Thank you for reading this guide, and we hope that you will join us for Web Dev Weekend, being held from April 2nd to 4th!
 
-Web Dev Weeks goes into detail in all five areas we’ve discussed above through a series of workshops. We’ve specifically designed the workshops so that they can be taken in any order, although we recommend taking the deployment workshop after you’ve completed at least one technical workshop (so you have something to deploy).
+While Web Dev Weekend won't be holding talks on all of the areas we discussed here, previous Web Dev Weeks talks have gone into detail in all five of these areas. We’ve specifically designed the workshops so that they can be taken in any order, although we recommend taking the deployment workshop after you’ve completed at least one technical workshop (so you have something to deploy).
+
+If you haven't already, __[be sure to register]({{ site.registration_link }})__! You certainly don't have to register to attend, but we like knowing how many people to expect and what people will be interested in learning. We can't wait, and we hope to see you there!
 
 If you have any comments or questions about this guide, please write to info at scottylabs dot org.
 
-## Registration
-
-[Register here]({{ site.registration_link }})
