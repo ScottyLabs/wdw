@@ -2,7 +2,7 @@
 
 <br>
 
-![WDW logo](assets/img/logo.svg)
+![WDW logo](/assets/img/logo.svg?raw=true)
 
 <br>
 
