@@ -27,13 +27,10 @@ html, body, .page-content .pure-g, .page-content .pure-u {
     text-decoration: none;
     }
   a:hover {
-    background: rgba(0, 0, 0, 0.1);
-    padding: 2px 4px;
-    margin: -2px -4px;
-    border-radius: 3px;
+    color: darken($color-accent, 10%);
   }
   a:active {
-    color: darken($color-accent, 10%);
+    text-decoration: underline;
   }
 
   border-bottom: 15px solid $color-base;
