@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: Deployment
+title: Deployment Lab
 subject: deployment
 ---
 

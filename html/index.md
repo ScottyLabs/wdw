@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: HTML and CSS
+title: Introduction to HTML & CSS
 subject: html
 ---
 

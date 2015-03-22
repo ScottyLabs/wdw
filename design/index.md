@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: Design Thinking
+title: Crafting Well-Designed Sites
 subject: design
 ---
 

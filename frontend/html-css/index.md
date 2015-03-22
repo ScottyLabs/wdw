@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: Frontend Web Development
+title: HTML & CSS of Frontend Development
 subject: frontend
 ---
 

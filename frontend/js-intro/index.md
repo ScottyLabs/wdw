@@ -1,12 +1,12 @@
 ---
 layout: guide
-title: Frontend Web Development
+title: JavaScript Intro
 subject: frontend
 ---
 
-# JavaScript intro
+# JavaScript Intro
 > JavaScript is both the most popular and least popular programming language.
-> 
+>
 > -- Doug Crockford
 
 JavaScript is _the_ language of the web. It runs in every web browser, has

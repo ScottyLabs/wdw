@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: CSS Frameworks
+title: "Synergize Your CSS: Using a Framework"
 subject: css
 ---
 

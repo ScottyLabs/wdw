@@ -1,10 +1,10 @@
 ---
 layout: guide
-title: Frontend Web Development
+title: Frontend Lab
 subject: frontend
 ---
 
-# frontend lab
+# Frontend Lab
 In this lab, you'll be introduced to jQuery, a popular library that helps speed
 up JavaScript web development to build interactive web pages.
 
