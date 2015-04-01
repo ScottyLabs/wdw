@@ -8,11 +8,11 @@ subject: css
 
 ###### jump-start your site's outline
 
-CSS Frameworks are a way to make a website look nice by re-using elements of web
-pages that people have found to commonly exist in modern web pages. Instead of
-writing a ton of custom CSS styles, CSS frameworks allow you to build off of a
-set of fine-tuned and well-tested styles that work well with a wide variety of
-web sites.
+During this CSS Workshop we will test out some Advanced CSS tricks as well as
+create a portfolio site using a CSS Framework. You'll be surprised at what you
+can do in CSS and you'll find that creating a well-designed website may not be
+as hard as you think. While there are different ways to use a CSS Framework,
+we'll take a look at the most powerful and flexible way to use it.
 
 This workshop is being held for the first time this semester!
 
@@ -25,5 +25,10 @@ Bring a computer with a web browser and text editor installed. We recommend [Chr
 
 ### Resources
 
-- No resources yet!
+- [Grunt][gruntjs]
+  - Used to compile and adjust our framework
+- [Materialize][materialize]
+  - A Material Design CSS Framework
 
+[gruntjs]: http://gruntjs.com
+[matierialize]: http://matierializecss.com
