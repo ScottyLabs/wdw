@@ -21,9 +21,7 @@ people to expect and what people will be interested in learning. We can't wait,
 and we hope to see you there!
 
 
-## Slides
-
-- [Presentation slides](WDWDesignSlides.pdf)
+## [> slides <](WDWDesignSlides.pdf)
 
 ## Additional Resources
 
