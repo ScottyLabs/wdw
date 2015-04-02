@@ -12,9 +12,20 @@ This workshop will teach you a set of guidelines for making your applications
 and websites work well. We'll cover the skills you need to judge a design, and
 give you some rules to follow when evaluating a design.
 
+
+### How to Attend
+
+If you haven't already, __[be sure to register]({{ site.registration_link }})__!
+You certainly don't have to register to attend, but we like knowing how many
+people to expect and what people will be interested in learning. We can't wait,
+and we hope to see you there!
+
+
+## Slides
+
 - [Presentation slides](WDWDesignSlides.pdf)
 
-Additional Resources
+## Additional Resources
 
 - [Dribbble] (http://dribbble.com)
 - [Behance] (http://behance.com)
@@ -34,22 +45,14 @@ Additional Resources
 - [Graphic Design StackExchange] (http://graphicdesign.stackexchange.com)
 - [Photoshop Plugins] (https://creativemarket.com/blog/2015/02/16/25-photoshop-plugins-that-will-blow-your-mind)
 
-Fun Stuff
+## Fun Stuff
 
-- [So you're dating a designer?] (http://www.mymodernmet.com/profiles/blogs/yoke-design-dating-a-designer) 
+- [So you're dating a designer?] (http://www.mymodernmet.com/profiles/blogs/yoke-design-dating-a-designer)
 - [design -> english] (http://lifehacker.com/this-graphic-translates-web-design-feedback-into-plain-1657178566)
 - [CSS Logos] (http://designinstruct.com/web-design/logos-only-css/)
 
-*also checkout other tools and resource that the creators of these have made
+*Also checkout other tools and resource that the creators of these have made!*
 
-
-
-### How to Attend
-
-If you haven't already, __[be sure to register]({{ site.registration_link }})__!
-You certainly don't have to register to attend, but we like knowing how many
-people to expect and what people will be interested in learning. We can't wait,
-and we hope to see you there!
 
 
 ## Previous Resources
