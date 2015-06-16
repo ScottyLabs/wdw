@@ -65,7 +65,7 @@ of JavaScript, and they're highly recommended__:
 1. [Codecademy](http://www.codecademy.com/)
     - Learn JavaScript as a language, learn how to use various JavaScript
       libraries, and work through some real-world projects.
-1. [Bento](https://www.bento.io/)
+1. [Bento](https://www.bento.io/grid)
     - Huge list of programming tutorials across tons of subjects
     - Get suggestions for what to learn after completing each tutorial
 
