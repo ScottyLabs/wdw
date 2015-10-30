@@ -16,11 +16,10 @@ $wdw-blue: #26AAB7;
 $wdw-pages: {% for p in site.wdw_pages %}{{ p }},{% endfor %};
 
 $wdw-colors: $wdw-blue, $wdw-orange, $wdw-pink,
-              $wdw-blue, $wdw-green, $wdw-purple, $wdw-green;
+              $wdw-blue, $wdw-green, $wdw-purple;
 
 
 @import
   "base",
   "pygments-monokai"
 ;
-

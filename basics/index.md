@@ -8,21 +8,15 @@ subject: basics
 
 ###### read on as we demystify web development and prepare you for your first workshop
 
-## What is the Web?
+Many technologies make up the experience we call "The Web." The following is an overview of the most common ones.
 
-###### but actually, tho
+__A web browser__ is a program—such as Google Chrome, Mozilla Firefox, Apple Safari, or Internet Explorer—that retrieves the source code of a website and renders it in a way that you can interact with.
 
-Many technologies make up the experience we call "the Internet." The following is an overview of the most common ones.
+A __client__ is a program that request information from another computer. For example, your web browser acts as a client when it requests a web page from a server.
 
-__Web browser__ is the most apt term to describe what you first click on to get started online. A web browser is a program—such as Google Chrome, Mozilla Firefox, Apple Safari, or Internet Explorer—that retrieves the source code of a website and displays it in an interactive form.
+A __server__ is a computer that responds to requests from a client. Servers are often responsible for storing information permanently: when you create an account on a website, that information is stored on the server.
 
-__Web pages__ are the content you see when you navigate somewhere online. When you go to google.com and see the big "Google" logo or the doodle of the day, that image is a part of the web page.
-
-__Web clients__ are programs that request information from another computer (see server). In most cases this is your web browser, however some servers can act as clients too.
-
-A __web server__ is a special type of computer whose job is to tie all the clients together by performing computations, storing persistent information, authenticating users, and more.
-
-__Web application__ is a more all encompassing term for all the code that goes into a particular web experience. This means the HTML and CSS code that makes up what you actually see, the JavaScript code that influences how you and the app interact, and any code that runs on a web server. Because this is a lot to talk about, we generally break it up into two parts, the __frontend__ and the __backend__.
+__Web application__ is a more all encompassing term for all the code that goes into a particular web experience. This means the HTML and CSS code that makes up what you actually see, the JavaScript makes those pages interactive, and any code that runs on a web server. Because this is a lot to talk about, we generally break it up into two parts, the __frontend__ and the __backend__.
 
 Most web development is split up into frontend and backend development, so let’s dive a little deeper into these areas.
 
@@ -35,8 +29,6 @@ The frontend of a web application is everything that ends up running in the brow
 <span class="aside">To learn how to write HTML and CSS by creating a simple portfolio website, check out <a href="{{ site.baseurl }}/html/">Introduction to HTML & CSS</a>.</span>
 
 HTML and CSS store information about a page. HTML contains the __content__, which could include text, images, videos, and any number of other things. Complementary to this, CSS stores information about how to __display__ the content stored by the HTML. This includes layout, color, fonts, and other information about how our site looks. With just HTML and CSS we can create beautiful, informational web pages that display the same information for everyone who loads them.
-
-<span class="aside">To learn how to create well-designed sites with minimal effort, attend <a href="{{ site.baseurl }}//">Synergize your CSS: Using a Framework</a>.</span>
 
 On the other hand, JavaScript is a fully featured programming language.
 
@@ -55,16 +47,6 @@ The backend is all of the code that runs on the web server.
 A backend is necessary if you want to store information long term, sign people in, or perform complex computations.
 
 Most backends have a set of HTML, CSS, and JavaScript that is sent to the client on request, so that the client can interact with the backend. Different parts of the frontend are called using different routes or URLs, for example the route of this page is "/basics/" whereas the route of the homepage is just "/". Finally, there is generally a database, which is where lots of information can be stored long term and accessed quickly.
-
-<div class="aside">In the workshop, we'll teach you Flask, a popular Python framework. Other common backend languages (and the sites that use them):
-    <ul>
-    <li>PHP (Facebook, Wordpress)</li>
-    <li>Java (Twitter)</li>
-    <li>C#/.NET(Microsoft, Stack Overflow)</li>
-    <li>Ruby (Airbnb, GitHub)</li>
-    <li>Python (Pinterest,  Instagram, Reddit)</li>
-    </ul>
-</div>
 
 Backends can be written in any programming language, but some languages are easier to use than others. In addition, to the language, web developers often use a web framework, which is a collection of code that handles common server tasks and helps organize code.
 
@@ -95,11 +77,10 @@ After a website has been designed, and the frontend and backend implemented, it�
 
 ###### where to go from here
 
-Thank you for reading this guide, and we hope that you will join us for Web Dev Weekend, being held from April 2nd to 4th!
+Thank you for reading this guide, and we hope that you will join us for Web Dev Weekend, being held on November 7th and 8th!
 
-While Web Dev Weekend won't be holding talks on all of the areas we discussed here, previous Web Dev Weeks talks have gone into detail in all five of these areas. We’ve specifically designed the workshops so that they can be taken in any order, although we recommend taking the deployment workshop after you’ve completed at least one technical workshop (so you have something to deploy).
+We’ve specifically designed the workshops so that they can be taken in any order, although we recommend taking the deployment workshop after you’ve completed at least one technical workshop (so you have something to deploy).
 
-If you haven't already, __[be sure to register]({{ site.registration_link }})__! You certainly don't have to register to attend, but we like knowing how many people to expect and what people will be interested in learning. We can't wait, and we hope to see you there!
+If you haven't already, __be sure to register__ (registration link coming soon)! You certainly don't have to register to attend, but we like knowing how many people to expect and what people will be interested in learning. We can't wait, and we hope to see you there!
 
 If you have any comments or questions about this guide, please write to info at scottylabs dot org.
-

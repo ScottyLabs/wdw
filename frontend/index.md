@@ -18,26 +18,24 @@ learning more.
 Participants in this workshop will complete exercises related to common
 JavaScript tasks.
 
-Although this workshop can be taken on its own, we recommend pairing it
-[Synergize your CSS: Using a Framework]({{ site.baseurl }}/css/).
-
 
 ### How to Attend
+
+This workshop will be held on Saturday, November 7th at 3pm in the Mac Cluster in Wean.
+
+Bring a computer with a web browser and text editor installed. We recommend
+[Chrome](https://www.google.com/chrome/browser/) and [Sublime
+Text](http://www.sublimetext.com/).
 
 If you haven't already, __[be sure to register]({{ site.registration_link }})__!
 You certainly don't have to register to attend, but we like knowing how many
 people to expect and what people will be interested in learning. We can't wait,
 and we hope to see you there!
 
-Bring a computer with a web browser and text editor installed. We recommend
-[Chrome](https://www.google.com/chrome/browser/) and [Sublime
-Text](http://www.sublimetext.com/).
-
 
 ## Resources
 
-This workshop has been run before. Here are all the resources that were used
-throughout the workshop. If you attend this workshop, we'll work through all
+This workshop has been run before, and these are the resources from last time. If you attend this workshop, we'll work through all
 of these resources to help you complete a fun JavaScript project!
 
 1. [Introduction to JavaScript]({{ site.baseurl }}/frontend/js-intro/)
@@ -68,4 +66,3 @@ of JavaScript, and they're highly recommended__:
 1. [Bento](https://www.bento.io/grid)
     - Huge list of programming tutorials across tons of subjects
     - Get suggestions for what to learn after completing each tutorial
-

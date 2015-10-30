@@ -35,7 +35,6 @@ wdw_pages:
   - basics
   - design
   - frontend
-  - css
   - html
   - backend
   - deployment

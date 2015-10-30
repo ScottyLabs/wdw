@@ -11,30 +11,24 @@ title: Home
 
 ###### a weekend packed with web development workshops
 
-Last fall, we ran an event called Web Dev Weeks: a series of lectures,
-workshops, and exercises to introduce you to the fundamentals of web
-development.
-
-This semester, we're holding a slightly smaller event: Web Dev Weekend, which
-aims to get you up and running with web development even more quickly than
-before.
+Web Dev Weekend is a series of lectures, workshops, and exercises that introduce you
+to the fundamentals of web development.
 
 If you want to make websites outside of the classroom, get a head start on later
-electives, or attend hackathons, Web Dev Weeks will give you the foundational
+electives, or attend hackathons, Web Dev Weekend will give you the foundational
 knowledge you need to get started.
 
 
 ## How do I attend?
 
-1. __[Register here]({{ site.registration_link }})__
+1. __Register__ (registration coming soon)
   - You certainly don't have to register to attend, but we like knowing how many
     people to expect and what people will be interested in learning.
 1. __[Read "The Basics"][basics]__
   - This quick read will introduce you to some common concepts and explain what
     the workshops are about.
 1. __[Pick some workshops!](#schedule)__
-  - Workshops are largely independent of each other; you can pick any workshop
-    regardless of what workshops you've already attended.
+  - Workshops are largely independent of each other: you can attend as many or as few as you'd like.
 
 Make sure to check out the [deployment][deployment] workshop on the last day. In
 this session, we'll teach you how to put what you've made on the open web __for
@@ -47,10 +41,12 @@ All workshops will be held in the WEH 5201 Mac Cluster.
 
 | Session                                           | Day      | Date | Time                  |
 | -------                                           | ---      | ---- | ----                  |
-| [Crafting Well-Designed Sites][design]            | Thursday | 4/2  | 7:00 p.m. - 9:00 p.m. |
-| [Frontend Engineering with JavaScript][frontend]  | Friday   | 4/3  | 7:00 p.m. - 9:00 p.m. |
-| [Using a CSS Framework][css]                      | Saturday | 4/4  | 2:00 p.m. - 4:00 p.m. |
-| [Making Your Site Public: Deployment][deployment] | Sunday   | 4/5  | 2:00 p.m. - 4:00 p.m. |
+| [HTML and CSS][html]                              | Saturday | 11/7 | 1:30 p.m. - 3:00 p.m. |
+| [Frontend Engineering with JavaScript][frontend]  | Saturday | 11/7 | 3:00 p.m. - 4:30 p.m. |
+| *break for dinner*                                | Saturday | 11/7 | 4:30 p.m. - 5:00 p.m. |
+| [Backend Engineering with Flask][backend]         | Saturday | 11/7 | 5:00 p.m. - 6:30 p.m. |
+| [Making Your Site Public: Deployment][deployment] | Sunday   | 11/8 | 1:30 p.m. - 3:00 p.m. |
+| [Crafting Well-Designed Sites][design]            | Sunday   | 11/8 | 3:00 p.m. - 4:30 p.m. |
 
 Click on any of the links to read more about what each section will cover!
 
@@ -76,6 +72,8 @@ Web Dev Weekend is run by [ScottyLabs](http://scottylabs.org). We also run
 [TartanHacks](http://tartanhacks.com/) (CMU's largest software hackathon) and
 other educational events like
 [CrashCourse](http://scottylabs.org/crashcourse/).
+
+We've run WDW twice before, in the Fall of 2014 and Spring of 2015.
 
 [basics]: basics/
 [html]: html/

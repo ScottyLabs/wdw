@@ -13,11 +13,9 @@ The backend is all about storing and persisting information. If you want to save
 
 Participants in this workshop will learn how to make a simple blog in Flask, a popular Python framework.
 
-Although this workshop can be taken on its own, we recommend pairing it with [Introduction to HTML & CSS]({{ site.baseurl }}/html/) so that you get a better idea of what's happening on the client side.
+### How to Attend
 
-__This workshop is not being offered for Web Dev Weekend.__
-
-### What to Bring
+This workshop will be held on Saturday, November 7th at 5pm in the Mac Cluster in Wean.
 
 Bring a computer with a web browser and text editor installed. We recommend [Chrome](https://www.google.com/chrome/browser/) and [Sublime Text](http://www.sublimetext.com/).
 
@@ -26,6 +24,11 @@ You will also need to install python and setup Flask. Follow the instructions fo
 - [Windows](https://docs.google.com/document/d/1iaocAw4Fy54yNXsYAbtyYrxYylvSVv9z1sNrPZuBsco)
 - [Mac OS X](https://docs.google.com/document/d/1bqxENcqgL8s_LIpW_cYOjGtoPIVzX5ElBRNJBNqqwdw)
 - [Linux](https://docs.google.com/document/d/17e6CQyKWHGENzokiDQRE-oA7nsjCe84pP8dQB_Nht8s)
+
+If you haven't already, __[be sure to register]({{ site.registration_link }})__!
+You certainly don't have to register to attend, but we like knowing how many
+people to expect and what people will be interested in learning. We can't wait,
+and we hope to see you there!
 
 
 ### Previous Resources
@@ -43,4 +46,3 @@ Some helpful links to learn more about backend programming:
 - [Jinja2 templating engine](http://jinja.pocoo.org/)
 - [Flask-SQLAlchemy](http://pythonhosted.org/Flask-SQLAlchemy/quickstart.html)
 - [Udacity course on web development](https://www.udacity.com/course/cs253)
-
