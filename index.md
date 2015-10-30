@@ -11,8 +11,8 @@ title: Home
 
 ###### a weekend packed with web development workshops
 
-Web Dev Weekend is a series of lectures, workshops, and exercises that introduce you
-to the fundamentals of web development.
+Web Dev Weekend is a series of lectures, workshops, and exercises that introduce
+you to the fundamentals of web development.
 
 If you want to make websites outside of the classroom, get a head start on later
 electives, or attend hackathons, Web Dev Weekend will give you the foundational
@@ -28,7 +28,8 @@ knowledge you need to get started.
   - This quick read will introduce you to some common concepts and explain what
     the workshops are about.
 1. __[Pick some workshops!](#schedule)__
-  - Workshops are largely independent of each other: you can attend as many or as few as you'd like.
+  - Workshops are largely independent of each other: you can attend as many or
+    as few as you'd like.
 
 Make sure to check out the [deployment][deployment] workshop on the last day. In
 this session, we'll teach you how to put what you've made on the open web __for

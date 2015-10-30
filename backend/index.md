@@ -9,17 +9,24 @@ subject: "backend"
 
 ###### learn how to save information, serve up different pages, and make a blog
 
-The backend is all about storing and persisting information. If you want to save a user's preferences, do complicated calculations, or store a lot of information, you're going to need a backend.
+The backend is all about storing and persisting information. If you want to save
+a user's preferences, do complicated calculations, or store a lot of
+information, you're going to need a backend.
 
-Participants in this workshop will learn how to make a simple blog in Flask, a popular Python framework.
+Participants in this workshop will learn how to make a simple blog in Flask, a
+popular Python framework.
 
 ### How to Attend
 
-This workshop will be held on Saturday, November 7th at 5pm in the Mac Cluster in Wean.
+This workshop will be held on Saturday, November 7th at 5:00 p.m. in the Windows
+Cluster in Wean.
 
-Bring a computer with a web browser and text editor installed. We recommend [Chrome](https://www.google.com/chrome/browser/) and [Sublime Text](http://www.sublimetext.com/).
+Bring a computer with a web browser and text editor installed. We recommend
+[Chrome](https://www.google.com/chrome/browser/) and [Sublime
+Text](http://www.sublimetext.com/).
 
-You will also need to install python and setup Flask. Follow the instructions for your operating system below.
+You will also need to install python and setup Flask. Follow the instructions
+for your operating system below.
 
 - [Windows](https://docs.google.com/document/d/1iaocAw4Fy54yNXsYAbtyYrxYylvSVv9z1sNrPZuBsco)
 - [Mac OS X](https://docs.google.com/document/d/1bqxENcqgL8s_LIpW_cYOjGtoPIVzX5ElBRNJBNqqwdw)

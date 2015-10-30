@@ -21,7 +21,8 @@ JavaScript tasks.
 
 ### How to Attend
 
-This workshop will be held on Saturday, November 7th at 3pm in the Mac Cluster in Wean.
+This workshop will be held on Saturday, November 7th at 3:00 p.m. in the Windows
+Cluster in Wean.
 
 Bring a computer with a web browser and text editor installed. We recommend
 [Chrome](https://www.google.com/chrome/browser/) and [Sublime
@@ -35,8 +36,9 @@ and we hope to see you there!
 
 ## Resources
 
-This workshop has been run before, and these are the resources from last time. If you attend this workshop, we'll work through all
-of these resources to help you complete a fun JavaScript project!
+This workshop has been run before, and these are the resources from last time.
+If you attend this workshop, we'll work through all of these resources to help
+you complete a fun JavaScript project!
 
 1. [Introduction to JavaScript]({{ site.baseurl }}/frontend/js-intro/)
 1. [JavaScript Lab]({{ site.baseurl }}/frontend/lab/)

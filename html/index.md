@@ -8,13 +8,16 @@ subject: html
 
 ###### build informative websites
 
-This workshop will teach you everything you need to know to make an informative static (or "unchanging") website. Learn how to write HTML, and style it with CSS.
+This workshop will teach you everything you need to know to make an informative
+static (or "unchanging") website. Learn how to write HTML, and style it with
+CSS.
 
 Participants in this workshop will make a fully functional portfolio.
 
 ### How to Attend
 
-This workshop will be held on Saturday, November 7th at 1:30pm in the Mac Cluster in Wean.
+This workshop will be held on Saturday, November 7th at 1:30 p.m. in the Windows
+Cluster in Wean.
 
 Bring a computer with a web browser and text editor installed. We recommend
 [Chrome](https://www.google.com/chrome/browser/) and [Sublime
