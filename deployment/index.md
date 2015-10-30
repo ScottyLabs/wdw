@@ -33,25 +33,65 @@ installed on your system.
 [gh-win]: https://windows.github.com/
 [git]: http://git-scm.com/downloads
 
+# Static Sites: GitHub Pages
+## Git Resources
+- [Github Bootcamp](https://help.github.com/categories/54/articles) - an intro to Git and Github for beginners
+- [Pro Git](http://git-scm.com/book) - the official, free book on Git
 
-### Resources
-Here are some resources from the past iteration of Web Dev Weeks:
-
-- [The lab]({{ site.baseurl }}/deployment/lab/)
-
-__Git__
-
-* [Github Bootcamp](https://help.github.com/categories/54/articles) - an intro to Git and Github for beginners
-* [Pro Git](http://git-scm.com/book) - the official, free book on Git
-
-__Deployment__
-
-* [Github Pages](https://pages.github.com) - good for deploying static sites
-  (those without a backend)
-* [Heroku](https://devcenter.heroku.com/articles/getting-started-with-python) -
-  good for deploying small dynamic sites (with backends) for free
-* [Digital Ocean](https://www.digitalocean.com/?refcode=96f57047c0c5) - really
-  cheap servers ($5/month) that are good for web apps
-* [Amazon AWS](http://aws.amazon.com/free/) - offers a variety of deployment
-  resources (compute, data storage, etc.) with a free tier
-* [Namecheap](https://www.namecheap.com/) - domains with fair prices
+## Getting Onto GitHub
+- Make an account.
+- Make a repo.
+- Get `git` onto your local machine.
+  - Linux: `apt-get install git`
+  - Windows/OSX: https://desktop.github.com/
+- Push code up to GitHub.
+- Set up `gh-pages`.
+- Updating your code.
+# DNS: How to Get Cool Names for Your Websites
+## DNS Resources
+- A very thorough and very readable guide from Digital Ocean.
+- A short comic made by DNSimple explaining name resolution.
+- A short guide on `A` vs `CNAME` by DNSimple.
+## Getting a Name
+- Free
+  - `.tk` domains are free (their site is kinda sketchy).
+- Non-free
+  - Namecheap
+    - Not the only solution
+    - Fair price, solid interface to set things up.
+## Setting Up a Host
+- What kinds of records?  `A` vs `CNAME`.
+  - `A`: name to IP
+  - `CNAME`: name to name
+- Guide to setting up records on Namecheap.
+## Getting Github to Play Nice
+- `CNAME` file
+- Their “Getting Started” guide.
+## Other Nice DNS Things
+- Mail
+- Subdomains
+# Non-Static Sites: Your Options
+# PaaS vs IaaS
+## PaaS: Platform-as-a-Service
+- Heroku
+- Lots of platform-specific ones (Nodejitsu, etc).
+## IaaS: Infrastructure-as-a-Service
+- You get a Linux machine. . . go nuts!
+- DigitalOcean
+- Amazon Web Services (AWS)
+## How do I choose?
+- Easy answer: use Heroku.
+  - Free
+  - Bootstrap existing apps easily.
+  - Fast!!
+  - De facto solution for things like hackathon hacks.
+- DigitalOcean:
+  - Customizable, centralized, use the Linux box for anything.
+  - Cheap, but not free. (Well, kinda.)
+  - Super educational in the long run!
+## Heroku
+- Non-technical overview to Heroku’s purpose and goals.
+- The Heroku Getting Started page.
+## DigitalOcean
+- Awesome blog on securing your shiny new Linux box.
+- So. Many. Tutorials.
