@@ -8,7 +8,9 @@ subject: html
 
 ###### build informative websites
 
-This workshop will prepare you with the basic skills you need to lay out a custom website. We will first discuss what HTML and CSS do at a high level, then we will work through examples of how to use HTML and CSS in practice.
+This workshop will prepare you with the basic skills you need to lay out a
+custom website. We will first discuss what HTML and CSS do at a high level, then
+we will work through examples of how to use HTML and CSS in practice.
 
 ### How to Attend
 
