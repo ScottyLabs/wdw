@@ -5,15 +5,17 @@ subject: frontend
 ---
 
 # Frontend Lab
+
 In this lab, you'll be introduced to jQuery, a popular library that helps speed
 up JavaScript web development to build interactive web pages.
 
 ## Overview
+
 The goal of this lab is to create a web app that will let us play the game
 "Galumphing Banderwoozles." I didn't come up with the name: the Spring 2014
 15-251 TA's did.
 
-Nontheless, the rules of the game are as follows:
+Nonetheless, the rules of the game are as follows:
 
 - You are given a board composed of 15251 by 15251 tiles.
 - Any tile can be one of three colors: __red, green, or blue__.
@@ -40,6 +42,7 @@ stated), the only struggle should be figuring out the JavaScript required to
 implement it.
 
 ## Diving in
+
 The code and tutorial for this lab will be [hosted on GitHub](source-final).
 Each step is a commit, allowing you to see what changed between steps. Links
 will be provided to the code of the step in question. Most of the explanations
@@ -47,6 +50,7 @@ will not make sense if you do not also take a look at the corresponding code,
 so be sure to do that.
 
 ## Step 1: Initial HTML and CSS
+
 __[download starter code][starter-code]__, __[diff for this step][diff-1]__,
 __[code at this step][step-1]__
 
@@ -72,22 +76,26 @@ workshop]({{ site.baseurl }}/html/), which shows you how to come up with the
 styles and content of a web page.
 
 ## Step 2: Load the external scripts
+
 __[diff for this step][diff-2]__, __[code at this step][step-2]__
 
 Now that we have all the HTML & CSS in place, we need to tell the
-browswer where to look to load the JavaScript files that we'll be using.
+browser where to look to load the JavaScript files that we'll be using.
 This is done with the `<script>` tag.
 
 For this project, we'll be using two different JavaScript sources.
 First, we'll load the jQuery, a JavaScript library that helps out
-tremendously with adding event listeneres, manipulating the DOM, and
+tremendously with adding event listeners, manipulating the DOM, and
 doing other routine tasks. jQuery is a library written and hosted by
-someone else: this means we need to go grap an external link to it. To
+someone else: this means we need to go grab an external link to it. To
 find it, search the Web for "Google jQuery CDN". (A CDN, or content
 delivery network, is basically a super-fast network designed for hosting
 commonly-requested files.) On the first result page, you should see a
-large list of Google hosted libraries. Find the one titled jQuery,
-copy the `<script>` tag under it, and paste it into the file `index.html`.
+large list of Google hosted libraries:
+
+1. Find the one titled jQuery,
+1. Copy the `<script>` tag under it, and
+3. Paste it into the file `index.html`.
 
 Now that we've loaded our helper JavaScript library, we need to load the
 file which will contain our core application code. We'll be calling this
@@ -102,6 +110,7 @@ With these lines in place in `index.html`, we should be good to go! Now
 we can start writing the core JavaScript code for our game.
 
 ## Step 3: Add starter code in main.js
+
 __[diff for this step][diff-3]__, __[code at this step][step-3]__
 
 We're finally at the point where we can add some code to our `main.js`
@@ -119,6 +128,11 @@ We're going to add the following lines to our JavaScript file:
 })();
 ```
 
+<span class="aside">
+If none of this makes sense, just copy the code into `main.js` and move
+on. It's not worth stressing over for this lab.
+</span>
+
 What these lines do is _terminate any previous, dangling JavaScript
 statement_ (with the first semi-colon), _create an anonymous function_
 (with the `function` keyword), and then _immediately call it_ (with the
@@ -128,72 +142,95 @@ context for all the code that we write. You can read more about it
 but you're almost always going to want to follow this convention when
 writing JavaScript files.
 
+
 ## Step 4: Listen for ready event
+
 __[diff for this step][diff-4]__, __[code at this step][step-4]__
 
 If you're familiar with a language like C/C++ or Java, you'll know that
-every application must have an entry point that's usually called `main`.
-In Python there's a similar concept using globally defined variables
-like `__name__`.
+every application has an entry point that's usually called `main`. In
+Python there's a similar concept using globally defined variables like
+`__name__ == '__main__'`.
 
 JavaScript has no such entry point. When JavaScript is run in a
-browswer, each line is run as it is encountered. While this is powerful,
-there are many times when being able to run a particular command when
-the page is ready for it to be run is useful. For this purpose, we use
-_event listeners_ to run a particular function once a corresponding
-event occurs. Events are generated for many different actions and
-conditions within the browser; one of these is the `ready` event, which
-is fired on the `document` object whenever the page is, well, ready for
-us.
+browser, each line is run as it is encountered. While this is useful
+sometimes, a lot of the time what we actually want is for our JavaScript
+to be run after the page has finished loading; i.e., when it's "ready"
+for us.
 
-We can then attach a _listener_, or a specialized function, to this
-event, effectively allowing us to run a particular piece of code
-whenever the event fires. This function can either have a name or be
-anonymous. We'll chose the latter:
+To make this happen, we use _event listeners_ to run a particular
+function once a corresponding event occurs. Events are generated for
+many different actions and conditions within the browser; one of these
+is the `ready` event, which is fired on the `document` object whenever
+the page is, well, ready for us.
+
+We can attach a _handler_, or a specialized function, to this event as
+follows. It effectively allows us to run a piece of code whenever the
+event fires. When writing event handlers, people tend to use anonymous
+functions:
 
 ```javascript
 $(document).ready(function() {
-
+  // empty
 });
 ```
 
-What this does is attach an empty function to the `ready` event of the
-`document` element. This syntax is actually a call to a jQuery function:
-the `$` is the variable name for all the things that jQuery provides,
-and the `.ready()` method is a utility method for attaching listeners to
-`ready` events.
+<span class="aside">
+Attaching a function to an event and having it be run at a later point
+is an _incredibly common_ and __unusually powerful__ paradigm in JavaScript.
+We call functions used like this _callbacks_.
+</span>
 
-This concept that we've used here of attaching a function to an event
-and having it be run at a later point is _incredibly common_ in
-JavaScript. In fact, it might be JavaScript's most powerful feature.
-When used in this manner, the function that we attached to this event is
-called a _callback_.
+What this does is attach an empty function to the `ready` event of the
+`document` element. Note the funny `$(document)` syntax at the
+beginning. This actually calls the function named `$` with an argument
+of `document`, a global variable representing the page. `$` is a
+function defined by jQuery that lets us do tons of things, including
+attach event handlers like we do with the `.ready()` method in this
+example.
+
 
 ## Step 5: Add `play` function
+
 __[diff for this step][diff-5]__, __[code at this step][step-5]__
 
 Now that the "ready" event listener is in place, we can add some
-boilerplate functions for where we'll write the brunt of our game code.
+boilerplate functions where we'll write our core game logic.
 
-First, we'll need a function called `play`, which for right now will
-remain empty. This function is also going to be an event listener, so
-it'll take a single argument representing the event that triggered the
-function to be called. You may notice that the anonymous function we
-registered on the `ready` event also is an event listener, and so it
-receives an event object as well. However, since we don't use it (and
-almost always won't on the `ready` event), we omit it for simplicity.
-This is possible because in JavaScript, _the number of arguments passed
-to a function does not have to equal the number declared_.  For more
-information, see [here][arguments].
+<span class="aside">
+Make sure you're also following along in the [diff for this
+step][diff-5]!
+</span>
 
-Now that we've got our empty `play` function in place, we're going to
-add it as an event listener on the `click` event of the submit button.
-This button has an `id` of `submit`, so we can use jQuery to select that
-element and bind the click event on that element to our `play` function.
+First, we'll need a function called `play`. Right now, it'll remain
+empty. This function will also be an event handler, so it'll take a
+single argument representing the event that triggered the function to be
+called.
+
+You may notice that the anonymous function we registered on the `ready`
+event from the last step was also an event handler. A logical question
+to ask might be, "Why didn't our ready handler have to take an argument
+`e`?" The answer is that we could have declared our handler like this,
+but the body of that handler isn't going to need to use it, so we just
+leave it out. JavaScript won't complain if the number of arguments a
+function is called with and how many it's declared with don't match up.
+For more information, see [here][arguments].
+
+Now, with our empty `play` function in place, we're going to add it as
+an event handler on the `click` event of the submit button. This button
+has an `id` of `submit` ([check the HTML!][submit]), so we can use
+jQuery to select that element and bind the click event on that element
+to our `play` function.
+
+Here we see our second use of `$`, the jQuery function. You should be
+thinking of this function as "selecting" the element specified by its
+argument.
 
 [arguments]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope/arguments
+[submit]: https://github.com/jez/jquery-lab/blob/gh-pages/index.html#L19
 
 ## Step 6: Get the user's input for rows and columns
+
 __[diff for this step][diff-6]__, __[code at this step][step-6]__
 
 So now we have a function that will be executed every time the user
@@ -202,8 +239,8 @@ useful.
 
 We said one of the things we'd have to do in order to set up the game
 state was to let the user choose how many rows and columns there should
-be. Using the two text that are present in the HTML of the page, we can
-do just this.
+be. We can do just this using the two text inputs already present in the
+page.
 
 By the time the user clicks on our submit button and fires off the
 `play` function, the text inputs with id's of `rows` and `cols` will
@@ -212,18 +249,36 @@ our board should have. We can use jQuery to extract these values, using
 the `.val()` function. We'll go ahead and store these values in global
 variables.
 
-Now is also a good time to deal with the circumstance when the user
-accidentally hits submit twice. What should happen? Should we start a
-fresh game? Add or remove rows from the game in progress? There are
-many ways we could handle this situation. For sake of simplicity, we're
-just going to remove the submit button and both text inputs entirely,
-thereby ensuring that we don't have to deal with this weird
-cirtumstance. After selecting the form with id `args` that wraps the
-text inputs and submit button, we can use the `.detach()` method to
-remove them from the DOM.
+Question: what should happen if the user clicks "submit" twice? Should
+we start a fresh game? Add or remove rows from the game in progress?
+There are many ways we could handle this situation.
+
+<span class="aside">
+If you tried this but clicking "Play!" doesn't do anything, try reading
+the next step :P
+</span>
+
+For sake of simplicity, we're just going to remove the submit button and
+both text inputs entirely. After selecting the form with id `args` that
+wraps the text inputs and submit button, we can use the `.detach()`
+method to remove them from the DOM.
 
 ## Step 7: Prevent form submission event from bubbling up
+
 __[diff for this step][diff-7]__, __[code at this step][step-7]__
+
+<div class="aside">
+If you're unfamiliar with the terminal, you can ignore the Python
+command here, but you'll have to go back and make some changes to
+index.html:
+
+<ol>
+  <li>Prefix the "//cdnjs..." URL in index.html with "http": "http://cdnjs..."</li>
+  <li>Do the same with the jQuery link in index.html</li>
+</ol>
+
+Then, open index.html using Chrome.
+</div>
 
 Once make the changes introduced in the previous step, go ahead and see
 if clicking the button removes the `#args` form. The best way to
@@ -233,34 +288,15 @@ project's directory with
 ```javascript
 $ python -m SimpleHTTPServer
 ```
-then open [http://localhost:8000](http://localhost:8000/) in your browser. If
-you need help with this, flag down a mentor! Otherwise, just open the
-index.html file in your browser. __Note__: if you don't use the Python command
-to preview your site, you will have to slightly change two lines. First, change
-line 9 of index.html to
-
-```html
-<link rel="stylesheet"
-href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css"
-type="text/css">
-```
-
-(add `http:` after `href="`), and change the line that loads jQuery within
-index.html (the line you copied and pasted from Google Hosted Libraries) to
-
-```html
-<script src="http://<the link that you copied>"></script>
-```
-
-(add `http:` after `src="`). Note that `<the link you copied>` is whatever link
-you copied from Google Hosted Libraries.
-
+then open [http://localhost:8000](http://localhost:8000/) in your
+browser. If you need help with this, flag down a mentor! Otherwise, just
+open the index.html file in your browser.
 
 What you'll probably notice is that the form didn't disappear, and it
 looked like the website reloaded the page. If you look carefully, you'll
 probably also see that the URL changed to something with variable names,
 question marks, and ampersands. This happened because of something
-called `bubbling` which is another JavaScript feature which can seem
+called "bubbling" which is another JavaScript feature which can seem
 like a quirk at times.
 
 Whenever there is a button inside a form and the button is clicked, the
@@ -274,29 +310,31 @@ instead of having the browser do something for us. To turn this feature
 off, we have to understand what's actually going on. Nearly every action
 a user has with a page generates some sort of event. Even though an
 event might have a particular element from which it originated, the
-event it self propagates up through the DOM tree from that element to
-it's parent element all the way until it reaches the `<html>` tag. This
-is what's known as `bubbling`, because the event bubbles up the DOM.
+event it self propagates up through the DOM tree, from that element to
+it's parent element, all the way until it reaches the `<html>` tag. This
+is what's known as "bubbling", because the event bubbles up the DOM.
 
 Our particular event handler is listening on the button itself, whereas
 the form submission event is attached to the form element; we want to
-shut off the bubbling before it can get there. To do this, we can use
-the event argument `e` that will be passed into our `play` function. By
-calling `e.preventDefault()`, we can stop the "default" action (the
-event bubbling upwards) from occuring.
+shut off the bubbling before it can get from the button to the form. To
+do this, we can use the argument `e`, which gives us information about
+the current event. We can stop the "default" action (i.e., the event
+bubbling upwards) from occurring by calling `e.preventDefault()`.
 
-Try adding this line and see what happens. You should see that the
-`#args` form detaches and stays detached. If not, flag down a mentor!
+Try adding [this line][diff-7] and see what happens. You should see that
+the `#args` form detaches and stays detached. If not, flag down a
+mentor!
 
 By now, you're probably starting to understand that there are a lot of
-idiosyncrasies in JavaScript who's solutions are not obvious. In cases
-like these, your best debugging tool is the ability to carefully
-describe what problem you're having and searching for it on Google. At
+idiosyncrasies in JavaScript whose solutions are not obvious. In cases
+like these, your best debugging tool is the ability to _carefully
+describe_ what problem you're having and searching for it on Google. At
 least when you're starting out, it's likely the problems you will
 experience will have relatively simple, though non-intuitive, solutions.
 Being able to Google effectively is invaluable in times like these.
 
 ## Step 8: Initialize the game's starting state
+
 __[diff for this step][diff-8]__, __[code at this step][step-8]__
 
 Now that we can accept the user's input with our form, we can actually
@@ -304,9 +342,15 @@ begin setting up the initial board configuration. Specifically, the user
 has told us how many rows and columns to use, so we can use a nested for
 loop to set up the grid with the right dimensions.
 
-HTML elements are display and drawn across and then down, we're going to
-draw one row at a time (as opposed to one column at a time). To make
-things easier, we're going to wrap each row in a div with the class
+<span class="aside">
+Throughout this step, it's a good idea to have a picture of how this
+step is supposed to work. Try drawing it yourself based on this
+description, or ask a mentor for clarification!
+</span>
+
+Since HTML elements are display and drawn across and then down, we're
+going to draw one row at a time (as opposed to one column at a time). To
+make things easier, we're going to wrap each row in a div with the class
 `tile-row` so that we can access arbitrary rows.
 
 To create a new DOM element (basically, an element in the page), we use
@@ -384,13 +428,20 @@ Since the function we pass to click must take an event object as an
 argument, we'll make the function we return take just that argument, and
 we'll pass it on to `move` just in case we need it.
 
-That's it for the processing we need to do within the loop! If you
-remember from before, I said that we'd take care of changing the upper
-left tile to green later, so let's go ahead and do that now. Remember
-that we use a helper function for this before, so we'll use the same
-function again now.
+<span class="aside">
+Somehow this step ended up being much, much longer than I wanted it to
+be. It's much easier to explain in person, so if it doesn't make sense
+as stated, be sure to flag someone down.
+</span>
+
+Phew, that was a long step, but that's it for the processing we need to
+do within the loop! If you remember from before, I said that we'd take
+care of changing the upper left tile to green later, so let's go ahead
+and do that now. Remember that we use a helper function for this before,
+so we'll use the same function again now.
 
 ## Step 9: Set the initial values on the "scoreboard"
+
 __[diff for this step][diff-9]__, __[code at this step][step-9]__
 
 One last thing to take care of before we start going nuts with our game
@@ -414,6 +465,7 @@ don't have to worry about setting the number of reds because it should
 already be set to 0 in the HTML (you can verify this).
 
 ## Step 10: Define a couple useful helper functions
+
 __[diff for this step][diff-10]__, __[code at this step][step-10]__
 
 As I mentioned two steps ago, we're going to now define the helper
@@ -461,6 +513,7 @@ can chain as many calls as we want on top of each other to keep
 modifying the current jQuery DOM element.
 
 ## Step 11: Start writing move function: get adjacent tiles
+
 __[diff for this step][diff-11]__, __[code at this step][step-11]__
 
 We're approaching the home stretch! `move` is the last function we'll
@@ -485,6 +538,7 @@ If it is green, we need to change it's color to red, increment the
 number of reds, and decrement the number of greens.
 
 ## Step 12: Get and check whether the neighbors are valid
+
 __[diff for this step][diff-12]__, __[code at this step][step-12]__
 
 Once we've toggled the current tile to red, we need to process the
@@ -511,6 +565,7 @@ array with their corresponding coordinates so that we can conveniently
 iterate over the array, and do the same processing for all four.
 
 ## Step 13: Use Array.forEach to iterate over each neighbor
+
 __[diff for this step][diff-13]__, __[code at this step][step-13]__
 
 This time, when iterating over each potential neighbor, we're going to
@@ -528,6 +583,7 @@ evaluated once for each element of the array, and the appropriate values
 will be substituted in.
 
 ## Step 14: Process each neighbor within Array.forEach
+
 __[diff for this step][diff-14]__, __[code at this step][step-14]__
 
 Within the forEach callback, we want to check to make sure that the
@@ -550,6 +606,7 @@ we'll need to toggle it's color to blue and adjust the number of blues
 and greens, and vice versa it the neighbor is blue.
 
 ## Step 15: Update scoreboard and check for winning conditions
+
 __[diff for this step][diff-15]__, __[code at this step][step-15]__
 
 The only thing left to do is update the scoreboard and check whether the

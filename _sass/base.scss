@@ -170,6 +170,13 @@ code {
   border-radius: 3px;
 }
 
+h2 code {
+  font-size: 34px;
+}
+.aside code {
+  font-size: 12px;
+}
+
 pre {
   padding: 15px;
 
@@ -198,6 +205,9 @@ pre {
   border-left: 3px solid #bcbcbc;
   padding: 0px 9px;
 
+  em {
+    font-style: initial;
+  }
 }
 
 /* When an aside is a div we need to subtract the newline between it and its parent paragraph. */
