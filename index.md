@@ -21,7 +21,7 @@ knowledge you need to get started.
 
 ## How do I attend?
 
-1. __Register__ (registration coming soon)
+1. __[Register]({{ site.registration_link }})__
   - You certainly don't have to register to attend, but we like knowing how many
     people to expect and what people will be interested in learning.
 1. __[Read "The Basics"][basics]__
