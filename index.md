@@ -38,7 +38,7 @@ free__, so that anyone can see it.
 
 ## Schedule
 
-All workshops will be held in the WEH 5201 Mac Cluster.
+All workshops will be held in the WEH Windows Cluster.
 
 | Session                                           | Day      | Date | Time                  |
 | -------                                           | ---      | ---- | ----                  |
