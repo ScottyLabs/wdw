@@ -134,7 +134,8 @@ we'll be using [NameCheap]().  They have fair prices and a solid user interface,
 but they're not the only ones out there.
 
 Typically a `.com` name will run somewhere ~10 dollars for a year.  There are
-some free locations out there, your mileage may vary.
+some free locations out there, your mileage may vary.  You can get a free one
+from NameCheap by using the (GitHub Student Developer Pack)[gh-eduction].
 
 ## setting up the domain name
 We'll now be setting up the domain as required by GitHub.  This is documented
@@ -165,4 +166,29 @@ If this has been set up properly, the domain should soon route to your new page!
   `<username>.github.io` page.  If you make a new repository with that name, the
   `master` branch will be the one serving out the content.
 
+## non-static sites: your options
+
+### PaaS: Platform-as-a-Service
+- [Heroku](https://www.heroku.com/)
+- Lots of platform-specific ones ([Nodejitsu](https://www.nodejitsu.com/), etc).
+
+### IaaS: Infrastructure-as-a-Service
+- You get a Linux machine. . . go nuts!
+- [DigitalOcean](https://www.digitalocean.com/)
+- [Amazon Web Services](https://aws.amazon.com/) (AWS)
+
+### how do i choose?
+- Easy answer: use Heroku.
+  - Free
+  - Bootstrap existing apps easily.
+  - Fast!!
+  - De facto solution for things like hackathon hacks.
+
+- DigitalOcean:
+  - Customizable, centralized, use the Linux box for anything.
+  - Cheap, but not free. (You get credits with the [GitHub Student Developer
+    Pack][gh-education])
+  - Super educational in the long run!
+
 [lab-dl]: https://scottylabs.org/wdw/deployment/lab/lab.zip "Lab Download Link"
+[gh-education]: https://education.github.com/pack "Github Education Pack"
