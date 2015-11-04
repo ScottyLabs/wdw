@@ -15,7 +15,7 @@ information, you're going to need a backend.
 
 Flask is a popular micro web application framework written in Python.
 Participants in this workshop will first get a brief overview of what backend
-engineering is before moving into how to make a simple blog using Flask. The
+engineering is before we will learn how to make a simple blog using Flask. The
 workshop will go over templating with Jinja, setting up forms, as well as user
 registration and login with a database.
 
