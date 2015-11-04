@@ -11,8 +11,8 @@ subject: deployment
 
 In this session, you'll learn how to put whatever you've made at Web Dev Weekend
 live on the web. Didn't manage to make it to any of the other sessions, but
-you're still interested in learning how to make a site public? Don't worry:
-we'll give you something to deploy.
+still interested in learning how to make a site public? Don't worry: we'll give
+you something to deploy.
 
 
 ### How to Attend
@@ -33,15 +33,16 @@ installed on your system.
 [gh-win]: https://windows.github.com/
 [git]: http://git-scm.com/downloads
 
-### The Lab
+## Lab and Resources
 
-Check out the today's lab [here](https://scottylabs.org/wdw/deployment/lab/).
+### [Start The Lab]({{ site.baseurl }}/deployment/lab/)
 
-## Some Helpful Links
+Click above to start the lab! There are also the resources from [Spring
+2015]({{ site.baseurl }}/deployment/s15/lab/).
 
 ### Git Resources
 
-- [Jake's huge git resource list](https://www.cs.cmu.edu/~15131/f15/topics/git/)
+- [15-131 (GPI) "Getting started with Git" resources](https://www.cs.cmu.edu/~15131/f15/topics/git/)
 
 ### Using GitHub for Static Sites
 
@@ -49,6 +50,7 @@ Check out the today's lab [here](https://scottylabs.org/wdw/deployment/lab/).
 - [Further GitHub Pages docs](://help.github.com/articles/tips-for-configuring-an-a-record-with-your-dns-provider/)
 
 ### DNS Resources
+
 - [A very thorough and readable guide from Digital Ocean](https://www.digitalocean.com/community/tutorials/an-introduction-to-dns-terminology-components-and-concepts)
 - [A short, comic by DNSimple explaining name resolution](https://howdns.works/)
 - [DNSimple blog post explaining the difference between an `A` and `CNAME`](https://support.dnsimple.com/articles/differences-a-cname-records/)
@@ -56,8 +58,10 @@ Check out the today's lab [here](https://scottylabs.org/wdw/deployment/lab/).
 - [Get a free domain from NameCheap and a _whole_ lot more from the GitHub Education Pack](http://plusbryan.com/my-first-5-minutes-on-a-server-or-essential-security-for-linux-servers)
 
 ### Heroku
+
 - [The Heroku "Getting Started" page, with examples for every major web platform](https://devcenter.heroku.com/start)
 
 ### DigitalOcean
+
 - [So. Many. Tutorials.](https://www.digitalocean.com/community/tutorials)
 - [A wonderful blog on how to lock down your shiny new DigitalOcean server](http://plusbryan.com/my-first-6-minutes-on-a-server-or-essential-security-for-linux-servers)

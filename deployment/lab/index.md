@@ -4,23 +4,34 @@ title: Deployment Lab
 subject: deployment
 ---
 
-# deployment lab
+# Deployment Lab
+
 In this session, we'll take the sites you've been building this weekend and put
 them on the web!  If you don't have a finished project, don't worry, we've got a
 nice starter set of files.
 
-## overview
-_Deployment_ is the process of making your app or site accessible to other people. With webapps/websites, we want a URL that we can point people to.
+## Overview
 
-_Static_ websites/webapps are those that don't have a backend. They can be written entirely in HTML, CSS, and JavaScript, and don't have any code running on a server. We'll show you how to deploy these with a free service called GitHub Pages.
+_Deployment_ is the process of making your app or site accessible to other
+people. With webapps/websites, we want a URL that we can point people to.
 
-_Dynamic_ websites/webapps are those that have a backend. These often have a database, and will have a component written in Python, Java, Ruby, etc. that runs on a server. These can also be deployed for free, and we have a lot of resources to point you in the right direction.
+_Static_ websites/webapps are those that don't have a backend. They can be
+written entirely in HTML, CSS, and JavaScript, and don't have any code running
+on a server. We'll show you how to deploy these with a free service called
+GitHub Pages.
 
-## getting the files
+_Dynamic_ websites/webapps are those that have a backend. These often have a
+database, and will have a component written in Python, Java, Ruby, etc. that
+runs on a server. These can also be deployed for free, and we have a lot of
+resources to point you in the right direction.
+
+## Getting the Files
+
 First thing's first, let's get our starter files.  You can get them as a
 `.zip` [here][lab-dl].
 
-## getting your files into git
+## Getting your files into Git
+
 First thing you're gonna want is a brand new git repository on GitHub.  While
 there's lots of ways to go about this, the easiest if you don't know your way
 around `git` is to go to GitHub and make a new repository
@@ -81,7 +92,8 @@ Get it onto GitHub with the command
 git push origin master
 ```
 
-## setting up gh-pages
+## Setting up `gh-pages`
+
 Congrats!  Your code is now on GitHub, but we need to do a bit more work to host
 it.  In particular, you should put your code on `gh-pages`, so that GitHub knows
 that you want to serve out your site.
@@ -103,7 +115,8 @@ Now, it's time to see your live site!  In your browser, go to
 `<username>.github.io/<repo-name>`.  For example, in my case, we'll go to
 [http://bezi.github.io/food4cmu/](http://bezi.github.io/food4cmu/).
 
-## [optional] tidying up the repository
+## [optional] Tidying up the Repository
+
 One optional step, if your repository is only going to be serving out a website,
 is to go to the settings and select "Branches" from the side menu ([direct
 link](https://github.com/bezi/food4cmu/settings/branches)).  In the dropdown
@@ -126,7 +139,7 @@ Now your repo just has a single branch.  How tidy!
 Alright, it's time to put away `git` for now.  We're going to drop into the
 exciting world of DNS!
 
-## buying a domain name
+## Buying a Domain Name
 
 If you want a nifty custom name for your site, you're going to have to look a
 bit.  There's many, many different places to get domains from, but for this talk
@@ -135,9 +148,10 @@ but they're not the only ones out there.
 
 Typically a `.com` name will run somewhere ~10 dollars for a year.  There are
 some free locations out there, your mileage may vary.  You can get a free one
-from NameCheap by using the (GitHub Student Developer Pack)[gh-eduction].
+from NameCheap by using the (GitHub Student Developer Pack)[gh-education].
 
-## setting up the domain name
+## Setting up the Domain Name
+
 We'll now be setting up the domain as required by GitHub.  This is documented
 [here](https://help.github.com/articles/tips-for-configuring-an-a-record-with-your-dns-provider/).
 In short, we want to add two `A` records to our domain that point to GitHub,
@@ -157,27 +171,31 @@ directly on GitHub!  In it, we put the domain that routes to our page.
 
 If this has been set up properly, the domain should soon route to your new page!
 
-## github tips
+## GitHub Tips
+
 - You can actually make any repository you want serve out web pages!  If you
   have a cool code project that you want to have a website, just put stuff into
   its `gh-pages` branch.
 
-- There's a special github repository for your user, which is the
+- There's a special GitHub repository for your user, which is the
   `<username>.github.io` page.  If you make a new repository with that name, the
   `master` branch will be the one serving out the content.
 
-## non-static sites: your options
+## Non-static Sites: Your Options
 
 ### PaaS: Platform-as-a-Service
+
 - [Heroku](https://www.heroku.com/)
 - Lots of platform-specific ones ([Nodejitsu](https://www.nodejitsu.com/), etc).
 
 ### IaaS: Infrastructure-as-a-Service
-- You get a Linux machine. . . go nuts!
+
+- You get a Linux machine... go nuts!
 - [DigitalOcean](https://www.digitalocean.com/)
 - [Amazon Web Services](https://aws.amazon.com/) (AWS)
 
-### how do i choose?
+### How Do I Choose?
+
 - Easy answer: use Heroku.
   - Free
   - Bootstrap existing apps easily.
