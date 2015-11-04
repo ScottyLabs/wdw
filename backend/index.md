@@ -13,8 +13,11 @@ The backend is all about storing and persisting information. If you want to save
 a user's preferences, do complicated calculations, or store a lot of
 information, you're going to need a backend.
 
-Participants in this workshop will learn how to make a simple blog in Flask, a
-popular Python framework.
+Flask is a popular micro web application framework written in Python. Participants
+in this workshop will first get a brief overview of what backend engineering is before 
+we will learn how to make a simple blog using Flask. The workshop will go over
+templating with Jinja, setting up forms, as well as user registration and login
+with a database.
 
 ### How to Attend
 
@@ -37,6 +40,11 @@ You certainly don't have to register to attend, but we like knowing how many
 people to expect and what people will be interested in learning. We can't wait,
 and we hope to see you there!
 
+### Resources for this Workshop
+
+Here are some resources that we will use through this workshop:
+
+- [Slides](https://github.com/bryanyan/flasktalk/raw/master/resources/Backend_Engineering_with_Flask.pdf)
 
 ### Previous Resources
 
