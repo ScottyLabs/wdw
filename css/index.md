@@ -31,4 +31,4 @@ Bring a computer with a web browser and text editor installed. We recommend [Chr
   - A Material Design CSS Framework
 
 [gruntjs]: http://gruntjs.com
-[matierialize]: http://matierializecss.com
+[materialize]: http://materializecss.com/
