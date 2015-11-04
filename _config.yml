@@ -3,7 +3,7 @@ title: WDW
 email: info@scottylabs.org
 description: "A talk series comprised of interactive workshops that teach the fundamentals of web development."
 baseurl: "/wdw"
-url: "http://scottylabs.org"
+url: "https://scottylabs.org"
 
 exclude:
   - README.md
