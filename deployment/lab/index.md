@@ -31,11 +31,13 @@ Next, clone this repository onto your machine.  With the desktop client, it
 should pop up and you can just download it.  For the command-line client, select
 the download URL on the new repository (it should be under `HTTPS clone URL` on
 the right).  Mine looks something like
+
 ```console
 https://github.com/bezi/food4cmu.git
 ```
 
 Then, you'll want to clone it to your local machine with
+
 ```console
 $ git clone <URL>
 ```
@@ -46,11 +48,13 @@ repository.
 
 For the terminal client, copy them into your directory repository and add them
 with
+
 ```console
 $ git add .
 ```
 
 If you now run `git status`, it should look something like this
+
 ```console
 $ git status
 On branch master
@@ -66,11 +70,13 @@ Changes to be committed:
 
 Commit these changes with the `git commit` command. Make sure to add a useful
 commit message!  Mine looks something like
+
 ```console
 $ git commit -am "Added all the files knocked out during CarnegieHax 2015."
 ```
 
 Get it onto GitHub with the command
+
 ```console
 git push origin master
 ```
@@ -81,11 +87,13 @@ it.  In particular, you should put your code on `gh-pages`, so that GitHub knows
 that you want to serve out your site.
 
 First thing's first, we need to make a new branch.  Do so by running
+
 ```console
 $ git checkout -b gh-pages
 ```
 from your repository.  This makes a new `gh-pages` branch from your `master`
 branch.  Then, push this new branch up to GitHub with the command
+
 ```console
 $ git push origin gh-pages
 ```
@@ -102,14 +110,17 @@ link](https://github.com/bezi/food4cmu/settings/branches).  In the dropdown
 menu, update your `Default Branch` to `gh-pages`.
 
 You can now delete your derelict `master` branch with
+
 ```console
 $ git branch -d master
 ```
 
 Delete the version on GitHub with
+
 ```console
 $ git push origin --delete master
 ```
+
 Now your repo just has a single branch.  How tidy!
 
 Alright, it's time to put away `git` for now.  We're going to drop into the
@@ -133,7 +144,8 @@ then we'll add a `CNAME` file to our repository so that `GitHub` knows where to
 route requests for that particular domain.
 
 First, we'll add the two `A` records to:
-```
+
+```console
 192.30.252.153
 192.30.252.154
 ```
