@@ -181,6 +181,8 @@ If this has been set up properly, the domain should soon route to your new page!
   `<username>.github.io` page.  If you make a new repository with that name, the
   `master` branch will be the one serving out the content.
 
+- [GitHub Pages documentation](https://pages.github.com/)
+
 ## Non-static Sites: Your Options
 
 ### PaaS: Platform-as-a-Service

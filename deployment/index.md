@@ -40,6 +40,9 @@ installed on your system.
 Click above to start the lab! There are also the resources from [Spring
 2015]({{ site.baseurl }}/deployment/s15/lab/).
 
+There's a lot of links below, feel free to browse them at your leisure, but none
+are required for this lab.
+
 ### Git Resources
 
 - [15-131 (GPI) "Getting started with Git" resources](https://www.cs.cmu.edu/~15131/f15/topics/git/)
@@ -55,9 +58,9 @@ Click above to start the lab! There are also the resources from [Spring
 - [A short, comic by DNSimple explaining name resolution](https://howdns.works/)
 - [DNSimple blog post explaining the difference between an `A` and `CNAME`](https://support.dnsimple.com/articles/differences-a-cname-records/)
 - [How to set up records on NameCheap](https://www.namecheap.com/support/knowledgebase/article.aspx/319/78/how-can-i-setup-an-a-address-record-for-my-domain)
-- [Get a free domain from NameCheap and a _whole_ lot more from the GitHub Education Pack](http://plusbryan.com/my-first-5-minutes-on-a-server-or-essential-security-for-linux-servers)
+- [Get a free domain from NameCheap and a _whole_ lot more from the GitHub Education Pack](https://education.github.com/pack)
 
-### Heroku
+### Herok
 
 - [The Heroku "Getting Started" page, with examples for every major web platform](https://devcenter.heroku.com/start)
 
