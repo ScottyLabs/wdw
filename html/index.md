@@ -8,11 +8,9 @@ subject: html
 
 ###### build informative websites
 
-This workshop will teach you everything you need to know to make an informative
-static (or "unchanging") website. Learn how to write HTML, and style it with
-CSS.
-
-Participants in this workshop will make a fully functional portfolio.
+This workshop will prepare you with the basic skills you need to lay out a
+custom website. We will first discuss what HTML and CSS do at a high level, then
+we will work through examples of how to use HTML and CSS in practice.
 
 ### How to Attend
 

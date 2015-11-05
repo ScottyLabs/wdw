@@ -14,14 +14,21 @@ can do in CSS and you'll find that creating a well-designed website may not be
 as hard as you think. While there are different ways to use a CSS Framework,
 we'll take a look at the most powerful and flexible way to use it.
 
-This workshop is being held for the first time this semester!
+This workshop is not being held this semester. Feel free to check out the
+resources from previous semesters below.
 
-
+<!--
 ### How to Attend
 
-If you haven't already, __[be sure to register]({{ site.registration_link }})__! You certainly don't have to register to attend, but we like knowing how many people to expect and what people will be interested in learning. We can't wait, and we hope to see you there!
+If you haven't already, __[be sure to register]({{ site.registration_link }})__!
+You certainly don't have to register to attend, but we like knowing how many
+people to expect and what people will be interested in learning. We can't wait,
+and we hope to see you there!
 
-Bring a computer with a web browser and text editor installed. We recommend [Chrome](https://www.google.com/chrome/browser/) and [Sublime Text](http://www.sublimetext.com/).
+Bring a computer with a web browser and text editor installed. We recommend
+[Chrome](https://www.google.com/chrome/browser/) and [Sublime
+Text](http://www.sublimetext.com/).
+-->
 
 ### Resources
 
@@ -31,4 +38,4 @@ Bring a computer with a web browser and text editor installed. We recommend [Chr
   - A Material Design CSS Framework
 
 [gruntjs]: http://gruntjs.com
-[matierialize]: http://matierializecss.com
+[materialize]: http://materializecss.com/

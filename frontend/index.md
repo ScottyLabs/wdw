@@ -18,6 +18,9 @@ learning more.
 Participants in this workshop will complete exercises related to common
 JavaScript tasks.
 
+Although this workshop can be taken on its own, we recommend pairing it
+[Synergize your CSS: Using a Framework]({{ site.baseurl }}/css/).
+
 
 ### How to Attend
 

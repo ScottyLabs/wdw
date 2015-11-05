@@ -21,7 +21,7 @@ knowledge you need to get started.
 
 ## How do I attend?
 
-1. __Register__ (registration coming soon)
+1. __[Register]({{ site.registration_link }})__
   - You certainly don't have to register to attend, but we like knowing how many
     people to expect and what people will be interested in learning.
 1. __[Read "The Basics"][basics]__
@@ -38,7 +38,7 @@ free__, so that anyone can see it.
 
 ## Schedule
 
-All workshops will be held in the WEH 5201 Mac Cluster.
+All workshops will be held in the WEH Windows Cluster.
 
 | Session                                           | Day      | Date | Time                  |
 | -------                                           | ---      | ---- | ----                  |
@@ -69,10 +69,10 @@ can build on in the future.
 
 ## Who's running Web Dev Weekend?
 
-Web Dev Weekend is run by [ScottyLabs](http://scottylabs.org). We also run
+Web Dev Weekend is run by [ScottyLabs](https://scottylabs.org). We also run
 [TartanHacks](http://tartanhacks.com/) (CMU's largest software hackathon) and
 other educational events like
-[CrashCourse](http://scottylabs.org/crashcourse/).
+[CrashCourse](https://scottylabs.org/crashcourse/).
 
 We've run WDW twice before, in the Fall of 2014 and Spring of 2015.
 

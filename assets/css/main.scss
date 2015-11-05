@@ -9,14 +9,15 @@ $text: #313131;
 $wdw-pink: #DB255E;
 $wdw-orange: #F49032;
 $wdw-green: #A9CE45;
-$wdw-purple: #382A57;
+//$wdw-purple: #382A57;
+$wdw-purple: #604794;
 $wdw-blue: #26AAB7;
 
 // Convert Liquid list to Sass list
 $wdw-pages: {% for p in site.wdw_pages %}{{ p }},{% endfor %};
 
 $wdw-colors: $wdw-blue, $wdw-orange, $wdw-pink,
-              $wdw-blue, $wdw-green, $wdw-purple;
+             $wdw-blue, $wdw-green, $wdw-purple, $wdw-pink;
 
 
 @import

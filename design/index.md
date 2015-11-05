@@ -30,8 +30,8 @@ This workshop has been run twice before. Here are the resources we used last tim
 
 ### From the Workshop
 
-- [Slides F14](https://drive.google.com/file/d/0B0-bUe9GLbYQNXJ5ZVpoYjhMWlE/edit?usp=sharing)
-- [Slides S15](WDWDesignSlides.pdf)
+- [Slides F14](f14/slides.pdf)
+- [Slides S15](s15/slides.pdf)
 
 ### Web Resources
 

@@ -4,204 +4,211 @@ title: Deployment Lab
 subject: deployment
 ---
 
-# deployment lab
-In this session, you'll learn how to put whatever you've made in Web Dev Weeks on the web. We'll teach you how to host your project for free, and how to actually deploy them to the services.
+# Deployment Lab
+
+In this session, we'll take the sites you've been building this weekend and put
+them on the web!  If you don't have a finished project, don't worry, we've got a
+nice starter set of files.
 
 ## Overview
-_Deployment_ is the process of making your app or site accessible to other people. With webapps/websites, we want a URL that we can point people to.
 
-_Static_ websites/webapps are those that don't have a backend. They can be written entirely in HTML, CSS, and JavaScript, and don't have any code running on a server. We'll show you how to deploy these with a free service called GitHub Pages.
+_Deployment_ is the process of making your app or site accessible to other
+people. With webapps/websites, we want a URL that we can point people to.
 
-_Dynamic_ websites/webapps are those that have a backend. These often have a database, and will have a component written in Python, Java, Ruby, etc. that runs on a server. We'll show you how to deploy these using the free tier of a service called Heroku.
+_Static_ websites/webapps are those that don't have a backend. They can be
+written entirely in HTML, CSS, and JavaScript, and don't have any code running
+on a server. We'll show you how to deploy these with a free service called
+GitHub Pages.
 
-## Git
-We're going to use [Git](http://git-scm.com/) to help us deploy our applications. Git is a distributed __version control__ system for code. This means that it lets you keep track of any changes to your code, merge your changes with other people's on collaborative projects, and download or upload code from a server. We're going to use Git to help us deploy our code to a server.
+_Dynamic_ websites/webapps are those that have a backend. These often have a
+database, and will have a component written in Python, Java, Ruby, etc. that
+runs on a server. These can also be deployed for free, and we have a lot of
+resources to point you in the right direction.
 
-You can [download Git here](http://git-scm.com/download).
+## Getting the Files
 
-### Basic Commands
-Git is a program that runs inside a terminal. This means that you'll have to run it in Terminal (on OS X or Linux) or Git Bash (on Windows). Make a folder somewhere on your computer and go to it in the terminal. We're going to show some very basic commands in Git, but if you're interested in using it to its full potential, check out the free book [_Pro Git_](http://git-scm.com/book).
+First thing's first, let's get our starter files.  You can get them as a
+`.zip` [here][lab-dl].
 
-#### Creating a Git repository
-Enter
+## Getting your files into Git
 
-```console
-$ git init
-```
+First thing you're gonna want is a brand new git repository on GitHub.  While
+there's lots of ways to go about this, the easiest if you don't know your way
+around `git` is to go to GitHub and make a new repository
+[here](https://github.com/new).  Make sure to check 'Initialize this repository
+with a README'!
 
-in your folder to _intialize_ your Git repository. This will make a folder called `.git` in your directory that will contain the history of your directory. Any code that you add or delete will be backed up in that folder.
-
-#### Adding files to a Git repository
-Copy the files you want to deploy into this directory. This should be the files you worked on either in the Frontend, Backend, or HTML & CSS. If you don't have anything from those sessions, or anything else you want to deploy, download [this code](https://github.com/jez/jquery-lab/archive/gh-pages.zip) if you want to learn to deploy a static site on GitHub Pages, or [this code](https://github.com/anbenson/webdevblog-example/archive/master.zip) if you want to learn to deploy a dynamic site on Heroku.
-
-Now, enter
-
-```console
-$ git add -A
-```
-
-to add all the files in this directory to the repository. This means that Git will now _track_ any changes to these files.
-
-After adding all these files, you'll want to enter
+Next, clone this repository onto your machine.  With the desktop client, it
+should pop up and you can just download it.  For the command-line client, select
+the download URL on the new repository (it should be under `HTTPS clone URL` on
+the right).  Mine looks something like
 
 ```console
-$ git commit -m "Initial commit"
+https://github.com/bezi/food4cmu.git
 ```
 
-to _commit_ your files. This will store the current state of all these files to the repository (the `.git` folder). If you change the files in the future, Git will take note of that and keep the old versions of your files around.
-
-The text in quotes after `-m` is the commit message. This lets anyone who is viewing the repository know what you did in this commit. Thus, it's important that it's informative enough that you or anyone else can tell what you changed (on a very high level) without reading your code.
-
-If you now enter
+Then, you'll want to clone it to your local machine with
 
 ```console
-$ git log
+$ git clone <URL>
 ```
 
-you can see a log of all the changes that have been made to this repository. You should see one commit with the message "Initial commit."
+Now that you have a nice new repository on your machine, let's fill it with
+code!  Unzip the handout files in the repository, and add them to your
+repository.
 
-#### Updating files in a Git repository
-Whenever you change a file, you can run
-
-```console
-$ git add <filename>
-```
-
-where `<filename>` is the name of the file you changed. This will add the changes to the next commit you make. This way, the next time you run
-
-```console
-$ git commit -m "Some commit message"
-```
-
-this change will be saved as part of that commit in the repository.
-
-
-#### Pushing and pulling code from remote servers
-Git is pretty useful if you just use it locally to keep track of changes, but its real power is when you use it to download and upload (pull and push) code from servers. To configure your repository to work with a remote server, enter
-
-```console
-$ git remote add origin <remote_url>
-```
-
-where `<remote_url>` is the URL of the server. We'll talk about which URLs to actually use later in the lab.
-
-Then, to push (upload) code to the server, enter
-
-```console
-$ git push
-```
-
-To pull (download) code from the server, enter
-
-```console
-$ git pull
-```
-
-At this point, the lab branches off. If you're deploying a static site (from the Frontend or HTML & CSS workshops), go [here](#github-pages-deployment). If you're deploying a dynamic site (from the Backend workshop), go [here](#heroku-deployment).
-
-## GitHub Pages deployment
-To deploy your static site, we're going to be using a site hosting service called [GitHub Pages](https://pages.github.com/). To begin, you're going to want to [make a GitHub account](https://pages.github.com/), if you don't already have one.
-
-### Creating a GitHub repository
-You want to start off by creating a Git repository on GitHub's servers. Go to [https://github.com/new](https://github.com/new), fill in a name and description, and click "Create repository."
-
-### Linking your GitHub and local repositories
-Run the following commands in your terminal:
-
-```console
-$ git remote add origin https://github.com/<username>/<reponame>.git
-$ git checkout -b gh-pages
-$ git push -u origin gh-pages
-```
-
-where `<username>` is your GitHub username, and `<reponame>` is the name of your GitHub repo. Make sure that the first command is __all one line__. On some screens, it wraps around, but it should all be one command. The first command links the remote repository with your local one. The second command creates a _branch_ of your code, which just tells GitHub that that's the code you want to deploy. Finally, the last command pushes the code up to the server.
-
-If you wait a minute or so, your site should be up at `http://<username>.github.io/<reponame>/`.
-
-Congratulations! You've just deployed a website.
-
-## Heroku deployment
-To deploy your dynamic site, we're going to be using a webapp hosting service called [Heroku](https://www.heroku.com/). To begin, you're going to want to [make a Heroku account](https://www.heroku.com/). Then, you'll want to download the [Heroku toolbelt](https://toolbelt.heroku.com/), which includes a set of tools for developing and deploying webapps. Finally, in the Terminal, run
-
-```console
-$ heroku login
-```
-
-to authenticate your local toolbelt with Heroku.
-
-### Creating a Heroku app
-While in the directory that contains your git repo, run
-
-```console
-$ heroku create <appname>
-```
-
-where <appname> is the optional name you want to give your webapp. If you don't specify an app name, then Heroku will generate one for you.
-
-### Deploying a Heroku app
-Now, deploy your code with
-
-```console
-$ git push heroku master
-```
-
-Then, to assign a server node to run your code, run
-
-```console
-$ heroku ps:scale web=1
-```
-
-Finally, you can open your app in the browser by running
-
-```console
-$ heroku open
-```
-
-Congratulations! You've just deployed a webapp.
-
-### Setting up a database
-However, if you've just deployed the webapp you made in the Backend workshop, you're not quite done. The webapp you wrote uses SQLite as a database. SQLite is a database that stores all of your data in a single file in your local filesystem. This is fine for local development, but when you deploy to Heroku, the servers that your code is running on doesn't have a persistent filesystem. This means your database is going to be wiped every once in a while.
-
-For your database to perist, that is, for your data to stick around for as long as Heroku does, you'll want to switch to a database that runs as a server. Fortunately, Heroku will also host database servers for free. We're going to use a database called [PostgreSQL](http://www.postgresql.org/).
-
-You can tell Heroku to set up a database for you by running
-
-```console
-$ heroku addons:add heroku-postgresql:dev
-```
-
-Next, you need to install a Python module for connecting to this database by running
-
-```console
-$ pip install psycopg2
-```
-
-while inside the `virtualenv`. You'll also need to include that in the list of requirements:
-
-```console
-$ pip freeze > requirements.txt
-```
-
-Finally, you'll want to change the line in your `main.py` that says
-
-```python
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:////tmp/webdevblog.db"
-```
-
-to
-
-```python
-app.config["SQLALCHEMY_DATABASE_URI"] = os.environ["DATABASE_URL"]
-```
-
-in order to use Heroku's database. Note that `DATABASE_URL` is an environmental variable that Heroku will supply your application giving the location of the database.
-
-Finally, you'll want to run
+For the terminal client, copy them into your directory repository and add them
+with
 
 ```console
 $ git add .
-$ git commit -m "Set up Postgres"
-$ git push heroku master
 ```
 
-to deploy your changes and switch your app over the using Heroku's PostgreSQL database.
+If you now run `git status`, it should look something like this
+
+```console
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   favicon.ico
+        new file:   index.html
+        new file:   index.min.js
+        new file:   main.css
+```
+
+Commit these changes with the `git commit` command. Make sure to add a useful
+commit message!  Mine looks something like
+
+```console
+$ git commit -am "Added all the files knocked out during CarnegieHax 2015."
+```
+
+Get it onto GitHub with the command
+
+```console
+git push origin master
+```
+
+## Setting up `gh-pages`
+
+Congrats!  Your code is now on GitHub, but we need to do a bit more work to host
+it.  In particular, you should put your code on `gh-pages`, so that GitHub knows
+that you want to serve out your site.
+
+First thing's first, we need to make a new branch.  Do so by running
+
+```console
+$ git checkout -b gh-pages
+```
+from your repository.  This makes a new `gh-pages` branch from your `master`
+branch.  Then, push this new branch up to GitHub with the command
+
+```console
+$ git push origin gh-pages
+```
+This pushes your new `gh-pages` branch to GitHub.
+
+Now, it's time to see your live site!  In your browser, go to
+`<username>.github.io/<repo-name>`.  For example, in my case, we'll go to
+[http://bezi.github.io/food4cmu/](http://bezi.github.io/food4cmu/).
+
+## [optional] Tidying up the Repository
+
+One optional step, if your repository is only going to be serving out a website,
+is to go to the settings and select "Branches" from the side menu ([direct
+link](https://github.com/bezi/food4cmu/settings/branches)).  In the dropdown
+menu, update your `Default Branch` to `gh-pages`.
+
+You can now delete your derelict `master` branch with
+
+```console
+$ git branch -d master
+```
+
+Delete the version on GitHub with
+
+```console
+$ git push origin --delete master
+```
+
+Now your repo just has a single branch.  How tidy!
+
+Alright, it's time to put away `git` for now.  We're going to drop into the
+exciting world of DNS!
+
+## Buying a Domain Name
+
+If you want a nifty custom name for your site, you're going to have to look a
+bit.  There's many, many different places to get domains from, but for this talk
+we'll be using [NameCheap]().  They have fair prices and a solid user interface,
+but they're not the only ones out there.
+
+Typically a `.com` name will run somewhere ~10 dollars for a year.  There are
+some free locations out there, your mileage may vary.  You can get a free one
+from NameCheap by using the (GitHub Student Developer Pack)[gh-education].
+
+## Setting up the Domain Name
+
+We'll now be setting up the domain as required by GitHub.  This is documented
+[here](https://help.github.com/articles/tips-for-configuring-an-a-record-with-your-dns-provider/).
+In short, we want to add two `A` records to our domain that point to GitHub,
+then we'll add a `CNAME` file to our repository so that `GitHub` knows where to
+route requests for that particular domain.
+
+First, we'll add the two `A` records to:
+
+```console
+192.30.252.153
+192.30.252.154
+```
+
+Then, we'll add a file to our repository root called a `CNAME` file.  While we
+could add it on our machine and push it up to GitHub, we can actually edit it
+directly on GitHub!  In it, we put the domain that routes to our page.
+
+If this has been set up properly, the domain should soon route to your new page!
+
+## GitHub Tips
+
+- You can actually make any repository you want serve out web pages!  If you
+  have a cool code project that you want to have a website, just put stuff into
+  its `gh-pages` branch.
+
+- There's a special GitHub repository for your user, which is the
+  `<username>.github.io` page.  If you make a new repository with that name, the
+  `master` branch will be the one serving out the content.
+
+- [GitHub Pages documentation](https://pages.github.com/)
+
+## Non-static Sites: Your Options
+
+### PaaS: Platform-as-a-Service
+
+- [Heroku](https://www.heroku.com/)
+- Lots of platform-specific ones ([Nodejitsu](https://www.nodejitsu.com/), etc).
+
+### IaaS: Infrastructure-as-a-Service
+
+- You get a Linux machine... go nuts!
+- [DigitalOcean](https://www.digitalocean.com/)
+- [Amazon Web Services](https://aws.amazon.com/) (AWS)
+
+### How Do I Choose?
+
+- Easy answer: use Heroku.
+  - Free
+  - Bootstrap existing apps easily.
+  - Fast!!
+  - De facto solution for things like hackathon hacks.
+
+- DigitalOcean:
+  - Customizable, centralized, use the Linux box for anything.
+  - Cheap, but not free. (You get credits with the [GitHub Student Developer
+    Pack][gh-education])
+  - Super educational in the long run!
+
+[lab-dl]: https://scottylabs.org/wdw/deployment/lab/lab.zip "Lab Download Link"
+[gh-education]: https://education.github.com/pack "Github Education Pack"

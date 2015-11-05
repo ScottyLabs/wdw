@@ -147,7 +147,7 @@ We’ve specifically designed the workshops so that they can be taken in any
 order, although we recommend taking the deployment workshop after you’ve
 completed at least one technical workshop (so you have something to deploy).
 
-If you haven't already, __be sure to register__ (registration link coming soon)!
+If you haven't already, __[be sure to register]({{ site.registration_link }})__!
 You certainly don't have to register to attend, but we like knowing how many
 people to expect and what people will be interested in learning. We can't wait,
 and we hope to see you there!
