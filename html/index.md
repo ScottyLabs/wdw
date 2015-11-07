@@ -26,6 +26,9 @@ You certainly don't have to register to attend, but we like knowing how many
 people to expect and what people will be interested in learning. We can't wait,
 and we hope to see you there!
 
+## Resources
+
+To follow along, go to the [demo website](https://skottyk.github.io/WDW_HTMLCSS/), where I've posted code and the ouput so you can see the code I add for each step in the presentation.
 
 ## Previous Resources
 
