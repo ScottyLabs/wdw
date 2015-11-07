@@ -43,7 +43,7 @@ implement it.
 
 ## Diving in
 
-The code and tutorial for this lab will be [hosted on GitHub](source-final).
+The code and tutorial for this lab will be [hosted on GitHub][source-final].
 Each step is a commit, allowing you to see what changed between steps. Links
 will be provided to the code of the step in question. Most of the explanations
 will not make sense if you do not also take a look at the corresponding code,
