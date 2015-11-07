@@ -30,6 +30,8 @@ and we hope to see you there!
 
 To follow along, go to the [demo website](https://skottyk.github.io/WDW_HTMLCSS/), where I've posted code and the ouput so you can see the code I add for each step in the presentation.
 
+The slides can be found [here](https://skottyk.github.io/WDW_HTMLCSS/HTMLCSS.pdf).
+
 ## Previous Resources
 
 This workshop has been run before. Here are the resources that were used
