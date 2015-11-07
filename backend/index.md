@@ -42,11 +42,13 @@ and we hope to see you there!
 
 ### Resources for this Workshop
 
-Here are some resources that we will use through this workshop:
-
+Here are some resources that we will use for this workshop:
 
 - [Slides](f15/slides.pdf)
-
+- [Starter Code](f15/wdwdemo.zip)
+- [Code at Each Step](https://github.com/bryanyan/flasktalk/resources)
+- [Example Website](http://flasktalk.herokuapp.com)
+- [Repository for Website](https://github.com/bryanyan/flasktalk)
 
 ### Previous Resources
 

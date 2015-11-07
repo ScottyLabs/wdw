@@ -60,7 +60,7 @@ are required for this lab.
 - [How to set up records on NameCheap](https://www.namecheap.com/support/knowledgebase/article.aspx/319/78/how-can-i-setup-an-a-address-record-for-my-domain)
 - [Get a free domain from NameCheap and a _whole_ lot more from the GitHub Education Pack](https://education.github.com/pack)
 
-### Herok
+### Heroku
 
 - [The Heroku "Getting Started" page, with examples for every major web platform](https://devcenter.heroku.com/start)
 
