@@ -15,8 +15,10 @@ give you some rules to follow when evaluating a design.
 
 ### How to Attend
 
+<!--
 This workshop will be held on Sunday, November 8th at 3:00 p.m. in the Windows
 Cluster in Wean.
+-->
 
 If you haven't already, __[be sure to register]({{ site.registration_link }})__!
 You certainly don't have to register to attend, but we like knowing how many

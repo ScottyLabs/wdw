@@ -24,8 +24,10 @@ Although this workshop can be taken on its own, we recommend pairing it
 
 ### How to Attend
 
+<!--
 This workshop will be held on Saturday, November 7th at 3:00 p.m. in the Windows
 Cluster in Wean.
+-->
 
 Bring a computer with a web browser and text editor installed. We recommend
 [Chrome](https://www.google.com/chrome/browser/) and [Sublime

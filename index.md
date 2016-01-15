@@ -38,16 +38,16 @@ free__, so that anyone can see it.
 
 ## Schedule
 
-All workshops will be held in the WEH Windows Cluster.
+The next WDW will probably be held in late spring 2016. Keep an eye peeled!
 
-| Session                                           | Day      | Date | Time                  |
-| -------                                           | ---      | ---- | ----                  |
-| [HTML and CSS][html]                              | Saturday | 11/7 | 1:30 p.m. - 3:00 p.m. |
-| [Frontend Engineering with JavaScript][frontend]  | Saturday | 11/7 | 3:00 p.m. - 4:30 p.m. |
-| *break for dinner*                                | Saturday | 11/7 | 4:30 p.m. - 5:00 p.m. |
-| [Backend Engineering with Flask][backend]         | Saturday | 11/7 | 5:00 p.m. - 6:30 p.m. |
-| [Making Your Site Public: Deployment][deployment] | Sunday   | 11/8 | 1:30 p.m. - 3:00 p.m. |
-| [Crafting Well-Designed Sites][design]            | Sunday   | 11/8 | 3:00 p.m. - 4:30 p.m. |
+| Session                                           | Day | Date | Time                  |
+| -------                                           | --- | ---- | ----                  |
+| [HTML and CSS][html]                              | n/a | n/a  | 1:30 p.m. - 3:00 p.m. |
+| [Frontend Engineering with JavaScript][frontend]  | n/a | n/a  | 3:00 p.m. - 4:30 p.m. |
+| *break for dinner*                                | n/a | n/a  | 4:30 p.m. - 5:00 p.m. |
+| [Backend Engineering with Flask][backend]         | n/a | n/a  | 5:00 p.m. - 6:30 p.m. |
+| [Making Your Site Public: Deployment][deployment] | n/a | n/a  | 1:30 p.m. - 3:00 p.m. |
+| [Crafting Well-Designed Sites][design]            | n/a | n/a  | 3:00 p.m. - 4:30 p.m. |
 
 Click on any of the links to read more about what each section will cover!
 
