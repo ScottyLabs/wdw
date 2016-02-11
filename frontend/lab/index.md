@@ -644,8 +644,7 @@ Thanks!
 
 I take great pride in writing good code, documentation, and tutorials. If you
 spot something that's not quite right or you spot something confusing, let me
-know! Write an email to info@scottylabs.org and include the url of this page in
-your email.
+know! Open an issue on <https://github.com/ScottyLabs/wdw>.
 
 Written by Jake Zimmerman, July 2014
 
