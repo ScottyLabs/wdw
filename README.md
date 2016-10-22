@@ -19,6 +19,14 @@ $ gem install bundler
 $ bundle install
 ```
 
+If that failed, and you're on OS X, you might have to run this:
+
+```
+gem install nokogiri -- --with-xml2-include=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/include/libxml2 --use-system-libraries
+```
+
+and then re-run `bundle install`.
+
 Once you've done that, you can preview the site locally by running
 
 ```console
