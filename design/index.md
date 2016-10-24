@@ -8,9 +8,13 @@ subject: design
 
 ###### learn to build things that don't suck
 
-This workshop will teach you a set of guidelines for making your applications
-and websites work well. We'll cover the skills you need to judge a design, and
-give you some rules to follow when evaluating a design.
+It’s often hard to identify what components contribute to a site feeling 
+“well-designed.” Indeed it’s been said that “Good design is invisible. 
+It’s only when something is poorly designed that we notice.” In this talk, 
+we’ll dissect two elements of good design: typography and grid.
+
+Participants in this workshop will complete typographic sketches and mockups 
+to get a feel for how to think critically about design on the web.
 
 
 ### How to Attend
@@ -20,10 +24,13 @@ This workshop will be held on Sunday, November 8th at 3:00 p.m. in the Windows
 Cluster in Wean.
 -->
 
-If you haven't already, __[be sure to register]({{ site.registration_link }})__!
-You certainly don't have to register to attend, but we like knowing how many
-people to expect and what people will be interested in learning. We can't wait,
-and we hope to see you there!
+Bring a pencil; paper will be provided. Also bring a laptop with your favorite 
+design software installed, like [Sketch](https://www.sketchapp.com/), 
+[InDesign](http://www.adobe.com/downloads.html), or 
+[Illustrator](http://www.adobe.com/downloads.html). If you don’t have 
+something like this already installed, you can use the links above to find 
+free trials. Alternatively, attend the workshop with a friend who has this 
+software already installed. The Mac cluster computers will be available as well.
 
 
 ## Previous Resources
