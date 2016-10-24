@@ -78,9 +78,8 @@ We've run WDW twice before, in the Fall of 2014 and Spring of 2015.
 
 __Other Talks__
 
-[CSS][css]
-
-[Deployment][deployment]
+- [CSS][css]
+- [Deployment][deployment]
 
 
 [basics]: basics/
