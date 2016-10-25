@@ -9,13 +9,13 @@ subject: frontend
 
 ###### make your pages interactive with JavaScript
 
-JavaScript is everywhere on the Web. With only a few lines of code, we can make 
-immersive web applications, entertaining games, and interactive sites. Learning 
-JavaScript is somewhat treacherous if you’re just starting out, so we’ll make 
-sure to introduce you to JavaScript in a way that will enable you to continue 
+JavaScript is everywhere on the Web. With only a few lines of code, we can make
+immersive web applications, entertaining games, and interactive sites. Learning
+JavaScript is somewhat treacherous if you’re just starting out, so we’ll make
+sure to introduce you to JavaScript in a way that will enable you to continue
 learning more.
 
-Participants in this workshop will complete exercises related to common 
+Participants in this workshop will complete exercises related to common
 JavaScript tasks.
 
 
@@ -27,8 +27,8 @@ This workshop will be held on Saturday, November 7th at 3:00 p.m. in the Windows
 Cluster in Wean.
 -->
 
-Bring a computer with a web browser and text editor installed. We recommend 
-[Chrome](https://www.google.com/chrome/browser/desktop/index.html) and 
+Bring a computer with a web browser and text editor installed. We recommend
+[Chrome](https://www.google.com/chrome/browser/desktop/index.html) and
 [Sublime Text](http://www.sublimetext.com/).
 
 ## Resources

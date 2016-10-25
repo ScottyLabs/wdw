@@ -8,30 +8,30 @@ subject: html
 
 ###### build informative websites
 
-HTML and CSS form the foundation of website on the Internet is built upon. 
-If you want to learn web development, HTML and CSS should be your first 
-stepping stone. This talk will be interactive: attendees can follow along with 
-the concepts introduced in the slides with the companion tutorial. By the end 
+HTML and CSS form the foundation of website on the Internet is built upon.
+If you want to learn web development, HTML and CSS should be your first
+stepping stone. This talk will be interactive: attendees can follow along with
+the concepts introduced in the slides with the companion tutorial. By the end
 of the tutorial, participants will have a custom resume website.
 
-The HTML and CSS talk will do two things. The first is to show your how to 
-write HTML and CSS code that will render a webpage just the way you want. 
-The second is to give you a basic understanding of the structure of webpages, 
-known as the DOM. Both are important if you would like to learn to make more 
+The HTML and CSS talk will do two things. The first is to show your how to
+write HTML and CSS code that will render a webpage just the way you want.
+The second is to give you a basic understanding of the structure of webpages,
+known as the DOM. Both are important if you would like to learn to make more
 interactive websites in the JavaScript, and Angular talks.
 
 ### How to Attend
 
-Bring a computer with a web browser and text editor installed. We recommend 
-[Chrome](https://www.google.com/chrome/browser/desktop/index.html) and 
-[Sublime Text](http://www.sublimetext.com/). If you are an elite hacker, you 
-may want to use Vim instead. [Brackets](http://brackets.io/) is also a great 
-editor for web development, but might be a bit overwhelming if this is your 
+Bring a computer with a web browser and text editor installed. We recommend
+[Chrome](https://www.google.com/chrome/browser/desktop/index.html) and
+[Sublime Text](http://www.sublimetext.com/). If you are an elite hacker, you
+may want to use Vim instead. [Brackets](http://brackets.io/) is also a great
+editor for web development, but might be a bit overwhelming if this is your
 first experience writing a lot of code.
 
 ## Resources
 
-To follow along, go to the 
+To follow along, go to the
 [demo website](https://skrulcik.github.io/WDW_HTMLCSS/), where I've posted code
  and the ouput so you can see the code I add for each step in the presentation.
 

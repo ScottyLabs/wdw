@@ -9,14 +9,14 @@ subject: "backend"
 
 ###### learn how to save information, serve up different pages, and make a blog
 
-The backend is all about storing and persisting information.  It usually 
-consists of three main parts: a server, an application, and a database. If you 
-want to save a user’s preferences, do complicated calculations, or store a lot 
+The backend is all about storing and persisting information.  It usually
+consists of three main parts: a server, an application, and a database. If you
+want to save a user’s preferences, do complicated calculations, or store a lot
 of information, you’re going to need a backend.
 
-Participants in this workshop will first get a brief overview of what backend 
-engineering is before learning how to make a simple blog using Flask, a web 
-application framework written in Python. 
+Participants in this workshop will first get a brief overview of what backend
+engineering is before learning how to make a simple blog using Flask, a web
+application framework written in Python.
 
 ### How to Attend
 
@@ -25,11 +25,11 @@ This workshop will be held on Saturday, November 7th at 5:00 p.m. in the Windows
 Cluster in Wean.
 -->
 
-Bring a computer with a web browser and a text editor installed. 
-[Chrome](https://www.google.com/chrome/browser/desktop/index.html) and 
-[Sublime Text](http://www.sublimetext.com/) are recommended.  Please also have 
-[Python](https://www.python.org/downloads/) installed as well as 
-[pip](https://pip.pypa.io/en/stable/installing/), a Python package manager. 
+Bring a computer with a web browser and a text editor installed.
+[Chrome](https://www.google.com/chrome/browser/desktop/index.html) and
+[Sublime Text](http://www.sublimetext.com/) are recommended.  Please also have
+[Python](https://www.python.org/downloads/) installed as well as
+[pip](https://pip.pypa.io/en/stable/installing/), a Python package manager.
 
 ### Resources for this Workshop
 
