@@ -38,30 +38,31 @@ free__, so that anyone can see it.
 
 ## Schedule
 
-The next WDW will probably be held in late spring 2016. Keep an eye peeled!
-
-Saturday
-
-| Session                                            | Date | Time                  |
-| -------                                            | ---- | ----                  |
-| [HTML and CSS][html]                               | 11/5 | 1:30 p.m. - 3:00 p.m. |
-| [Frontend Engineering with JavaScript][frontend]   | 11/5 | 3:00 p.m. - 4:30 p.m. |
-| [UX Prototyping with Framer.js][framer]            | 11/5 | 4:30 p.m. - 6:00 p.m. |
-| *break for dinner*                                 | 11/5 | 6:00 p.m. - 6:30 p.m. |
-| [Frontend Development with Angular.js][angular]    | 11/5 | 6:30 p.m. - 8:00 p.m. |
-
-
-Sunday
-
-| Session                                            | Date | Time                  |
-| -------                                            | ---- | ----                  |
-| [HTML and CSS][html]                               | 11/6 | 1:30 p.m. - 3:00 p.m. |
-| [Frontend Engineering with JavaScript][frontend]   | 11/6 | 3:00 p.m. - 4:30 p.m. |
-| [Crafting Well-Designed Sites][design]             | 11/6 | 4:30 p.m. - 6:00 p.m. |
-| *break for dinner*                                 | 11/6 | 6:00 p.m. - 6:30 p.m. |
-| [Backend Engineering with Flask][backend]          | 11/6 | 6:30 p.m. - 8:00 p.m. |
+### Saturday, 11/5
 
 Click on any of the links to read more about what each section will cover!
+
+You can go to as many or as few as you'd like. Most talks have no
+pre-requisites, but the ones that do list them on their descriptions.
+
+| Session                                            | Time                  |
+| -------                                            | ----                  |
+| [HTML and CSS][html]                               | 1:30 p.m. - 3:00 p.m. |
+| [Frontend Engineering with JavaScript][frontend]   | 3:00 p.m. - 4:30 p.m. |
+| [UX Prototyping with Framer.js][framer]            | 4:30 p.m. - 6:00 p.m. |
+| *break for dinner*                                 | 6:00 p.m. - 6:30 p.m. |
+| [Frontend Development with Angular.js][angular]    | 6:30 p.m. - 8:00 p.m. |
+
+
+### Sunday, 11/6
+
+| Session                                            | Time                  |
+| -------                                            | ----                  |
+| [HTML and CSS][html]                               | 1:30 p.m. - 3:00 p.m. |
+| [Frontend Engineering with JavaScript][frontend]   | 3:00 p.m. - 4:30 p.m. |
+| [Crafting Well-Designed Sites][design]             | 4:30 p.m. - 6:00 p.m. |
+| *break for dinner*                                 | 6:00 p.m. - 6:30 p.m. |
+| [Backend Engineering with Flask][backend]          | 6:30 p.m. - 8:00 p.m. |
 
 
 ## What will I learn?
