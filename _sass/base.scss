@@ -37,6 +37,9 @@ html, body {
 }
 
 .page-content {
+  // default to blue on non-specified pages
+  @include color-mixin(white, $wdw-blue);
+
   .home {
     // white + pink on home page
     @include color-mixin(white, $wdw-pink);
@@ -44,7 +47,7 @@ html, body {
 
   @for $i from 1 through length($wdw-pages) {
     .#{nth($wdw-pages, $i)} {
-      // wdw-colors[i] + wdw-colors[i] on other pages
+      // wdw-colors[i] + wdw-colors[i] on selected talk pages
       @include color-mixin(nth($wdw-colors, $i), nth($wdw-colors, $i))
     }
   }
