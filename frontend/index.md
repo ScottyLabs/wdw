@@ -5,7 +5,7 @@ subject: frontend
 ---
 
 
-# Frontend Engineering
+# Frontend JavaScript Primer
 
 ###### make your pages interactive with JavaScript
 
@@ -19,17 +19,15 @@ Participants in this workshop will complete exercises related to common
 JavaScript tasks.
 
 
-
 ### How to Attend
-
-<!--
-This workshop will be held on Saturday, November 7th at 3:00 p.m. in the Windows
-Cluster in Wean.
--->
 
 Bring a computer with a web browser and text editor installed. We recommend
 [Chrome](https://www.google.com/chrome/browser/desktop/index.html) and
 [Sublime Text](http://www.sublimetext.com/).
+
+This talk assumes you've programmed before, either for a class or on your own
+time.
+
 
 ## Resources
 

@@ -19,11 +19,6 @@ to get a feel for how to think critically about design on the web.
 
 ### How to Attend
 
-<!--
-This workshop will be held on Sunday, November 8th at 3:00 p.m. in the Windows
-Cluster in Wean.
--->
-
 Bring a pencil; paper will be provided. Also bring a laptop with your favorite
 design software installed, like [Sketch](https://www.sketchapp.com/),
 [InDesign](http://www.adobe.com/downloads.html), or

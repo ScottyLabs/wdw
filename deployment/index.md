@@ -17,16 +17,10 @@ you something to deploy.
 
 ### How to Attend
 
+This workshop is not being offered this semester. Feel free to browse the lab
+and resources below.
+
 <!--
-This workshop will be held on Sunday, November 8th at 1:30 p.m. in the Windows
-Cluster in Wean.
--->
-
-If you haven't already, __[be sure to register]({{ site.registration_link }})__!
-You certainly don't have to register to attend, but we like knowing how many
-people to expect and what people will be interested in learning. We can't wait,
-and we hope to see you there!
-
 Be sure to bring a laptop. You'll want to make sure that either [GitHub for
 Mac][gh-mac], [GitHub for Windows][gh-win], or [Git][git] & a terminal are
 installed on your system.
@@ -34,6 +28,7 @@ installed on your system.
 [gh-mac]: https://mac.github.com/
 [gh-win]: https://windows.github.com/
 [git]: http://git-scm.com/downloads
+-->
 
 ## Lab and Resources
 

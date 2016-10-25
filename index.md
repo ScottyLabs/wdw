@@ -38,17 +38,17 @@ free__, so that anyone can see it.
 
 ## Schedule
 
-### Saturday, 11/5
-
 Click on any of the links to read more about what each section will cover!
 
 You can go to as many or as few as you'd like. Most talks have no
 pre-requisites, but the ones that do list them on their descriptions.
 
+### Saturday, 11/5
+
 | Session                                            | Time                  |
 | -------                                            | ----                  |
-| [HTML and CSS][html]                               | 1:30 p.m. - 3:00 p.m. |
-| [Frontend Engineering with JavaScript][frontend]   | 3:00 p.m. - 4:30 p.m. |
+| [HTML & CSS Primer][html]                          | 1:30 p.m. - 3:00 p.m. |
+| [Frontend JavaScript Primer][frontend]             | 3:00 p.m. - 4:30 p.m. |
 | [UX Prototyping with Framer.js][framer]            | 4:30 p.m. - 6:00 p.m. |
 | *break for dinner*                                 | 6:00 p.m. - 6:30 p.m. |
 | [Frontend Development with Angular.js][angular]    | 6:30 p.m. - 8:00 p.m. |
@@ -58,8 +58,8 @@ pre-requisites, but the ones that do list them on their descriptions.
 
 | Session                                            | Time                  |
 | -------                                            | ----                  |
-| [HTML and CSS][html]                               | 1:30 p.m. - 3:00 p.m. |
-| [Frontend Engineering with JavaScript][frontend]   | 3:00 p.m. - 4:30 p.m. |
+| [HTML & CSS Primer][html]                          | 1:30 p.m. - 3:00 p.m. |
+| [Frontend JavaScript Primer][frontend]             | 3:00 p.m. - 4:30 p.m. |
 | [Crafting Well-Designed Sites][design]             | 4:30 p.m. - 6:00 p.m. |
 | *break for dinner*                                 | 6:00 p.m. - 6:30 p.m. |
 | [Backend Engineering with Flask][backend]          | 6:30 p.m. - 8:00 p.m. |
@@ -89,10 +89,10 @@ other educational events like
 
 We've run WDW twice before, in the Fall of 2014 and Spring of 2015.
 
-__Other Talks__
+### Previous Talks
 
-- [CSS][css]
-- [Deployment][deployment]
+- [Synergize Your CSS: Using a Framework][css]
+- [Deployment: Making Your Site Public][deployment]
 
 
 [basics]: basics/

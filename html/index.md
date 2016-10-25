@@ -24,10 +24,11 @@ interactive websites in the JavaScript, and Angular talks.
 
 Bring a computer with a web browser and text editor installed. We recommend
 [Chrome](https://www.google.com/chrome/browser/desktop/index.html) and
-[Sublime Text](http://www.sublimetext.com/). If you are an elite hacker, you
-may want to use Vim instead. [Brackets](http://brackets.io/) is also a great
-editor for web development, but might be a bit overwhelming if this is your
-first experience writing a lot of code.
+[Sublime Text](http://www.sublimetext.com/). [Brackets](http://brackets.io/) is
+also a great editor for web development, but might be a bit overwhelming if this
+is your first experience writing a lot of code.If you're more comfortable with
+another editor, feel free to use it.
+
 
 ## Resources
 
