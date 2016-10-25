@@ -12,13 +12,13 @@ $wdw-green: #A9CE45;
 $wdw-darkpurple: #382A57;
 $wdw-lightpurple: #604794;
 $wdw-blue: #26AAB7;
-$wdw-brightblue: #00A0B0;
+$wdw-darkorange: #E0691A;
 
 // Convert Liquid list to Sass list
 $wdw-pages: {% for p in site.wdw_pages %}{{ p }},{% endfor %};
 
 $wdw-colors: $wdw-blue, $wdw-lightpurple, $wdw-orange, $wdw-pink,
-             $wdw-green, $wdw-darkpurple, $wdw-brightblue;
+             $wdw-green, $wdw-darkpurple, $wdw-darkorange;
 
 
 @import
