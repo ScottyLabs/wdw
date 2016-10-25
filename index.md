@@ -40,14 +40,26 @@ free__, so that anyone can see it.
 
 The next WDW will probably be held in late spring 2016. Keep an eye peeled!
 
+Saturday
+
 | Session                                           | Day | Date | Time                  |
 | -------                                           | --- | ---- | ----                  |
-| [HTML and CSS][html]                              | n/a | n/a  | 1:30 p.m. - 3:00 p.m. |
-| [Frontend Engineering with JavaScript][frontend]  | n/a | n/a  | 3:00 p.m. - 4:30 p.m. |
-| *break for dinner*                                | n/a | n/a  | 4:30 p.m. - 5:00 p.m. |
-| [Backend Engineering with Flask][backend]         | n/a | n/a  | 5:00 p.m. - 6:30 p.m. |
-| [Making Your Site Public: Deployment][deployment] | n/a | n/a  | 1:30 p.m. - 3:00 p.m. |
-| [Crafting Well-Designed Sites][design]            | n/a | n/a  | 3:00 p.m. - 4:30 p.m. |
+| [HTML and CSS][html]                              | Sat | 11/5 | 1:30 p.m. - 3:00 p.m. |
+| [Frontend Engineering with JavaScript][frontend]  | Sat | 11/5 | 3:00 p.m. - 4:30 p.m. |
+| [UX Prototyping with Framer.js][framer]           | Sat | 11/5 | 4:30 p.m. - 6:00 p.m. |
+| *break for dinner*                                | Sat | 11/5 | 6:00 p.m. - 6:30 p.m. |
+| [Frontend Development with Angular.js][angular]   | Sat | 11/5 | 6:30 p.m. - 8:00 p.m. |
+
+
+Sunday
+
+| Session                                           | Day | Date | Time                  |
+| -------                                           | --- | ---- | ----                  |
+| [HTML and CSS][html]                              | Sun | 11/6 | 1:30 p.m. - 3:00 p.m. |
+| [Frontend Engineering with JavaScript][frontend]  | Sun | 11/6 | 3:00 p.m. - 4:30 p.m. |
+| [Crafting Well-Designed Sites][design]            | Sun | 11/6 | 4:30 p.m. - 6:00 p.m. |
+| *break for dinner*                                | Sun | 11/6 | 6:00 p.m. - 6:30 p.m. |
+| [Backend Engineering with Flask][backend]         | Sun | 11/6 | 6:30 p.m. - 8:00 p.m. |
 
 Click on any of the links to read more about what each section will cover!
 
@@ -89,3 +101,5 @@ __Other Talks__
 [frontend]: frontend/
 [backend]: backend/
 [deployment]: deployment/
+[angular]: angular/
+[framer]: framer/
