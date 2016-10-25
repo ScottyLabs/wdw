@@ -18,15 +18,15 @@ sass:
 permalink: pretty
 
 # custom configuration
-registration_link: https://docs.google.com/forms/d/18kKgkeUjIpzmXJyElnX1Htzyx7ivQeejImcq8-RTYHg/viewform
+registration_link: https://docs.google.com/forms/d/e/1FAIpQLSeZ8uVV1xXcagFA8agorNg9pq8-EQ1RTFKdUF8Rpg2h1GtIMQ/viewform
 
 # The order that pages should be displayed int the menu bar
 wdw_pages:
   - basics
   - design
-  - frontend
+  - prototyping
   - html
-  - backend
+  - frontend
   - angular
-  - framer
+  - backend
 
