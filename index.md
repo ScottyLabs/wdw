@@ -124,6 +124,6 @@ We've run WDW twice before, in the Fall of 2014 and Spring of 2015.
       "name": "Wean Mac Cluster",
       "address": "WEH 5201"
   },
-  "image": "{{ site.baseurl }}/assets/css/pure/0.6.0/pure-min.css"
+  "image": "https://scottylabs.org/wdw/assets/img/logo.svg"
   }
 </script>
