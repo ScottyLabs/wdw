@@ -104,3 +104,26 @@ We've run WDW twice before, in the Fall of 2014 and Spring of 2015.
 [deployment]: deployment/
 [angular]: angular/
 [framer]: framer/
+
+<!-- schema.org information about the event, so it shows up in Google -->
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Event",
+  "name": "Web Dev Weekend",
+  "organizer": {
+    "@type": "Organization",
+    "name": "ScottyLabs",
+    "sameAs": "https://scottylabs.org/"
+  },
+  "startDate": "2016-11-5T13:40",
+  "endDate": "2016-11-6T20:00",
+  "description": "A talk series comprised of interactive workshops that teach the fundamentals of web development.",
+  "location": {
+      "@type": "Place",
+      "name": "Wean Mac Cluster",
+      "address": "WEH 5201"
+  },
+  "image": "{{ site.baseurl }}/assets/css/pure/0.6.0/pure-min.css"
+  }
+</script>
