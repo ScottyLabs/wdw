@@ -103,7 +103,7 @@ We've run WDW twice before, in the Fall of 2014 and Spring of 2015.
 [backend]: backend/
 [deployment]: deployment/
 [angular]: angular/
-[framer]: framer/
+[framer]: prototyping/
 
 <!-- schema.org information about the event, so it shows up in Google -->
 <script type="application/ld+json">
