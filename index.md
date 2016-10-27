@@ -31,10 +31,11 @@ knowledge you need to get started.
   - Workshops are largely independent of each other: you can attend as many or
     as few as you'd like.
 
-Make sure to check out the [deployment][deployment] workshop on the last day. In
-this session, we'll teach you how to put what you've made on the open web __for
-free__, so that anyone can see it.
-
+After participating in these workshops, you might want to show your friends the
+cool things that you built. If you are interested in publishing your website,
+you should check out one of our previous talks about [deployment][deployment].
+The deployment resources will walk you through how to host your website online
+__for free__!
 
 ## Schedule
 
