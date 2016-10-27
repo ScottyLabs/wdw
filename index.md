@@ -49,7 +49,7 @@ pre-requisites, but the ones that do list them on their descriptions.
 | -------                                            | :--:                   |
 | [HTML & CSS Primer][html]                          | 1:30 p.m. -- 3:00 p.m. |
 | [Frontend JavaScript Primer][frontend]             | 3:00 p.m. -- 4:30 p.m. |
-| [UX Prototyping with Framer.js][prototyping]       | 4:30 p.m. -- 6:00 p.m. |
+| [UX Prototyping with Framer.js][framer]            | 4:30 p.m. -- 6:00 p.m. |
 | *break for dinner*                                 | 6:00 p.m. -- 6:30 p.m. |
 | [Frontend Development with Angular.js][angular]    | 6:30 p.m. -- 8:00 p.m. |
 
