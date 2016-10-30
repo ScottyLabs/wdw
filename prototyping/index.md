@@ -26,6 +26,8 @@ Check out the framer prototype below, it looks so real!
 
 ### How to Attend
 
-Bring a computer with [Framer (Mac only)](https://framerjs.com/) installed.
-Unfortunately, if you are a Windows or Linux user, Framer will not be available.
+1. Bring a computer with [Framer (Mac only)](https://framerjs.com/) installed.
+   Unfortunately, if you are a Windows or Linux user, Framer will not be
+   available.
+1. Download all the initial files for the prototype [here](https://drive.google.com/drive/folders/0B9HSc1BtqNgANEVueWdoX0lRZlk?usp=sharing).
 
