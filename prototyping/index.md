@@ -16,6 +16,13 @@ What’s more, every FramerJS prototype looks just a real product!
 Participants will make their own interactive FramerJs prototype at the end of
 the workshop.
 
+Check out the framer prototype below, it looks so real!
+
+<div class="pure-g">
+    <div class="pure-u-1">
+        <img class="pure-img" src="{{ site.baseurl }}/assets/img/framer-demo.gif"/>
+    </div>
+</div>
 
 ### How to Attend
 
