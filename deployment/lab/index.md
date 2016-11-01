@@ -210,5 +210,5 @@ If this has been set up properly, the domain should soon route to your new page!
     Pack][gh-education])
   - Super educational in the long run!
 
-[lab-dl]: https://scottylabs.org/wdw/deployment/lab/lab.zip "Lab Download Link"
+[lab-dl]: lab.zip "Lab Download Link"
 [gh-education]: https://education.github.com/pack "Github Education Pack"
