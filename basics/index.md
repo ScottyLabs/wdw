@@ -152,5 +152,5 @@ You certainly don't have to register to attend, but we like knowing how many
 people to expect and what people will be interested in learning. We can't wait,
 and we hope to see you there!
 
-If you have any comments or questions about this guide, please write to info at
+If you have any comments or questions about this guide, please write to hello at
 scottylabs dot org.
