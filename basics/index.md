@@ -141,7 +141,7 @@ application.
 ###### where to go from here
 
 Thank you for reading this guide, and we hope that you will join us for Web Dev
-Weekend, being held on November 7th and 8th!
+Weekend!
 
 We’ve specifically designed the workshops so that they can be taken in any
 order, although we recommend taking the deployment workshop after you’ve
