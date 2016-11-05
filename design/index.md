@@ -46,6 +46,10 @@ software already installed. The Mac cluster computers will be available as well.
     - 05-391 Interaction Design Overview
     - 05-392 Designing Human-Centered Systems
 
+[Practical Typography]: http://practicaltypography.com/
+[Zell Liew]: https://zellwk.com/blog/
+[Why Vertical Rhythm]: https://zellwk.com/blog/why-vertical-rhythms/
+[Typewolf]: https://www.typewolf.com/
 
 ## Previous Resources
 
