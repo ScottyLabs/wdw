@@ -4,6 +4,8 @@ title: "Angular.js Lab"
 subject: angular
 ---
 
+{% raw %}
+
 # Interactive Lab: Angular Portfolio Website
 
 
@@ -256,7 +258,7 @@ index.html
 
 ```html
 <section ng-controller="tabController as navigation">
-  <h1>\{\{main.content.name\}\}</h1>
+  <h1>{{main.content.name}}</h1>
   <ul class="nav nav-pills">
     <li ng-class="{ active: navigation.isSelected(1)}">
       <a href>About</a>
@@ -286,7 +288,7 @@ index.html
 
 ```html
 <section ng-controller="tabController as navigation">
-  <h1>\{\{main.content.name\}\}</h1>
+  <h1>{{main.content.name}}</h1>
   <ul class="nav nav-pills">
     <li ng-class="{ active: navigation.isSelected(1)}">
       <a href ng-click="navigation.selectTab(1)">About</a>
@@ -301,7 +303,7 @@ index.html
 </section>
 ```
 
-In order to test the code you can add the expression `\{\{navigation.tab\}\}` to
+In order to test the code you can add the expression `{{navigation.tab}}` to
 under the `</ul>` tag to see the Angular magic. Made sure you delete this before
 we get into our next step.
 
@@ -366,7 +368,7 @@ defined in our main controller.
 These specific expressions will follow the format:
 
 ```js
-\{\{controllerName.variable.jsonDefinedName\}\}
+{{controllerName.variable.jsonDefinedName}}
 ```
 
 The JSON defined variable name refers to the elements that are before the colon
@@ -397,8 +399,8 @@ index.html
 
 ```html
 <div class="navigation container" ng-show="navigation.isSelected(1)">
-  <p class="col-md-8">\{\{main.content.description\}\}</p>
-  <img class="col-md-4" ng-src="\{\{main.content.aboutImage\}\}">
+  <p class="col-md-8">{{main.content.description}}</p>
+  <img class="col-md-4" ng-src="{{main.content.aboutImage}}">
 </div>
 <div class="navigation container"  ng-show="navigation.isSelected(2)">
   <li class="thumbnail" >
@@ -440,12 +442,12 @@ index.html
 
 ```html
 <div class="navigation container" ng-show="navigation.isSelected(1)">
-  <p class="col-md-8">\{\{main.content.description\}\}</p>
-    <img class="col-md-4" ng-src="\{\{main.content.aboutImage\}\}">
+  <p class="col-md-8">{{main.content.description}}</p>
+    <img class="col-md-4" ng-src="{{main.content.aboutImage}}">
 </div>
 <div class="navigation container"  ng-show="navigation.isSelected(2)">
   <li class="thumbnail" ng-repeat="image in main.content.images">
-    <img ng-src="\{\{image\}\}"/>
+    <img ng-src="{{image}}"/>
   </li>
 </div>
 <div class="navigation container" ng-show="navigation.isSelected(3)" >
@@ -453,14 +455,14 @@ index.html
     <ul>
       <li>
         <span class="glyphicon glyphicon-map-marker"></span>
-        <p>\{\{main.content.address\}\}</p></li>
+        <p>{{main.content.address}}</p></li>
       <li>
         <span class="glyphicon glyphicon-earphone"></span>
-        <p>\{\{main.content.phone\}\}</p>
+        <p>{{main.content.phone}}</p>
       </li>
       <li>
         <span class="glyphicon glyphicon-envelope"></span>
-        <p>\{\{main.content.email\}\}</p>
+        <p>{{main.content.email}}</p>
       </li>
     </ul>
   </div>
@@ -559,3 +561,5 @@ will be to now find a way to meaningfully access the data. You could store it in
 a database or a server. This is more of a backend issue and is beyond the scope
 of this particular course. But we have covered most of the front-end work that
 needs to happen to create your very own website.
+
+{% endraw %}
