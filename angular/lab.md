@@ -141,7 +141,7 @@ index.html
 ```html
 <section>
     <h1></h1>
-    <ul class = "nav nav-pills">
+    <ul class="nav nav-pills">
         <li>
           <a href>About</a>
         </li>
@@ -204,9 +204,9 @@ portfolio.controller('tabController', function(){
 index.html
 
 ```html
-<section ng-controller = "tabController as navigation">
+<section ng-controller="tabController as navigation">
     <h1></h1>
-    <ul class = "nav nav-pills">
+    <ul class="nav nav-pills">
         <li>
           <a href>About</a>
         </li>
@@ -232,7 +232,7 @@ Angular. This will allow you to show which tab is selected currently. The active
 class will be be used in the format defined below.
 
 ```
-ng-class = "{ active: controllerName.someFunction(parameter) }
+ng-class="{ active: controllerName.someFunction(parameter) }
 ```
 
 We will define this class in each of the `<li>` elements in the html. We will be
@@ -255,19 +255,20 @@ your code will look like
 index.html
 
 ```html
- <section ng-controller = "tabController as navigation">
-          <h1>\{\{main.content.name\}\}</h1>
-          <ul class = "nav nav-pills">
-              <li ng-class = "{ active: navigation.isSelected(1)}">
-                <a href>About</a>
-              </li>
-            <li ng-class = "{ active:navigation.isSelected(2) }">
-                <a href >Portfolio</a>
-              </li>
-            <li ng-class = "{ active:navigation.isSelected(3) }">
-                <a href>Contact Me</a>
-              </li>
-          </ul>
+<section ng-controller="tabController as navigation">
+  <h1>\{\{main.content.name\}\}</h1>
+  <ul class="nav nav-pills">
+    <li ng-class="{ active: navigation.isSelected(1)}">
+      <a href>About</a>
+    </li>
+    <li ng-class="{ active:navigation.isSelected(2) }">
+      <a href >Portfolio</a>
+    </li>
+    <li ng-class="{ active:navigation.isSelected(3) }">
+      <a href>Contact Me</a>
+    </li>
+  </ul>
+</section>
 ```
 
 While this code does define, which tab is selected, we still need to actually
@@ -284,19 +285,19 @@ in the table above.
 index.html
 
 ```html
-  <section ng-controller = "tabController as navigation">
-          <h1>\{\{main.content.name\}\}</h1>
-          <ul class = "nav nav-pills">
-              <li ng-class = "{ active: navigation.isSelected(1)}">
-                <a href ng-click = "navigation.selectTab(1)">About</a>
-              </li>
-            <li ng-class = "{ active:navigation.isSelected(2) }">
-                <a href ng-click = "navigation.selectTab(2)">Portfolio</a>
-              </li>
-            <li ng-class = "{ active:navigation.isSelected(3) }">
-                <a href ng-click = "navigation.selectTab(3)">Contact Me</a>
-              </li>
-          </ul>
+<section ng-controller="tabController as navigation">
+  <h1>\{\{main.content.name\}\}</h1>
+  <ul class="nav nav-pills">
+    <li ng-class="{ active: navigation.isSelected(1)}">
+      <a href ng-click="navigation.selectTab(1)">About</a>
+    </li>
+    <li ng-class="{ active:navigation.isSelected(2) }">
+      <a href ng-click="navigation.selectTab(2)">Portfolio</a>
+    </li>
+    <li ng-class="{ active:navigation.isSelected(3) }">
+      <a href ng-click="navigation.selectTab(3)">Contact Me</a>
+    </li>
+  </ul>
 </section>
 ```
 
@@ -317,8 +318,8 @@ the website.
 
 ```html
 <div class="container">
-  <p class = "col-md-8"></p>
-  <img class = "col-md-4">
+  <p class="col-md-8"></p>
+  <img class="col-md-4">
 </div>
 <div class="container">
   <li class="thumbnail" >
@@ -339,16 +340,16 @@ code, this will look like:
 index.html
 
 ```html
-<div class = "navigation container" ng-show="navigation.isSelected(1)">
-  <p class = "col-md-8"></p>
-  <img class = "col-md-4" >
+<div class="navigation container" ng-show="navigation.isSelected(1)">
+  <p class="col-md-8"></p>
+  <img class="col-md-4" >
 </div>
-<div class = "navigation container"  ng-show="navigation.isSelected(2)">
-  <li class = "thumbnail">
+<div class="navigation container"  ng-show="navigation.isSelected(2)">
+  <li class="thumbnail">
     <img ng-src=/>
   </li>
 </div>
-<div class = "navigation container" ng-show="navigation.isSelected(3)" >
+<div class="navigation container" ng-show="navigation.isSelected(3)" >
 </div>
 ```
 
@@ -395,16 +396,16 @@ the expression defined above.
 index.html
 
 ```html
-<div class = "navigation container" ng-show="navigation.isSelected(1)">
-  <p class = "col-md-8">\{\{main.content.description\}\}</p>
-  <img class = "col-md-4" ng-src="\{\{main.content.aboutImage\}\}">
+<div class="navigation container" ng-show="navigation.isSelected(1)">
+  <p class="col-md-8">\{\{main.content.description\}\}</p>
+  <img class="col-md-4" ng-src="\{\{main.content.aboutImage\}\}">
 </div>
-<div class = "navigation container"  ng-show="navigation.isSelected(2)">
-  <li class = "thumbnail" >
+<div class="navigation container"  ng-show="navigation.isSelected(2)">
+  <li class="thumbnail" >
     <img/>
   </li>
 </div>
-<div class = "navigation" ng-show="navigation.isSelected(3)" >
+<div class="navigation" ng-show="navigation.isSelected(3)" >
   <ul>
     <li>
       <span class="glyphicon glyphicon-map-marker"></span>
@@ -428,7 +429,7 @@ page, with images. The only nuance is that we will be using the directive
 list to display it. The `ng-repeat` has the following structure.
 
 ```
-ng-repeat = "image in controllerName.var.images"
+ng-repeat="image in controllerName.var.images"
 ```
 
 Try applying it so we can display 3 different images.  Just follow the format
@@ -438,16 +439,16 @@ so:
 index.html
 
 ```html
-<div class = "navigation container" ng-show="navigation.isSelected(1)">
-  <p class = "col-md-8">\{\{main.content.description\}\}</p>
-    <img class = "col-md-4" ng-src="\{\{main.content.aboutImage\}\}">
+<div class="navigation container" ng-show="navigation.isSelected(1)">
+  <p class="col-md-8">\{\{main.content.description\}\}</p>
+    <img class="col-md-4" ng-src="\{\{main.content.aboutImage\}\}">
 </div>
-<div class = "navigation container"  ng-show="navigation.isSelected(2)">
-  <li class = "thumbnail" ng-repeat="image in main.content.images">
+<div class="navigation container"  ng-show="navigation.isSelected(2)">
+  <li class="thumbnail" ng-repeat="image in main.content.images">
     <img ng-src="\{\{image\}\}"/>
   </li>
 </div>
-<div class = "navigation container" ng-show="navigation.isSelected(3)" >
+<div class="navigation container" ng-show="navigation.isSelected(3)" >
   <div id="contactBox">
     <ul>
       <li>
@@ -481,7 +482,7 @@ class for the the third and final tab.
 index.html
 
 ```html
-<form class = col-md-8>
+<form class="col-md-8">
   <div class="form-group">
     <label for="name">Name:</label>
     <input type="name" class="form-control" id="name">
@@ -527,7 +528,7 @@ This will link ng-model to a particular input and bind it to the backend. We
 will be using the following format for our particular ng-model.
 
 ```html
-ng-model = "variableName.inputType"
+ng-model="variableName.inputType"
 ```
 
 Now we will be using ng-click to call the function update(user) from the
@@ -536,20 +537,20 @@ controller.
 index.html
 
 ```html
-<form ng-controller = "userController" class = col-md-8>
+<form ng-controller="userController" class="col-md-8">
   <div class="form-group">
     <label for="name">Name:</label>
-    <input type="name" class="form-control" ng-model= "user.name">
+    <input type="name" class="form-control" ng-model="user.name">
   </div>
   <div class="form-group">
     <label for="email">Email address:</label>
-    <input type="email" class="form-control" ng-model= "user.email">
+    <input type="email" class="form-control" ng-model="user.email">
   </div>
   <div class="form-group">
     <label for="msg">Message:</label>
-    <textarea rows="4" cols="50" type="msg" class="form-control" ng-model= "user.msg"></textarea>
+    <textarea rows="4" cols="50" type="msg" class="form-control" ng-model="user.msg"></textarea>
   </div>
-  <button type="submit" class="btn btn-primary" ng-click ="update(user)">Submit</button>
+  <button type="submit" class="btn btn-primary" ng-click="update(user)">Submit</button>
 </form>
 ```
 
