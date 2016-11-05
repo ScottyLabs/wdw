@@ -26,3 +26,9 @@ Text](http://www.sublimetext.com/).
 This talk assumes you've programmed in JavaScript before, either for a class or
 on your own time.
 
+## Resources
+
+1. [Slides](slides.pdf)
+1. [Angular.js Introduction](intro/)
+1. [Starter Code](starter.zip)
+1. [Angular.js Lab](lab/)
