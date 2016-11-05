@@ -27,6 +27,25 @@ something like this already installed, you can use the links above to find
 free trials. Alternatively, attend the workshop with a friend who has this
 software already installed. The Mac cluster computers will be available as well.
 
+## Resources
+
+### During the Event
+
+- [Slides F16](f16/slides.pdf)
+
+### Extend your Knowledge
+
+- [Practical Typography]
+  - An amazing, concise book on typography
+- [Zell Liew] on Grids
+    - for a good start: [Why Vertical Rhythm]
+- [Typewolf]
+    - Best reference on typefaces and pairings on the
+      Internet
+- If you can, take an HCI class!
+    - 05-391 Interaction Design Overview
+    - 05-392 Designing Human-Centered Systems
+
 
 ## Previous Resources
 
@@ -34,11 +53,12 @@ This workshop has been run twice before. Here are the resources we used last tim
 
 ### From the Workshop
 
-- [Slides F14](f14/slides.pdf)
 - [Slides S15](s15/slides.pdf)
+- [Slides F14](f14/slides.pdf)
+  - [Hack Design](https://hackdesign.org/)
+  - [The Vignelli Cannon](http://www.vignelli.com/canon.pdf)
+  - [The Visual Display of Quantitative Information](http://www.amazon.com/The-Visual-Display-Quantitative-Information/dp/0961392142)
 
 ### Web Resources
 
-- [Hack Design](https://hackdesign.org/)
-- [The Vignelli Cannon](http://www.vignelli.com/canon.pdf)
-- [The Visual Display of Quantitative Information](http://www.amazon.com/The-Visual-Display-Quantitative-Information/dp/0961392142)
+
