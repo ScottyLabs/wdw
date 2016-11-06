@@ -35,11 +35,8 @@ time.
 
 Here are some resources that we will use for this workshop:
 
-- [Slides](f15/slides.pdf)
-- [Starter Code](f15/wdwdemo.zip)
-- [Code at Each Step](https://github.com/bryanyan/flasktalk/tree/master/resources)
-- [Example Website](http://flasktalk.herokuapp.com)
-- [Repository for Website](https://github.com/bryanyan/flasktalk)
+- [Slides](slides.pdf)
+- [Repository for Demo](https://github.com/bryanyan/wdwdemo)
 
 ### Previous Resources
 
