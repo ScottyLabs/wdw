@@ -33,8 +33,12 @@ another editor, feel free to use it.
 ## Resources
 
 To follow along, go to the
-[demo website](https://skrulcik.github.io/WDW_HTMLCSS/), where I've posted code
- and the ouput so you can see the code I add for each step in the presentation.
+[demo website](https://skrulcik.github.io/WDW_HTMLCSS/). As we introduce new
+topics during the talk, the companion website will show you examples of source
+code and its output to illustrate concepts.
+
+We also created a list of suggested websites and other [resources](resources/) for
+further exploration once you are finished with the talk.
 
 The slides can be found [here](https://skrulcik.github.io/WDW_HTMLCSS/HTMLCSS.pdf).
 
@@ -52,4 +56,5 @@ last time.
 ### On the Web
 
 - [Shay Howe's HTML and CSS Tutorial](http://learn.shayhowe.com/)
-- MDN's [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) and [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- MDN's [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) and
+    [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
