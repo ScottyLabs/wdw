@@ -33,14 +33,14 @@ another editor, feel free to use it.
 ## Resources
 
 To follow along, go to the
-[demo website](https://skrulcik.github.io/WDW_HTMLCSS/). As we introduce new
+[demo website](https://scottylabs.org/wdw-htmlcss/). As we introduce new
 topics during the talk, the companion website will show you examples of source
 code and its output to illustrate concepts.
 
 We also created a list of suggested websites and other [resources](resources/) for
 further exploration once you are finished with the talk.
 
-The slides can be found [here](https://skrulcik.github.io/WDW_HTMLCSS/HTMLCSS.pdf).
+The slides can be found [here](https://scottylabs.org/wdw-htmlcss/HTMLCSS.pdf).
 
 ## Previous Resources
 
