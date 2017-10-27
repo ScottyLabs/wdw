@@ -42,19 +42,3 @@ further exploration once you are finished with the talk.
 
 The slides can be found [here](https://scottylabs.org/wdw-htmlcss/HTMLCSS.pdf).
 
-## Previous Resources
-
-This workshop has been run before. Here are the resources that were used
-last time.
-
-### From the Workshop
-
-- [Lab Instructions](https://docs.google.com/file/d/0B9HqC5cnPeRVbng4RnRodDFFZVk/edit)
-- [Sample Website](http://naher94.github.io/Basic-Sample-Site/portfolio.html)
-- [Workshop Slides](https://docs.google.com/file/d/0B9HqC5cnPeRVODB6MURCTUxvSVk/edit)
-
-### On the Web
-
-- [Shay Howe's HTML and CSS Tutorial](http://learn.shayhowe.com/)
-- MDN's [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) and
-    [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
