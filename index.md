@@ -46,26 +46,26 @@ pre-requisites, but the ones that do list them on their descriptions.
 
 **Location**: WEH 5201 (Mac cluster)
 
-### Saturday, 11/5
+### Saturday, November 4th
 
-| Session                                            | Time                   |
-| -------                                            | :--:                   |
-| [HTML & CSS Primer][html]                          | 1:30 p.m. -- 3:00 p.m. |
-| [Frontend JavaScript Primer][frontend]             | 3:00 p.m. -- 4:30 p.m. |
-| [UX Prototyping with Framer.js][framer]            | 4:30 p.m. -- 6:00 p.m. |
-| *break for dinner*                                 | 6:00 p.m. -- 6:30 p.m. |
-| [Frontend Development with Angular.js][angular]    | 6:30 p.m. -- 8:00 p.m. |
+| Session                                | Time                   |
+|----------------------------------------|:----------------------:|
+| [HTML & CSS][html]                     | 1:30 p.m. -- 3:00 p.m. |
+| [Frontend JavaScript][frontend]        | 3:00 p.m. -- 4:30 p.m. |
+| [Crafting Well-Designed Sites][design] | 4:30 p.m. -- 6:00 p.m. |
+| *break for dinner - PIADA!*            | 6:00 p.m. -- 6:30 p.m. |
+| [React][react]                         | 6:30 p.m. -- 8:00 p.m. |
 
 
-### Sunday, 11/6
+### Sunday, November 5th
 
-| Session                                            | Time                   |
-| -------                                            | :--:                   |
-| [HTML & CSS Primer][html]                          | 1:30 p.m. -- 3:00 p.m. |
-| [Frontend JavaScript Primer][frontend]             | 3:00 p.m. -- 4:30 p.m. |
-| [Crafting Well-Designed Sites][design]             | 4:30 p.m. -- 6:00 p.m. |
-| *break for dinner*                                 | 6:00 p.m. -- 6:30 p.m. |
-| [Backend Engineering with Flask][backend]          | 6:30 p.m. -- 8:00 p.m. |
+| Session                                    | Time                   |
+|--------------------------------------------|:----------------------:|
+| [HTML & CSS][html]                         | 1:30 p.m. -- 3:00 p.m. |
+| [P5 - JavaScript Graphical Sketchbook][p5] | 3:00 p.m. -- 4:30 p.m. |
+| [Crafting Well-Designed Sites][design]     | 4:30 p.m. -- 6:00 p.m. |
+| *break for dinner- Noodles and Co.*        | 6:00 p.m. -- 6:30 p.m. |
+| [React][react]                             | 6:30 p.m. -- 8:00 p.m. |
 
 
 ## What will I learn?
@@ -90,18 +90,24 @@ Web Dev Weekend is run by [ScottyLabs](https://scottylabs.org). We also run
 other educational events like
 [CrashCourse](https://scottylabs.org/crashcourse/).
 
-We've run WDW twice before, in the Fall of 2014 and Spring of 2015.
-
 ### Previous Talks
 
-- [Synergize Your CSS: Using a Framework][css]
-- [Deployment: Making Your Site Public][deployment]
+We've run WDW many times before, sometimes with different workshops. Here are
+previous workshops that aren't running this year, but whose resources resources
+might be useful:
 
+- [Synergize Your CSS: Using a Framework][css-frameworks]
+- [UX Prototyping with Framer.js][framer]
+- [Frontend JavaScript with AngularJS][angular]
+- [Backend Engineering with Flask][backend]
+- [Deployment: Making Your Site Public][deployment]
 
 [basics]: basics/
 [html]: html/
-[css]: css/
 [design]: design/
+[p5]: p5/
+[react]: react/
+[css-frameworks]: css/
 [frontend]: frontend/
 [backend]: backend/
 [deployment]: deployment/
@@ -119,9 +125,9 @@ We've run WDW twice before, in the Fall of 2014 and Spring of 2015.
     "name": "ScottyLabs",
     "sameAs": "https://scottylabs.org/"
   },
-  "startDate": "2016-11-5T13:40",
-  "endDate": "2016-11-6T20:00",
-  "description": "A talk series comprised of interactive workshops that teach the fundamentals of web development.",
+  "startDate": "2016-11-4T13:40",
+  "endDate": "2016-11-5T20:00",
+  "description": "A series of interactive workshops that teach the fundamentals of web development.",
   "location": {
       "@type": "Place",
       "name": "Wean Mac Cluster",

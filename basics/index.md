@@ -52,15 +52,22 @@ information about how our site looks. With just HTML and CSS we can create
 beautiful, informational web pages that display the same information for
 everyone who loads them.
 
-On the other hand, JavaScript is a fully featured programming language.
-
 <span class="aside">To learn about JavaScript, its many quirks, and it's
 infinite possibilities, attend <a href="{{ site.baseurl }}/frontend/">Frontend
 Engineering with JavaScript</a>.</span>
 
-When run in a web browser, JavaScript can alter HTML and CSS on the fly,
-communicate with a web server, or perform computation all by itself. This opens
-the door to modern, interactive, experiences.
+On the other hand, JavaScript is a fully featured programming language.  When
+run in a web browser, JavaScript can alter HTML and CSS on the fly, communicate
+with a web server, or perform computation all by itself. This opens the door to
+modern, interactive, experiences.
+
+<span class="aside">To learn how companies like Facebook and AirBnB code their
+frontends, check out our <a href="{{ site.baseurl }}/react/">React
+Workshop</a>.</span>
+
+HTML, CSS and JavaScript still form the core of web development, but companies
+have built tools on top of them to make it easier to build good-looking, high
+performance websites.
 
 ## The Backend
 
@@ -88,6 +95,7 @@ tasks and helps organize code.
 ## Design
 
 ###### optimizing the user's experience
+
 <span class="aside">To learn more about design, attend <a href="{{ site.baseurl }}/design/">Crafting Well-Designed Sites</a></span>
 
 When creating a web application, it’s important to remember that in a good
