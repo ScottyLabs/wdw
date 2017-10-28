@@ -23,7 +23,7 @@ registration_link: https://docs.google.com/forms/d/e/1FAIpQLSeR5Zwwo2hIszTzXC_oo
 # The order that pages should be displayed int the menu bar
 wdw_pages:
   - basics
-  - html
+  - html+css
   - javascript
   - design
   - react

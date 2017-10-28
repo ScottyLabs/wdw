@@ -41,8 +41,8 @@ browser. It is written in three main languages, __HTML__, __CSS__, and
 __Javascript__.
 
 <span class="aside">To learn how to write HTML and CSS by creating a simple
-portfolio website, check out <a href="{{ site.baseurl }}/html/">Introduction to
-HTML & CSS</a>.</span>
+portfolio website, check out <a href="{{ site.baseurl
+}}/html+css/">Introduction to HTML & CSS</a>.</span>
 
 HTML and CSS store information about a page. HTML contains the __content__,
 which could include text, images, videos, and any number of other things.

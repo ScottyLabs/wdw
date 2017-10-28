@@ -59,7 +59,7 @@ The first step takes care of getting the starter code. You can download it
 unzipped: a file called index.html and one called styles.css.
 
 For more information about how to create things like this, check out the
-Web Dev Weeks talk on [HTML & CSS]({{ site.baseurl }}/html/).
+Web Dev Weeks talk on [HTML & CSS]({{ site.baseurl }}/html+css/).
 
 Skimming over this step's code, you can see that we've included our
 styles.css file containing all of our CSS, as well as an external file
@@ -72,8 +72,8 @@ counters to keep track of some game stats, and we've got the
 `tile-wrapper`, which will hold the code for all of our tiles.
 
 If you're interested in this, you should definitely check out the [HTML & CSS
-workshop]({{ site.baseurl }}/html/), which shows you how to come up with the
-styles and content of a web page.
+workshop]({{ site.baseurl }}/html+css/), which shows you how to come up with
+the styles and content of a web page.
 
 ## Step 2: Load the external scripts
 

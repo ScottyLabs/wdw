@@ -103,7 +103,7 @@ might be useful:
 - [Deployment: Making Your Site Public][deployment]
 
 [basics]: basics/
-[html]: html/
+[html]: html+css/
 [design]: design/
 [p5]: p5/
 [react]: react/
