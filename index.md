@@ -51,7 +51,7 @@ pre-requisites, but the ones that do list them on their descriptions.
 | Session                                | Time                   |
 |----------------------------------------|:----------------------:|
 | [HTML & CSS][html]                     | 1:30 p.m. -- 3:00 p.m. |
-| [Frontend JavaScript][frontend]        | 3:00 p.m. -- 4:30 p.m. |
+| [JavaScript][javascript]               | 3:00 p.m. -- 4:30 p.m. |
 | [Crafting Well-Designed Sites][design] | 4:30 p.m. -- 6:00 p.m. |
 | *break for dinner - PIADA!*            | 6:00 p.m. -- 6:30 p.m. |
 | [React][react]                         | 6:30 p.m. -- 8:00 p.m. |
@@ -108,7 +108,7 @@ might be useful:
 [p5]: p5/
 [react]: react/
 [css-frameworks]: css/
-[frontend]: frontend/
+[javascript]: javascript/
 [backend]: backend/
 [deployment]: deployment/
 [angular]: angular/

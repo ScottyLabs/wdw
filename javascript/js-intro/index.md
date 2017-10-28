@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: JavaScript Intro
-subject: frontend
+subject: javascript
 ---
 
 # JavaScript Intro
@@ -415,4 +415,4 @@ Written by Jake Zimmerman, July 2014
 [airbnb]: https://github.com/airbnb/javascript
 [operators]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators
 [hoisting]: http://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html
-[lab]: {{ site.baseurl }}/frontend/lab/
+[lab]: {{ site.baseurl }}/javascript/lab/

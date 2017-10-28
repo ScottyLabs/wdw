@@ -1,11 +1,11 @@
 ---
 layout: guide
-title: Frontend Engineering
-subject: frontend
+title: JavaScript
+subject: javascript
 ---
 
 
-# Frontend JavaScript Primer
+# Frontend JavaScript
 
 ###### make your pages interactive with JavaScript
 
@@ -35,10 +35,10 @@ This workshop has been run before, and these are the resources from last time.
 If you attend this workshop, we'll work through all of these resources to help
 you complete a fun JavaScript project!
 
-1. [Introduction to JavaScript]({{ site.baseurl }}/frontend/js-intro/)
-1. [JavaScript Lab]({{ site.baseurl }}/frontend/lab/)
-1. [HTML & CSS Recap]({{ site.baseurl }}/frontend/html-css/)
-1. [Demo of Final Project]({{ site.baseurl }}/frontend/demo/)
+1. [Introduction to JavaScript]({{ site.baseurl }}/javascript/js-intro/)
+1. [JavaScript Lab]({{ site.baseurl }}/javascript/lab/)
+1. [HTML & CSS Recap]({{ site.baseurl }}/javascript/html-css/)
+1. [Demo of Final Project]({{ site.baseurl }}/javascript/demo/)
 1. [Source code of Final Project](https://github.com/jez/jquery-lab/)
 
 

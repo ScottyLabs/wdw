@@ -1,7 +1,7 @@
 ---
 layout: guide
-title: HTML & CSS of Frontend Development
-subject: frontend
+title: 'HTML & CSS for the JS Lab'
+subject: javascript
 ---
 
 # HTML & CSS of the lab

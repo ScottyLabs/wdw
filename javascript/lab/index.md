@@ -1,10 +1,10 @@
 ---
 layout: guide
-title: Frontend Lab
-subject: frontend
+title: JavaScript Lab
+subject: javascript
 ---
 
-# Frontend Lab
+# Frontend JavaScript Lab
 
 In this lab, you'll be introduced to jQuery, a popular library that helps speed
 up JavaScript web development to build interactive web pages.
@@ -648,7 +648,7 @@ know! Open an issue on <https://github.com/ScottyLabs/wdw>.
 
 Written by Jake Zimmerman, July 2014
 
-[galumphing]: {{ site.baseurl }}/frontend/demo/
+[galumphing]: {{ site.baseurl }}/javascript/demo/
 
 [source-final]: https://github.com/jez/jquery-lab/
 [source-final-zip]: https://github.com/jez/jquery-lab/archive/gh-pages.zip

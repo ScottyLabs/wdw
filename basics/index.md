@@ -53,7 +53,7 @@ beautiful, informational web pages that display the same information for
 everyone who loads them.
 
 <span class="aside">To learn about JavaScript, its many quirks, and it's
-infinite possibilities, attend <a href="{{ site.baseurl }}/frontend/">Frontend
+infinite possibilities, attend <a href="{{ site.baseurl }}/javascript/">Frontend
 Engineering with JavaScript</a>.</span>
 
 On the other hand, JavaScript is a fully featured programming language.  When
