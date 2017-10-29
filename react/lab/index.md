@@ -1,6 +1,9 @@
-
-# Setup for Pausch Project
-WDW 2017 React Tutorial
+---
+layout: guide
+title: React Lab
+subject: react
+---
+# Pausch Project Setup
 
 ## 0. Update Browser
 - Make sure that your browser is up to date, we highly recommend using Chrome for this project.
