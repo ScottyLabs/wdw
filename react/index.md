@@ -32,4 +32,4 @@ Atom are recommended. Please also have Node installed with NPM, the Node
 package manager.
 
 ## Resources
-Here's the link to the [lab]({{ site.baseurl }}/react/react/lab/) for this workshop!
+Here's the link to the [lab]({{ site.baseurl }}/react/lab/) for this workshop!
