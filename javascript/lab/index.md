@@ -4,698 +4,229 @@ title: JavaScript Lab
 subject: javascript
 ---
 
-# Frontend JavaScript Lab
-
-In this lab, you'll be introduced to jQuery, a popular library that helps speed
-up JavaScript web development to build interactive web pages.
-
+# JavaScript Lab
+The purpose of this lab to practice using JavaScript to create an interactive webpage and introduce new features of the language.
 ## Overview
+In this lab, we will be creating a website for playing the game "Falling Boulders." The goal of this game is to move your player across the bottom of the screen using the left and right arrow keys to avoid constantly falling boulders. Every boulder that is successfully dodged earns the player a point. The game ends when the player collides with one of the boulders. You can play a finished demo of the game __[here][game-demo]__.
+## Step 1: Initial Code
 
-The goal of this lab is to create a web app that will let us play the game
-"Galumphing Banderwoozles." I didn't come up with the name: the Spring 2014
-15-251 TA's did.
+__[download starter code][starter-code]__, __[diff for this step][diff-1]__, __[code for this step][step-1]__
 
-Nonetheless, the rules of the game are as follows:
+To start off, you are going to need to download the starter code, which you can download __[here][starter-code]__. This includes an html file (`index.html`) with the layout of the page already set up and a JavaScript file (`framework.js`) with some pre-written code that takes care of some behind-the-scenes work we don't want to have to worry about while coding the game itself.
 
-- You are given a board composed of 15251 by 15251 tiles.
-- Any tile can be one of three colors: __red, green, or blue__.
-- Initially, all tiles are blue, except for the tile in the top left corner,
-  which is green.
-- The object is to __turn the entire board red__.
-- Green tiles can be clicked to turn them red. __Once a tile is red, it stays
-  red__.
-- Clicking a green tile also affects it's neighbors to top, right, bottom, and left.
-    - When a green tile is clicked, __all neighbors that are currently blue
-      become green__, and __all those that are green become blue__.
-    - Recall that the red tiles stay red.
+Once you have that downloaded, go ahead and create a new file called `main.js` and add a reference to it with the `<script>` tag at the bottom of `index.html`. If you don't know how to do this, look at the tag loading `framework.js` for reference.
 
-These rules are pretty confusing. If you want to get a feel for how the game
-works, you can play a working demo of the game __[here][galumphing]__. Simply
-enter a board size (say, 5 rows by 5 columns) and start clicking on the green
-tiles.
+All of the code we write from now on will be inside `main.js`
+## Step 2: Initializing Global Variables
 
-15251 by 15251 is pretty big, so for our purposes, we're going to let the
-player decide how big to make the board. Going one step further, this tutorial
-in general requires you to recall the rules of this game very rarely. As long
-as you know what goal we're trying to achieve (which will almost always be
-stated), the only struggle should be figuring out the JavaScript required to
-implement it.
+__[diff for this step][diff-2]__, __[code for this step][step-2]__
 
-## Diving in
+Before we begin coding the game itself, we are going to want to initialize some variables that we will use throughout the project. At the top of `main.js`, create three variables `scoreBoard`, `startButton`, and `canvas` for storing the scoreboard, start button, and canvas respectively and use `document.getElementById()` to create references to each of their respective HTML elements in `index.html`.
 
-The code and tutorial for this lab will be [hosted on GitHub][source-final].
-Each step is a commit, allowing you to see what changed between steps. Links
-will be provided to the code of the step in question. Most of the explanations
-will not make sense if you do not also take a look at the corresponding code,
-so be sure to do that.
+Next, create a variable for storing the context of the canvas. This will look something like this:
+```JavaScript
+var ctx = canvas.getContext('2d');
+```
+What this line does is give us a way to interact with our canvas. We pass the argument `'2d'` to let JavaScript know that we want to draw 2-D images onto the canvas.
 
-## Step 1: Initial HTML and CSS
+Now that we have these variables, let's use them to code our game.
+## Step 3: Begin Creating the Player
 
-__[download starter code][starter-code]__, __[diff for this step][diff-1]__,
-__[code at this step][step-1]__
+__[diff for this step][diff-3]__, __[code for this step][step-3]__
 
-The first step takes care of getting the starter code. You can download it
-[using this link][starter-code]. The starter code should contain two files when
-unzipped: a file called index.html and one called styles.css.
+The first part we want to create is our player object. On the next line, create a new object representing our player and store it in a variable called `player`. For now, we will give our player object three properties: `hitbox`, `color`, and `draw`.
 
-For more information about how to create things like this, check out the
-Web Dev Weeks talk on [HTML & CSS]({{ site.baseurl }}/html+css/).
+First, let's assign a new `Rectangle` object to `hitbox`. The constructor for `Rectangle` is already defined in `framework.js` and is used as follows:
+```JavaScript
+var rect = new Rectangle(x, y, width, height);
+```
+This rectangle is going to represent the bounds of our player for detecting collisions and for drawing the player on the canvas.
 
-Skimming over this step's code, you can see that we've included our
-styles.css file containing all of our CSS, as well as an external file
-called normalize.min.css which will also help make things appear
-correctly.
+Assign values for `x` and `y` so that the player will appear on the bottom of the canvas and give it a `width` and `height` of your choosing (in my example, I used a width of 30 and a height of 60). Keep in mind that for canvases the top left corner is the origin (0, 0). Also, you may find it useful to use `canvas.width` and `canvas.height` in your calculations.
 
-You can also see a rough sketch of how the app will look: we've got a
-couple of text inputs to get the board size, we've got a couple of
-counters to keep track of some game stats, and we've got the
-`tile-wrapper`, which will hold the code for all of our tiles.
+> ### A Note about the Canvas
+> Throughout the lab, it will be helpful to think about the canvas as being a grid of 10x10 cells. For example, this is why I gave my example player a width of 30 and height of 60. This corresponds nicely to a 3x6 block of cells. Keep this in mind when creating other elements later.
 
-If you're interested in this, you should definitely check out the [HTML & CSS
-workshop]({{ site.baseurl }}/html+css/), which shows you how to come up with
-the styles and content of a web page.
+Next, let's give our player a color. Assign a `String` to the `color` property of your player object to represent whatever color you want. This can be a color name, such as `"red"` (if it's supported by HTML), or a hex code, such as `#FF0000`.
 
-## Step 2: Load the external scripts
+Finally, for `draw` we are going to write a function that will draw the player onto the canvas. For now, this will be pretty basic and just draw the hitbox in the color you chose previously. To do this, call the `draw()` method on the hitbox, which looks like:
+```JavaScript
+rect.draw(ctx, color);
+```
+where `ctx` is the context of the canvas we wish to draw on (which we created in Step 2) and `color` is a string representing the color of the rectangle. Fill in these values as well as the value of `rect` yourself. (Hint: use the `this` keyword)
+## Step 4: Rendering the Player
 
-__[diff for this step][diff-2]__, __[code at this step][step-2]__
+__[diff for this step][diff-4]__, __[code for this step][step-4]__
 
-Now that we have all the HTML & CSS in place, we need to tell the
-browser where to look to load the JavaScript files that we'll be using.
-This is done with the `<script>` tag.
+Now that we have a player with a `draw` function, let's display the player on the canvas. To do this, we are going to assign a new function to `document.body.onload` like this:
+```JavaScript
+document.body.onload = function()
+{
+    player.draw();
+};
+```
+So, what does this do? Well, `document.body` refers to the `<body>` of our HTML page and `onload` is property that stores a function to be called as soon as the webpage loads. `document.body.onload` is `null` by default, so by setting it to our newly created function we are telling the page that we want this new block of code to be run once the page finishes loading. This will sort of act similarly to a main method in Java or C.
 
-For this project, we'll be using two different JavaScript sources.
-First, we'll load the jQuery, a JavaScript library that helps out
-tremendously with adding event listeners, manipulating the DOM, and
-doing other routine tasks. jQuery is a library written and hosted by
-someone else: this means we need to go grab an external link to it. To
-find it, search the Web for "Google jQuery CDN". (A CDN, or content
-delivery network, is basically a super-fast network designed for hosting
-commonly-requested files.) On the first result page, you should see a
-large list of Google hosted libraries:
+Now, we can begin seeing the fruits of labor! Open up a web browser and click `File > Open File` (`ctrl/cmd + O`), navigate to wherever you saved this project, and select `index.html`. If your code is all correct, you should see a colored rectangle on a blank gameboard. (If you don't see this, check the JavaScript console for errors).
 
-1. Find the one titled jQuery,
-1. Copy the `<script>` tag under it, and
-3. Paste it into the file `index.html`.
+From here on out, we will be able to test our code simply by going to the browser and refreshing the page.
+## Step 5: Drawing a Prettier Player (Optional)
 
-Now that we've loaded our helper JavaScript library, we need to load the
-file which will contain our core application code. We'll be calling this
-file `main.js`, so add a `<script>` tag that looks similar to the one
-you just copied, but with a source of `src="main.js"` instead:
+__[diff for this step][diff-5]__, __[code for this step][step-5]__
 
-```html
-<script src="main.js"></script>
+At this point we have a pretty basic player displaying on the gameboard. But what if our player aspires to be more than just a rectangle? Well, we can fix that!
+
+Back in the `player` object, add a new property called `body`. `body` is going to be an array of rectangle objects that represent different pieces of our player's body. This can look like however you want, just keep in mind it should fit the bounds of `hitbox`. Also, consider the top left corner of `hitbox` to be the coordinate (0,0) when assigning `x` and `y` values to your rectangles. The reason for this will be apparent in the next part of this step.
+
+Since we've changed what our player looks like, we're going to want to rewrite the `draw` function. Instead of calling `Rectangle.draw()` on just `hitbox`, loop through the rectangles in `body` and call `Rectangle.draw()` on each one of them. However, this time we are going to add an argument as follows:
+```JavaScript
+rect.draw(ctx, color, offset)
+```
+`offset` is an optional parameter that offsets the rectangle by the `x` and `y` values of the rectangle passed in (this is why we treated the top left corner of `hitbox` as (0,0) when making `body`). Fill in `rect`, `ctx`, and `color` as you did previously, but for `offset` fill in the value `this.hitbox`.
+## Step 6: Moving the Player
+
+__[diff for this step][diff-6]__, __[code for this step][step-6]__
+
+So now we have a player displaying, but what good is a player if it can't move? Our next step will be to add `moveLeft()` and `moveRight()` functions to move the player across the bottom of the gameboard.
+
+Before we write these functions, we are going to first define a function `erase()` inside `player`. The reason for this is that we want to be able to update the player's location on the canvas after we move it and the only way we can do this is by erasing the player from its previous location then redrawing it in the new one. Similarly to `draw()`, we already have a function defined in `framework.js` for erasing that can called like:
+```JavaScript
+clearRect(ctx, rect);
+```
+Again, call `clearRect()` in your `erase()` function replacing `ctx` and `rect` with the correct values and you are done.
+
+Now, let's write `moveLeft()` and `moveRight()` (still inside `player`). I'll leave the implementation to you, but each function should fulfill the following tasks:
+1. Erase the player from the canvas
+2. Move the player's location (hint: edit some property in `hitbox`)
+3. Make sure the player cannot leave the bounds of the screen
+4. Redraw the player onto the canvas
+
+When choosing the amount to shift the player by, keep in mind the hypothetical grid of 10x10 cells discussed in Step 3.
+## Step 7: Listening for Key Presses
+
+__[diff for this step][diff-7]__, __[code for this step][step-7]__
+
+Remember when we assigned a function to `document.body.onload` to run some code when the page loaded? Well, we can edit a similar property to have code whenever a key is pressed on the keyboard. Inside the function we assigned to `document.body.onload`, add the following snippet:
+```JavaScript
+document.body.onkeydown = function(e)
+{
+    var keyCode = e.which || e.keyCode;
+    // to be implemented
+};
+```
+Notice that for this function we have defined a parameter `e`. This refers to the event data that will be passed by the browser when it calls the function, which is how we determine which key was pressed.
+
+This determination is performed in the line `var keyCode = e.which || e.keyCode;`. Similarly to how characters have an ASCII value, every key on the keyboard has its own key code that can be used to identify it. This value is stored in either `e.which` or `e.keyCode` depending on which browser you are using. That's why we include `e.which || e.keyCode`. What this does is check if `e.which` is defined: if it is, then its value is returned, if not, then `e.keyCode` is returned.
+
+Now that we have the key code, we can check if the left or right arrow keys have been pressed. If the left arrow key is pressed, the player should move left; otherwise, if the right arrow key is pressed, the player should move right. Implement this yourself. (Note: left arrow has a key code of 37, right arrow is 39)
+## Step 8: Constructing Boulders
+
+__[diff for this step][diff-8]__, __[code for this step][step-8]__
+
+At this point, you should have all the skills necessary to write a constructor for `Boulder` objects yourself. Like `player`, it should have `x`, `y`, `color`, `hitbox`, `draw`, and `erase` properties. `color` should be passed as a parameter into the constructor so that we can easily change it (or even have differently colored boulders!). The `x` coordinate should be given a random position on the canvas such that it is fully visible (hint: use `Math.random()`) and the `y` coordinate should be `0`. Since our boulders are just squares, just having `hitbox` will suffice to represent both the bounds and the shape we want displayed. `draw` and `erase` should look pretty similar to those of `player`.
+
+Keeping with the idea of 10x10 cells, I recommend making the boulders 10x10 and making their `x` values multiples of 10.
+## Step 9: Falling Boulders Part 1
+
+__[diff for this step][diff-9]__, __[code for this step][step-9]__
+
+Now that we have our `Boulder` constructor, let's start making boulders. First, we need some variables to store our boulders. Under the global variables we created at the top of the file, add two more variables: `boulderCount`, which is how many boulders we want in existence at one time, and `boulders`, which should be initialized as a empty array. Give `boulderCount` any value you want; I chose 15 in my example.
+
+The rest of this step is going to be creating a new function called `start`. The purpose of `start` is to create new boulders after a time interval until we reach the size of `boulderCount`.
+
+Inside `start`, initialize a new variable to 0 to represent a counter. Next, we are going to use JavaScript's `setInterval()` function to create new boulders every second or so. Add the following code underneath your counter:
+```JavaScript
+var boulderInterval = setInterval(function() {
+  // to be implemented
+}, 900);
+```
+This will run the code inside the anonymously defined function every `900` milliseconds forever or until we terminate the interval. To terminate it, call the function `clearInterval(boulderInterval)`. Inside the new function for our interval, check if the counter is equal to `boulderCount` and terminate the interval if it is. Otherwise, add a new boulder to `boulders` with a color of your choosing and increment the counter. Note that right now we are only creating boulders, not drawing them. Drawing will come in the next step.
+
+Finally, we want `start` to run when the user presses the start button on the webpage. Back inside the function we assigned to `document.body.onload`, add the following line:
+```JavaScript
+startButton.onclick = start;
+```
+This tells the website that whenever someone clicks the start button, we want our `start` function to be called. However, we really only want `start` to be called the first time the start button gets clicked. So, at the top of `start`, add a similar line:
+```JavaScript
+startButton.onclick = null;
+```
+This will stop `start` from being called again when the start button gets clicked.
+## Step 10: Falling Boulders Part 2
+
+__[diff for this step][diff-10]__, __[code for this step][step-10]__
+
+In Step 9 we created several boulders, but we haven't made them fall yet. Let's write a new function called `fall` to do just that. Here's what `fall` should do: for each boulder in the array `boulders`,
+1. Erase the boulder from the canvas
+2. Update its `y` value (again, I recommend adding 10)
+3. If a boulder reaches the bottom, replace it with a new a boulder starting at the top
+4. Redraw the boulder
+
+Once you finish that, we need to call `fall`. At the top of the file, add another global variable called `fallInterval` and set it to `null`. Next, add the following line to the end of `start`:
+```JavaScript
+fallInterval = setInterval(fall, 40);
+```
+This makes it so `fall` gets called every 40 milliseconds. We store the interval in `fallInterval` so that we can clear it later.
+## Step 11: Keeping Score
+
+__[diff for this step][diff-11]__, __[code for this step][step-11]__
+
+Our game is almost complete! All we have left is to keep track of score and determine when the game is over.
+
+Create another global variable called `score` and initialize it to 0. Next, write a new function called `updateScore`. This function is pretty simple: all it does is increment `score` by 1 and display the new score on the screen. To display the new score, edit the `innerHTML` property of `scoreBoard` as follows:
+```JavaScript
+scoreBoard.innerHTML = "Score: " + score;
 ```
 
-With these lines in place in `index.html`, we should be good to go! Now
-we can start writing the core JavaScript code for our game.
-
-## Step 3: Add starter code in main.js
-
-__[diff for this step][diff-3]__, __[code at this step][step-3]__
-
-We're finally at the point where we can add some code to our `main.js`
-file!
-
-With the first few lines, we get the opportunity to see one of the many
-quirks about JavaScript: something that's not really necessary but that
-makes life a little bit easier.
-
-We're going to add the following lines to our JavaScript file:
-
-```javascript
-;(function() {
-
-})();
+Next, write a new function called `checkHit`. This will be how we determine when to the player has lost. In the function, for each boulder in `boulders`, check if its hitbox intersects the player's hitbox with the `intersects()` function from our rectangle framework which looks like:
+```JavaScript
+rect.intersects(rect2)
+```
+and returns true if the `rect` and `rect2` are intersecting. If the player has been hit, clear `fallInterval` and let the player know that the game is over using JavaScript's built-in `alert()` function. Pass a String with a message telling the player that they lost and letting them know their final score into `alert` (e.g. `alert("Game Over")`) and the page will display a popup with your message. Finally, we want to refresh the page so that the player can play again. To do this, all we need is the line
+```JavaScript
+document.location.reload();
 ```
 
-<span class="aside">
-If none of this makes sense, just copy the code into `main.js` and move
-on. It's not worth stressing over for this lab.
-</span>
+Now that we have `updateScore` and `checkHit`, let's put them inside `fall`. At the top of `fall` call `checkHit` and inside your check for if a boulder reached the bottom call `updateScore` if it in fact hit the bottom.
 
-What these lines do is _terminate any previous, dangling JavaScript
-statement_ (with the first semi-colon), _create an anonymous function_
-(with the `function` keyword), and then _immediately call it_ (with the
-`()` towards the end). This ensures that we have our own execution
-context for all the code that we write. You can read more about it
-[here](http://sarfraznawaz.wordpress.com/2012/01/26/javascript-self-invoking-functions/),
-but you're almost always going to want to follow this convention when
-writing JavaScript files.
-
-
-## Step 4: Listen for ready event
-
-__[diff for this step][diff-4]__, __[code at this step][step-4]__
-
-If you're familiar with a language like C/C++ or Java, you'll know that
-every application has an entry point that's usually called `main`. In
-Python there's a similar concept using globally defined variables like
-`__name__ == '__main__'`.
-
-JavaScript has no such entry point. When JavaScript is run in a
-browser, each line is run as it is encountered. While this is useful
-sometimes, a lot of the time what we actually want is for our JavaScript
-to be run after the page has finished loading; i.e., when it's "ready"
-for us.
-
-To make this happen, we use _event listeners_ to run a particular
-function once a corresponding event occurs. Events are generated for
-many different actions and conditions within the browser; one of these
-is the `ready` event, which is fired on the `document` object whenever
-the page is, well, ready for us.
-
-We can attach a _handler_, or a specialized function, to this event as
-follows. It effectively allows us to run a piece of code whenever the
-event fires. When writing event handlers, people tend to use anonymous
-functions:
-
-```javascript
-$(document).ready(function() {
-  // empty
-});
-```
-
-<span class="aside">
-Attaching a function to an event and having it be run at a later point
-is an _incredibly common_ and __unusually powerful__ paradigm in JavaScript.
-We call functions used like this _callbacks_.
-</span>
-
-What this does is attach an empty function to the `ready` event of the
-`document` element. Note the funny `$(document)` syntax at the
-beginning. This actually calls the function named `$` with an argument
-of `document`, a global variable representing the page. `$` is a
-function defined by jQuery that lets us do tons of things, including
-attach event handlers like we do with the `.ready()` method in this
-example.
-
-
-## Step 5: Add `play` function
-
-__[diff for this step][diff-5]__, __[code at this step][step-5]__
-
-Now that the "ready" event listener is in place, we can add some
-boilerplate functions where we'll write our core game logic.
-
-<span class="aside">
-Make sure you're also following along in the [diff for this
-step][diff-5]!
-</span>
-
-First, we'll need a function called `play`. Right now, it'll remain
-empty. This function will also be an event handler, so it'll take a
-single argument representing the event that triggered the function to be
-called.
-
-You may notice that the anonymous function we registered on the `ready`
-event from the last step was also an event handler. A logical question
-to ask might be, "Why didn't our ready handler have to take an argument
-`e`?" The answer is that we could have declared our handler like this,
-but the body of that handler isn't going to need to use it, so we just
-leave it out. JavaScript won't complain if the number of arguments a
-function is called with and how many it's declared with don't match up.
-For more information, see [here][arguments].
-
-Now, with our empty `play` function in place, we're going to add it as
-an event handler on the `click` event of the submit button. This button
-has an `id` of `submit` ([check the HTML!][submit]), so we can use
-jQuery to select that element and bind the click event on that element
-to our `play` function.
-
-Here we see our second use of `$`, the jQuery function. You should be
-thinking of this function as "selecting" the element specified by its
-argument.
-
-[arguments]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope/arguments
-[submit]: https://github.com/jez/jquery-lab/blob/gh-pages/index.html#L19
-
-## Step 6: Get the user's input for rows and columns
-
-__[diff for this step][diff-6]__, __[code at this step][step-6]__
-
-So now we have a function that will be executed every time the user
-clicks on our submit button. Let's start filling it in with something
-useful.
-
-We said one of the things we'd have to do in order to set up the game
-state was to let the user choose how many rows and columns there should
-be. We can do just this using the two text inputs already present in the
-page.
-
-By the time the user clicks on our submit button and fires off the
-`play` function, the text inputs with id's of `rows` and `cols` will
-be holding values corresponding to the number of rows and columns that
-our board should have. We can use jQuery to extract these values, using
-the `.val()` function. We'll go ahead and store these values in global
-variables.
-
-Question: what should happen if the user clicks "submit" twice? Should
-we start a fresh game? Add or remove rows from the game in progress?
-There are many ways we could handle this situation.
-
-<span class="aside">
-If you tried this but clicking "Play!" doesn't do anything, try reading
-the next step :P
-</span>
-
-For sake of simplicity, we're just going to remove the submit button and
-both text inputs entirely. After selecting the form with id `args` that
-wraps the text inputs and submit button, we can use the `.detach()`
-method to remove them from the DOM.
-
-## Step 7: Prevent form submission event from bubbling up
-
-__[diff for this step][diff-7]__, __[code at this step][step-7]__
-
-<div class="aside">
-If you're unfamiliar with the terminal, you can ignore the Python
-command here, but you'll have to go back and make some changes to
-index.html:
-
-<ol>
-  <li>Prefix the "//cdnjs..." URL in index.html with "http": "http://cdnjs..."</li>
-  <li>Do the same with the jQuery link in index.html</li>
-</ol>
-
-Then, open index.html using Chrome.
-</div>
-
-Once make the changes introduced in the previous step, go ahead and see
-if clicking the button removes the `#args` form. The best way to
-preview your work is to start a simple Python webserver running in your
-project's directory with
-
-```javascript
-$ python -m SimpleHTTPServer
-```
-then open [http://localhost:8000](http://localhost:8000/) in your
-browser. If you need help with this, flag down a mentor! Otherwise, just
-open the index.html file in your browser.
-
-What you'll probably notice is that the form didn't disappear, and it
-looked like the website reloaded the page. If you look carefully, you'll
-probably also see that the URL changed to something with variable names,
-question marks, and ampersands. This happened because of something
-called "bubbling" which is another JavaScript feature which can seem
-like a quirk at times.
-
-Whenever there is a button inside a form and the button is clicked, the
-browser thinks that the values of the inputs within that form need to be
-submitted. If you don't specify where to submit this information on the
-`<form>` tag, then it assumes that you want it to be submitted to the
-current URL, effectively reloading the page.
-
-This is pretty annoying, because we'd actually like to run our own code
-instead of having the browser do something for us. To turn this feature
-off, we have to understand what's actually going on. Nearly every action
-a user has with a page generates some sort of event. Even though an
-event might have a particular element from which it originated, the
-event it self propagates up through the DOM tree, from that element to
-it's parent element, all the way until it reaches the `<html>` tag. This
-is what's known as "bubbling", because the event bubbles up the DOM.
-
-Our particular event handler is listening on the button itself, whereas
-the form submission event is attached to the form element; we want to
-shut off the bubbling before it can get from the button to the form. To
-do this, we can use the argument `e`, which gives us information about
-the current event. We can stop the "default" action (i.e., the event
-bubbling upwards) from occurring by calling `e.preventDefault()`.
-
-Try adding [this line][diff-7] and see what happens. You should see that
-the `#args` form detaches and stays detached. If not, flag down a
-mentor!
-
-By now, you're probably starting to understand that there are a lot of
-idiosyncrasies in JavaScript whose solutions are not obvious. In cases
-like these, your best debugging tool is the ability to _carefully
-describe_ what problem you're having and searching for it on Google. At
-least when you're starting out, it's likely the problems you will
-experience will have relatively simple, though non-intuitive, solutions.
-Being able to Google effectively is invaluable in times like these.
-
-## Step 8: Initialize the game's starting state
-
-__[diff for this step][diff-8]__, __[code at this step][step-8]__
-
-Now that we can accept the user's input with our form, we can actually
-begin setting up the initial board configuration. Specifically, the user
-has told us how many rows and columns to use, so we can use a nested for
-loop to set up the grid with the right dimensions.
-
-<span class="aside">
-Throughout this step, it's a good idea to have a picture of how this
-step is supposed to work. Try drawing it yourself based on this
-description, or ask a mentor for clarification!
-</span>
-
-Since HTML elements are display and drawn across and then down, we're
-going to draw one row at a time (as opposed to one column at a time). To
-make things easier, we're going to wrap each row in a div with the class
-`tile-row` so that we can access arbitrary rows.
-
-To create a new DOM element (basically, an element in the page), we use
-the jQuery function (`$`) with a string argument representing the HTML
-that we should use to construct that object. We just need to create a
-`<div>` with a class of `tile-row`, so the string we want is `'<div
-class="tile-row"></div>'`. We can then store this in a variable named
-`$curTileRow` (note that `$` is a perfectly valid character to use in a
-JavaScript variable name). Finally, we use the jQuery append method to
-append this tile row to the tile wrapper.
-
-We'll be using a multidimensional array to maintain what color each
-board piece is. JavaScript arrays aren't fixed in length (because
-they're actually just special objects), so we'll be dynamically adding a
-row every time we need a new one. What that means for us is that within
-the outer loop, where code will be executed once per row, we should add
-a row to our multidimentional array. This is done with the code
-`boardColors[curRow] = [];`, which sets the contents of the curRow'th
-row to an empty array.
-
-Now that we've done the required setup for each row, we can work on
-adding the individual tiles that will ultimately constitute the columns.
-We'll add a for loop inside our outer for loop that ranges over the
-entire number of columns.
-
-The first thing this inner loop should do is create the DOM element for
-the tile residing in that column. This is done with the jQuery append
-method that we used before to add a row to the outer, wrapper div. Next,
-since all but the top left tiles should start out blue, we'll set the
-color of this tile to blue (and worry about the one green one later).
-I'll use a helper function called `setColor` to set the color of a tile.
-It'll take a row, column, and a string representing a color. We'll write
-this function after the next step. For now, just know that it takes care of
-setting the color for us.
-
-Finally, we'll have to set the click event on the div to handle what
-should happen when the user "makes a move," or attempts to change the
-color of a tile. This part is actually very sophisticated! We're going
-to be using a technique called closures, which is a very powerful
-concept that is used quite frequently in JavaScript.
-
-The basic paradigm stems from the fact that JavaScript maintains a
-context of all the variables and their values for every function that is
-created. That means that we can create special contexts that bind
-additional variables that a function would find useful to use.
-
-First you'll note the helper function `getTile`. We'll write this helper
-function in after next step as well, for but for now just now that it's
-basically a wrapper around the `$` function that we've been using this
-whole time.  What that means is that it returns to us the same jQuery
-DOM object that we would normally get back, so we can set the `.click`
-attribute of that result to bind a function to the click event of that
-particular DOM element.
-
-Next, we have an anonymous function wrapped in parentheses,
-(function(r, c) {...}), followed by `(curRow, curCol)`. When you see
-this, a function definition wrapped in parentheses immediately followed
-by parentheses, this will create an anonymous function and _immediately
-call it_ with the arguments specified in the second set of parentheses.
-This is called a self executing function, and you can read more about it
-[here](http://markdalgleish.com/2011/03/self-executing-anonymous-functions/).
-
-Remember that the argument to the `.click` function needs to be a
-function which takes one variable: the event object `e` that triggered
-the click event. We're actually going to use this self-executing
-function to _return a different function_. What's special about this
-returned function is that it will have access to the parameters of the
-outer function, namely the current row and current column. We can then
-reference those inside our returned function; in our case, we're going
-to pass them on to `move`, a third helper function that will take care
-of the brunt of the game logic for us. We'll start writing that function
-in three steps.
-
-Since the function we pass to click must take an event object as an
-argument, we'll make the function we return take just that argument, and
-we'll pass it on to `move` just in case we need it.
-
-<span class="aside">
-Somehow this step ended up being much, much longer than I wanted it to
-be. It's much easier to explain in person, so if it doesn't make sense
-as stated, be sure to flag someone down.
-</span>
-
-Phew, that was a long step, but that's it for the processing we need to
-do within the loop! If you remember from before, I said that we'd take
-care of changing the upper left tile to green later, so let's go ahead
-and do that now. Remember that we use a helper function for this before,
-so we'll use the same function again now.
-
-## Step 9: Set the initial values on the "scoreboard"
-
-__[diff for this step][diff-9]__, __[code at this step][step-9]__
-
-One last thing to take care of before we start going nuts with our game
-is to set up number of greens, blues, and total tiles, and then display
-these values.
-
-We'll initialize a few global variables called `reds`, `greens`, and
-`blues` to 0, set `greens` to 1 (for the upper left tile), and set
-`blues` to the remaining number of tiles. Obviously, the total number of
-tiles is `rows * columns`, and this will be important because we will
-know the user has won if the number of reds is equal to this value.
-
-Finally, we'll use a couple more jQuery calls to display these values.
-The `.html` function on a jQuery object will set the inner HTML of that
-attribute to the text specified (if you pass something that's not a
-string, it will try and cast it to a string). That means we can use this
-method, passing it `blues` and `greens` respectively, to set these
-colors to the right values. Remember that the HTML elements with id's
-`blues` and `greens` house the data we want to display. Note that we
-don't have to worry about setting the number of reds because it should
-already be set to 0 in the HTML (you can verify this).
-
-## Step 10: Define a couple useful helper functions
-
-__[diff for this step][diff-10]__, __[code at this step][step-10]__
-
-As I mentioned two steps ago, we're going to now define the helper
-function we used to both set a tile's color given its indices, and to
-get the DOM node of an element given its indices.
-
-The first of these, `getTile`, is a one-liner, though it is a bit
-complicated. We'll be using the jQuery/CSS `:nth()` pseudo-selector,
-which basically allows us to access the nth element of a particular
-class. We'll also be using the `>` selector, which selects the children
-of a particular node. Remember that we wrapped every row in a div with
-the class `tile-row`, so to get the nth row we can use `.tile-row:nth('
-+ row + ')`. Then we want to access an individual tile (an element with
-the class `tile`), which is a child of a `tile-row`. That means the next
-selector needs to be a `>`. Finally, we want the nth tile, so in a
-similar fashion to before, we want to use `.tile:nth(' + col + ')`. If
-you hadn't already figured it out, the `:nth()` pseudo-selector takes as
-an argument an integer which represents the index of which element it
-should select.
-
-Next up is `setColor`. We have two things to do: update our internal
-representation of the colors of the tiles, and then actually change the
-color of the element. Remember that we've been storing our internal
-representation of the board's colors in a multidimensional array called
-`boardColors`. We want to access the element at `[row][col]` and set
-it's contents to `color`. We'll use this stored value later in
-processing what to do when the user clicks on a tile.
-
-The second thing to do is change the actual color of the tile. In the
-CSS stylesheet (styles.css), there are a bunch of handy classes that
-will turn our element a particular color depending on which class is
-applied. First, we want to get the DOM element represented by the row
-and column we are dealing with, which is simple enough because we have a
-helper function to deal with that! We'll next use the `.removeClass`
-jQuery method to remove any previous color class that had previously
-been attached to this element, and then the `.addClass` method to add
-the class corresponding to the color we want to make this tile.
-
-There are a couple of things to note here. The first is that if
-`removeClass` doesn't find the class you specified to remove, it doesn't
-do anything.  The second is that you can _chain jQuery calls_. Note that
-there are no semicolons after each line, only the last line. Every time
-we call a jQuery method that's operating on a DOM element like this, we
-can chain as many calls as we want on top of each other to keep
-modifying the current jQuery DOM element.
-
-## Step 11: Start writing move function: get adjacent tiles
-
-__[diff for this step][diff-11]__, __[code at this step][step-11]__
-
-We're approaching the home stretch! `move` is the last function we'll
-need to implement.
-
-Recall that `move` will be called every time someone clicks a `tile`
-element, and it will have access to the current row and column because
-of the closure we used when initializing the click event. We'll use this
-method to handle processing all the rules of the game that we outlined
-in the Overview.
-
-In the rules, we specified that the only tiles we can actually click on
-are the green ones, so let's check if the current tile is green.
-
-Remember that we have access to the row and column of the clicked tile
-from the parameters to the `move` function, and we have a
-multidimensional array which will give us the color of a tile given a
-row and a column. Once we have this stored in a variable, we can check
-to see whether that color is `'green'`.
-
-If it is green, we need to change it's color to red, increment the
-number of reds, and decrement the number of greens.
-
-## Step 12: Get and check whether the neighbors are valid
-
-__[diff for this step][diff-12]__, __[code at this step][step-12]__
-
-Once we've toggled the current tile to red, we need to process the
-current tile's neighbors. If we know what the current row and column
-are, we can easily get the row and column of the neighbors by adding or
-subtracting one to the appropriate variable.
-
-Note that some of these cells will actually not be valid; for example,
-if we are in the 0th row, trying to access the 0 - 1 = -1th row will be
-invalid. We can check whether a variable is valid by checking the
-appropriate condition... beware of off by one errors!
-
-To make things easier, we're going to utilize the fact that JavaScript
-variables are dynamically typed. Since we don't have to declare a
-variable's type, we could assign either a jQuery DOM element or `null`
-to a variable and let the JavaScript interpreter determine this at
-runtime. Combining this with the JavaScript _ternary operator_,
-`<condition> ? <value if true> : <value if false>`, we can very
-conveniently check the edge conditions, get the neighbor if safe, and
-evaluate to `null` if not.
-
-Once we've done this, I'm going to stick all four variables into an
-array with their corresponding coordinates so that we can conveniently
-iterate over the array, and do the same processing for all four.
-
-## Step 13: Use Array.forEach to iterate over each neighbor
-
-__[diff for this step][diff-13]__, __[code at this step][step-13]__
-
-This time, when iterating over each potential neighbor, we're going to
-use a different style of JavaScript for loop called `Array.forEach`.
-This is a function present on all JavaScript arrays that allows you to
-loop over all the elements of a list without using indices.
-
-The way this works is you specify a function to the `.forEach()` method.
-This function takes as parameters the current element of the list, the
-index of the current element, and the a reference to the array the
-function was called on (in our example this isn't necessary because we
-have access to the original array variable, but there are times when
-this isn't the case). Since this function is a callback, it will be
-evaluated once for each element of the array, and the appropriate values
-will be substituted in.
-
-## Step 14: Process each neighbor within Array.forEach
-
-__[diff for this step][diff-14]__, __[code at this step][step-14]__
-
-Within the forEach callback, we want to check to make sure that the
-current neighbor we're processing exists, i.e. is not null. Since the
-actual element we're iterating over is an object containing the
-properties `tile`, `row`, and `col`, we need to check the
-`$neighbor.tile` property to see if the element itself exists. Since
-JavaScript values are all truthy, an object is only ever falsy if it's
-null, we can simply use `if($neighbor.tile)` to check whether the
-neighbor exists or not.
-
-Now that we know whether the neighbor exists, we can do the appropriate
-processing. Particularly, what we need to do depends on the color of the
-current element. Let's get the color of the current neighbor using the
-same method we did for the clicked tile (making care to draw the row and
-column from the properties we set on the current `$neighbor` variable).
-
-Now we can case on the color of the current element. If it's green,
-we'll need to toggle it's color to blue and adjust the number of blues
-and greens, and vice versa it the neighbor is blue.
-
-## Step 15: Update scoreboard and check for winning conditions
-
-__[diff for this step][diff-15]__, __[code at this step][step-15]__
-
-The only thing left to do is update the scoreboard and check whether the
-player has won the game.
-
-If you recall the code to update the scoreboard from early, we will use
-the same code now, but add an additional line to update reds (because
-reds will have definitely changed this time).
-
-If the number of reds is equal to the total number of tiles, that means
-that every tile has been flipped, so the user has won. If the number of
-greens is 0, then the user lost, because there aren't any tiles that can
-be flipped. There's a JavaScript function `alert` that lets you display
-a message in a dialog box, so we can use this to report a win or a loss.
-
-It turns out that some boards are winnable and some boards aren't (if
-you're interested you should try to prove it). Regardless of this, I
-thought it'd be funny when I made this game and distributed it to my
-fellow 251 classmates to tell them that a non-winnable board was in fact
-winnable... it had some interesting consequences. Feel free to change
-the winning and losing messages to something more "agreeable."
-
-The final thing we'll take care of is reload the page for if the user
-want to play again. We can do with with `location.reload()`, which will
-take the current page's URL and reload that addresss.
-
-That's it! You should be able to try everything out and have it work in
-the browser. If you're still stuck, or you've got errors, flag down a
-mentor or ask someone for help and we'd love to give you some hints to
-fix everything up.
-
-Thanks!
+Congratulations, you've finished your first game in JavaScript!
 
 - - -
 
-I take great pride in writing good code, documentation, and tutorials. If you
-spot something that's not quite right or you spot something confusing, let me
-know! Open an issue on <https://github.com/ScottyLabs/wdw>.
+Written by Ari Cohn, October 2017
 
-Written by Jake Zimmerman, July 2014
+[game-demo]: https://wafflecohn.github.io/javascript-lab/
 
-[galumphing]: {{ site.baseurl }}/javascript/demo/
+[starter-code]: https://wafflecohn.github.io/javascript-lab/starter-code.zip
 
-[source-final]: https://github.com/jez/jquery-lab/
-[source-final-zip]: https://github.com/jez/jquery-lab/archive/gh-pages.zip
+[diff-1]: https://github.com/WaffleCohn/javascript-lab/commit/427829f46feb493cd3b11839c58c8c53c3ea250c
+[step-1]: https://github.com/WaffleCohn/javascript-lab/blob/427829f46feb493cd3b11839c58c8c53c3ea250c/index.html
 
-[starter-code]: https://github.com/jez/jquery-lab/archive/7a570d3b69f20f89ee14f53c1f67f0e277b02dcb.zip
+[diff-2]: https://github.com/WaffleCohn/javascript-lab/commit/adb00d3b766bfd808b547ed29997717172242c5b
+[step-2]: https://github.com/WaffleCohn/javascript-lab/blob/adb00d3b766bfd808b547ed29997717172242c5b/main.js
 
-[diff-1]: https://github.com/jez/jquery-lab/commit/7a570d3b69f20f89ee14f53c1f67f0e277b02dcb#diff-0
-[step-1]: https://github.com/jez/jquery-lab/blob/7a570d3b69f20f89ee14f53c1f67f0e277b02dcb/index.html
+[diff-3]: https://github.com/WaffleCohn/javascript-lab/commit/2d8c80d902cfcbf46de8198a048201e0367cf723
+[step-3]: https://github.com/WaffleCohn/javascript-lab/blob/2d8c80d902cfcbf46de8198a048201e0367cf723/main.js
 
-[diff-2]: https://github.com/jez/jquery-lab/commit/1758ef9a9680baab2fadbeb18804b4fdac5e1e76#diff-0
-[step-2]: https://github.com/jez/jquery-lab/blob/1758ef9a9680baab2fadbeb18804b4fdac5e1e76/index.html
+[diff-4]: https://github.com/WaffleCohn/javascript-lab/commit/4c4665f47fefc38878965bc79313a5a9cf7e49fc
+[step-4]: https://github.com/WaffleCohn/javascript-lab/blob/4c4665f47fefc38878965bc79313a5a9cf7e49fc/main.js
 
-[diff-3]: https://github.com/jez/jquery-lab/commit/57850d9aeffe58f11f3eda00b5c5efc56cf335b3#diff-0
-[step-3]: https://github.com/jez/jquery-lab/blob/57850d9aeffe58f11f3eda00b5c5efc56cf335b3/main.js
+[diff-5]: https://github.com/WaffleCohn/javascript-lab/commit/44df2b7cb2806eea61beaeb7645556e2bd86016d
+[step-5]: https://github.com/WaffleCohn/javascript-lab/blob/44df2b7cb2806eea61beaeb7645556e2bd86016d/main.js
 
-[diff-4]: https://github.com/jez/jquery-lab/commit/0c558e73168bbac72ad48a448d72a1c9996f87fc#diff-0
-[step-4]: https://github.com/jez/jquery-lab/blob/0c558e73168bbac72ad48a448d72a1c9996f87fc/main.js
+[diff-6]: https://github.com/WaffleCohn/javascript-lab/commit/95cba599ff2c65a4aa0f733a6b95e95da8111906
+[step-6]: https://github.com/WaffleCohn/javascript-lab/blob/95cba599ff2c65a4aa0f733a6b95e95da8111906/main.js
 
-[diff-5]: https://github.com/jez/jquery-lab/commit/3ac0b325290e000c62db61ec46180d80a861cd6e#diff-0
-[step-5]: https://github.com/jez/jquery-lab/blob/3ac0b325290e000c62db61ec46180d80a861cd6e/main.js
+[diff-7]: https://github.com/WaffleCohn/javascript-lab/commit/4b6c9121c4f26b66fc7804a3f030e7a62aad8b80
+[step-7]: https://github.com/WaffleCohn/javascript-lab/blob/4b6c9121c4f26b66fc7804a3f030e7a62aad8b80/main.js
 
-[diff-6]: https://github.com/jez/jquery-lab/commit/4096958f937c051910e7f02343107842a0af3056#diff-0
-[step-6]: https://github.com/jez/jquery-lab/blob/4096958f937c051910e7f02343107842a0af3056/main.js
+[diff-8]: https://github.com/WaffleCohn/javascript-lab/commit/6c378f5af6b6e8f8149aa0ee97b4ee8ed2d38398
+[step-8]: https://github.com/WaffleCohn/javascript-lab/blob/6c378f5af6b6e8f8149aa0ee97b4ee8ed2d38398/main.js
 
-[diff-7]: https://github.com/jez/jquery-lab/commit/7539b3c3bef06d8017875029ae6170205e24b6ed#diff-0
-[step-7]: https://github.com/jez/jquery-lab/blob/7539b3c3bef06d8017875029ae6170205e24b6ed/main.js
+[diff-9]: https://github.com/WaffleCohn/javascript-lab/commit/ec020639551b57342964da71eec31a7e3ef88ee9
+[step-9]: https://github.com/WaffleCohn/javascript-lab/blob/ec020639551b57342964da71eec31a7e3ef88ee9/main.js
 
-[diff-8]: https://github.com/jez/jquery-lab/commit/6f03b66c13a7854af0c966bc54538e3d394f6b0c#diff-0
-[step-8]: https://github.com/jez/jquery-lab/blob/6f03b66c13a7854af0c966bc54538e3d394f6b0c/main.js
+[diff-10]: https://github.com/WaffleCohn/javascript-lab/commit/f5c7c8511289ce74e9e2fd8f04df7404009720f1
+[step-10]: https://github.com/WaffleCohn/javascript-lab/blob/f5c7c8511289ce74e9e2fd8f04df7404009720f1/main.js
 
-[diff-9]: https://github.com/jez/jquery-lab/commit/d2cb6d0a00b2ace36b604a82c5ca0271b6a6c0ad#diff-0
-[step-9]: https://github.com/jez/jquery-lab/blob/d2cb6d0a00b2ace36b604a82c5ca0271b6a6c0ad/main.js
-
-[diff-10]: https://github.com/jez/jquery-lab/commit/e8a0125f92dc232d645cd6137c53c8e0264148ec#diff-0
-[step-10]: https://github.com/jez/jquery-lab/blob/e8a0125f92dc232d645cd6137c53c8e0264148ec/main.js
-
-[diff-11]: https://github.com/jez/jquery-lab/commit/d3964bd408295cb7e4cae2a15f341baa8b348f05#diff-0
-[step-11]: https://github.com/jez/jquery-lab/blob/d3964bd408295cb7e4cae2a15f341baa8b348f05/main.js
-
-[diff-12]: https://github.com/jez/jquery-lab/commit/7eb4aeecd41aebe184d67eaf73bf84e9c4081cb5#diff-0
-[step-12]: https://github.com/jez/jquery-lab/blob/7eb4aeecd41aebe184d67eaf73bf84e9c4081cb5/main.js
-
-[diff-13]: https://github.com/jez/jquery-lab/commit/c9a180d97cabc20bd89be2d019338786997d86c4#diff-0
-[step-13]: https://github.com/jez/jquery-lab/blob/c9a180d97cabc20bd89be2d019338786997d86c4/main.js
-
-[diff-14]: https://github.com/jez/jquery-lab/commit/638042297ef875ff438730b79d97c48150275759#diff-0
-[step-14]: https://github.com/jez/jquery-lab/blob/638042297ef875ff438730b79d97c48150275759/main.js
-
-[diff-15]: https://github.com/jez/jquery-lab/commit/220c4416ce04f4a0caae1c527d7bf7b75df32ef4#diff-0
-[step-15]: https://github.com/jez/jquery-lab/blob/220c4416ce04f4a0caae1c527d7bf7b75df32ef4/main.js
+[diff-11]: https://github.com/WaffleCohn/javascript-lab/commit/df8042c3818087c0cf77eb79ef470120b9b55aa1
+[step-11]: https://github.com/WaffleCohn/javascript-lab/blob/df8042c3818087c0cf77eb79ef470120b9b55aa1/main.js
