@@ -23,7 +23,7 @@ JavaScript tasks.
 
 Bring a computer with a web browser and text editor installed. We recommend
 [Chrome](https://www.google.com/chrome/browser/desktop/index.html) and
-[Sublime Text](http://www.sublimetext.com/).
+[Sublime Text](http://www.sublimetext.com/) or [Atom](https://atom.io/).
 
 This talk assumes you've programmed before, either for a class or on your own
 time.
@@ -31,20 +31,23 @@ time.
 
 ## Resources
 
-This workshop has been run before, and these are the resources from last time.
+Here are the resources we are going to be using as well as some resources from
+previous years.
 If you attend this workshop, we'll work through all of these resources to help
 you complete a fun JavaScript project!
 
-1. [Introduction to JavaScript]({{ site.baseurl }}/javascript/js-intro/)
-1. [JavaScript Lab]({{ site.baseurl }}/javascript/lab/)
+1. [Introduction to JavaScript Slides](https://wafflecohn.github.io/javascript-lab/intro-javascript-slides.pdf)
 1. [HTML & CSS Recap]({{ site.baseurl }}/javascript/html-css/)
-1. [Demo of Final Project]({{ site.baseurl }}/javascript/demo/)
-1. [Source code of Final Project](https://github.com/jez/jquery-lab/)
+1. [JavaScript Lab]({{ site.baseurl }}/javascript/lab/)
+1. [Demo of Final Project](https://wafflecohn.github.io/javascript-lab/)
+1. [Source code of Final Project](https://github.com/WaffleCohn/javascript-lab)
+1. [Old Introduction to JavaScript]({{ site.baseurl }}/javascript/js-intro/)
+1. [Old JavaScript Lab]({{ site.baseurl }}/javascript/lab/oldlab)
 
 
 ## Even More Resources
 
-The lab links to the following external resources if you're interested:
+Last year's lab links to the following external resources if you're interested:
 
 1. [Humorous video about JavaScript's shortcomings](https://www.destroyallsoftware.com/talks/wat)
 1. [Airbnb Style Guide](https://github.com/airbnb/javascript)
@@ -63,3 +66,6 @@ of JavaScript, and they're highly recommended__:
 1. [Bento](https://www.bento.io/grid)
     - Huge list of programming tutorials across tons of subjects
     - Get suggestions for what to learn after completing each tutorial
+1. [W3Schools](https://www.w3schools.com/)
+    - Great tutorials and reference pages for HTML, CSS, JavaScript, and more
+    - Helpful interactive examples
