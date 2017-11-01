@@ -42,7 +42,7 @@ you complete a fun JavaScript project!
 1. [Demo of Final Project](https://wafflecohn.github.io/javascript-lab/)
 1. [Source code of Final Project](https://github.com/WaffleCohn/javascript-lab)
 1. [Old Introduction to JavaScript]({{ site.baseurl }}/javascript/js-intro/)
-1. [Old JavaScript Lab]({{ site.baseurl }}/javascript/lab/oldlab.html)
+1. [Old JavaScript Lab]({{ site.baseurl }}/javascript/lab/oldlab)
 
 
 ## Even More Resources
