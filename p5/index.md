@@ -18,6 +18,8 @@ Participants will learn the basics of p5.js through interactive examples, and
 a longer lab session at the end where they will create their own mini p5.js
 project!
 
+The slides (and labs) can be found [here](http://tinyurl.com/p5js-webdev).
+
 
 ### Prerequisites
 
