@@ -31,7 +31,8 @@ software already installed. The Mac cluster computers will be available as well.
 
 ### During the Event
 
-- [Slides F16](f16/slides.pdf)
+- [Slides F17](CraftingWell-DesignedWebsitesPresentation.pptx)
+- [Example](Example.ai)
 
 ### Extend your Knowledge
 
@@ -57,6 +58,7 @@ This workshop has been run twice before. Here are the resources we used last tim
 
 ### From the Workshop
 
+- [Slides F16](f16/slides.pdf)
 - [Slides S15](s15/slides.pdf)
 - [Slides F14](f14/slides.pdf)
   - [Hack Design](https://hackdesign.org/)
