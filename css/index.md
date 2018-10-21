@@ -18,7 +18,7 @@ This workshop is not being held this semester. Feel free to check out the
 resources from previous semesters below.
 
 <!--
-### How to Attend
+## How to Attend
 
 If you haven't already, __[be sure to register]({{ site.registration_link }})__!
 You certainly don't have to register to attend, but we like knowing how many

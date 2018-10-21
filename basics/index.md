@@ -6,8 +6,6 @@ subject: basics
 
 # The Basics
 
-###### read on as we demystify web development and prepare you for your first workshop
-
 Many technologies make up the experience we call "The Web." The following is an
 overview of the most common ones.
 
@@ -33,8 +31,6 @@ Most web development is split up into frontend and backend development, so let�
 dive a little deeper into these areas.
 
 ## The Frontend
-
-###### everything you can touch
 
 The frontend of a web application is everything that ends up running in the
 browser. It is written in three main languages, __HTML__, __CSS__, and
@@ -71,8 +67,6 @@ performance websites.
 
 ## The Backend
 
-###### everything behind the curtain
-
 The backend is all of the code that runs on the web server.
 
 <span class="aside">To learn more and make a simple blog, check out <a href="{{ site.baseurl }}/backend/">Introduction to Backend Web Development</a>.</span>
@@ -94,9 +88,7 @@ tasks and helps organize code.
 
 ## Design
 
-###### optimizing the user's experience
-
-<span class="aside">To learn more about design, attend <a href="{{ site.baseurl }}/design/">Crafting Well-Designed Sites</a></span>
+<span class="aside">To learn more about design, check out <a href="{{ site.baseurl }}/design/">Crafting Well-Designed Sites</a></span>
 
 When creating a web application, it’s important to remember that in a good
 design can make or break your site’s success. Design is best described as all of
@@ -131,9 +123,7 @@ implement a full design, which can save engineering resources.
 
 ## Deployment
 
-###### the final flourish
-
-<span class="aside">To learn how to deploy whatever you created during Web Dev Weekend, attend <a href="{{ site.baseurl }}/deployment/">Deployment: Making Your Site Public</a></span>
+<span class="aside">To learn how to deploy whatever you created during Web Dev Weekend, check out <a href="{{ site.baseurl }}/deployment/">Deployment: Making Your Site Public</a></span>
 
 After a website has been designed, and the frontend and backend implemented,
 it’s time for it to be __deployed__. Deployment is the process of taking the
@@ -144,9 +134,7 @@ is deployed in. Deploying and running a webapp is generally called
 __operations__, and it’s an important step in the life cycle of creating a web
 application.
 
-## Attending More Workshops
-
-###### where to go from here
+## Attending Workshops
 
 Thank you for reading this guide, and we hope that you will join us for Web Dev
 Weekend!

@@ -24,7 +24,7 @@ Check out the framer prototype below, it looks so real!
     </div>
 </div>
 
-### How to Attend
+## How to Attend
 
 1. Bring a computer with [Framer (Mac only)](https://framerjs.com/) installed.
    Unfortunately, if you are a Windows or Linux user, Framer will not be

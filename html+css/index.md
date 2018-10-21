@@ -1,7 +1,9 @@
 ---
 layout: guide
 title: Introduction to HTML & CSS
-subject: html
+subject: htmlcss
+# subject line must be "htmlcss"  instead of "html+css"
+# because "+" character is ignored when yaml is converted into css
 ---
 
 # Introduction to <br>HTML & CSS
@@ -20,7 +22,7 @@ The second is to give you a basic understanding of the structure of webpages,
 known as the DOM. Both are important if you would like to learn to make more
 interactive websites in the JavaScript, and Angular talks.
 
-### How to Attend
+## How to Attend
 
 Bring a computer with a web browser and text editor installed. We recommend
 [Chrome](https://www.google.com/chrome/browser/desktop/index.html) and

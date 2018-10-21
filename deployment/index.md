@@ -15,7 +15,7 @@ still interested in learning how to make a site public? Don't worry: we'll give
 you something to deploy.
 
 
-### How to Attend
+## How to Attend
 
 This workshop is not being offered this semester. Feel free to browse the lab
 and resources below.

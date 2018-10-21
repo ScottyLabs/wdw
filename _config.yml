@@ -25,7 +25,8 @@ wdw_pages:
   - basics
   - html+css
   - javascript
-  - design
+  - rest
   - react
-  - p5
+  - tensorflow
+  - backend
 

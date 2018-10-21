@@ -25,7 +25,7 @@ This talk is geared towards intermediate developers who have some experience
 with HTML and JS. It is recommended that you are familiar with some ES6 syntax
 (such as `const`, `let`, `class`) but it is not necessary.
 
-### How to Attend
+## How to Attend
 
 Bring a computer with a web browser and a text editor installed. Chrome and
 Atom are recommended. Please also have Node installed with NPM, the Node

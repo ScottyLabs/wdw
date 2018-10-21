@@ -19,6 +19,7 @@ html, body {
   font-size: 18px;
   line-height: 1.5;
   color: $text;
+  background-color: $background;
 }
 
 @mixin color-mixin($color-base, $color-accent) {
@@ -38,11 +39,11 @@ html, body {
 
 .page-content {
   // default to blue on non-specified pages
-  @include color-mixin(white, $wdw-blue);
+  @include color-mixin($background, $wdw-blue);
 
   .home {
     // white + pink on home page
-    @include color-mixin(white, $wdw-pink);
+    @include color-mixin($background, $wdw-pink);
   }
 
   @for $i from 1 through length($wdw-pages) {
@@ -90,7 +91,7 @@ header {
 }
 
 
-h1, h2, h6 {
+h1, h5, h6 {
   text-align: center;
 }
 
@@ -99,8 +100,16 @@ h1 {
 }
 
 h2 {
+  display: inline-block;
   margin-top: 1.5em;
+  padding-left: .7em;
+  padding-right: 10%;
+  font-family: "Ubuntu", sans-serif;
   font-size: 36px;
+  text-transform: uppercase;
+  color: #CD375E;
+  background-color: #E3F1F8;
+  clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
 }
 
 h3 {
@@ -115,6 +124,13 @@ h4 {
   &::before {
     content: "> ";
   }
+}
+
+h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-top: 0;
 }
 
 h6 {
@@ -258,6 +274,8 @@ table {
   width: 100%;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
+  //border-collapse: separate;
+  //border-spacing: 20px 2px;
 }
 th {
   border-bottom: 1px solid black;
@@ -265,4 +283,6 @@ th {
 td, th {
   padding: 10px;
   text-align: left;
+  //border: 1px solid black;
+  //background-color: lightblue;
 }
