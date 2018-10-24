@@ -37,6 +37,18 @@ $ mkdir wdwflask
 $ cd wdwflask
 ```
 
+We will now create a virtual environment using `venv`.  Run the command
+```
+python3 -m venv venv
+```
+This creates a virtual environment at `wdwflask/venv` using the module `venv`. This
+might be a bit confusing. The most general form of this command is
+```
+python3 -m venv /path/to/new/virtual/environment
+```
+which will create a virtual environment at `/path/to/new/virtual/environment`
+(note: don't actually run the above command).
+
 Now run the following:
 
 ```
@@ -52,9 +64,9 @@ a library that allows us to create forms and manage its data easily.
 Now we'll create our basic application structure, so run the following. You should be inside your `wdwflask` directory.
 
 ```
-mkdir app
-mkdir app/templates
-mkdir app/static
+$ mkdir app
+$ mkdir app/templates
+$ mkdir app/static
 ```
 
 The app folder will be where we put our application. The static sub-folder is where we will store static files like images, JavaScript, and CSS. The templates sub-folder is where our templates/HTML will go.
@@ -82,7 +94,7 @@ def index():
 ```
 
 This view is very simple, returning just the string "Hello, World!" to be displayed on the browser. The two route decorators
-`@app.route('/')` and `@app/route('/index')` create the mappings for the URLs '/' and '/index' to this function.
+`@app.route('/')` and `@app.route('/index')` create the mappings for the URLs '/' and '/index' to this function.
 
 
 The final step to running this application is to create a script that starts the web server. Let's call this `run.py` and put it in our root directory.
