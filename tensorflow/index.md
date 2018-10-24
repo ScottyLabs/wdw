@@ -6,12 +6,5 @@ subject: tensorflow
 
 # TensorFlow JS
 
-###### tensorflow
-
-We're doing tensorflow
-
-
-## Resources
-
-Cool resources
+This page is still under development. Check back next week!
 
