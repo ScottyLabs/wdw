@@ -205,7 +205,6 @@ Instead of doing this, we can use the inheritance feature of Jinja2. This allows
 `app/templates/base.html`.
 
 ```html
-{% raw %}
 <!-- app/templates/base.html-->
 <html>
   <head>
@@ -227,14 +226,12 @@ Instead of doing this, we can use the inheritance feature of Jinja2. This allows
     {% block content %}{% endblock %}
   </body>
 </html>
-{% endraw %}
 ```
 
-Here, we use the <b>{% raw %}{% block content %}{% endblock %}{% endraw %} </b> to define the place where the sub-templates can insert themselves. This content can be replaced in sub-templates. To demonstrate this, let's modify `index.html` to inherit from `base.html`. 
+Here, we use the <b>{% block content %}{% endblock %}</b> to define the place where the sub-templates can insert themselves. This content can be replaced in sub-templates. To demonstrate this, let's modify `index.html` to inherit from `base.html`. 
 
 ```html
 <!-- app/templates/index.html -->
-{% raw %}
 {% extends "base.html" %}
 {% block content %}
   {% if post %}
@@ -242,8 +239,7 @@ Here, we use the <b>{% raw %}{% block content %}{% endblock %}{% endraw %} </b> 
   {% else %}
     <h1> Hello, World! </h1>
   {% endif %}
- {% endblock %}
-{% endraw %}
+{% endblock %}
 ```
 
 Since `base.html` now has our page title, we can remove that from `index.html`. All we leave here is the actual content. The extends block is how Jinja2 knows to include `index.html` inside `base.html`. The templates have matching block statements, so Jinja2 knows to combine them into one. Anytime we want to write a new page with a navbar, we would create them as extensions to `base.html`.
