@@ -90,7 +90,7 @@ from app import app
 @app.route('/')
 @app.route('/index')
 def index():
-	return "Hello, World!"
+    return "Hello, World!"
 ```
 
 This view is very simple, returning just the string "Hello, World!" to be displayed on the browser. The two route decorators
@@ -127,17 +127,17 @@ from app import app
 @app.route('/')
 @app.route('/index')
 def index():
-	post = "This is my first post!"
-	return '''
-		<html>
-		  <head>
-			<title> WDW Flask Demo </title>
-		  </head>
-		  <body>
-			<h1> ''' + post + ''' </h1>
-		  </body>
-		</html>
-		'''
+    post = "This is my first post!"
+    return '''
+        <html>
+            <head>
+                <title> WDW Flask Demo </title>
+            </head>
+            <body>
+                <h1> ''' + post + ''' </h1>
+            </body>
+        </html>
+        '''
 ```
 
 Wow! That was easy.
@@ -151,16 +151,16 @@ homepage in `app/templates/index.html`.
 ```html
 <!-- app/templates/index.html -->
 <html>
-  <head>
-    <title> WDW Flask Demo </title>
-  </head>
-  <body>
-    <h1> {% raw %}{{ post }}{% endraw %} </h1>
-  </body>
+    <head>
+        <title> WDW Flask Demo </title>
+    </head>
+    <body>
+        <h1> {{ post }} </h1>
+    </body>
 </html>
 ```
 
-As you can see, we just wrote standard HTML. The only difference is that we now have <b> {% raw %}{{ ... }}{% endraw %} </b> sections, which are placeholders for dynamic content. This feature is built into Jinja2 templating that comes with Flask, which will substitute the blocks with the corresponding values provided as template arguments. We can update our `app/views.py` file to use this template.
+As you can see, we just wrote standard HTML. The only difference is that we now have <b> {{ ... }} </b> sections, which are placeholders for dynamic content. This feature is built into Jinja2 templating that comes with Flask, which will substitute the blocks with the corresponding values provided as template arguments. We can update our `app/views.py` file to use this template.
 
 ```python
 # app/views.py
@@ -170,8 +170,8 @@ from app import app
 @app.route('/')
 @app.route('/index')
 def index():
-	post = "This is my first post!"
-	return render_template("index.html", post=post)
+    post = "This is my first post!"
+    return render_template("index.html", post=post)
 ```
 
 
@@ -181,20 +181,18 @@ Jinja2 also supports conditional statements, control flow, and many other script
 
 ```html
 <!-- app/templates/index.html -->
-{% raw %}
 <html>
-  <head>
-    <title> WDW Flask Demo </title>
-  </head>
-  <body>
-    {% if post %}
-      <h1> {{ post }} </h1>
-    {% else %}
-      <h1> Hello, World! </h1>
-    {% endif %}
-  </body>
+    <head>
+        <title> WDW Flask Demo </title>
+    </head>
+    <body>
+        {% if post %}
+            <h1> {{ post }} </h1>
+        {% else %}
+            <h1> Hello, World! </h1>
+        {% endif %}
+    </body>
 </html>
-{% endraw %}
 ```
 
 Play around with this to see how the conditional statement works! If we don't pass in a post to `render_template` in `app/views.py`, then we should show 'Hello, World!'. 
@@ -287,8 +285,8 @@ from wtforms import TextField
 from wtforms.validators import DataRequired
 
 class PostForm(Form):
-	title = TextField("title", validators=[DataRequired()])
-	post = TextField("post", validators=[DataRequired()])
+    title = TextField("title", validators=[DataRequired()])
+    post = TextField("post", validators=[DataRequired()])
 ```
 
 All we need now is a template that contains the HTML to create the form. Flask-WTF knows how to render form fields as HTML, so
@@ -336,8 +334,8 @@ from forms import PostForm
 @app.route('/', methods=['GET', 'POST'])
 @app.route('/index', methods=['GET', 'POST'])
 def index():
-	form = PostForm(request.form)
-	return render_template("index.html", form=form)
+    form = PostForm(request.form)
+    return render_template("index.html", form=form)
 ```
 
 The only new thing here is that in our route decorators, we have added a methods argument. This tells Flask that the view function accepts GET and POST requests. We want to be able to have POST requests, since these are the ones that will bring in the form data entered by the user.
@@ -353,10 +351,10 @@ from forms import PostForm
 @app.route('/', methods=['GET', 'POST'])
 @app.route('/index', methods=['GET', 'POST'])
 def index():
-	form = PostForm(request.form)
-	if form.validate():
-		print "Successful form!"
-	return render_template("index.html", form=form)
+    form = PostForm(request.form)
+    if form.validate():
+        print "Successful form!"
+    return render_template("index.html", form=form)
 ```
 
 When `form.validate()` is called, it will gather the data and run all the validators we have specified. If everything looks ok, it will return True, letting us know we can safely use this input data. We'll just print some message for now.
@@ -412,13 +410,13 @@ The ORM layer will translate objects created from our classes into rows in the p
 from app import db
 
 class Post(db.Model):
-	id = db.Column(db.Integer, primary_key=True)
-	body = db.Column(db.String(140))
-	title = db.Column(db.String(140))
-	timestamp = db.Column(db.String(140))
+    id = db.Column(db.Integer, primary_key=True)
+    body = db.Column(db.String(140))
+    title = db.Column(db.String(140))
+    timestamp = db.Column(db.String(140))
 
-	def __repr__(self):
-	    return 'Post <%r>' %(self.body)
+    def __repr__(self):
+        return 'Post <%r>' %(self.body)
 ```
 
 The `id` field is common in all models, and is used as the primary key. This means that each post in the database will be assigned a unique id value, stored in this field. We then have fields for the `body` and `title` of our posts, and even a `timestamp` for when the post was created.
