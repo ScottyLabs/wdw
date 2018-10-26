@@ -130,12 +130,12 @@ def index():
     post = "This is my first post!"
     return '''
         <html>
-            <head>
-                <title> WDW Flask Demo </title>
-            </head>
-            <body>
-                <h1> ''' + post + ''' </h1>
-            </body>
+          <head>
+            <title> WDW Flask Demo </title>
+          </head>
+          <body>
+            <h1> ''' + post + ''' </h1>
+          </body>
         </html>
         '''
 ```
@@ -151,12 +151,12 @@ homepage in `app/templates/index.html`.
 ```html
 <!-- app/templates/index.html -->
 <html>
-    <head>
-        <title> WDW Flask Demo </title>
-    </head>
-    <body>
-        <h1> {{ post }} </h1>
-    </body>
+  <head>
+    <title> WDW Flask Demo </title>
+  </head>
+  <body>
+    <h1> {{ post }} </h1>
+  </body>
 </html>
 ```
 
@@ -182,16 +182,16 @@ Jinja2 also supports conditional statements, control flow, and many other script
 ```html
 <!-- app/templates/index.html -->
 <html>
-    <head>
-        <title> WDW Flask Demo </title>
-    </head>
-    <body>
-        {% if post %}
-            <h1> {{ post }} </h1>
-        {% else %}
-            <h1> Hello, World! </h1>
-        {% endif %}
-    </body>
+  <head>
+    <title> WDW Flask Demo </title>
+  </head>
+  <body>
+    {% if post %}
+      <h1> {{ post }} </h1>
+    {% else %}
+      <h1> Hello, World! </h1>
+    {% endif %}
+  </body>
 </html>
 ```
 
