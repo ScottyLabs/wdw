@@ -60,7 +60,7 @@ pre-requisites, but the ones that do list them on their descriptions.
 | Session                                    | Time                   |
 |--------------------------------------------|:----------------------:|
 | [HTML & CSS][html+css]                     | 1:30 p.m. -- 3:00 p.m. |
-| [TensorFlow JS][tensorflow]                | 3:00 p.m. -- 4:30 p.m. |
+| [Chrome Extension][tensorflow]                | 3:00 p.m. -- 4:30 p.m. |
 | [Backend Engineering with Flask][backend]  | 4:30 p.m. -- 6:00 p.m. |
 | *break for dinner- Pizza*                  | 6:00 p.m. -- 6:30 p.m. |
 | [React][react]                             | 6:30 p.m. -- 8:00 p.m. |
