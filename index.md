@@ -113,7 +113,7 @@ might be useful:
 [angular]: angular/
 [framer]: prototyping/
 [rest]: rest/
-[tensorflow]: chrome_extension/
+[tensorflow]: chrome extension/
 
 <!-- schema.org information about the event, so it shows up in Google -->
 <script type="application/ld+json">
