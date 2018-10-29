@@ -27,6 +27,6 @@ wdw_pages:
   - javascript
   - rest
   - react
-  - chrome extension
+  - chrome_extension
   - backend
 
