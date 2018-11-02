@@ -41,7 +41,7 @@ Here's the link to the [lab]({{ site.baseurl }}/react/lab/) for this workshop!
 
 Participants will learn the basics of React through brief demonstrations, interactive examples, and a lab where they create a small web application.
 
-This talk is geared towards intermediate developers who have some experience with HTML and JS. It is recommended that you are familiar with some ES6 syntax (such as const, let, class) but it is not necessary.
+This talk is geared towards intermediate developers who have some experience with HTML and JS. It is recommended that you are familiar with some ES6 syntax (such as `const`, `let`, `class`) but it is not necessary.
 
 ### Resources
 Here's the link to the [slides]({{ site.baseurl }}/react/sunday/slides.pdf) for this workshop!
