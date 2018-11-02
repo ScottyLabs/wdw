@@ -16,6 +16,15 @@ companies across the industry, such as Facebook, Netflix, AirBnB, and more! If
 you’re thinking of taking your web development skills to the next level, then
 join us for our React talk!
 
+
+## Prerequisites
+
+Bring a computer with a web browser and a text editor installed. Chrome and
+Atom are recommended. Please also have Node installed with NPM, the Node
+package manager.
+
+
+### Saturday: 
 We will be introducing some of the core concepts behind React, such as
 component-based design, and some basic features of React. Then, we will apply
 these skills to developing an user interface for developing light-shows for the
@@ -25,11 +34,13 @@ This talk is geared towards intermediate developers who have some experience
 with HTML and JS. It is recommended that you are familiar with some ES6 syntax
 (such as `const`, `let`, `class`) but it is not necessary.
 
-## How to Attend
-
-Bring a computer with a web browser and a text editor installed. Chrome and
-Atom are recommended. Please also have Node installed with NPM, the Node
-package manager.
-
 ## Resources
 Here's the link to the [lab]({{ site.baseurl }}/react/lab/) for this workshop!
+
+### Sunday: 
+
+Participants will learn the basics of React through brief demonstrations, interactive examples, and a lab where they create a small web application.
+
+## Resources
+Here's the link to the [slides]({{ site.baseurl }}/react/sunday/slides/) for this workshop!
+
