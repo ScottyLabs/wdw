@@ -24,7 +24,7 @@ Atom are recommended. Please also have Node installed with NPM, the Node
 package manager.
 
 
-### Saturday: 
+## Saturday: 
 We will be introducing some of the core concepts behind React, such as
 component-based design, and some basic features of React. Then, we will apply
 these skills to developing an user interface for developing light-shows for the
@@ -34,13 +34,13 @@ This talk is geared towards intermediate developers who have some experience
 with HTML and JS. It is recommended that you are familiar with some ES6 syntax
 (such as `const`, `let`, `class`) but it is not necessary.
 
-## Resources
+### Resources
 Here's the link to the [lab]({{ site.baseurl }}/react/lab/) for this workshop!
 
-### Sunday: 
+## Sunday: 
 
 Participants will learn the basics of React through brief demonstrations, interactive examples, and a lab where they create a small web application.
 
-## Resources
+### Resources
 Here's the link to the [slides]({{ site.baseurl }}/react/sunday/slides/) for this workshop!
 
