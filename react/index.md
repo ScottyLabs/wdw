@@ -42,5 +42,5 @@ Here's the link to the [lab]({{ site.baseurl }}/react/lab/) for this workshop!
 Participants will learn the basics of React through brief demonstrations, interactive examples, and a lab where they create a small web application.
 
 ### Resources
-Here's the link to the [slides]({{ site.baseurl }}/react/sunday/slides/) for this workshop!
+Here's the link to the [slides]({{ site.baseurl }}/react/sunday/slides.pdf) for this workshop!
 
