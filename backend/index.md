@@ -19,7 +19,7 @@ engineering is before learning how to make a simple blog using Flask, a web
 application framework written in Python.
 
 
-### How to Attend
+## How to Attend
 
 Bring a computer with a web browser and a text editor installed.
 [Chrome](https://www.google.com/chrome/browser/desktop/index.html) and
@@ -31,7 +31,7 @@ This talk assumes you've programmed before, either for a class or on your own
 time.
 
 
-### Resources for this Workshop
+## Resources
 
 Here are some resources that we will use for this workshop:
 
@@ -39,7 +39,7 @@ Here are some resources that we will use for this workshop:
 - [Backend Lab]({{ site.baseurl }}/backend/lab/)
 - [Repository for Demo](https://github.com/bryanyan/wdwdemo)
 
-### Previous Resources
+## More Resources
 
 Here are some resources from the past iteration of Web Dev Weeks:
 

@@ -19,7 +19,7 @@ Participants in this workshop will complete exercises related to common
 JavaScript tasks.
 
 
-### How to Attend
+## How to Attend
 
 Bring a computer with a web browser and text editor installed. We recommend
 [Chrome](https://www.google.com/chrome/browser/desktop/index.html) and

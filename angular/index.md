@@ -17,7 +17,7 @@ Participants in this workshop will learn how to develop a basic Angular JS
 application while learning the overall structure of this framework.
 
 
-### How to Attend
+## How to Attend
 
 Bring a computer with a web browser and text editor installed. We recommend
 [Chrome](https://www.google.com/chrome/browser/) and [Sublime

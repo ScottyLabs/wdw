@@ -17,7 +17,7 @@ Participants in this workshop will complete typographic sketches and mockups
 to get a feel for how to think critically about design on the web.
 
 
-### How to Attend
+## How to Attend
 
 Bring a pencil; paper will be provided. Also bring a laptop with your favorite
 design software installed, like [Sketch](https://www.sketchapp.com/),

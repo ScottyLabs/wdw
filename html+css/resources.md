@@ -1,7 +1,9 @@
 ---
 layout: guide
 title: Resources For HTML \& CSS
-subject: html
+subject: htmlcss
+# subject line must be "htmlcss"  instead of "html+css"
+# because "+" character is ignored when yaml is converted into css
 ---
 
 ## Resources For HTML & CSS

@@ -19,13 +19,15 @@ permalink: pretty
 
 # custom configuration
 registration_link: https://goo.gl/forms/vmLptRve19h2XMK12
+attendance_link: https://docs.google.com/forms/d/e/1FAIpQLScQGaSC30dwZaQ38oirk19jANV0Fmd-m-LObLgUMhZEvr9JXQ/viewform
 
 # The order that pages should be displayed int the menu bar
 wdw_pages:
   - basics
   - html+css
   - javascript
-  - design
+  - rest
   - react
-  - p5
+  - chrome extension
+  - backend
 
