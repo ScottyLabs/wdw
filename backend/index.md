@@ -37,7 +37,7 @@ Here are some resources that we will use for this workshop:
 
 - [Slides - Introduction to Backend Development](slides.pdf)
 - [Backend Lab]({{ site.baseurl }}/backend/lab/)
-- [Repository for Demo](https://github.com/bryanyan/wdwdemo)
+- [Repository for Demo](https://github.com/crcmowry/wdwdemo)
 
 ## More Resources
 
