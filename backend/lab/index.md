@@ -276,11 +276,11 @@ In Flask-WTF, web forms are simple classes, subclassed from the super class Form
 
 ```python
 # app/forms.py
-from flask.ext.wtf import Form
+from flask_wtf import FlaskForm
 from wtforms import TextField
 from wtforms.validators import DataRequired
 
-class PostForm(Form):
+class PostForm(FlaskForm):
     title = TextField("title", validators=[DataRequired()])
     post = TextField("post", validators=[DataRequired()])
 ```
@@ -316,8 +316,12 @@ we can focus on the actual HTML. Here's what the template should look like (`app
 {% endraw %}
 ```
 
-So on our homepage, we want to be able to make posts. We still inherit from `base.html` so we can have a navbar on this page. The only
-difference between a regular HTML form and this one is that ours expects a Form object instantiated from the Form class we just defined, passed in as a template argument named `form`. The fields of our form (title, post) are rendered by {% raw %}<b>{{ form.field_name }}</b>{% endraw %}.
+So on our homepage, we want to be able to make posts. We still inherit from
+`base.html` so we can have a navbar on this page. The only difference between a
+regular HTML form and this one is that ours expects a Form object instantiated
+from the Form class we just defined, passed in as a template argument named
+`form`. The fields of our form (title, post) are rendered by <b>{{
+form.field_name }}</b>.
 
 If you recall how passing in data works, all we have to do is put it in as an argument to `render_template()` in `views.py`. Here is what our new views should look like.
 
@@ -325,12 +329,12 @@ If you recall how passing in data works, all we have to do is put it in as an ar
 # app/views.py
 from flask import render_template
 from app import app
-from forms import PostForm
+from app.forms import PostForm
 
 @app.route('/', methods=['GET', 'POST'])
 @app.route('/index', methods=['GET', 'POST'])
 def index():
-    form = PostForm(request.form)
+    form = PostForm()
     return render_template("index.html", form=form)
 ```
 
@@ -342,14 +346,14 @@ Another way Flask-WTF makes our lives easy is the processing of submitted form d
 # app/views.py
 from flask import render_template
 from app import app
-from forms import PostForm
+from app.forms import PostForm
 
 @app.route('/', methods=['GET', 'POST'])
 @app.route('/index', methods=['GET', 'POST'])
 def index():
-    form = PostForm(request.form)
-    if form.validate():
-        print "Successful form!"
+    form = PostForm()
+    if (form.validate()):
+        print ("Successful form!")
     return render_template("index.html", form=form)
 ```
 
