@@ -551,7 +551,7 @@ Thanks!
 
 - - -
 
-[slides]: {{site.baseurl}}/backend/slides.pdf
+[slides]: https://docs.google.com/presentation/d/1HcADdPMhP35u7tUUuXhPCQw-V49eDt_fYKH2Iek863o/edit?usp=sharing
 [mega-tutorial]: https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world
 
 [source-final]: https://github.com/crcmowry/wdwdemo
