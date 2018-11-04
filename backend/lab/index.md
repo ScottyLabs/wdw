@@ -48,6 +48,14 @@ python3 -m venv /path/to/new/virtual/environment
 ```
 which will create a virtual environment at `/path/to/new/virtual/environment`
 (note: don't actually run the above command).
+To activate the virtual environment, run
+```
+$ . venv/bin/activate
+```
+Your terminal prompt should now look like
+```
+(venv) $
+```
 
 Now run the following:
 
@@ -162,12 +170,12 @@ homepage in `app/templates/index.html`.
     <title> WDW Flask Demo </title>
   </head>
   <body>
-    <h1> {{ post }} </h1>
+    <h1> {% raw %}{{ post }}{% endraw %} </h1>
   </body>
 </html>
 ```
 
-As you can see, we just wrote standard HTML. The only difference is that we now have <b> {{ ... }} </b> sections, which are placeholders for dynamic content. This feature is built into Jinja2 templating that comes with Flask, which will substitute the blocks with the corresponding values provided as template arguments. We can update our `app/views.py` file to use this template.
+As you can see, we just wrote standard HTML. The only difference is that we now have <b> {% raw %}{{ ... }}{% endraw %} </b> sections, which are placeholders for dynamic content. This feature is built into Jinja2 templating that comes with Flask, which will substitute the blocks with the corresponding values provided as template arguments. We can update our `app/views.py` file to use this template.
 
 ```python
 # app/views.py
@@ -188,7 +196,7 @@ Jinja2 also supports conditional statements, control flow, and many other script
 
 ```html
 <!-- app/templates/index.html -->
-<html>
+{% raw %}<html>
   <head>
     <title> WDW Flask Demo </title>
   </head>
@@ -199,7 +207,7 @@ Jinja2 also supports conditional statements, control flow, and many other script
       <h1> Hello, World! </h1>
     {% endif %}
   </body>
-</html>
+</html>{% endraw %}
 ```
 
 Play around with this to see how the conditional statement works! If we don't pass in a post to `render_template` in `app/views.py`, then we should show 'Hello, World!'. 
@@ -211,14 +219,15 @@ Jinja2 also supports inheritance. Let's say in our application, we will have man
 Instead of doing this, we can use the inheritance feature of Jinja2. This allows us to move the parts of the page that are common into one base template from which all other files inherit from. Let's define a base template that includes a navigation bar in 
 `app/templates/base.html`.
 
+
+
 ```html
-<!-- app/templates/base.html-->
+{% raw %}<!-- app/templates/base.html-->
 <html>
   <head>
     <title> WDW Flask Demo </title>
-    <link rel="stylesheet" href=".../materialize.min.css">
-    <script src=".../jquery-latest.js"> </script>
-    <script src=".../materialize.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -232,21 +241,21 @@ Instead of doing this, we can use the inheritance feature of Jinja2. This allows
     </div>
     {% block content %}{% endblock %}
   </body>
-</html>
+</html>{% endraw %}
 ```
 
-Here, we use the <b>{% block content %}{% endblock %}</b> to define the place where the sub-templates can insert themselves. This content can be replaced in sub-templates. To demonstrate this, let's modify `index.html` to inherit from `base.html`. 
+Here, we use the <b>{% raw %}{% block content %}{% endblock %}{% endraw %}</b> to define the place where the sub-templates can insert themselves. This content can be replaced in sub-templates. To demonstrate this, let's modify `index.html` to inherit from `base.html`. 
 
 ```html
 <!-- app/templates/index.html -->
-{% extends "base.html" %}
+{% raw %}{% extends "base.html" %}
 {% block content %}
   {% if post %}
     <h1> {{ post }} </h1>
   {% else %}
     <h1> Hello, World! </h1>
   {% endif %}
-{% endblock %}
+{% endblock %}{% endraw %}
 ```
 
 Since `base.html` now has our page title, we can remove that from `index.html`. All we leave here is the actual content. The extends block is how Jinja2 knows to include `index.html` inside `base.html`. The templates have matching block statements, so Jinja2 knows to combine them into one. Anytime we want to write a new page with a navbar, we would create them as extensions to `base.html`.
@@ -297,8 +306,7 @@ we can focus on the actual HTML. Here's what the template should look like (`app
 
 ```html
 <!--app/templates/index.html-->
-{% raw %}
-{% extends "base.html" %}
+{% raw %}{% extends "base.html" %}
 {% block content %}
 <div class="container">
   <div class="row">
@@ -319,16 +327,15 @@ we can focus on the actual HTML. Here's what the template should look like (`app
     </form>
   </div>
 </div>
-{% endblock %}
-{% endraw %}
+{% endblock %}{% endraw %}
 ```
 
 So on our homepage, we want to be able to make posts. We still inherit from
 `base.html` so we can have a navbar on this page. The only difference between a
 regular HTML form and this one is that ours expects a Form object instantiated
 from the Form class we just defined, passed in as a template argument named
-`form`. The fields of our form (title, post) are rendered by <b>{{
-form.field_name }}</b>.
+`form`. The fields of our form (title, post) are rendered by <b>{% raw %}{{
+form.field_name }}{% endraw %}</b>.
 
 If you recall how passing in data works, all we have to do is put it in as an argument to `render_template()` in `views.py`. Here is what our new views should look like.
 
@@ -397,16 +404,18 @@ When we start our application, we also need to tell it to use our database. Here
 ```python
 # app/__init__.py
 from flask import Flask
-from flask.ext.sqlalchemy import SQLAlchemy
+from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate
 
 app = Flask(__name__)
 app.config.from_object('config')
 db = SQLAlchemy(app)
+migrate = Migrate(app, db)
 
 from app import views, models
 ```
 
-Here, we've made two changes to our initilization script. We create a `db` object that is our database. We will also import `models`,
+Here, we've made two changes to our initilization script. We create a `db` object that is our database, and a migrate object that we'll use to make changes to our database structure. We will also import `models`,
 which is just that data we will store in our database. We will create these as Python classes as well.
 
 ### Models
@@ -495,7 +504,7 @@ Now if we go back to our `index.html` file and display these posts,
 
 ```html
 <!-- app/templates/index.html -->
-{% extends "base.html" %}
+{% raw %}{% extends "base.html" %}
 {% block content %}
 <div class="container">
   <div class="row">
@@ -527,7 +536,7 @@ Now if we go back to our `index.html` file and display these posts,
     </form>
   </div>
 </div>
-{% endblock %}
+{% endblock %}{% endraw %}
 ```
 
 We loop through the posts reversed because we want our most recent post to be at the top. We're done! 
@@ -545,11 +554,11 @@ Thanks!
 [slides]: {{site.baseurl}}/backend/slides.pdf
 [mega-tutorial]: https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world
 
-[source-final]: https://github.com/bryanyan/wdwdemo
-[step-1]: https://github.com/bryanyan/wdwdemo
-[step-2]: https://github.com/bryanyan/wdwdemo
-[step-3]: https://github.com/bryanyan/wdwdemo
-[step-4]: https://github.com/bryanyan/wdwdemo
+[source-final]: https://github.com/crcmowry/wdwdemo
+[step-1]: https://github.com/crcmowry/wdwdemo/tree/57c57270750bbdd8f23250951ba888b17bdc6d26
+[step-2]: https://github.com/crcmowry/wdwdemo/tree/cc4351017d4b377be10e68164d160d6779da3fed
+[step-3]: https://github.com/crcmowry/wdwdemo/tree/2daf5e29d41f0af26d8e116ebe31a5afe827e54f
+[step-4]: https://github.com/crcmowry/wdwdemo/tree/78184f675e639aa611534db7f359813c148300f6
 
 [python-dl]: https://www.python.org/downloads/
 [pip-dl]: https://pip.pypa.io/en/stable/installing/
