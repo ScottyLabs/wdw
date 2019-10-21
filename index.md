@@ -22,6 +22,9 @@ knowledge you need to get started.
 1. __[Register]({{ site.registration_link }})__
   - You certainly don't have to register to attend, but we like knowing how many
     people to expect and what people will be interested in learning.
+    <a href="site.registration_link"><button style= "display:block;width:30%;background-color: #CD375E; color:white;padding: 14pix 28px; text-align:center; font-size:16px">Register</button></a>
+
+
 1. __[Read "The Basics"][basics]__
   - This quick read will introduce you to some common concepts and explain what
     the workshops are about.
@@ -46,24 +49,29 @@ pre-requisites, but the ones that do list them on their descriptions.
 
 ### Friday, October 25th 
 
-| Session                                | Time                   |
-|----------------------------------------|:----------------------:|
-| [HTML & CSS][html+css]                 | 1:30 p.m. -- 3:00 p.m. |
-| [JavaScript][javascript]               | 3:00 p.m. -- 4:30 p.m. |
-| [RESTful API Design][rest]             | 4:30 p.m. -- 6:00 p.m. |
-| *break for dinner - Noodles & Co.*     | 6:00 p.m. -- 6:30 p.m. |
-| [React][react]                         | 6:30 p.m. -- 8:00 p.m. |
+| Session                                                      | Time                   |
+|--------------------------------------------------------------|:----------------------:|
+| *Lunch - Piada*                                              | 1:30 p.m. -- 2:00 p.m. |
+| [HTML & CSS][html+css]                                       | 2:00 p.m. -- 3:00 p.m. |
+| [JavaScript][javascript]                                     | 3:00 p.m. -- 4:00 p.m. |
+| *Setup Your Dev Setup*                                       | 4:00 p.m. -- 5:00 p.m. |
+| [React][react]                                               | 6:30 p.m. -- 8:00 p.m. |
+| *Dinner - Chipotle*                                          | 6:00 p.m. -- 6:30 p.m. |
+| [Building RESTful APIs with Node.js and MongoDB][rest]       | 6:30 p.m. -- 8:00 p.m. |
 
 
 ### Saturday, October 26th
 
-| Session                                    | Time                   |
-|--------------------------------------------|:----------------------:|
-| [HTML & CSS][html+css]                     | 1:30 p.m. -- 3:00 p.m. |
-| [Backend Engineering with Flask][backend]  | 3:00 p.m. -- 4:30 p.m. |
-| [Chrome Extension][tensorflow]             | 4:30 p.m. -- 6:00 p.m. |
-| *break for dinner- Pizza*                  | 6:00 p.m. -- 6:30 p.m. |
-| [React][react]                             | 6:30 p.m. -- 8:00 p.m. |
+| Session                                                      | Time                   |
+|--------------------------------------------------------------|:----------------------:|
+| *Lunch - Pizza*                                              | 1:30 p.m. -- 2:00 p.m. |
+| [Frontend JavaScript with AngularJS][javascript]             | 2:00 p.m. -- 3:00 p.m. |
+| [Chrome Extension][tensorflow]                               | 3:00 p.m. -- 4:00 p.m. |
+| [Building RESTful APIs with Flask][rest]                     | 4:00 p.m. -- 5:00 p.m. |
+| *Postman Fundamentals*                                       | 5:00 p.m. -- 6:00 p.m. |
+| *break for dinner- Choolaah*                                 | 6:00 p.m. -- 6:30 p.m. |
+| *TensorFLow.js*                                              | 6:30 p.m. -- 8:00 p.m. |
+
 
 
 ## What will I learn?
