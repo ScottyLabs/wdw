@@ -22,7 +22,7 @@ knowledge you need to get started.
 1. __[Register]({{site.registration_link}})__
   - You certainly don't have to register to attend, but we like knowing how many
     people to expect and what people will be interested in learning.
-    <a href="{{site.registration_link}}"><button style= "display:block;width:30%;background-color: #CD375E; color:white;padding: 14pix 28px; text-align:center; font-size:16px">Register</button></a>
+<a href="{{site.registration_link}}"><button style="border:none; display:block; width:40%; background-color: #CD375E; color:white; padding: 14px 28px; text-align:center; font-size:16px; border-radius:6px"><b>Register Here!</b></button></a>
 
 
 1. __[Read "The Basics"][basics]__
@@ -45,18 +45,18 @@ Click on any of the links to read more about what each section will cover!
 You can go to as many or as few as you'd like. Most talks have no
 pre-requisites, but the ones that do list them on their descriptions.
 
-**Location**: WEH 5201 (Mac cluster)
+**Location**: Gates 5 Clusters
 
 ### Friday, October 25th 
 
 | Session                                                      | Time                   |
 |--------------------------------------------------------------|:----------------------:|
-| *Lunch - Piada*                                              | 1:30 p.m. -- 2:00 p.m. |
+| *Lunch: Piada*                                               | 1:30 p.m. -- 2:00 p.m. |
 | [HTML & CSS][html+css]                                       | 2:00 p.m. -- 3:00 p.m. |
 | [JavaScript][javascript]                                     | 3:00 p.m. -- 4:00 p.m. |
-| *Setup Your Dev Setup*                                       | 4:00 p.m. -- 5:00 p.m. |
+| Setup Your Dev Setup                                         | 4:00 p.m. -- 5:00 p.m. |
 | [React][react]                                               | 6:30 p.m. -- 8:00 p.m. |
-| *Dinner - Chipotle*                                          | 6:00 p.m. -- 6:30 p.m. |
+| *Dinner: Chipotle*                                           | 6:00 p.m. -- 6:30 p.m. |
 | [Building RESTful APIs with Node.js and MongoDB][rest]       | 6:30 p.m. -- 8:00 p.m. |
 
 
@@ -64,13 +64,13 @@ pre-requisites, but the ones that do list them on their descriptions.
 
 | Session                                                      | Time                   |
 |--------------------------------------------------------------|:----------------------:|
-| *Lunch - Pizza*                                              | 1:30 p.m. -- 2:00 p.m. |
+| *Lunch: Pizza*                                               | 1:30 p.m. -- 2:00 p.m. |
 | [Frontend JavaScript with AngularJS][javascript]             | 2:00 p.m. -- 3:00 p.m. |
-| [Chrome Extension][tensorflow]                               | 3:00 p.m. -- 4:00 p.m. |
+| [Chrome Extension][extensions]                               | 3:00 p.m. -- 4:00 p.m. |
 | [Building RESTful APIs with Flask][rest]                     | 4:00 p.m. -- 5:00 p.m. |
 | *Postman Fundamentals*                                       | 5:00 p.m. -- 6:00 p.m. |
-| *break for dinner- Choolaah*                                 | 6:00 p.m. -- 6:30 p.m. |
-| *TensorFLow.js*                                              | 6:30 p.m. -- 8:00 p.m. |
+| *Dinner: Choolaah*                                           | 6:00 p.m. -- 6:30 p.m. |
+| TensorFlow.js                                                | 6:30 p.m. -- 8:00 p.m. |
 
 
 
@@ -121,7 +121,7 @@ might be useful:
 [angular]: angular/
 [framer]: prototyping/
 [rest]: rest/
-[tensorflow]: chrome extension/
+[extensions]: chrome extension/
 
 <!-- schema.org information about the event, so it shows up in Google -->
 <script type="application/ld+json">
