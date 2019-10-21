@@ -53,9 +53,9 @@ pre-requisites, but the ones that do list them on their descriptions.
 | [HTML & CSS][html+css]                                       | 2:00 p.m. -- 3:00 p.m. |
 | [JavaScript][javascript]                                     | 3:00 p.m. -- 4:00 p.m. |
 | Setup Your Dev Setup                                         | 4:00 p.m. -- 5:00 p.m. |
-| [React][react]                                               | 6:30 p.m. -- 8:00 p.m. |
+| [React][react]                                               | 5:00 p.m. -- 6:00 p.m. |
 | *Dinner: Chipotle*                                           | 6:00 p.m. -- 6:30 p.m. |
-| [Building RESTful APIs with Node.js and MongoDB][rest]       | 6:30 p.m. -- 8:00 p.m. |
+| [Building RESTful APIs with Node.js and MongoDB][rest]       | 6:30 p.m. -- 7:30 p.m. |
 
 
 ### Saturday, October 26th
@@ -68,7 +68,7 @@ pre-requisites, but the ones that do list them on their descriptions.
 | [Building RESTful APIs with Flask][rest]                     | 4:00 p.m. -- 5:00 p.m. |
 | Postman Fundamentals                                         | 5:00 p.m. -- 6:00 p.m. |
 | *Dinner: Choolaah*                                           | 6:00 p.m. -- 6:30 p.m. |
-| TensorFlow.js                                                | 6:30 p.m. -- 8:00 p.m. |
+| TensorFlow.js                                                | 6:30 p.m. -- 7:30 p.m. |
 
 
 
