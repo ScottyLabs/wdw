@@ -44,7 +44,7 @@ pre-requisites, but the ones that do list them on their descriptions.
 
 **Location**: WEH 5201 (Mac cluster)
 
-### Saturday, November 3rd
+### Friday, October 25th 
 
 | Session                                | Time                   |
 |----------------------------------------|:----------------------:|
@@ -55,7 +55,7 @@ pre-requisites, but the ones that do list them on their descriptions.
 | [React][react]                         | 6:30 p.m. -- 8:00 p.m. |
 
 
-### Sunday, November 4th
+### Saturday, October 26th
 
 | Session                                    | Time                   |
 |--------------------------------------------|:----------------------:|
