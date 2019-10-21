@@ -22,7 +22,7 @@ knowledge you need to get started.
 1. __[Register]({{site.registration_link}})__
   - You certainly don't have to register to attend, but we like knowing how many
     people to expect and what people will be interested in learning.
-    <a href="https://forms.gle/H6PXxyXhVAxsSTPVA"><button style= "display:block;width:30%;background-color: #CD375E; color:white;padding: 14pix 28px; text-align:center; font-size:16px">Register</button></a>
+    <a href="{{site.registration_link}}"><button style= "display:block;width:30%;background-color: #CD375E; color:white;padding: 14pix 28px; text-align:center; font-size:16px">Register</button></a>
 
 
 1. __[Read "The Basics"][basics]__
