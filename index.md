@@ -22,7 +22,7 @@ knowledge you need to get started.
 1. __[Register]({{ site.registration_link }})__
   - You certainly don't have to register to attend, but we like knowing how many
     people to expect and what people will be interested in learning.
-    <a href="site.registration_link"><button style= "display:block;width:30%;background-color: #CD375E; color:white;padding: 14pix 28px; text-align:center; font-size:16px">Register</button></a>
+    <a href="https://accounts.google.com/signin/v2/identifier?service=wise&passive=1209600&continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSel_P0sC1bV3DNYCmLuL3y88WEiZckj_kkve7vCvFVGIQ2Jgw%2Fviewform%3Fusp%3Dsend_form&followup=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSel_P0sC1bV3DNYCmLuL3y88WEiZckj_kkve7vCvFVGIQ2Jgw%2Fviewform%3Fusp%3Dsend_form&ltmpl=forms&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><button style= "display:block;width:30%;background-color: #CD375E; color:white;padding: 14pix 28px; text-align:center; font-size:16px">Register</button></a>
 
 
 1. __[Read "The Basics"][basics]__
