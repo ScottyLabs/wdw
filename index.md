@@ -22,9 +22,7 @@ knowledge you need to get started.
 1. __[Register]({{site.registration_link}})__
   - You certainly don't have to register to attend, but we like knowing how many
     people to expect and what people will be interested in learning.
-<a href="{{site.registration_link}}"><button style="border:none; display:block; width:40%; background-color: #CD375E; color:white; padding: 14px 28px; text-align:center; font-size:16px; border-radius:6px"><b>Register Here!</b></button></a>
-
-
+    <a href="{{site.registration_link}}"><button style="border:none; display:block; background-color: #CD375E; color:white; padding: 10px 16px; text-align:center; font-size:16px; border-radius:6px; margin-top:10px;"><b>Register Here!</b></button></a>
 1. __[Read "The Basics"][basics]__
   - This quick read will introduce you to some common concepts and explain what
     the workshops are about.
@@ -68,7 +66,7 @@ pre-requisites, but the ones that do list them on their descriptions.
 | [Frontend JavaScript with AngularJS][javascript]             | 2:00 p.m. -- 3:00 p.m. |
 | [Chrome Extension][extensions]                               | 3:00 p.m. -- 4:00 p.m. |
 | [Building RESTful APIs with Flask][rest]                     | 4:00 p.m. -- 5:00 p.m. |
-| *Postman Fundamentals*                                       | 5:00 p.m. -- 6:00 p.m. |
+| Postman Fundamentals                                         | 5:00 p.m. -- 6:00 p.m. |
 | *Dinner: Choolaah*                                           | 6:00 p.m. -- 6:30 p.m. |
 | TensorFlow.js                                                | 6:30 p.m. -- 8:00 p.m. |
 
