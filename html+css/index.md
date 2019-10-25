@@ -43,5 +43,5 @@ We also created a list of suggested websites and other [resources](resources/) f
 further exploration once you are finished with the talk.
 
 The slides can be found [here](https://scottylabs.org/wdw-htmlcss/HTMLCSS.pdf).
-The link to the the Lab can be found [here](https://docs.google.com/document/d/1p5rpkYiPJniWMpCdGZDb5PUg1HF7DKtHaIx__9JTt0A/edit?usp=sharing).
+
 
