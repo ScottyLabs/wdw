@@ -13,146 +13,146 @@ There is a whole world of dotfiles and package management to set up, but we'll f
 1. Writing and Executing Code
 1. Common Frameworks (especially for the rest of the talks)
 
-Before we move on, a word of caution. At the end of the day, all of this boils down to personal preferences and 
+Before we move on, a word of caution. At the end of the day, all of this boils down to personal preferences and style. Your mileage may vary with a lot of things here, but what's most important is to start thinking about the dev setup that works for you.
 
-__A web browser__ is a program—such as Google Chrome, Mozilla Firefox, Apple
-Safari, or Internet Explorer—that retrieves the source code of a website and
-renders it in a way that you can interact with.
+You can find the slides [here](slides.pdf)!
 
-A __client__ is a program that request information from another computer. For
-example, your web browser acts as a client when it requests a web page from a
-server.
+## Terminal
 
-A __server__ is a computer that responds to requests from a client. Servers are
-often responsible for storing information permanently: when you create an
-account on a website, that information is stored on the server.
+Download iTerm
+```
+https://www.iterm2.com/
+```
 
-__Web application__ is a more all encompassing term for all the code that goes
-into a particular web experience. This means the HTML and CSS code that makes up
-what you actually see, the JavaScript makes those pages interactive, and any
-code that runs on a web server. Because this is a lot to talk about, we
-generally break it up into two parts, the __frontend__ and the __backend__.
+Download Hyper
+```
+https://hyper.is/
+```
 
-Most web development is split up into frontend and backend development, so let’s
-dive a little deeper into these areas.
+## Windows Subsystem for Linux
 
-## The Frontend
+Install a New Linux Distro:
+```
+https://docs.microsoft.com/en-us/windows/wsl/install-win10
+```
 
-The frontend of a web application is everything that ends up running in the
-browser. It is written in three main languages, __HTML__, __CSS__, and
-__Javascript__.
+Initialize Your New Distro:
+```
+https://docs.microsoft.com/en-us/windows/wsl/initialize-distro
+```
 
-<span class="aside">To learn how to write HTML and CSS by creating a simple
-portfolio website, check out <a href="{{ site.baseurl
-}}/html+css/">Introduction to HTML & CSS</a>.</span>
+## Homebrew
 
-HTML and CSS store information about a page. HTML contains the __content__,
-which could include text, images, videos, and any number of other things.
-Complementary to this, CSS stores information about how to __display__ the
-content stored by the HTML. This includes layout, color, fonts, and other
-information about how our site looks. With just HTML and CSS we can create
-beautiful, informational web pages that display the same information for
-everyone who loads them.
+Install Homebrew
+```
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
 
-<span class="aside">To learn about JavaScript, its many quirks, and it's
-infinite possibilities, attend <a href="{{ site.baseurl }}/javascript/">Frontend
-Engineering with JavaScript</a>.</span>
+Install `tree`
+```
+brew install tree
+```
 
-On the other hand, JavaScript is a fully featured programming language.  When
-run in a web browser, JavaScript can alter HTML and CSS on the fly, communicate
-with a web server, or perform computation all by itself. This opens the door to
-modern, interactive, experiences.
+## Zsh
 
-<span class="aside">To learn how companies like Facebook and AirBnB code their
-frontends, check out our <a href="{{ site.baseurl }}/react/">React
-Workshop</a>.</span>
+Install Oh My Zsh
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
 
-HTML, CSS and JavaScript still form the core of web development, but companies
-have built tools on top of them to make it easier to build good-looking, high
-performance websites.
+Install Pure Prompt
+```
+npm install --global pure-prompt
+```
 
-## The Backend
+```
+autoload -U promptinit; promptinit
+prompt pure
+```
 
-The backend is all of the code that runs on the web server.
+Install `z`
+```
+git clone https://github.com/agkozak/zsh-z $ZSH_CUSTOM/plugins/zsh-z
+```
 
-<span class="aside">To learn more and make a simple blog, check out <a href="{{ site.baseurl }}/backend/">Introduction to Backend Web Development</a>.</span>
+Install `zsh-autosuggestions`
+```
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
 
-A backend is necessary if you want to store information long term, sign people
-in, or perform complex computations.
+Install `zsh-syntax-highlighting`
+```
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+```
 
-Most backends have a set of HTML, CSS, and JavaScript that is sent to the client
-on request, so that the client can interact with the backend. Different parts of
-the frontend are called using different routes or URLs, for example the route of
-this page is "/basics/" whereas the route of the homepage is just "/". Finally,
-there is generally a database, which is where lots of information can be stored
-long term and accessed quickly.
+Source Your Packages
+```
+plugins=(
+    z
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+)
+```
 
-Backends can be written in any programming language, but some languages are
-easier to use than others. In addition, to the language, web developers often
-use a web framework, which is a collection of code that handles common server
-tasks and helps organize code.
+```
+vi ~/.zshrc
+source ~/.zshrc
+```
 
-## Design
+## Visual Studio Code
 
-<span class="aside">To learn more about design, check out <a href="{{ site.baseurl }}/design/">Crafting Well-Designed Sites</a></span>
+Install Visual Studio Code
+```
+https://code.visualstudio.com/
+```
 
-When creating a web application, it’s important to remember that in a good
-design can make or break your site’s success. Design is best described as all of
-the choices that go into making a website. Design is more than the way a website
-looks; a good design considers every aspect of a user’s experience. This
-includes how a user signs up, how information is laid out, and overall every
-action the user has to take inside your app. The goal of any good design is to
-be unobtrusive, intuitive, and pleasant.
+Download Fira Sans
+```
+https://www.fontsquirrel.com/fonts/fira-sans
+```
 
-We group the choices a designer makes about how a piece of software fits into a
-user’s life under the term __User Experience__, or UX. Another common term you
-will hear discussed in relation to UX is the UI, or __User Interface__. The user
-interface is what the user sees and actually interacts with. __Wireframes__,
-__mockups__ and __prototypes__ are examples of tools which facilitate the
-development of a good user experience.
+Install Fira Sans in Visual Studio Code
+```
+{
+    "editor.fontFamily": "'FiraCode-Retina'",
+    "editor.fontLigatures": true,
+}
+```
 
-Wireframes are like an outline to an essay. They’re non-functional, ugly, and
-generally use a visual style that will not end up in the app. They do help at
-visualizing a very rough an idea. Wireframing focuses on the broad ideas of an
-interface—the functionality and layout—rather than on the specific details.
+Install `pdflatex`
+```
+brew cask install mactex
+```
 
-Making mockups is like filling in your bulleted outline with the most important
-pieces of text. We say that they can be done with varying degrees of
-__Fidelity__. Low fidelity mockups serve roughly the same purpose as wireframes,
-while high fidelity mockups are pixel-perfect examples of what a developer
-should be implementing.
+## Python
 
-Prototypes are like rough drafts. With prototypes, users can actually interact
-with an interface, though it still may be rough and clunky. Prototypes are
-valuable because they can identify problems before developers take the time to
-implement a full design, which can save engineering resources.
+Install `python`
+```
+brew install python
+```
 
-## Deployment
+Install `virtualenv`
+```
+pip install virtualenv
+```
 
-<span class="aside">To learn how to deploy whatever you created during Web Dev Weekend, check out <a href="{{ site.baseurl }}/deployment/">Deployment: Making Your Site Public</a></span>
+## Node.js
 
-After a website has been designed, and the frontend and backend implemented,
-it’s time for it to be __deployed__. Deployment is the process of taking the
-code a developer has written, and setting it up to run on a server where the
-whole world can interact with it. It is a very important step, but it can be
-complicated because software is often not developed in the same environment it
-is deployed in. Deploying and running a webapp is generally called
-__operations__, and it’s an important step in the life cycle of creating a web
-application.
+Install Node.js and Yarn on macOS
 
-## Attending Workshops
+```
+brew install node yarn
+```
 
-Thank you for reading this guide, and we hope that you will join us for Web Dev
-Weekend!
+Install Node.js on Windows/Linux
+```
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+sudo apt-get install node
+```
 
-We’ve specifically designed the workshops so that they can be taken in any
-order, although we recommend taking the deployment workshop after you’ve
-completed at least one technical workshop (so you have something to deploy).
-
-If you haven't already, __[be sure to register]({{ site.registration_link }})__!
-You certainly don't have to register to attend, but we like knowing how many
-people to expect and what people will be interested in learning. We can't wait,
-and we hope to see you there!
-
-If you have any comments or questions about this guide, please write to hello at
-scottylabs dot org.
+Install Yarn on Windows/Linux
+```
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt-get update & sudo apt-get install yarn
+```
