@@ -66,7 +66,7 @@ pre-requisites, but the ones that do list them on their descriptions.
 | [Frontend JavaScript with AngularJS][javascript]             | 2:00 p.m. -- 3:00 p.m. |
 | [Chrome Extension][extensions]                               | 3:00 p.m. -- 4:00 p.m. |
 | [Building RESTful APIs with Flask][rest]                     | 4:00 p.m. -- 5:00 p.m. |
-| Postman Fundamentals                                         | 5:00 p.m. -- 6:00 p.m. |
+| [Postman Fundamentals][postman]                              | 5:00 p.m. -- 6:00 p.m. |
 | *Dinner*                                                     | 6:00 p.m. -- 6:30 p.m. |
 | TensorFlow.js                                                | 6:30 p.m. -- 7:30 p.m. |
 
@@ -119,6 +119,7 @@ might be useful:
 [angular]: angular/
 [framer]: prototyping/
 [rest]: rest/
+[postman]: postman/
 [extensions]: chrome extension/
 
 <!-- schema.org information about the event, so it shows up in Google -->
