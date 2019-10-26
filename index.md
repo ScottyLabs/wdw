@@ -45,7 +45,7 @@ pre-requisites, but the ones that do list them on their descriptions.
 
 **Location**: Gates 5 Clusters
 
-### Friday, October 25th 
+### Friday, October 25th
 
 | Session                                                      | Time                   |
 |--------------------------------------------------------------|:----------------------:|
@@ -64,7 +64,7 @@ pre-requisites, but the ones that do list them on their descriptions.
 |--------------------------------------------------------------|:----------------------:|
 | *Lunch*                                                      | 1:30 p.m. -- 2:00 p.m. |
 | [Frontend JavaScript with AngularJS][javascript]             | 2:00 p.m. -- 3:00 p.m. |
-| TensorFlow.js                                                | 3:00 p.m. -- 4:00 p.m. |
+| [TensorFlow.js][tensorflow]                                  | 3:00 p.m. -- 4:00 p.m. |
 | [Building RESTful APIs with Flask][backend]                  | 4:00 p.m. -- 5:00 p.m. |
 | [Postman Fundamentals][postman]                              | 5:00 p.m. -- 6:00 p.m. |
 | *Dinner*                                                     | 6:00 p.m. -- 6:30 p.m. |
