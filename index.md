@@ -114,6 +114,7 @@ might be useful:
 [react]: react/
 [css-frameworks]: css/
 [javascript]: javascript/
+[tensorflow]: tensorflow/
 [backend]: backend/
 [deployment]: deployment/
 [angular]: angular/
