@@ -4,7 +4,7 @@ title: Set Up Your Dev Setup
 subject: setup
 ---
 
-# The Basics
+# Set Up Your Dev Setup
 
 Programming is hard! Your brain already has a lot to do as it tries to solve complex problems and write clean and modular code and there's no time to struggle with the intricacies of package installation and annoyances of your code editor. It's a good idea to invest some time up front to set up your dev setup to help you save a few keystrokes for common programming workflows and have a nicer time while writing code, overall.
 
