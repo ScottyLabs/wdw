@@ -68,7 +68,7 @@ pre-requisites, but the ones that do list them on their descriptions.
 | [Building RESTful APIs with Flask][backend]                  | 4:00 p.m. -- 5:00 p.m. |
 | [Postman Fundamentals][postman]                              | 5:00 p.m. -- 6:00 p.m. |
 | *Dinner*                                                     | 6:00 p.m. -- 6:30 p.m. |
-| App Engine                                                   | 6:30 p.m. -- 7:30 p.m. |
+| [App Engine][appengine]                                      | 6:30 p.m. -- 7:30 p.m. |
 
 
 
