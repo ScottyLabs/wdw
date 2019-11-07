@@ -18,4 +18,4 @@ with using it for your own projects.
 ## Resources
 Here's the link to the [slides](https://docs.google.com/presentation/d/19EJDzdDuHyNIgk_SmSBzn01-4zAbqDHTvJ3v2QgjXjY/mobilepresent?slide=id.g45e4b4956f_0_70).
 
-Take a look at the [App Engine website](cloud.google.com/appengine) for more information!
+Take a look at the [App Engine website](https://cloud.google.com/appengine) for more information!
