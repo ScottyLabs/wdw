@@ -5,7 +5,7 @@ title: Home
 
 <br>
 
-<img class="hero-logo" src="/wdw/assets/img/logo.svg">
+<img class="hero-logo" src="{{ site.baseurl }}/assets/img/logo.svg">
 ##### Web Dev Weekend
 
 
@@ -144,6 +144,6 @@ might be useful:
       "name": "Wean Mac Cluster",
       "address": "WEH 5201"
   },
-  "image": "https://scottylabs.org/wdw/assets/img/logo.svg"
+  "image": "{{ site.baseurl }}/assets/img/logo.svg"
   }
 </script>

@@ -1,7 +1,7 @@
 # Site settings
 title: WDW
 description: "A talk series comprised of interactive workshops that teach the fundamentals of web development."
-baseurl: "/"
+baseurl: ""
 url: "https://wdw.scottylabs.org"
 
 exclude:
