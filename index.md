@@ -43,7 +43,7 @@ Click on any of the links to read more about what each section will cover!
 You can go to as many or as few as you'd like. Most talks have no
 pre-requisites, but the ones that do list them on their descriptions.
 
-**Location**: Gates 5 Clusters
+**Location**: Zoom
 
 ### Friday, October 25th
 
