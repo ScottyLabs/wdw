@@ -31,10 +31,7 @@ knowledge you need to get started.
     as few as you'd like.
 
 After participating in these workshops, you might want to show your friends the
-cool things that you built. If you are interested in publishing your website,
-you should check out one of our previous talks about [deployment][deployment].
-The deployment resources will walk you through how to host your website online
-__for free__!
+cool things that you built.
 
 ## Schedule
 
@@ -45,30 +42,27 @@ pre-requisites, but the ones that do list them on their descriptions.
 
 **Location**: Gates 5 Clusters
 
-### Friday, October 25th
+### Saturday, October 10th
 
 | Session                                                      | Time                   |
 |--------------------------------------------------------------|:----------------------:|
-| *Lunch*                                                      | 1:30 p.m. -- 2:00 p.m. |
-| [HTML & CSS][html+css]                                       | 2:00 p.m. -- 3:00 p.m. |
-| [JavaScript][javascript]                                     | 3:00 p.m. -- 4:00 p.m. |
-| [Set Up Your Dev Setup][setup]                               | 4:00 p.m. -- 5:00 p.m. |
-| [React][react]                                               | 5:00 p.m. -- 6:00 p.m. |
-| *Dinner*                                                     | 6:00 p.m. -- 6:30 p.m. |
-| [Building RESTful APIs with Node.js and MongoDB][rest]       | 6:30 p.m. -- 7:30 p.m. |
+| Git & Github                                                 | 1:00 p.m. -- 1:30 p.m. |
+| HTML & CSS                                                   | 1:30 p.m. -- 2:30 p.m. |
+| JavaScript                                                   | 2:30 p.m. -- 3:30 p.m. |
+| Break                                                        | 3:30 p.m. -- 4:00 p.m. |
+| Flask                                                        | 4:00 p.m. -- 4:30 p.m. |
+| Office Hours                                                 | 4:40 p.m. -- 5:30 p.m. |
 
-
-### Saturday, October 26th
+### Sunday, October 11th
 
 | Session                                                      | Time                   |
 |--------------------------------------------------------------|:----------------------:|
-| *Lunch*                                                      | 1:30 p.m. -- 2:00 p.m. |
-| [Frontend JavaScript with AngularJS][javascript]             | 2:00 p.m. -- 3:00 p.m. |
-| [TensorFlow.js][tensorflow]                                  | 3:00 p.m. -- 4:00 p.m. |
-| [Building RESTful APIs with Flask][backend]                  | 4:00 p.m. -- 5:00 p.m. |
-| [Postman Fundamentals][postman]                              | 5:00 p.m. -- 6:00 p.m. |
-| *Dinner*                                                     | 6:00 p.m. -- 6:30 p.m. |
-| [App Engine][appengine]                                      | 6:30 p.m. -- 7:30 p.m. |
+| Office Hours                                                 | 1:00 p.m. -- 1:30 p.m. |
+| Node                                                         | 1:30 p.m. -- 2:30 p.m. |
+| React                                                        | 2:30 p.m. -- 3:30 p.m. |
+| Break                                                        | 3:30 p.m. -- 4:00 p.m. |
+| Deployment                                                   | 4:00 p.m. -- 4:30 p.m. |
+| Office Hours and Submission                                  | 4:40 p.m. -- 5:30 p.m. |
 
 
 
