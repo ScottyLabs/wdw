@@ -29,8 +29,8 @@ wdw_pages:
   - basics
   - html+css
   - javascript
+  - backend
   - rest
   - react
-  - chrome extension
-  - backend
+  - deployment
 
