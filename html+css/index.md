@@ -28,14 +28,14 @@ The slides can be found [here](https://docs.google.com/presentation/d/1MKxdJmHn_
 
 ## Resources
 
-# HTML
+### HTML
 - [W3S Intro to HTML](https://www.w3schools.com/html/html_intro.asp)
 - [Codecademy](https://www.codecademy.com/learn/learn-html)
 - [Cool HTML Video](https://www.youtube.com/watch?v=pQN-pnXPaVg)
 - [List of All HTML Tags](https://www.w3schools.com/TAGS/default.ASP)
 - [List of All HTML Attributes](https://www.w3schools.com/TAGS/ref_attributes.asp)
 
-# CSS
+### CSS
 - [Bootstrap Documentation](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
 - [W3S Intro to CSS](https://www.w3schools.com/css/)
 - [List of All CSS Properties](https://www.w3schools.com/cssref/)
