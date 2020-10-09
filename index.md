@@ -8,6 +8,7 @@ title: Home
 <img class="hero-logo" src="{{ site.baseurl }}/assets/img/logo.svg">
 ##### Web Dev Weekend
 
+<span id="time"></span>
 
 Web Dev Weekend is a series of lectures, workshops, and exercises that introduce
 you to the fundamentals of web development.
@@ -22,7 +23,7 @@ knowledge you need to get started.
 1. __[Register]({{site.registration_link}})__
   - You certainly don't have to register to attend, but we like knowing how many
     people to expect and what people will be interested in learning.
-    <a href="{{site.registration_link}}"><button style="border:none; display:block; background-color: #CD375E; color:white; padding: 10px 16px; text-align:center; font-size:16px; border-radius:6px; margin-top:10px;"><b>Register Here!</b></button></a>
+    <a href="{{site.registration_link}}"><button>Register Here!</button></a>
 1. __[Read "The Basics"][basics]__
   - This quick read will introduce you to some common concepts and explain what
     the workshops are about.
@@ -40,7 +41,9 @@ Click on any of the links to read more about what each section will cover!
 You can go to as many or as few as you'd like. Most talks have no
 pre-requisites, but the ones that do list them on their descriptions.
 
-**Location**: Zoom
+### Location
+This year, WDW will be virtual! You can join us on Zoom from wherever you are.
+<div class="zoom"></div>
 
 ### Saturday, October 10th
 

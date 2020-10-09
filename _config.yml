@@ -20,14 +20,17 @@ permalink: pretty
 # custom configuration
 registration_link: https://forms.gle/zLJQqwgEzvXtVDzDA
 attendance_link: https://forms.gle/5jYSgHkMZi8uKeDo9
+zoom_link: https://cmu.zoom.us/s/91495063440
+
+wdw_start_time: "October 10, 2020 12:00:00"
 
 # The order that pages should be displayed int the menu bar
 wdw_pages:
   - basics
   - html+css
   - javascript
+  - backend
   - rest
   - react
-  - chrome extension
-  - backend
+  - deployment
 
