@@ -10,38 +10,35 @@ subject: htmlcss
 
 ###### build informative websites
 
-HTML and CSS form the foundation of website on the Internet is built upon.
-If you want to learn web development, HTML and CSS should be your first
-stepping stone. This talk will be interactive: attendees can follow along with
-the concepts introduced in the slides with the companion tutorial. By the end
-of the tutorial, participants will have a custom resume website.
+HHTML and CSS form the backbone of the web. When getting into Web Development, they are the first stepping stone, and having a strong understanding of the structure of web pages makes it easier to transition to dynamic pages. HTML is all about formatting content in ways that the browser can understand, while CSS adds stylistic elements and allows for responsiveness. 
 
-The HTML and CSS talk will do two things. The first is to show your how to
-write HTML and CSS code that will render a webpage just the way you want.
-The second is to give you a basic understanding of the structure of webpages,
-known as the DOM. Both are important if you would like to learn to make more
-interactive websites in the JavaScript, and Angular talks.
+This talk will cover the basics of HTML and CSS while laying the foundation for participants to learn about Web Development on their own. It’ll also be interactive, with lots of room for questions to clarify any confusing concepts. After the presentation, attendees will have the opportunity to apply the concepts from the talk to create their own personal website. The lab will provide suggestions on how to create a personal website, but participants are encouraged to add their own style and flair! 
 
-## How to Attend
+## Set Up
 
-Bring a computer with a web browser and text editor installed. We recommend
-[Chrome](https://www.google.com/chrome/browser/desktop/index.html) and
-[Sublime Text](http://www.sublimetext.com/). [Brackets](http://brackets.io/) is
-also a great editor for web development, but might be a bit overwhelming if this
-is your first experience writing a lot of code.If you're more comfortable with
-another editor, feel free to use it.
+Bring a computer with a web browser and text editor installed. We will also be using [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/), which you can [download here](https://getbootstrap.com/docs/4.5/getting-started/download/).
 
+
+## Lab
+
+To follow along, go to the
+[handout]({{ site.baseurl }}/html+css/handout/html+css.pdf). Feel free to use whatever components you want throughout the lab - this website is for you!
+
+The slides can be found [here](https://docs.google.com/presentation/d/1MKxdJmHn_ysdiYFZre5vhCtu1YAtEjgQIpkuawIKT9o/edit?usp=sharing).
 
 ## Resources
 
-To follow along, go to the
-[demo website](https://scottylabs.org/wdw-htmlcss/). As we introduce new
-topics during the talk, the companion website will show you examples of source
-code and its output to illustrate concepts.
+# HTML
+- [W3S Intro to HTML](https://www.w3schools.com/html/html_intro.asp)
+- [Codecademy](https://www.codecademy.com/learn/learn-html)
+- [Cool HTML Video](https://www.youtube.com/watch?v=pQN-pnXPaVg)
+- [List of All HTML Tags](https://www.w3schools.com/TAGS/default.ASP)
+- [List of All HTML Attributes](https://www.w3schools.com/TAGS/ref_attributes.asp)
+
+# CSS
+- [Bootstrap Documentation](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
+- [W3S Intro to CSS](https://www.w3schools.com/css/)
+- [List of All CSS Properties](https://www.w3schools.com/cssref/)
 
 We also created a list of suggested websites and other [resources](resources/) for
 further exploration once you are finished with the talk.
-
-The slides can be found [here](https://scottylabs.org/wdw-htmlcss/HTMLCSS.pdf).
-
-
