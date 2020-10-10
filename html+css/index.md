@@ -14,7 +14,7 @@ HHTML and CSS form the backbone of the web. When getting into Web Development, t
 
 This talk will cover the basics of HTML and CSS while laying the foundation for participants to learn about Web Development on their own. It’ll also be interactive, with lots of room for questions to clarify any confusing concepts. After the presentation, attendees will have the opportunity to apply the concepts from the talk to create their own personal website. The lab will provide suggestions on how to create a personal website, but participants are encouraged to add their own style and flair! 
 
-## Set Up
+## How to Attend
 
 Bring a computer with a web browser and text editor installed. We will also be using [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/), which you can [download here](https://getbootstrap.com/docs/4.5/getting-started/download/).
 
