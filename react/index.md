@@ -61,3 +61,5 @@ this workshop!
 - [React Native (build mobile apps with React)](https://reactnative.dev/)
 
 Here's the link to the [slides](https://drive.google.com/file/d/1w70QCtIpLWYftlVR1acIClr-bp9RCcDE/view?usp=sharing) for this workshop!
+
+If you can't make it, here's a [prerecorded video of the talk](https://drive.google.com/file/d/1390KJHZ1y_49rReIXmmEcB_0ofofsBxf/view?usp=sharing).
