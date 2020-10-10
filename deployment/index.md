@@ -17,7 +17,7 @@ you something to deploy.
 
 ## How to Attend
 
-Check out the lab sessions [here](https://drive.google.com/drive/u/1/folders/14DZVFknPuwLSYtqZRgzNQPB8R2qPlUbg). If you want to use starter code to follow along the lab, check out this [repo]().
+Check out the lab sessions [here](https://drive.google.com/drive/u/1/folders/14DZVFknPuwLSYtqZRgzNQPB8R2qPlUbg). If you want to use starter code to follow along the lab, check out this [repo](https://github.com/AvantikaNaik/wdw-sample-personal-website).
 <div class="zoom"></div>
 
 <!--
