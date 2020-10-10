@@ -49,11 +49,11 @@ This year, WDW will be virtual! You can join us on Zoom from wherever you are.
 
 | Session                                                      | Time                   |
 |--------------------------------------------------------------|:----------------------:|
-| Git & Github                                                 | 1:00 p.m. -- 1:30 p.m. |
-| HTML & CSS                                                   | 1:30 p.m. -- 2:30 p.m. |
-| JavaScript                                                   | 2:30 p.m. -- 3:30 p.m. |
+| [Git & Github](git/)                                         | 1:00 p.m. -- 1:30 p.m. |
+| [HTML & CSS](html+css/)                                      | 1:30 p.m. -- 2:30 p.m. |
+| [JavaScript](javascript/)                                    | 2:30 p.m. -- 3:30 p.m. |
 | Break                                                        | 3:30 p.m. -- 4:00 p.m. |
-| Flask                                                        | 4:00 p.m. -- 4:30 p.m. |
+| [Flask](flask/)                                              | 4:00 p.m. -- 4:30 p.m. |
 | Office Hours                                                 | 4:40 p.m. -- 5:30 p.m. |
 
 ### Sunday, October 11th
@@ -61,10 +61,10 @@ This year, WDW will be virtual! You can join us on Zoom from wherever you are.
 | Session                                                      | Time                   |
 |--------------------------------------------------------------|:----------------------:|
 | Office Hours                                                 | 1:00 p.m. -- 1:30 p.m. |
-| Node                                                         | 1:30 p.m. -- 2:30 p.m. |
-| React                                                        | 2:30 p.m. -- 3:30 p.m. |
+| [Express](express/)                                          | 1:30 p.m. -- 2:30 p.m. |
+| [React](react/)                                              | 2:30 p.m. -- 3:30 p.m. |
 | Break                                                        | 3:30 p.m. -- 4:00 p.m. |
-| Deployment                                                   | 4:00 p.m. -- 4:30 p.m. |
+| [Deployment](deployment/)                                    | 4:00 p.m. -- 4:30 p.m. |
 | Office Hours and Submission                                  | 4:40 p.m. -- 5:30 p.m. |
 
 
@@ -121,6 +121,10 @@ might be useful:
 [setup]: setup/
 [appengine]: appengine/
 [extensions]: chrome extension/
+[git]: git/
+[flask]: flask/
+[express]: express/
+[react]: react/
 
 <!-- schema.org information about the event, so it shows up in Google -->
 <script type="application/ld+json">
