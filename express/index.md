@@ -5,7 +5,7 @@ permalink: /express/
 subject: "express"
 ---
 
-# Express Development
+# REST APIs in Express
 
 ###### learn how to build a minimal and flexible web applicatoin
 
@@ -21,15 +21,7 @@ application framework written in Python.
 
 ## How to Attend
 
-Bring a computer with a web browser and a text editor installed.
-[Chrome](https://www.google.com/chrome/browser/desktop/index.html) and
-[Sublime Text](http://www.sublimetext.com/) are recommended.  Please also have
-[Python](https://www.python.org/downloads/) installed as well as
-[pip](https://pip.pypa.io/en/stable/installing/), a Python package manager.
-
-This talk assumes you've programmed before, either for a class or on your own
-time.
-
+Bring a computer with a web browser and a text editor installed. You will also need to install [Node.JS](https://nodejs.org/en/download/) and [Postman](https://www.postman.com/downloads/).
 
 ## Lab
 
@@ -42,7 +34,7 @@ Here are some resources that we will use for this workshop:
 
 - [Documentation](https://nodejs.org/en/)
 
-Here are some resources from the past iteration of Web Dev Weeks:
+Here are some resources from the past iteration of Web Dev Weekends:
 
 - [Slides](https://github.com/anbenson/webdevblog/raw/master/resources/WebDevWeeks-Backend.pdf)
 - [Tutorial](https://docs.google.com/document/d/1dUa36KFGPPwruOIOxDfKkVyqf5ZboZ0AiHdyNYniFWA/edit?pli=1)

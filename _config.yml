@@ -27,6 +27,7 @@ wdw_start_time: "October 10, 2020 12:00:00"
 # The order that pages should be displayed int the menu bar
 wdw_pages:
   - basics
+  - git
   - html+css
   - javascript
   - flask

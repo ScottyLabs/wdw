@@ -1,56 +1,29 @@
 ---
 layout: guide
-title: "Backend Development"
-permalink: /backend/
-subject: "backend"
+title: "Git and Github"
+subject: "git"
 ---
 
-# Backend Development
+# Git and GitHub
 
-###### learn how to save information, serve up different pages, and more
+###### control 
 
-The backend is all about storing and persisting information.  It usually
-consists of three main parts: a server, an application, and a database. If you
-want to save a user’s preferences, do complicated calculations, or store a lot
-of information, you’re going to need a backend.
-
-Participants in this workshop will first get a brief overview of what backend
-engineering is before learning how to make a simple blog using Flask, a web
-application framework written in Python.
-
+Git and GitHub are essential tools for any software developer, and have become the industry standard for version control. In this talk, we will introduce you to the power of version control and how Git and GitHub can help you manage projects. At the end of the talk, we will help you get set up so that you can utilize these tools to streamline the development of your projects this weekend.
 
 ## How to Attend
 
-Bring a computer with a web browser and a text editor installed.
-[Chrome](https://www.google.com/chrome/browser/desktop/index.html) and
-[Sublime Text](http://www.sublimetext.com/) are recommended.  Please also have
-[Python](https://www.python.org/downloads/) installed as well as
-[pip](https://pip.pypa.io/en/stable/installing/), a Python package manager.
-
-This talk assumes you've programmed before, either for a class or on your own
-time.
-
+Download [Git](https://git-scm.com/downloads) and create an account on [Github](https://github.com/join). You can check out the slides [here](https://docs.google.com/presentation/d/10SFLNnDKB9xX6JgA_lj6c7ouTMT_iOuN2vx3TdRSzJ4/edit?usp=sharing).
 
 ## Resources
 
 Here are some resources that we will use for this workshop:
 
-- [Slides - Introduction to Backend Development](https://docs.google.com/presentation/d/1HcADdPMhP35u7tUUuXhPCQw-V49eDt_fYKH2Iek863o/edit?usp=sharing)
-- [Backend Lab]({{ site.baseurl }}/backend/lab/)
-- [Repository for Demo](https://github.com/crcmowry/wdwdemo)
-
-## More Resources
-
-Here are some resources from the past iteration of Web Dev Weeks:
-
-- [Slides](https://github.com/anbenson/webdevblog/raw/master/resources/WebDevWeeks-Backend.pdf)
-- [Tutorial](https://docs.google.com/document/d/1dUa36KFGPPwruOIOxDfKkVyqf5ZboZ0AiHdyNYniFWA/edit?pli=1)
-- [Example website](http://webdevblog.herokuapp.com/)
-- [Repository for webdevblog example and resources](https://github.com/anbenson/webdevblog)
-
-Some helpful links to learn more about backend programming:
-
-- [Flask](http://flask.pocoo.org/)
-- [Jinja2 templating engine](http://jinja.pocoo.org/)
-- [Flask-SQLAlchemy](http://pythonhosted.org/Flask-SQLAlchemy/quickstart.html)
-- [Udacity course on web development](https://www.udacity.com/course/cs253)
+- [GitHub Documentation](https://docs.github.com/en)
+- [Setting up Git](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/set-up-git)
+- [Installing and configuring GitHub Desktop](https://docs.github.com/en/free-pro-team@latest/desktop/installing-and-configuring-github-desktop)
+- [Creating a GitHub Pages site](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/creating-a-github-pages-site)
+- [Keyboard shortcuts](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/keyboard-shortcuts)
+- [The Pro Git Book](https://git-scm.com/book/en/v2)
+- [15-131 (GPI) "Getting started with Git" resources](https://www.cs.cmu.edu/~15131/f15/topics/git/)
+- [GitHub Pages documentation](https://pages.github.com/)
+- [Further GitHub Pages docs](://help.github.com/articles/tips-for-configuring-an-a-record-with-your-dns-provider/)

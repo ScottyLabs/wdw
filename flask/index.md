@@ -1,27 +1,18 @@
 ---
 layout: guide
 title: "REST APIs in Flask"
-permalink: /flask/
 subject: "flask"
 ---
 
-# Backend Development
+# REST APIs in Flask
 
 ###### learn how to save information, serve up different pages, and more
 
-The backend is all about storing and persisting information.  It usually
-consists of three main parts: a server, an application, and a database. If you
-want to save a user’s preferences, do complicated calculations, or store a lot
-of information, you’re going to need a backend.
-
-Participants in this workshop will first get a brief overview of what backend
-engineering is before learning how to make a simple blog using Flask, a web
-application framework written in Python.
-
+In this talk, we'll be covering the fundamental concepts behind building functional APIs. We'll discuss and explore what APIs are and how they are used, types of APIs, what it means for an API to be RESTful, basic functions and CRUD, and server communication with HTTP. Then, we'll move on to the implementation of an API in Python using the Flask web framework, covering topics like data models, endpoints, and routing. Finally, we'll look at a real use case and demo of a functional RESTful API, and use this in the lab to build our own API for managing and querying a database of personal contacts.
 
 ## How to Attend
 
-In addition, before these steps, you should download [Python](https://www.python.org/downloads/), [pip](https://pip.pypa.io/en/stable/installing/), and [Postman](https://www.postman.com/downloads/). Make sure you have an editor as well!
+You should download [Python](https://www.python.org/downloads/), [pip](https://pip.pypa.io/en/stable/installing/), and [Postman](https://www.postman.com/downloads/). Make sure you have an code editor as well!
 
 ## Resources
 

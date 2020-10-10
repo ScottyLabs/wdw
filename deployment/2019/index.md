@@ -17,7 +17,8 @@ you something to deploy.
 
 ## How to Attend
 
-Check out the lab sessions [here](https://drive.google.com/drive/u/1/folders/14DZVFknPuwLSYtqZRgzNQPB8R2qPlUbg). If you want to use starter code to follow along the lab, check out this [repo]().
+This workshop is not being offered this semester. Feel free to browse the lab
+and resources below.
 
 <!--
 Be sure to bring a laptop. You'll want to make sure that either [GitHub for
@@ -29,6 +30,24 @@ installed on your system.
 [git]: http://git-scm.com/downloads
 -->
 
+## Lab and Resources
+
+### [Start The Lab]({{ site.baseurl }}/deployment/lab/)
+
+Click above to start the lab! There are also the resources from [Spring
+2015]({{ site.baseurl }}/deployment/s15/lab/).
+
+There's a lot of links below, feel free to browse them at your leisure, but none
+are required for this lab.
+
+### Git Resources
+
+- [15-131 (GPI) "Getting started with Git" resources](https://www.cs.cmu.edu/~15131/f15/topics/git/)
+
+### Using GitHub for Static Sites
+
+- [GitHub Pages documentation](https://pages.github.com/)
+- [Further GitHub Pages docs](://help.github.com/articles/tips-for-configuring-an-a-record-with-your-dns-provider/)
 
 ### DNS Resources
 
