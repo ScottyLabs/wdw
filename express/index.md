@@ -24,7 +24,7 @@ Bring a computer with a web browser and a text editor installed. You will also n
 
 Here are some resources that we will use for this workshop:
 
-- [Slides](https://docs.google.com/presentation/d/1JHGoCwCcxaY1Xxe0Nc_U1dBXMEHZYL1QYRDwkJJsfuE/edit?usp=sharing)
+- [Slides](https://docs.google.com/presentation/d/1Kh3_Rgl8qb00nRrPG_Dki8gN8E27KeWd7hDl4ugmFro/edit?usp=sharing)
 - [Lab](https://github.com/ScottyLabs/wdw-node/blob/master/lab.md)
 
 ## Resources

@@ -40,6 +40,6 @@ and an API development environment such as [Postman](https://www.getpostman.com/
 will make the development process much easier during the workshop.
 
 ## Resources
-Here's the link to the [slides](https://docs.google.com/presentation/d/1dpjKNDPTclaXNG-NY4zd9d4ULmXYWW6J5nJEyvmIRmg/edit?usp=sharing).
+Here's the link to the [slides](https://docs.google.com/presentation/d/1Kh3_Rgl8qb00nRrPG_Dki8gN8E27KeWd7hDl4ugmFro/edit?usp=sharing).
 
 Here's the link to the [lab](https://github.com/joshuadurham/restAPILab) for this workshop!
