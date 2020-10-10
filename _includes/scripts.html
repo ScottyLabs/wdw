@@ -16,7 +16,8 @@
     var start = new Date("{{site.wdw_start_time}}");
     var month = monthNames[start.getMonth()]
     var period = "AM";
-    var hours = start.getHours() > 12 ? (period = "PM") && start.getHours() % 12 : start.getHours();
+    var hours = start.getHours() >= 12 ? (period = "PM") && start.getHours() - 12 : start.getHours();
+    if (hours == 0) hours = 12;
     var minutes = start.getMinutes() < 10 ? `0${start.getMinutes()}` : start.getMinutes();
     if (time - start < 0) {
       $(".zoom").html(`<span class="aside">The Zoom meeting will open on ${month} ${start.getDate()}, ${start.getFullYear()} at ${hours}:${minutes} ${period}</span><a><button class="zoom disabled" disabled>Link not yet available</button></a>`);
