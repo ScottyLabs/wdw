@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: React
-subject: basics
+subject: react
 ---
 
 # React
@@ -16,6 +16,10 @@ companies across the industry, such as Facebook, Netflix, AirBnB, and more! If
 you’re thinking of taking your web development skills to the next level, then
 join us for our React talk!
 
+## How to Attend
+
+This year, WDW will be virtual! You can join us on Zoom from wherever you are.
+<div class="zoom"></div>
 
 ## Prerequisites
 
@@ -34,12 +38,6 @@ Please install the following software before attending the workshop and lab:
   - [Firefox Browser Add-ons](https://addons.mozilla.org/en-US/firefox/addon/react-devtools/) for Mozilla Firefox
 <span class="aside">It's less straightforward to install React Dev Tools for browsers like Safari</span>
   - [NPM](https://www.npmjs.com/package/react-devtools) for other browsers (Safari) 
-
-
-## How to Attend
-
-This year, WDW will be virtual! You can join us on Zoom from wherever you are.
-<div class="zoom"></div>
 
 
 ## Talk Content
