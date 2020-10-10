@@ -53,8 +53,8 @@ This year, WDW will be virtual! You can join us on Zoom from wherever you are.
 | [HTML & CSS](html+css/)                                      | 1:30 p.m. -- 2:30 p.m. |
 | [JavaScript](javascript/)                                    | 2:30 p.m. -- 3:30 p.m. |
 | Break                                                        | 3:30 p.m. -- 4:00 p.m. |
-| [Flask](flask/)                                              | 4:00 p.m. -- 4:30 p.m. |
-| Office Hours                                                 | 4:40 p.m. -- 5:30 p.m. |
+| [Flask](flask/)                                              | 4:00 p.m. -- 5:00 p.m. |
+| Office Hours                                                 | 5:00 p.m. -- 5:30 p.m. |
 
 ### Sunday, October 11th
 
