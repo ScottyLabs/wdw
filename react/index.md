@@ -39,10 +39,7 @@ Please install the following software before attending the workshop and lab:
 ## How to Attend
 
 This year, WDW will be virtual! You can join us on Zoom from wherever you are.
-<div class="zoom">
-  <span class="aside">Meeting ID: 914 9506 3440</span>
-  <a href="{{site.zoom_link}}" target="_blank"><button class="zoom">Join us on Zoom</button></a>
-</div>
+<div class="zoom"></div>
 
 
 ## Talk Content
