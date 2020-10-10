@@ -58,6 +58,11 @@ After the talk, there will be a lab which will walk you through creating your
 own React app. Here's the link to the [lab](https://github.com/scottylabs/wdw-react) for
 this workshop!
 
-### Resources
-Here's the link to the [slides]({{ site.baseurl }}/react/sunday/slides.pdf) for this workshop!
+## Resources
 
+- [React Docs](https://reactjs.org/docs/getting-started.html)
+- [Redux (advanced state management)](https://redux.js.org/introduction/getting-started)
+- [Next.js (production-ready framework)](https://nextjs.org/)
+- [React Native (build mobile apps with React)](https://reactnative.dev/)
+
+Here's the link to the [slides](https://drive.google.com/file/d/1w70QCtIpLWYftlVR1acIClr-bp9RCcDE/view?usp=sharing) for this workshop!
