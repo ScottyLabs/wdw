@@ -9,11 +9,12 @@ subject: "git"
 ###### version control at its finest 
 
 Git and GitHub are essential tools for any software developer, and have become the industry standard for version control. In this talk, we will introduce you to the power of version control and how Git and GitHub can help you manage projects. At the end of the talk, we will help you get set up so that you can utilize these tools to streamline the development of your projects this weekend.
-<div class="zoom"></div>
 
 ## How to Attend
 
 Download [Git](https://git-scm.com/downloads) and create an account on [Github](https://github.com/join). You can check out the slides [here](https://docs.google.com/presentation/d/10SFLNnDKB9xX6JgA_lj6c7ouTMT_iOuN2vx3TdRSzJ4/edit?usp=sharing).
+
+<div class="zoom"></div>
 
 ## Resources
 

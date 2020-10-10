@@ -7,17 +7,13 @@ subject: "express"
 
 # REST APIs in Express
 
-###### learn how to build a minimal and flexible web applicatoin
+###### Learn how to build a minimal and flexible web application with Node.JS and Express
 
-The backend is all about storing and persisting information.  It usually
-consists of three main parts: a server, an application, and a database. If you
-want to save a user’s preferences, do complicated calculations, or store a lot
-of information, you’re going to need a backend.
+Most modern websites and web applications involve some sort of backend framework to handle data going from a backend to some sort of database. You will be learning about the basics of what a REST API is and how to use it to expose data to a frontend.
 
-Participants in this workshop will first get a brief overview of what backend
-engineering is before learning how to make a simple blog using Flask, a web
-application framework written in Python.
+Node.JS is one of the most popular and most powerful choices for desigining a website backend. In this talk, you will be learning about how Node.JS is used today to power websites as well as how to use a popular framework called Express to simplify developing a server.
 
+After this talk, there will be a workshop where participants will get a hands-on experience working on building a basic Express app and testing their endpoints using Postman.
 
 ## How to Attend
 
@@ -28,8 +24,8 @@ Bring a computer with a web browser and a text editor installed. You will also n
 
 Here are some resources that we will use for this workshop:
 
-- [Slides](https://docs.google.com/presentation/d/1NBszm4rlD7fBq_9yrNE_7UMRj5DFtYRR/edit?dls=true)
-- [Lab]()
+- [Slides](https://docs.google.com/presentation/d/1JHGoCwCcxaY1Xxe0Nc_U1dBXMEHZYL1QYRDwkJJsfuE/edit?usp=sharing)
+- [Lab](https://github.com/ScottyLabs/wdw-node/blob/master/lab.md)
 
 ## Resources
 
@@ -42,9 +38,9 @@ Here are some resources from the past iteration of Web Dev Weekends:
 - [Example website](http://webdevblog.herokuapp.com/)
 - [Repository for webdevblog example and resources](https://github.com/anbenson/webdevblog)
 
-Some helpful links to learn more about backend programming:
+Some helpful links to learn more about Node.JS and further topics:
 
-- [Flask](http://flask.pocoo.org/)
-- [Jinja2 templating engine](http://jinja.pocoo.org/)
-- [Flask-SQLAlchemy](http://pythonhosted.org/Flask-SQLAlchemy/quickstart.html)
-- [Udacity course on web development](https://www.udacity.com/course/cs253)
+- [Node.JS Crash Course](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jsz4LDYc6kv3ymONOKxwBU)
+- [Node.JS with MongoDB](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jBcybHMTIia56aV21o2cZ8)
+- [Using Mongoose to simplify the MongoDB interface](https://mongoosejs.com/)
+- [Node.JS Authentication with JWT](https://www.youtube.com/playlist?list=PL4cUxeGkcC9iqqESP8335DA5cRFp8loyp)
