@@ -65,7 +65,8 @@ This year, WDW will be virtual! You can join us on Zoom from wherever you are.
 | [React](react/)                                              | 2:30 p.m. -- 3:30 p.m. |
 | Break                                                        | 3:30 p.m. -- 4:00 p.m. |
 | [Deployment](deployment/)                                    | 4:00 p.m. -- 4:30 p.m. |
-| Office Hours and Submission                                  | 4:40 p.m. -- 5:30 p.m. |
+| Office Hours                                                 | 4:40 p.m. -- 5:30 p.m. |
+| [Submission](https://forms.gle/hbubcVAhdPNhwiT56)            | 5:30 p.m.              |
 
 
 
@@ -100,7 +101,6 @@ might be useful:
 - [Synergize Your CSS: Using a Framework][css-frameworks]
 - [UX Prototyping with Framer.js][framer]
 - [Frontend JavaScript with AngularJS][angular]
-- [Deployment: Making Your Site Public][deployment]
 - [Crafting Well-Designed Sites][design]
 - [P5 - JavaScript Graphical Sketchbook][p5]
 
