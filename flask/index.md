@@ -13,6 +13,7 @@ In this talk, we'll be covering the fundamental concepts behind building functio
 ## How to Attend
 
 You should download [Python](https://www.python.org/downloads/), [pip](https://pip.pypa.io/en/stable/installing/), and [Postman](https://www.postman.com/downloads/). Make sure you have an code editor as well!
+<div class="zoom"></div>
 
 ## Resources
 

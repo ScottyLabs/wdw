@@ -22,6 +22,7 @@ application framework written in Python.
 ## How to Attend
 
 Bring a computer with a web browser and a text editor installed. You will also need to install [Node.JS](https://nodejs.org/en/download/) and [Postman](https://www.postman.com/downloads/).
+<div class="zoom"></div>
 
 ## Lab
 

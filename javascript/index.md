@@ -24,10 +24,9 @@ JavaScript tasks.
 Bring a computer with a web browser and text editor installed. We recommend
 [Chrome](https://www.google.com/chrome/browser/desktop/index.html) and
 [Sublime Text](http://www.sublimetext.com/) or [Atom](https://atom.io/).
+<div class="zoom"></div>
 
-This talk assumes you've programmed before, either for a class or on your own
-time.
-
+[JavaScript Slides](https://docs.google.com/presentation/d/15XewMwaSIDiRMRHWaJPc_XBqhwHsgI1dp3VORCNfNV4/edit)
 
 ## Resources
 
@@ -36,7 +35,6 @@ previous years.
 If you attend this workshop, we'll work through all of these resources to help
 you complete a fun JavaScript project!
 
-1. [Introduction to JavaScript Slides](https://wafflecohn.github.io/javascript-lab/intro-javascript-slides.pdf)
 1. [HTML & CSS Recap]({{ site.baseurl }}/javascript/html-css/)
 1. [JavaScript Lab]({{ site.baseurl }}/javascript/lab/)
 1. [Demo of Final Project](https://wafflecohn.github.io/javascript-lab/)
