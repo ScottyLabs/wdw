@@ -66,7 +66,7 @@ This year, WDW will be virtual! You can join us on Zoom from wherever you are.
 | Break                                                        | 3:30 p.m. -- 4:00 p.m. |
 | [Deployment](deployment/)                                    | 4:00 p.m. -- 4:30 p.m. |
 | Office Hours                                                 | 4:40 p.m. -- 5:30 p.m. |
-| [Submission](https://forms.gle/hbubcVAhdPNhwiT56)            | 4:40 p.m. -- 5:30 p.m. |
+| [Submission](https://forms.gle/hbubcVAhdPNhwiT56)            | 5:00 p.m. -- 5:30 p.m. |
 
 
 
