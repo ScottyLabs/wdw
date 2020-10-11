@@ -21,6 +21,8 @@ join us for our React talk!
 This year, WDW will be virtual! You can join us on Zoom from wherever you are.
 <div class="zoom"></div>
 
+View a pre-recorded version of the talk [here](https://drive.google.com/file/d/1390KJHZ1y_49rReIXmmEcB_0ofofsBxf/view?usp=sharing)!
+
 ## Prerequisites
 
 Please install the following software before attending the workshop and lab:
