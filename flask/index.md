@@ -15,6 +15,8 @@ In this talk, we'll be covering the fundamental concepts behind building functio
 You should download [Python](https://www.python.org/downloads/), [pip](https://pip.pypa.io/en/stable/installing/), and [Postman](https://www.postman.com/downloads/). Make sure you have an code editor as well!
 <div class="zoom"></div>
 
+View a pre-recorded version of the talk [here](https://drive.google.com/file/d/1QMTt4U4LMOXhfLMROwN6LVSHi9oAIALW/view?usp=sharing)!
+
 ## Resources
 
 Here are some resources that we will use for this workshop:
