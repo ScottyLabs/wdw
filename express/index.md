@@ -20,6 +20,8 @@ After this talk, there will be a workshop where participants will get a hands-on
 Bring a computer with a web browser and a text editor installed. You will also need to install [Node.JS](https://nodejs.org/en/download/) and [Postman](https://www.postman.com/downloads/).
 <div class="zoom"></div>
 
+View a pre-recorded version of the talk [here](https://drive.google.com/file/d/1JNXcmyza46aO8Z-_fFZYDVz--jNVu9eb/view?usp=sharing)!
+
 ## Lab
 
 Here are some resources that we will use for this workshop:
