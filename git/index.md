@@ -16,6 +16,8 @@ Download [Git](https://git-scm.com/downloads) and create an account on [Github](
 
 <div class="zoom"></div>
 
+View a pre-recorded version of the talk [here](https://cmu.zoom.us/rec/share/jbBaTE5NUHVL1c2HehMXK3usBToadic_-REqgt8v3yi7sy_B_F21w84JzUhXyQLy.bcnU0ft_nmwA0MuX)! Password: N7cW@+Ra
+
 ## Resources
 
 Here are some resources that we will use for this workshop:
