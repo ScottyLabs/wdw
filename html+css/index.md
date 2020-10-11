@@ -19,6 +19,8 @@ This talk will cover the basics of HTML and CSS while laying the foundation for 
 Bring a computer with a web browser and text editor installed. We will also be using [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/), which you can [download here](https://getbootstrap.com/docs/4.5/getting-started/download/).
 <div class="zoom"></div>
 
+View a pre-recorded version of the talk [here](https://drive.google.com/file/d/1dC6pcfSxNBWcbzgMjn0TLgb0r_URg_mh/view?usp=sharing)!
+
 ## Lab
 
 To follow along, go to the
