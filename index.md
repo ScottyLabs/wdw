@@ -42,8 +42,7 @@ You can go to as many or as few as you'd like. Most talks have no
 pre-requisites, but the ones that do list them on their descriptions.
 
 ### Location
-This year, WDW will be virtual! You can join us on Zoom from wherever you are.
-<div class="zoom"></div>
+WDW will be held in Rashid Auditorium!
 
 ### Saturday, November 13th
 

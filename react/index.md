@@ -18,8 +18,7 @@ join us for our React talk!
 
 ## How to Attend
 
-This year, WDW will be virtual! You can join us on Zoom from wherever you are.
-<div class="zoom"></div>
+WDW will be held in Rashid Auditorium!
 
 View a pre-recorded version of the talk [here](https://drive.google.com/file/d/1390KJHZ1y_49rReIXmmEcB_0ofofsBxf/view?usp=sharing)!
 
