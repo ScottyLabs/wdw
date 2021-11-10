@@ -45,7 +45,7 @@ pre-requisites, but the ones that do list them on their descriptions.
 This year, WDW will be virtual! You can join us on Zoom from wherever you are.
 <div class="zoom"></div>
 
-### Saturday, October 10th
+### Saturday, November 13th
 
 | Session                                                      | Time                   |
 |--------------------------------------------------------------|:----------------------:|
@@ -56,7 +56,7 @@ This year, WDW will be virtual! You can join us on Zoom from wherever you are.
 | [Flask](flask/)                                              | 4:00 p.m. -- 5:00 p.m. |
 | Office Hours                                                 | 5:00 p.m. -- 5:30 p.m. |
 
-### Sunday, October 11th
+### Sunday, November 14th
 
 | Session                                                      | Time                   |
 |--------------------------------------------------------------|:----------------------:|
@@ -66,7 +66,7 @@ This year, WDW will be virtual! You can join us on Zoom from wherever you are.
 | Break                                                        | 3:30 p.m. -- 4:00 p.m. |
 | [Deployment](deployment/)                                    | 4:00 p.m. -- 4:30 p.m. |
 | Office Hours                                                 | 4:40 p.m. -- 5:30 p.m. |
-| [Submission](https://forms.gle/hbubcVAhdPNhwiT56)            | 5:00 p.m. -- 5:30 p.m. |
+| [Submission](https://forms.gle/Fu1hVT7Sg2VVJXkVA)            | 5:00 p.m. -- 5:30 p.m. |
 
 
 
