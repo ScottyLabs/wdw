@@ -30,8 +30,7 @@ wdw_pages:
   - git
   - html+css
   - javascript
-  - flask
   - express
-  - react
+  - flask
   - deployment
 

@@ -48,24 +48,18 @@ WDW will be held in Rashid Auditorium!
 
 | Session                                                      | Time                   |
 |--------------------------------------------------------------|:----------------------:|
-| [Git & Github](git/)                                         | 1:00 p.m. -- 1:30 p.m. |
-| [HTML & CSS](html+css/)                                      | 1:30 p.m. -- 2:30 p.m. |
-| [JavaScript](javascript/)                                    | 2:30 p.m. -- 3:30 p.m. |
-| Break                                                        | 3:30 p.m. -- 4:00 p.m. |
-| [Flask](flask/)                                              | 4:00 p.m. -- 5:00 p.m. |
-| Office Hours                                                 | 5:00 p.m. -- 5:30 p.m. |
+| Opening Ceremony                                             | 1:45 p.m. -- 2:00 p.m. |
+| [Git & Github](git/)                                         | 2:00 p.m. -- 3:00 p.m. |
+| [HTML & CSS](html+css/)                                      | 3:00 p.m. -- 4:00 p.m. |
+| [JavaScript](javascript/)                                    | 4:00 p.m. -- 5:00 p.m. |
 
 ### Sunday, November 14th
 
 | Session                                                      | Time                   |
 |--------------------------------------------------------------|:----------------------:|
-| Office Hours                                                 | 1:00 p.m. -- 1:30 p.m. |
-| [Express](express/)                                          | 1:30 p.m. -- 2:30 p.m. |
-| [React](react/)                                              | 2:30 p.m. -- 3:30 p.m. |
-| Break                                                        | 3:30 p.m. -- 4:00 p.m. |
-| [Deployment](deployment/)                                    | 4:00 p.m. -- 4:30 p.m. |
-| Office Hours                                                 | 4:40 p.m. -- 5:30 p.m. |
-| [Submission](https://forms.gle/Fu1hVT7Sg2VVJXkVA)            | 5:00 p.m. -- 5:30 p.m. |
+| [Express](express/)                                          | 2:00 p.m. -- 3:00 p.m. |
+| [Flask](flask/)                                              | 3:00 p.m. -- 4:00 p.m. |
+| [Deployment](deployment/)                                    | 4:00 p.m. -- 5:00 p.m. |
 
 
 
