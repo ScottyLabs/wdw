@@ -57,7 +57,7 @@ WDW will be held in Rashid Auditorium!
 
 | Session                                                      | Time                   |
 |--------------------------------------------------------------|:----------------------:|
-| [Express](express/)                                          | 2:00 p.m. -- 3:00 p.m. |
+| [Beautiful Soup](beautifulsoup/)                             | 2:00 p.m. -- 3:00 p.m. |
 | [Flask](flask/)                                              | 3:00 p.m. -- 4:00 p.m. |
 | [Deployment](deployment/)                                    | 4:00 p.m. -- 5:00 p.m. |
 
@@ -117,6 +117,7 @@ might be useful:
 [git]: git/
 [flask]: flask/
 [express]: express/
+[beautifulsoup]: beautifulsoup/
 [react]: react/
 
 <!-- schema.org information about the event, so it shows up in Google -->

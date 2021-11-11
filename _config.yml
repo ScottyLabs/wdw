@@ -30,7 +30,7 @@ wdw_pages:
   - git
   - html+css
   - javascript
-  - express
+  - beautifulsoup
   - flask
   - deployment
 

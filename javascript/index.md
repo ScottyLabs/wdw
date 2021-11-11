@@ -25,7 +25,7 @@ Bring a computer with a web browser and text editor installed. We recommend
 [Chrome](https://www.google.com/chrome/browser/desktop/index.html) and
 [Sublime Text](http://www.sublimetext.com/) or [Atom](https://atom.io/).
 
-[JavaScript Slides](https://docs.google.com/presentation/d/15XewMwaSIDiRMRHWaJPc_XBqhwHsgI1dp3VORCNfNV4/edit)
+[JavaScript Slides](https://docs.google.com/presentation/d/1jx6D6EqI4GRpN9wu2x3-y6pNkgEc7e3OJtQC1pNFqHU/edit?usp=sharing)
 
 ## Resources
 
