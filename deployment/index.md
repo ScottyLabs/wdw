@@ -18,9 +18,6 @@ you something to deploy.
 ## How to Attend
 
 Check out the lab sessions [here](https://drive.google.com/drive/u/1/folders/14DZVFknPuwLSYtqZRgzNQPB8R2qPlUbg). If you want to use starter code to follow along the lab, check out this [code](http://href.scottylabs.org/deployment).
-<div class="zoom"></div>
-
-View a pre-recorded version of the talk [here](https://cmu.zoom.us/rec/share/SjnKoX2Uzv77nU0U2cyDFxUlMe3_HuhLHVzd26VNcI0un7a22Wp97yjVZEogdWOc.ByWhFsNfuOYT7uGl)! Password: 0t+FXbPS
 
 <!--
 Be sure to bring a laptop. You'll want to make sure that either [GitHub for
