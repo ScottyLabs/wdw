@@ -16,7 +16,7 @@ This talk will cover the basics of HTML and CSS while laying the foundation for 
 
 ## How to Attend
 
-Bring a computer with a web browser and text editor installed. We will also be using [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/), which you can [download here](https://getbootstrap.com/docs/4.5/getting-started/download/).s
+Bring a computer with a web browser and text editor installed. We will also be using [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/), which you can [download here](https://getbootstrap.com/docs/4.5/getting-started/download/).
 
 ## Lab
 
