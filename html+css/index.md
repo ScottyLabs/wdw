@@ -10,16 +10,13 @@ subject: htmlcss
 
 ###### build informative websites
 
-HHTML and CSS form the backbone of the web. When getting into Web Development, they are the first stepping stone, and having a strong understanding of the structure of web pages makes it easier to transition to dynamic pages. HTML is all about formatting content in ways that the browser can understand, while CSS adds stylistic elements and allows for responsiveness. 
+HTML and CSS form the backbone of the web. When getting into Web Development, they are the first stepping stone, and having a strong understanding of the structure of web pages makes it easier to transition to dynamic pages. HTML is all about formatting content in ways that the browser can understand, while CSS adds stylistic elements and allows for responsiveness. 
 
 This talk will cover the basics of HTML and CSS while laying the foundation for participants to learn about Web Development on their own. It’ll also be interactive, with lots of room for questions to clarify any confusing concepts. After the presentation, attendees will have the opportunity to apply the concepts from the talk to create their own personal website. The lab will provide suggestions on how to create a personal website, but participants are encouraged to add their own style and flair! 
 
 ## How to Attend
 
-Bring a computer with a web browser and text editor installed. We will also be using [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/), which you can [download here](https://getbootstrap.com/docs/4.5/getting-started/download/).
-<div class="zoom"></div>
-
-View a pre-recorded version of the talk [here](https://drive.google.com/file/d/1dC6pcfSxNBWcbzgMjn0TLgb0r_URg_mh/view?usp=sharing)!
+Bring a computer with a web browser and text editor installed. We will also be using [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/), which you can [download here](https://getbootstrap.com/docs/4.5/getting-started/download/).s
 
 ## Lab
 

@@ -14,10 +14,6 @@ Git and GitHub are essential tools for any software developer, and have become t
 
 Download [Git](https://git-scm.com/downloads) and create an account on [Github](https://github.com/join). You can check out the slides [here](https://docs.google.com/presentation/d/10SFLNnDKB9xX6JgA_lj6c7ouTMT_iOuN2vx3TdRSzJ4/edit?usp=sharing).
 
-<div class="zoom"></div>
-
-View a pre-recorded version of the talk [here](https://cmu.zoom.us/rec/share/jbBaTE5NUHVL1c2HehMXK3usBToadic_-REqgt8v3yi7sy_B_F21w84JzUhXyQLy.bcnU0ft_nmwA0MuX)! Password: N7cW@+Ra
-
 ## Resources
 
 Here are some resources that we will use for this workshop:

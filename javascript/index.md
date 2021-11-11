@@ -24,7 +24,6 @@ JavaScript tasks.
 Bring a computer with a web browser and text editor installed. We recommend
 [Chrome](https://www.google.com/chrome/browser/desktop/index.html) and
 [Sublime Text](http://www.sublimetext.com/) or [Atom](https://atom.io/).
-<div class="zoom"></div>
 
 [JavaScript Slides](https://docs.google.com/presentation/d/15XewMwaSIDiRMRHWaJPc_XBqhwHsgI1dp3VORCNfNV4/edit)
 
