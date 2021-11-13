@@ -20,8 +20,8 @@ Bring a computer with a web browser and text editor installed. We will also be u
 
 ## Lab
 
-To follow along, go to the
-[handout]({{ site.baseurl }}/html+css/handout/html+css.pdf). Feel free to use whatever components you want throughout the lab - this website is for you! Here is a [sample website](https://github.com/AvantikaNaik/wdw-sample-personal-website) created by following this lab!
+To follow along, go to this
+[Google Drive](https://drive.google.com/drive/folders/1s3LULBM6_8vP9VuGslQ4cPY1touSn3Jd?usp=sharing) for the handout and source code.
 
 The slides can be found [here](https://www.canva.com/design/DAEvcRysGYY/XgIGyoMwKIExUcS_5qthuQ/view).
 
